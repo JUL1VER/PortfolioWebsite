@@ -1,10 +1,10 @@
 
-    .Header {
-        text-align: left;
-    }
+.Header {
+    text-align: left;
+}
     
-    .Header_burger {
-        margin-top: 10%;
-        margin-left: 10%;
-        cursor: pointer;
-    }
+.Header_burger {
+    margin-top: 10%;
+    margin-left: 10%;
+    cursor: pointer;
+}
