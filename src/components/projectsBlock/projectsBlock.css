@@ -1,0 +1,106 @@
+.ProjectsBlock_header{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.ProjectsBlock_header_text{
+    width: 98px;
+    height: 37px;
+    margin-bottom: 0px;
+
+    font-family: 'Be Vietnam Pro';
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #F37A7A;
+}
+
+.ProjectsBlock_header_img{
+    width: 36px;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.ProjectsBlock_text{
+    width: 250px;
+    height: 26px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 45px;
+
+    font-family: 'Be Vietnam';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #818080;
+}
+
+.ProjectsBlock_containers{
+    width: 273px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding: 3px 0px 3px 0px;
+
+    background: linear-gradient(302.35deg, #0D54BE 4.37%, #20ECD3 95.31%);
+}
+
+.ProjectsBlock_containers_content{
+    margin: 0 auto;
+    width: 263px;
+    background-color: #ffffff;
+}
+
+.ProjectsBlock_containers_img{
+    width: 263px;
+}
+
+.ProjectsBlock_containers_text{
+    width: 252.33px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #818080;
+}
+
+.ProjectsBlock_containers_footer{
+    margin-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ProjectsBlock_containers_footer_img{
+    width: 25px;
+    height: 21px;
+    margin-top: 2px;
+}
+
+.ProjectsBlock_containers_footer_text{
+    margin: 0px 0px 0px 7px;
+    width: 74.09px;
+
+    font-family: 'Padauk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #0571AD;
+}

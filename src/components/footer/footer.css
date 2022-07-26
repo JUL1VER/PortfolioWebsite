@@ -1,0 +1,59 @@
+.Footer_wrapper {
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-image: url('../../img/wave.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #FFFFFF;
+}
+
+.Footer_linksText {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.Footer_linksBlock {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.Footer_projectsText{
+    margin: 0px 0px 0px 0px;
+}
+
+.Footer_githubBlock{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.Footer_githubBlock_img{
+    width: 30px;
+    height: 30px;
+}
+
+.Footer_githubBlock_text{
+    margin: 0px 0px 0px 0px;
+
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #FFFAFA;
+}
+
+.Footer_githubBlock_text_name{
+    color: #0ACBBF;
+}
