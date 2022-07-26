@@ -4,3 +4,10 @@
   justify-content: center;
   text-align: center;
 }
+
+@media (min-width: 1440px) {
+  .App {
+    width: 1440px;
+    background-color: aliceblue;
+  }
+}

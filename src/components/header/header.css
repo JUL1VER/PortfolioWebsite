@@ -1,10 +1,46 @@
 
 .Header {
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
 }
     
 .Header_burger {
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 20px;
+    margin-left: 20px;
     cursor: pointer;
+}
+
+.Header_navbar {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .Header {
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        margin-right: 290px;
+    
+    }
+    
+    .Header_burger {
+        display: none;
+    }
+
+    .Header_navbar {
+        display: contents;
+    }
+
+    .Header_navbar_Projects {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Header_navbar_gears{
+        margin-left: 5px;
+    }
 }

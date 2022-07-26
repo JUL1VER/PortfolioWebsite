@@ -104,3 +104,10 @@
 
     color: #0571AD;
 }
+
+@media (min-width: 1440px) {
+    .ProjectsBlock_slides{
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -95,3 +95,33 @@
     margin-top: -100px;
 }
 
+@media (min-width: 1440px) {
+    .SkillsBlock_content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SkillsBlock_skillsAndLogos{
+        order: 1;
+        width: 688px;
+    }
+
+    .SkillsBlock_text{
+        width: 600px;
+    }
+
+    .SkillsBlock_img{
+        order: 2;
+    }
+
+    .SkillsBlock_logoWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .SkillsBlock_logoWrapperDown {
+        margin-top: 11px;
+    }
+}
+

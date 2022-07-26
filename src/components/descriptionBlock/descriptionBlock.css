@@ -56,3 +56,21 @@
     font-size: 18px;
     color: #FFFFFF;
 }
+
+@media (min-width: 1440px) {
+    .DescriptionBlock_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .DescriptionBlock_leftPart {
+        order: 1;
+        width: 630px;
+    }
+
+    .DescriptionBlock_fotoWithFigures{
+        order: 2;
+        width: 530px;
+    }
+}

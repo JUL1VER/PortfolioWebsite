@@ -57,3 +57,29 @@
 .Footer_githubBlock_text_name{
     color: #0ACBBF;
 }
+
+@media (min-width: 1440px) {
+    .Footer_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: url('../../img/waveBig.png');
+        background-repeat: no-repeat;
+    }
+
+    .Footer_media {
+        display: flex;
+        flex-direction: column;
+        margin: 95px 0px 50px 0px;
+    }
+
+    .Footer_linksText{
+        margin-top: 0px;
+    }
+
+    .Footer_github {
+        display: flex;
+        flex-direction: column;
+        margin-top: 95px;
+    }
+}
