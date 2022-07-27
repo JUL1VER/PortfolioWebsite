@@ -6,26 +6,39 @@
     width: 142px;
     margin: 0 auto;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
     line-height: 37px;
 
-    color: #F37A7A;
+    color: #f37a7a;
 }
 
 .ContactmeBlock_img {
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    min-height: 187px;
+    max-width: 370px;
     margin-top: 45px;
 }
 
+.ContactmeBlock_forms{
+    display: flex;
+    flex-direction: column;
+}
+
 .ContactmeBlock_email {
+    margin: 0 auto;
     box-sizing: border-box;
     padding-top: 15px;
     padding-left: 10px;
     margin-top: 75px;
 
-    width: 259px;
+    width: 60%;
+    min-width: 259px;
+    max-width: 500px;
     height: 45.7px;
 
     background: #FFFFFF;
@@ -34,7 +47,7 @@
     border-radius: 8px;
     text-decoration: underline;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -44,11 +57,14 @@
 }
 
 .ContactmeBlock_message {
+    margin: 0 auto;
     box-sizing: border-box;
     margin-top: 15px;
     padding: 10px 0px 0px 10px;
 
-    width: 258.09px;
+    width: 60%;
+    min-width: 251px;
+    max-width: 500px;
     height: 120.2px;
 
     background: #FFFFFF;
@@ -57,7 +73,7 @@
     border-radius: 8px;
     resize: none;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -69,7 +85,9 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 81.96px;
+    width: 10%;
+    min-width: 81.96px;
+    max-width: 120px;
     height: 30.16px;
     margin: 0 auto;
     margin-top: 20px;
@@ -81,7 +99,7 @@
     border: none;
     cursor: pointer;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-weight: 600;
     font-size: 16px;
     line-height: 23px;

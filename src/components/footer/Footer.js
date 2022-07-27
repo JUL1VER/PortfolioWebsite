@@ -12,16 +12,16 @@ const Footer = () => {
             <div className='Footer_media'>
                 <p className='Footer_linksText'>My social media links:</p>
                 <div className='Footer_linksBlock'>
-                    <a href="https://github.com/JUL1VER">
+                    <a href="https://github.com/JUL1VER" target="_blank" rel='noreferrer'>
                         <img src={linkedin} alt="linkedin" />
                     </a>
-                    <a href="https://github.com/JUL1VER">
+                    <a href="https://github.com/JUL1VER" target="_blank" rel='noreferrer'>
                         <img src={whatsapp} alt="whatsapp" />
                     </a>
-                    <a href="https://github.com/JUL1VER">
+                    <a href="https://github.com/JUL1VER" target="_blank" rel='noreferrer'>
                         <img src={twitter} alt="twitter" />
                     </a>
-                    <a href="https://github.com/JUL1VER">
+                    <a href="https://github.com/JUL1VER" target="_blank" rel='noreferrer'>
                         <img src={gmail} alt="gmail" />
                     </a>
                 </div>

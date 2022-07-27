@@ -1,10 +1,13 @@
+.SkillsBlock_wrapper {
+    margin-top: 100px;
+}
+
 .SkillsBlock_header {
     width: 65px;
     height: 37px;
     margin: 0 auto;
-    margin-top: 100px;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-weight: 900;
     font-size: 25px;
     line-height: 37px;
@@ -12,14 +15,18 @@
 }
 
 .SkillsBlock_img {
-    width: 250px;
-    height: 186px;
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    min-height: 186px;
+    max-height: 370px;
     margin: 0 auto;
     margin-top: 15px;
 }
 
 .SkillsBlock_text {
-    width: 293px;
+    width: 80%;
+    min-width: 293px;
     height: 80px;
     margin: 0 auto;
     margin-top: 45px;
@@ -31,68 +38,39 @@
     color: #818080;
 }
 
+.SkillsBlock_logoWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .SkillsBlock_logoWrapperUp{
     display: flex;
-    direction: row;
+    flex-direction: row;
+    margin: 0 auto;
     margin-top: 10px;
 }
 
 .SkillsBlock_logoWrapperDown{
     display: flex;
     direction: row;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
 .SkillsBlock_css {
     width: 118px;
-    margin-left: 35px;
 }
 
 .SkillsBlock_js {
     width: 118px;
-    margin-left: 35px;
 }
 
 .SkillsBlock_html {
     width: 118px;
-    margin-left: 35px;
 }
 
 .SkillsBlock_bootstrap {
     width: 118px;
-    margin-left: 35px;
-}
-
-.SkillsBlock_cssLogo {
-    margin-top: 2px;
-}
-
-.SkillsBlock_jsLogo {
-    margin-top: 2px;
-}
-
-.SkillsBlock_htmlLogo {
-    margin-top: 2px;
-}
-
-.SkillsBlock_bootstrapLogo {
-    margin-top: 2px;
-}
-
-.SkillsBlock_cssLogo_borderLogo {
-    margin-top: -100px;
-}
-
-.SkillsBlock_jsLogo_borderLogo {
-    margin-top: -100px;
-}
-
-.SkillsBlock_htmlLogo_borderLogo {
-    margin-top: -100px;
-}
-
-.SkillsBlock_bootstrapLogo_borderLogo {
-    margin-top: -100px;
 }
 
 @media (min-width: 1440px) {

@@ -3,8 +3,8 @@
 }
 
 .DescriptionBlock_userFoto {
-    width: 257px;
-    height: 293px;
+    min-width: 257px;
+    min-height: 293px;
 }
 
 .DescriptionBlock_circles {
@@ -13,10 +13,13 @@
     margin-left: -125px;
 }
 
+.DescriptionBlock_contentPart {
+    margin-top: 70px;
+}
+
 .DescriptionBlock_name {
     width: 150px;
     margin: 0 auto;
-    margin-top: 70px;
 
     font-family: 'Be Vietnam Pro';
     font-weight: 900;
@@ -26,11 +29,12 @@
 }
 
 .DescriptionBlock_text{
-    width: 298px;
+    width: 80%;
+    min-width: 298px;
     margin: 0 auto;
     margin-top: 16px;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -50,7 +54,7 @@
     border-radius: 4px;
     cursor: pointer;
 
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -64,7 +68,7 @@
         justify-content: center;
     }
 
-    .DescriptionBlock_leftPart {
+    .DescriptionBlock_contentPart {
         order: 1;
         width: 630px;
     }

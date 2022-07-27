@@ -3,11 +3,16 @@
     display: flex;
     justify-content: flex-start;
 }
-    
-.Header_burger {
-    margin-top: 20px;
-    margin-left: 20px;
+
+.Header_burgerBlock{
+    background-color: #ffffff;
+    background-image: url("../../img/burgermenu.png");
+    width: 32px;
+    height: 32px;
+    border: none;
     cursor: pointer;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 
 .Header_navbar {
@@ -26,7 +31,7 @@
     
     }
     
-    .Header_burger {
+    .Header_burgerBlock {
         display: none;
     }
 

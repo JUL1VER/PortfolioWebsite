@@ -1,9 +1,12 @@
 .Footer_wrapper {
+    margin: 0 auto;
     margin-top: 100px;
     padding-top: 30px;
     padding-bottom: 10px;
+    width: 100%;
     background-image: url('../../img/wave.png');
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     font-family: 'Be Vietnam Pro';
     font-weight: 400;
@@ -13,8 +16,13 @@
     color: #FFFFFF;
 }
 
+.Footer_media {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
 .Footer_linksText {
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
     margin-bottom: 0px;
 }
@@ -22,6 +30,7 @@
 .Footer_linksBlock {
     margin: 0 auto;
     margin-top: 10px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -32,7 +41,9 @@
 }
 
 .Footer_githubBlock{
+    margin: 0 auto;
     margin-top: 10px;
+    max-width: 400px;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
