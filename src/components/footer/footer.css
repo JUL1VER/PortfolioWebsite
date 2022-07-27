@@ -71,26 +71,60 @@
 
 @media (min-width: 1440px) {
     .Footer_wrapper {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         background-image: url('../../img/waveBig.png');
         background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 35px;
+        line-height: 51px;
     }
 
     .Footer_media {
         display: flex;
         flex-direction: column;
-        margin: 95px 0px 50px 0px;
+        margin: 150px 0px 50px 0px;
+        width: 30%;
+    }
+
+    .Footer_linksBlock {
+        display: flex;
+        margin: 20px 0px 0px 10px;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px;
     }
 
     .Footer_linksText{
+        display: flex;
         margin-top: 0px;
     }
 
     .Footer_github {
         display: flex;
         flex-direction: column;
-        margin-top: 95px;
+        margin-top: 150px;
+    }
+
+    .Footer_githubBlock {
+        max-width: 700px;
+    }
+
+    .Footer_githubBlock_text {
+        font-size: 35px;
+        line-height: 51px;
+        margin-left: 20px;
+    }
+
+    .Footer_githubBlock_img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .Footer_linksBlock_imgs {
+        width: 65px;
+        height: 65px;
     }
 }

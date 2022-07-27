@@ -74,28 +74,48 @@
 }
 
 @media (min-width: 1440px) {
+    .SkillsBlock_wrapper {
+        max-width: 1440px;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
     .SkillsBlock_content {
         display: flex;
         flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .SkillsBlock_header {
+        width: 15%;
+        font-size: 40px;
+        line-height: 58px;
     }
 
     .SkillsBlock_skillsAndLogos{
         order: 1;
-        width: 688px;
+        width: 50%;
     }
 
     .SkillsBlock_text{
-        width: 600px;
+        width: 100%;
+        font-size: 35px;
+        line-height: 51px;
     }
 
     .SkillsBlock_img{
         order: 2;
+        width: 30%;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .SkillsBlock_logoWrapper{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top: 50px;
     }
 
     .SkillsBlock_logoWrapperDown {

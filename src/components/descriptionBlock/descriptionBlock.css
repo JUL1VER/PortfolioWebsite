@@ -63,6 +63,9 @@
 
 @media (min-width: 1440px) {
     .DescriptionBlock_wrapper {
+        max-width: 1440px;
+        width: 95%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -70,11 +73,52 @@
 
     .DescriptionBlock_contentPart {
         order: 1;
-        width: 630px;
+        width: 55%;
+        margin-top: 180px;
     }
 
-    .DescriptionBlock_fotoWithFigures{
+    .DescriptionBlock_fotoWithFigures {
         order: 2;
-        width: 530px;
+        width: 45%;
+    }
+
+    .DescriptionBlock_userFoto {
+        width: 610px;
+    }
+
+    .DescriptionBlock_circles {
+        width: 300px;
+        margin-top: 615px;
+        margin-left: -280px;
+    }
+
+    .DescriptionBlock_name {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 50px;
+        line-height: 73px;
+        width: 100%;
+    }
+
+    .DescriptionBlock_text {
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+        width: 100%;
+        font-size: 35px;
+        line-height: 157.6%;
+    }
+
+    .DescriptionBlock_hireButton {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 10px 24px;
+        font-size: 35px;
+        line-height: 51px;
+
+        width: 176px;
+        height: 71px;
     }
 }
