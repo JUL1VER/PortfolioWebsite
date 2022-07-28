@@ -6,8 +6,20 @@ import css from '../../img/css3.png';
 import js from '../../img/js.png';
 import html from '../../img/html5.png';
 import bootstrap from '../../img/bootstrap.png';
+import SkillIcon from '../skillIcon/SkillIcon';
 
 const SkillsBlock = () => {
+    const technologies = [
+        {id: 1, imgprop: css},
+        {id: 2, imgprop: html},
+        {id: 3, imgprop: js},
+        {id: 4, imgprop: bootstrap}
+    ]
+
+    const content = technologies.map(techno => 
+        <SkillIcon imgprop={techno.imgprop}/>
+    )
+
     return (
         <div className='SkillsBlock_wrapper'>
             <h3 className='SkillsBlock_header'>Skills</h3>
@@ -22,18 +34,7 @@ const SkillsBlock = () => {
                 <div className='SkillsBlock_skillsAndLogos'>
                     <p className='SkillsBlock_text'>I have a vast experience in the following web technologies:</p>
                     <div className='SkillsBlock_logoWrapper'>
-                        <div className='SkillsBlock_css'>
-                            <img src={css} alt="css" />
-                        </div>
-                        <div className='SkillsBlock_js'>
-                            <img src={js} alt="js" />
-                        </div>
-                        <div className='SkillsBlock_html'>
-                            <img src={html} alt="html" />
-                        </div>
-                        <div className='SkillsBlock_bootstrap'>
-                            <img src={bootstrap} alt="bootstrap" />
-                        </div>
+                        {content}
                     </div>
                 </div>
             </div>

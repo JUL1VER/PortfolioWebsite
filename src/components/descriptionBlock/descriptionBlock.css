@@ -13,6 +13,22 @@
     margin-left: -125px;
 }
 
+.DescriptionBlock_fotoWithFigures_cube {
+    display: none;
+}
+
+.DescriptionBlock_fotoWithFigures_plus {
+    display: none;
+}
+
+.DescriptionBlock_fotoWithFigures_zigzags {
+    display: none;
+}
+
+.DescriptionBlock_fotoWithFigures_ellipse {
+    display: none;
+}
+
 .DescriptionBlock_contentPart {
     margin-top: 70px;
 }
@@ -91,24 +107,28 @@
     }
 
     .DescriptionBlock_fotoWithFigures_ellipse {
+        display: block;
         position: absolute;
         margin-top: 600px;
-        margin-left: -70px;
+        margin-left: -30px;
     }
 
     .DescriptionBlock_fotoWithFigures_zigzags {
+        display: block;
         position: absolute;
         margin-top: -50px;
-        margin-left: -70px;
+        margin-left: -50px;
     }
 
     .DescriptionBlock_fotoWithFigures_plus {
+        display: block;
         position: absolute;
         margin-top: -70px;
         margin-left: 180px;
     }
 
     .DescriptionBlock_fotoWithFigures_cube {
+        display: block;
         position: absolute;
         margin-top: -70px;
         margin-left: 450px;
