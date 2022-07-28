@@ -1,6 +1,8 @@
 import React from 'react';
 import contactmeImg from '../../img/contactmeImg.png'
+import contactmeImg_large from '../../img/contactmeImg_large.png'
 import paperplane from '../../img/paperplane.png'
+import paperplane_large from '../../img/paperplane_large.png'
 import './contactmeBlock.css';
 
 const ContactmeBlock = () => {
@@ -8,13 +10,25 @@ const ContactmeBlock = () => {
         <div className='ContactmeBlock_wrapper'>
             <h3 className='ContactmeBlock_header'>Contact me</h3>
             <div className='ContactmeBlock_content'>
-                <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
+                <picture className="ContactmeBlock_imgPic">
+                    <source
+                        className='Header_navbar_gears'
+                        media='(min-width: 500px)'
+                        srcset={contactmeImg_large}/> 
+                    <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
+                </picture>
                 <form className='ContactmeBlock_form'>
                     <input type="email" placeholder='Enter email address' className='ContactmeBlock_email'/>
                     <textarea type="text" placeholder='Enter message...' className='ContactmeBlock_message'/>
                     <button className='ContactmeBlock_button'>
                         Send
-                        <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
+                        <picture className="ContactmeBlock_button_imgPic">
+                            <source
+                                className='ContactmeBlock_button_img'
+                                media='(min-width: 1440px)'
+                                srcset={paperplane_large}/> 
+                            <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
+                        </picture>
                     </button>
                 </form>
             </div>

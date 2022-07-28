@@ -69,27 +69,49 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
     .DescriptionBlock_contentPart {
         order: 1;
         width: 55%;
-        margin-top: 180px;
     }
 
     .DescriptionBlock_fotoWithFigures {
         order: 2;
         width: 45%;
-    }
-
-    .DescriptionBlock_userFoto {
-        width: 610px;
+        margin-top: 100px;
+        margin-left: 100px;
     }
 
     .DescriptionBlock_circles {
-        width: 300px;
-        margin-top: 615px;
-        margin-left: -280px;
+        position: absolute;
+        margin-top: 550px;
+        margin-left: -220px;
+    }
+
+    .DescriptionBlock_fotoWithFigures_ellipse {
+        position: absolute;
+        margin-top: 600px;
+        margin-left: -70px;
+    }
+
+    .DescriptionBlock_fotoWithFigures_zigzags {
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -70px;
+    }
+
+    .DescriptionBlock_fotoWithFigures_plus {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 180px;
+    }
+
+    .DescriptionBlock_fotoWithFigures_cube {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
     }
 
     .DescriptionBlock_name {
@@ -101,6 +123,7 @@
     }
 
     .DescriptionBlock_text {
+        margin-top: 50px;
         display: flex;
         justify-content: flex-start;
         text-align: start;
@@ -113,6 +136,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 50px;
 
         padding: 10px 24px;
         font-size: 35px;

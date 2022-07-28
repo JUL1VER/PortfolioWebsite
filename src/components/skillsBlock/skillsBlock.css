@@ -67,7 +67,7 @@
         max-width: 1440px;
         width: 95%;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 180px;
     }
 
     .SkillsBlock_content {
@@ -93,11 +93,15 @@
         line-height: 51px;
     }
 
-    .SkillsBlock_img {
+    .SkillsBlock_imgPic{
         order: 2;
-        width: 30%;
-        max-width: 500px;
-        max-height: 500px;
+        margin: 0 auto;
+    }
+
+    .SkillsBlock_img {
+        width: 100%;
+        max-width: 550px;
+        max-height: 550px;
     }
 
     .SkillsBlock_logoWrapper {
