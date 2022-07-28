@@ -9,14 +9,14 @@ const ContactmeBlock = () => {
             <h3 className='ContactmeBlock_header'>Contact me</h3>
             <div className='ContactmeBlock_content'>
                 <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
-                <div className='ContactmeBlock_forms'>
+                <form className='ContactmeBlock_form'>
                     <input type="email" placeholder='Enter email address' className='ContactmeBlock_email'/>
                     <textarea type="text" placeholder='Enter message...' className='ContactmeBlock_message'/>
                     <button className='ContactmeBlock_button'>
                         Send
                         <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className="Header">
             <div className="Header_wrapper">
-                <button className="Header_burgerBlock"></button>
+                <button className="Header_burgerBlock" type='button'/>
                 <nav className="Header_navbar">
                     <a href="https://github.com/JUL1VER" className='Header_navbar_skills'>Skills</a>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_projects'>

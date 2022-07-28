@@ -24,7 +24,7 @@
     margin-top: 45px;
 }
 
-.ContactmeBlock_forms{
+.ContactmeBlock_form{
     display: flex;
     flex-direction: column;
 }
@@ -86,7 +86,7 @@
     justify-content: space-around;
     text-align: center;
     width: 10%;
-    min-width: 81.96px;
+    min-width: 82px;
     max-width: 120px;
     height: 30.16px;
     margin: 0 auto;
@@ -134,7 +134,7 @@
         margin-top: 0px;
     }
 
-    .ContactmeBlock_forms{
+    .ContactmeBlock_form{
         order: 2;
         display: flex;
         flex-direction: column;

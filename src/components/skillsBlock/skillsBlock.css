@@ -39,22 +39,11 @@
 }
 
 .SkillsBlock_logoWrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.SkillsBlock_logoWrapperUp{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.SkillsBlock_logoWrapperDown{
-    display: flex;
-    direction: row;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
+    display: grid;
+    column-gap: 60px;
+    grid-template-columns: auto auto;
+    justify-content: center;
 }
 
 .SkillsBlock_css {
@@ -93,33 +82,30 @@
         line-height: 58px;
     }
 
-    .SkillsBlock_skillsAndLogos{
+    .SkillsBlock_skillsAndLogos {
         order: 1;
         width: 50%;
     }
 
-    .SkillsBlock_text{
+    .SkillsBlock_text {
         width: 100%;
         font-size: 35px;
         line-height: 51px;
     }
 
-    .SkillsBlock_img{
+    .SkillsBlock_img {
         order: 2;
         width: 30%;
         max-width: 500px;
         max-height: 500px;
     }
 
-    .SkillsBlock_logoWrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .SkillsBlock_logoWrapper {
         margin-top: 50px;
-    }
-
-    .SkillsBlock_logoWrapperDown {
-        margin-top: 11px;
+        display: grid;
+        column-gap: 60px;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
     }
 }
 
