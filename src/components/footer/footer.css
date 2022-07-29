@@ -126,9 +126,15 @@
         max-width: 600px;
     }
 
+    .Footer_linksBlock_imgs {
+        width: 60px;
+        height: 60px;
+    }
+
     .Footer_linksText{
         display: flex;
         margin-top: 0px;
+        font-size: 35px;
     }
 
     .Footer_github {
