@@ -29,8 +29,8 @@ const ProjectsBlock = () => {
                 <picture className="ProjectsBlock_header_gearsImg">
                     <source
                         className='ProjectsBlock_header_img'
-                        media='(min-width: 1440px)'
-                        srcset={gears_large}/> 
+                        media='(min-width: 650px)'
+                        srcSet={gears_large}/> 
                     <img src={gears} alt="gears" className="ProjectsBlock_header_img"/>
                 </picture>
             </div>

@@ -9,7 +9,7 @@ const FooterLink = (props) => {
                 <source
                     className='Footer_linksBlock_imgs'
                     media='(min-width: 1440px)'
-                    srcset={img_largeprop}/> 
+                    srcSet={img_largeprop}/> 
                 <img src={imgprop} alt="linkIcon" className='Footer_linksBlock_imgs'/>
             </picture>
         </a>

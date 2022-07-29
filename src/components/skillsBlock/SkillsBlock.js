@@ -17,7 +17,7 @@ const SkillsBlock = () => {
     ]
 
     const content = technologies.map(techno => 
-        <SkillIcon imgprop={techno.imgprop}/>
+        <SkillIcon imgprop={techno.imgprop} key={techno.id}/>
     )
 
     return (
@@ -28,7 +28,7 @@ const SkillsBlock = () => {
                     <source 
                         className='SkillsBlock_img'
                         media='(min-width: 500px)'
-                        srcset={skillsImg_large}/>
+                        srcSet={skillsImg_large}/>
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
                 </picture>
                 <div className='SkillsBlock_skillsAndLogos'>

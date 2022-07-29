@@ -43,7 +43,7 @@
 .Footer_githubBlock{
     margin: 0 auto;
     margin-top: 10px;
-    max-width: 400px;
+    max-width: 350px;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
@@ -67,6 +67,35 @@
 
 .Footer_githubBlock_text_name{
     color: #0ACBBF;
+    font-weight: 400;
+}
+
+@media (min-width: 650px) {
+    .Footer_wrapper {
+        background-image: url('../../img/waveBig.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .Footer_linksText {
+        font-size: 30px;
+    }
+
+    .Footer_linksBlock {
+        margin-top: 20px;
+    }
+
+    .Footer_linksBlock_imgs {
+        width: 40px;
+    }
+
+    .Footer_githubBlock {
+        max-width: 400px;
+    }
+
+    .Footer_githubBlock_text {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -122,5 +151,9 @@
     .Footer_githubBlock_img {
         width: 65px;
         height: 65px;
+    }
+
+    .Footer_githubBlock_text_name {
+        font-weight: 400;
     }
 }

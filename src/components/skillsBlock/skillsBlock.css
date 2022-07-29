@@ -42,24 +42,31 @@
     margin-top: 20px;
     display: grid;
     column-gap: 60px;
+    row-gap: 50px;
     grid-template-columns: auto auto;
     justify-content: center;
 }
 
-.SkillsBlock_css {
-    width: 118px;
+.SkillsBlock_logos {
+    width: 120px;
+    height: 145px;
 }
 
-.SkillsBlock_js {
-    width: 118px;
-}
+@media (min-width: 650px) {
+    .SkillsBlock_header {
+        width: 20%;
+        font-size: 40px;
+    }
 
-.SkillsBlock_html {
-    width: 118px;
-}
+    .SkillsBlock_text {
+        font-size: 25px;
+        line-height: 35px;
+    }
 
-.SkillsBlock_bootstrap {
-    width: 118px;
+    .SkillsBlock_logos {
+        width: 140px;
+        height: 170px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -105,11 +112,16 @@
     }
 
     .SkillsBlock_logoWrapper {
-        margin-top: 50px;
+        margin-top: 80px;
         display: grid;
         column-gap: 60px;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
+    }
+
+    .SkillsBlock_logos {
+        width: 125px;
+        height: 150px;
     }
 }
 

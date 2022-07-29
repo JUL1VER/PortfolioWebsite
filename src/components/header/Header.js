@@ -16,7 +16,7 @@ const Header = () => {
                             <source
                                 className='Header_navbar_gears'
                                 media='(min-width: 1440px)'
-                                srcset={gears_large}/> 
+                                srcSet={gears_large}/> 
                             <img src={gears} alt="gears" className="Header_navbar_gears"></img>
                         </picture>
                     </a>

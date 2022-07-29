@@ -20,7 +20,6 @@
     min-width: 250px;
     max-width: 500px;
     min-height: 187px;
-    max-width: 370px;
     margin-top: 45px;
 }
 
@@ -37,9 +36,9 @@
     margin-top: 75px;
 
     width: 60%;
-    min-width: 259px;
+    min-width: 251px;
     max-width: 500px;
-    height: 45.7px;
+    height: 45px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -65,7 +64,7 @@
     width: 60%;
     min-width: 251px;
     max-width: 500px;
-    height: 120.2px;
+    height: 120px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -88,7 +87,7 @@
     width: 10%;
     min-width: 82px;
     max-width: 120px;
-    height: 30.16px;
+    height: 30px;
     margin: 0 auto;
     margin-top: 20px;
     padding-top: 3px;
@@ -105,6 +104,38 @@
     line-height: 23px;
 
     color: #FFFDFD;
+}
+
+@media (min-width: 650px) {
+    .ContactmeBlock_header {
+        font-size: 40px;
+        width: 400px;
+    }
+
+    .ContactmeBlock_email {
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .ContactmeBlock_message {
+        font-size: 20px;
+        height: 220px;
+    }
+
+    .ContactmeBlock_button {
+        width: 150px;
+        max-width: 250px;
+        height: 50px;
+        margin-top: 30px;
+        padding-top: 0px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .ContactmeBlock_button_img {
+        width: 35px;
+        margin-top: 7px;
+    }
 }
 
 @media (min-width: 1440px) {

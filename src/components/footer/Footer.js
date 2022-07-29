@@ -22,7 +22,7 @@ const Footer = () => {
     ]
 
     const content = links.map((link) => 
-        <FooterLink imgprop={link.imgprop} img_largeprop={link.img_largeprop} src={link.src}/>
+        <FooterLink imgprop={link.imgprop} img_largeprop={link.img_largeprop} src={link.src} key={link.id}/>
     )
 
     return (
@@ -37,7 +37,7 @@ const Footer = () => {
                 <p className='Footer_linksText'>More projects I've worked on</p>
                 <div className='Footer_githubBlock'>
                     <FooterLink imgprop={github} img_largeprop={github_large} src='https://github.com/JUL1VER'/>
-                    <p className='Footer_githubBlock_text'>@<e className='Footer_githubBlock_text_name'>john-doe</e> on github</p>
+                    <p className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>john-doe</b> on github</p>
                 </div>
             </div>
         </div>

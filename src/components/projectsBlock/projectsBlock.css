@@ -60,7 +60,7 @@
 }
 
 .ProjectsBlock_containers_text{
-    width: 252.33px;
+    width: 252px;
     margin-top: 20px;
     margin-bottom: 0px;
 
@@ -94,7 +94,7 @@
 
 .ProjectsBlock_containers_footer_text{
     margin: 0px 0px 0px 7px;
-    width: 74.09px;
+    width: 74px;
 
     font-family: 'Padauk';
     font-style: normal;
@@ -105,36 +105,27 @@
     color: #0571AD;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 650px) {
     .ProjectsBlock_wrapper {
         max-width: 1440px;
         width: 95%;
         margin: 0 auto;
     }
 
-    .ProjectsBlock_slides{
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-    }
-
     .ProjectsBlock_header_text {
         font-size: 40px;
-        line-height: 58px;
         width: 170px;
-        margin-top: 15px;
+    }
+
+    .ProjectsBlock_text {
+        margin-top: 30px;
+        font-size: 25px;
+        width: 500px;
     }
 
     .ProjectsBlock_header_img {
         width: 45px;
         height: 45px;
-    }
-
-    .ProjectsBlock_text {
-        font-size: 35px;
-        line-height: 51px;
-        width: 50%;
-        margin-top: 50px;
     }
 
     .ProjectsBlock_containers {
@@ -175,5 +166,27 @@
     .ProjectsBlock_containers_footer_img {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ProjectsBlock_header_text {
+        font-size: 40px;
+        line-height: 58px;
+        width: 170px;
+        margin-top: 15px;
+    }
+
+    .ProjectsBlock_text {
+        font-size: 35px;
+        line-height: 51px;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .ProjectsBlock_slides{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
     }
 }

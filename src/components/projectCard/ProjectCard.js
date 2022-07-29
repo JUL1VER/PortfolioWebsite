@@ -1,6 +1,5 @@
 import React from 'react';
 import internet_large from '../../img/internet_large.png';
-import './projectCard.css';
 
 const ProjectCard = (props) => {
     const {imgprop, img_largeprop, description} = props;
@@ -11,8 +10,8 @@ const ProjectCard = (props) => {
                 <picture>
                     <source 
                         className='ProjectsBlock_containers_img'
-                        media='(min-width: 1440px)'
-                        srcset={img_largeprop}/>
+                        media='(min-width: 650px)'
+                        srcSet={img_largeprop}/>
                     <img src={imgprop} alt="projectImg" className='ProjectsBlock_containers_img'/>
                 </picture>
                 <p className='ProjectsBlock_containers_text'>{description}</p>

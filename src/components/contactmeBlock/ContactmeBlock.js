@@ -14,7 +14,7 @@ const ContactmeBlock = () => {
                     <source
                         className='Header_navbar_gears'
                         media='(min-width: 500px)'
-                        srcset={contactmeImg_large}/> 
+                        srcSet={contactmeImg_large}/> 
                     <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
                 </picture>
                 <form className='ContactmeBlock_form'>
@@ -25,8 +25,8 @@ const ContactmeBlock = () => {
                         <picture className="ContactmeBlock_button_imgPic">
                             <source
                                 className='ContactmeBlock_button_img'
-                                media='(min-width: 1440px)'
-                                srcset={paperplane_large}/> 
+                                media='(min-width: 650px)'
+                                srcSet={paperplane_large}/> 
                             <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
                         </picture>
                     </button>

@@ -19,16 +19,20 @@ const DescriptionBlock = () => {
                 <img src={cube_large} alt='cube' className='DescriptionBlock_fotoWithFigures_cube' />
                 <picture className='DescriptionBlock_foto'>
                     <source 
-                        className='DescriptionBlock_userForoPic'
+                        className='DescriptionBlock_userFoto'
+                        media='(min-width: 650px)'
+                        srcSet={userFoto_large}/>
+                    <source 
+                        className='DescriptionBlock_userFoto'
                         media='(min-width: 1440px)'
-                        srcset={userFoto_large}/>
+                        srcSet={userFoto_large}/>
                     <img src={userFoto} alt='userForo' className='DescriptionBlock_userFoto'/>
                 </picture>
                 <picture className='DescriptionBlock_circlesPic'>
                     <source
                         className='DescriptionBlock_circles'
                         media='(min-width: 1440px)'
-                        srcset={circles_large}/>
+                        srcSet={circles_large}/>
                     <img src={circles} alt='circles' className='DescriptionBlock_circles'/>
                 </picture>
             </div>
