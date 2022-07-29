@@ -36,6 +36,14 @@
     width: 90%;
 }
 
+.Footer_linksBlock_imgs {
+    transition: all 0.2s;
+}
+
+.Footer_linksBlock_imgs:hover {
+    transform: scale(1.2);
+}
+
 .Footer_projectsText{
     margin: 0;
 }

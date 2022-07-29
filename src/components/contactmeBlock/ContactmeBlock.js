@@ -20,7 +20,7 @@ const ContactmeBlock = () => {
                 <form className='ContactmeBlock_form'>
                     <input type="email" placeholder='Enter email address' className='ContactmeBlock_email'/>
                     <textarea type="text" placeholder='Enter message...' className='ContactmeBlock_message'/>
-                    <button className='ContactmeBlock_button'>
+                    <button className='ContactmeBlock_button' type='button'>
                         Send
                         <picture className="ContactmeBlock_button_imgPic">
                             <source

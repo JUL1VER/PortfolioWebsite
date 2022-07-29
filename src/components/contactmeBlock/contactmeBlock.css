@@ -55,6 +55,12 @@
     color: #838383;
 }
 
+.ContactmeBlock_email:focus {
+    color:#6860E2;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
 .ContactmeBlock_message {
     margin: 0 auto;
     box-sizing: border-box;
@@ -80,6 +86,10 @@
     color: #838383;
 }
 
+.ContactmeBlock_message:focus {
+    color:#6860E2;
+}
+
 .ContactmeBlock_button{
     display: flex;
     justify-content: space-around;
@@ -95,15 +105,27 @@
 
     background: #6860E2;
     border-radius: 3px;
-    border: none;
+    border: 2px solid #6860E2;
     cursor: pointer;
 
     font-family: "Be Vietnam Pro";
     font-weight: 600;
     font-size: 16px;
     line-height: 23px;
+    transition: all 0.5s;
 
     color: #FFFDFD;
+}
+
+.ContactmeBlock_button:hover {
+    color:#6860E2;
+    background: #fff;
+}
+
+.ContactmeBlock_button:active {
+    color: #fff;
+    background: #6860E2;
+    transition: all 0.1s;
 }
 
 @media (min-width: 650px) {
@@ -201,13 +223,13 @@
         height: 66px;
         max-height: 150px;
         margin-top: 30px;
-        padding-top: 7px;
+        padding-top: 5px;
         font-size: 36px;
         line-height: 53px;
     }
 
     .ContactmeBlock_button_img {
         width: 40px;
-        margin-top: 5px;
+        margin-top: 8px;
     }
 }

@@ -1,4 +1,4 @@
-.ProjectsBlock_header{
+.ProjectsBlock_header {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.ProjectsBlock_header_text{
+.ProjectsBlock_header_text {
     width: 98px;
     height: 37px;
     margin-bottom: 0px;
@@ -19,13 +19,13 @@
     color: #F37A7A;
 }
 
-.ProjectsBlock_header_img{
+.ProjectsBlock_header_img {
     width: 36px;
     height: 32px;
     margin-top: 20px;
 }
 
-.ProjectsBlock_text{
+.ProjectsBlock_text {
     width: 250px;
     height: 26px;
     margin: 0 auto;
@@ -40,7 +40,7 @@
     color: #818080;
 }
 
-.ProjectsBlock_containers{
+.ProjectsBlock_containers {
     width: 273px;
     margin: 0 auto;
     margin-bottom: 75px;
@@ -49,17 +49,17 @@
     background: linear-gradient(302.35deg, #0D54BE 4.37%, #20ECD3 95.31%);
 }
 
-.ProjectsBlock_containers_content{
+.ProjectsBlock_containers_content {
     margin: 0 auto;
     width: 263px;
     background-color: #ffffff;
 }
 
-.ProjectsBlock_containers_img{
+.ProjectsBlock_containers_img {
     width: 263px;
 }
 
-.ProjectsBlock_containers_text{
+.ProjectsBlock_containers_text {
     width: 252px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -75,7 +75,7 @@
     color: #818080;
 }
 
-.ProjectsBlock_containers_footer{
+.ProjectsBlock_containers_footer {
     margin-top: 20px;
     padding-bottom: 5px;
     display: flex;
@@ -86,13 +86,13 @@
     cursor: pointer;
 }
 
-.ProjectsBlock_containers_footer_img{
+.ProjectsBlock_containers_footer_img {
     width: 25px;
     height: 21px;
     margin-top: 2px;
 }
 
-.ProjectsBlock_containers_footer_text{
+.ProjectsBlock_containers_footer_text {
     margin: 0px 0px 0px 7px;
     width: 74px;
 
@@ -130,7 +130,7 @@
 
     .ProjectsBlock_containers {
         width: 391px;
-        height: 501px;
+        height: 550px;
     }
 
     .ProjectsBlock_containers_content {
@@ -154,7 +154,7 @@
 
     .ProjectsBlock_containers_footer {
         align-items: center;
-        margin-top: 2px;
+        margin-top: 15px;
     }
 
     .ProjectsBlock_containers_footer_text {
