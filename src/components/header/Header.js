@@ -14,12 +14,12 @@ const Header = () => {
         <div className="Header">
             <div className="Header_wrapper">
                 <div 
-                    className={`Header_burgerBlock ${!isActive ? 'active' : null}`}
+                    className={`Header_burgerBlock ${isActive ? 'active' : null}`}
                     onClick={ toggleClass }
                 >
                     <span></span>
                 </div>
-                <nav className={`Header_navbar ${!isActive ? 'active' : null}`}>
+                <nav className={`Header_navbar ${isActive ? 'active' : null}`}>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_skills'>Skills</a>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_projects'>
                         <p className="Header_navbar_Projects_text">Projects</p>
