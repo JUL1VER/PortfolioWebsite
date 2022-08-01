@@ -23,7 +23,7 @@ const ContactmeBlock = () => {
             <div className='ContactmeBlock_content'>
                 <picture className="ContactmeBlock_imgPic">
                     <source
-                        className='Header_navbar_gears'
+                        className='ContactmeBlock_img'
                         media='(min-width: 500px)'
                         srcSet={contactmeImg_large}/> 
                     <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>

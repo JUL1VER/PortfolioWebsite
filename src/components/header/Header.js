@@ -4,22 +4,22 @@ import gears_large from '../../img/gears_large.svg';
 import './header.css';
 
 const Header = () => {
-    const [isActive, setActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
-    const toggleClass = () => {
-        setActive(!isActive);
+    const toggleActiveClass = () => {
+        setIsActive(!isActive);
     };
 
     return (
         <div className="Header">
             <div className="Header_wrapper">
-                <div 
-                    className={`Header_burgerBlock ${isActive ? 'active' : null}`}
-                    onClick={ toggleClass }
-                >
+                <button 
+                    type='button'
+                    className={`Header_burgerBlock ${isActive ? 'active' : ''}`}
+                    onClick={ toggleActiveClass }>
                     <span></span>
-                </div>
-                <nav className={`Header_navbar ${isActive ? 'active' : null}`}>
+                </button>
+                <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_skills'>Skills</a>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_projects'>
                         <p className="Header_navbar_Projects_text">Projects</p>
@@ -33,6 +33,7 @@ const Header = () => {
                     </a>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_contactme'>Contact me</a>
                 </nav>
+                <div className={`Header_overlay ${isActive ? 'active' : ''}`} onClick={ toggleActiveClass }></div>
             </div>
         </div>
     );
