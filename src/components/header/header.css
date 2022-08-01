@@ -6,8 +6,7 @@
 
 .Header_burgerBlock{
     display: block;
-    position: relative;
-    /* background-image: url("../../img/burgermenu.png"); */
+    position: fixed;
     width: 40px;
     height: 30px;
     border: none;
