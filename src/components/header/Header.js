@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import gears from '../../img/gears.png';
 import gears_large from '../../img/gears_large.svg';
 import './header.css';
 
 const Header = () => {
+    const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
+
     return (
         <div className="Header">
             <div className="Header_wrapper">
-                <button className="Header_burgerBlock" type='button'/>
-                <nav className="Header_navbar">
+                <div 
+                    className={`Header_burgerBlock ${!isActive ? 'active' : null}`}
+                    onClick={ toggleClass }
+                >
+                    <span></span>
+                </div>
+                <nav className={`Header_navbar ${!isActive ? 'active' : null}`}>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_skills'>Skills</a>
                     <a href="https://github.com/JUL1VER" className='Header_navbar_projects'>
                         <p className="Header_navbar_Projects_text">Projects</p>

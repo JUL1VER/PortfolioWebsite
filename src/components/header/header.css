@@ -5,18 +5,99 @@
 }
 
 .Header_burgerBlock{
-    background-color: #fff;
-    background-image: url("../../img/burgermenu.png");
-    width: 32px;
-    height: 32px;
+    display: block;
+    position: relative;
+    /* background-image: url("../../img/burgermenu.png"); */
+    width: 40px;
+    height: 30px;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.Header_burgerBlock:before,
+.Header_burgerBlock:after {
+    content: '';
+    background-color: #E84949;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all 1s;
+}
+
+.Header_burgerBlock span {
+    position: absolute;
+    background-color: #E84949;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 14px;
+    left: 20px;
+    transition: all 0.5s;
+}
+
+.Header_burgerBlock:before {
+    top: 0;
+}
+
+.Header_burgerBlock:after {
+    bottom: 0;
+}
+
+.Header_burgerBlock.active:before {
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.Header_burgerBlock.active:after {
+    transform: rotate(-45deg);
+    bottom: 14px;
+}
+
+.Header_burgerBlock.active span {
+    transform: scale(0);
 }
 
 .Header_navbar {
-    display: none;
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.Header_navbar.active {
+    left: 0;
+}
+
+.Header_navbar_skills {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+.Header_navbar_projects {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #E84949;
+}
+
+.Header_navbar_contactme {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
 }
 
 @media (min-width: 1440px) {
