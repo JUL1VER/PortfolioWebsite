@@ -26,6 +26,7 @@
 .ContactmeBlock_form{
     display: flex;
     flex-direction: column;
+    margin-top: 75px;
 }
 
 .ContactmeBlock_email {
@@ -33,7 +34,6 @@
     box-sizing: border-box;
     padding-top: 15px;
     padding-left: 10px;
-    margin-top: 75px;
 
     width: 60%;
     min-width: 251px;
@@ -193,6 +193,7 @@
         display: flex;
         flex-direction: column;
         width: 55%;
+        margin-top: 0px;
     }
 
     .ContactmeBlock_email {
