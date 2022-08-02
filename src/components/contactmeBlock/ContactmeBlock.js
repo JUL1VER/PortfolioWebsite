@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import contactmeImg from '../../img/contactmeImg.png'
 import contactmeImg_large from '../../img/contactmeImg_large.png'
 import paperplane from '../../img/paperplane.png'
@@ -6,15 +6,35 @@ import paperplane_large from '../../img/paperplane_large.png'
 import './contactmeBlock.css';
 
 const ContactmeBlock = () => {
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
+
+    // const sendInfo = () => {
+    //     const info = {
+    //         'email': email,
+    //         'message': message
+    //     }
+    //     console.log(info);
+    // }
+
+    const [info, setInfo] = useState({email: '', message: ''});
+
+    
+    const handleEmailChange = (e) => {
+        setInfo(state => ({ ...state, email: e.target.value }))
+    }
+
+    const handleMessageChange = (e) => {
+        setInfo(state => ({ ...state, message: e.target.value }))
+    }
 
     const sendInfo = () => {
-        const info = {
-            'email': email,
-            'message': message
+        const postInfo = {
+            'email': info.email,
+            'message': info.message
         }
-        console.log(info);
+
+        console.log(postInfo);
     }
 
     return (
@@ -33,12 +53,12 @@ const ContactmeBlock = () => {
                         type="email" 
                         placeholder='Enter email address' 
                         className='ContactmeBlock_email'
-                        onChange={(e) => setEmail(e.target.value)}/>
+                        onChange={handleEmailChange}/>
                     <textarea 
                         type="text" 
                         placeholder='Enter message...' 
                         className='ContactmeBlock_message'
-                        onChange={(e) => setMessage(e.target.value)}/>
+                        onChange={handleMessageChange}/>
                     <button 
                         className='ContactmeBlock_button' 
                         type='button' 

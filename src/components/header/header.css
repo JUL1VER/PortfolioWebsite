@@ -97,7 +97,7 @@
     align-items: center;
     text-decoration: none;
     font-size: 25px;
-    color: #E84949;
+    color: #000;
 }
 
 .Header_navbar_contactme {
@@ -116,6 +116,26 @@
     height: 100vh;
     z-index: 1;
     background-color: #000;
+}
+
+.Header_navbar_skills,
+.Header_navbar_projects,
+.Header_navbar_contactme {
+    transition: all 0.5s;
+}
+
+.Header_navbar_skills:hover,
+.Header_navbar_projects:hover,
+.Header_navbar_contactme:hover {
+    color:#E84949;
+    font-size: 30px;
+}
+
+.Header_navbar_skills:active,
+.Header_navbar_projects:active,
+.Header_navbar_contactme:active {
+    color:#E84949;
+    font-size: 30px;
 }
 
 @media (min-width: 1440px) {
@@ -159,7 +179,7 @@
         flex-direction: row;
         align-items: center;
         text-decoration: none;
-        color: #E84949;
+        color: #000;
     }
 
     .Header_navbar_contactme {
@@ -169,5 +189,25 @@
     
     .Header_navbar_gears{
         margin-left: 5px;
+    }
+
+    .Header_navbar_skills,
+    .Header_navbar_projects,
+    .Header_navbar_contactme {
+        transition: all 0.5s;
+    }
+
+    .Header_navbar_skills:hover,
+    .Header_navbar_projects:hover,
+    .Header_navbar_contactme:hover {
+        color:#E84949;
+        font-size: 30px;
+    }
+
+    .Header_navbar_skills:active,
+    .Header_navbar_projects:active,
+    .Header_navbar_contactme:active {
+        color:#E84949;
+        font-size: 30px;
     }
 }
