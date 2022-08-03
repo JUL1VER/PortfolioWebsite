@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import contactmeImg from '../../img/contactmeImg.png'
 import contactmeImg_large from '../../img/contactmeImg_large.png'
 import paperplane from '../../img/paperplane.png'
@@ -11,18 +11,24 @@ const ContactmeBlock = () => {
     const [emailError, setEmailError] = useState('Email cannot be empty');
     const [textError, setTextError] = useState('Message cannot be empty');
     const [info, setInfo] = useState({ email: '', message: '' });
-    const [buttonDirty, setButtonDirty] = useState(false);
-    const [disableButton, setDisableButton] = useState(false);
-    
+    // Думаю, два стейта для блокировки кнопки, это уже лишнее :)
+    // const [buttonDirty, setButtonDirty] = useState(false);
+    const [disableButton, setDisableButton] = useState(true);
+
+    // Здесь проверяем поля формы на пустоту
+    useEffect(() => {
+        if (!info.email.length || !info.message.length) { setDisableButton(true) }
+        else { setDisableButton(false) }
+    }, [info])
+
+
     const blurHandler = (e) => {
         switch (e.target.name) {
             case 'email':
                 setEmailDirty(true)
-                // setButtonDirty(true)
                 break
             case 'text':
                 setTextDirty(true)
-                // setButtonDirty(true)
                 break
             default: break
         }
@@ -68,41 +74,41 @@ const ContactmeBlock = () => {
                     <source
                         className='ContactmeBlock_img'
                         media='(min-width: 500px)'
-                        srcSet={contactmeImg_large}/> 
-                    <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
+                        srcSet={contactmeImg_large} />
+                    <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img' />
                 </picture>
                 <form className='ContactmeBlock_form'>
-                    {(emailDirty && emailError) && <div style={{color: 'red', margin: '0px 0px 10px 0px' }}>{emailError}</div>}
-                    <input 
+                    {(emailDirty && emailError) && <div style={{ color: 'red', margin: '0px 0px 10px 0px' }}>{emailError}</div>}
+                    <input
                         name='email'
                         type='email'
-                        placeholder='Enter email address' 
+                        placeholder='Enter email address'
                         className='ContactmeBlock_email'
                         value={info.email}
                         onChange={handleEmailChange}
-                        onBlur={e => blurHandler(e)}/>
-                    {(textDirty && textError) && <div style={{color: 'red', margin: '20px 0px -10px 0px'}}>{textError}</div>}
-                    <textarea 
+                        onBlur={e => blurHandler(e)} />
+                    {(textDirty && textError) && <div style={{ color: 'red', margin: '20px 0px -10px 0px' }}>{textError}</div>}
+                    <textarea
                         name='text'
                         type='text'
-                        placeholder='Enter message...' 
+                        placeholder='Enter message...'
                         className='ContactmeBlock_message'
                         value={info.message}
                         onChange={handleMessageChange}
-                        onBlur={e => blurHandler(e)}/>
+                        onBlur={e => blurHandler(e)} />
                     <button
-                        disabled={(disableButton || buttonDirty) ? 'disabled' : 'enabled'}
-                        // ВОТ ТУТ ПО АНАЛОГИИ ОН ДОЛЖЕН РАБОТАТЬ, ОН СРАБАТЫВАЕТ НА disableButton, НО НЕ НА buttonDirty. ВЕРОЯТНО, Я ГДЕ-ТО ОШИБСЯ В ЛОГИКЕ СВЕРХУ ИЛИ В ВЫРАЖЕНИИ
-                        className={(disableButton || buttonDirty) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
-                        type='button' 
+                        // тут достаточно булев тип передать
+                        disabled={disableButton || textError.length || emailError.length}
+                        className={(disableButton || textError.length || emailError.length) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
+                        type='button'
                         onClick={sendInfo}>
                         Send
                         <picture className="ContactmeBlock_button_imgPic">
                             <source
                                 className='ContactmeBlock_button_img'
                                 media='(min-width: 650px)'
-                                srcSet={paperplane_large}/> 
-                            <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
+                                srcSet={paperplane_large} />
+                            <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img' />
                         </picture>
                     </button>
                 </form>
