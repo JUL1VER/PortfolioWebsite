@@ -13,10 +13,6 @@ const DescriptionBlock = () => {
     return (
         <div className='DescriptionBlock_wrapper'>
             <div className='DescriptionBlock_fotoWithFigures'>
-                <img src={ellipse_large} alt='ellipse' className='DescriptionBlock_fotoWithFigures_ellipse' />
-                <img src={zigzags_large} alt='zigzags' className='DescriptionBlock_fotoWithFigures_zigzags' />
-                <img src={plus_large} alt='plus' className='DescriptionBlock_fotoWithFigures_plus' />
-                <img src={cube_large} alt='cube' className='DescriptionBlock_fotoWithFigures_cube' />
                 <picture className='DescriptionBlock_foto'>
                     <source 
                         className='DescriptionBlock_userFoto'
@@ -31,7 +27,7 @@ const DescriptionBlock = () => {
                 <picture className='DescriptionBlock_circlesPic'>
                     <source
                         className='DescriptionBlock_circles'
-                        media='(min-width: 1440px)'
+                        media='(min-width: 650px)'
                         srcSet={circles_large}/>
                     <img src={circles} alt='circles' className='DescriptionBlock_circles'/>
                 </picture>

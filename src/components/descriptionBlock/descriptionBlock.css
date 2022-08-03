@@ -93,50 +93,31 @@
 
 @media (min-width: 650px) {
     .DescriptionBlock_wrapper {
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .DescriptionBlock_fotoWithFigures {
-        max-width: 650px;
+        order: 2;
+        width: 500px;
         margin: 0 auto;
+        padding-top: 70px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
+          url("../../img/zigzags_large.png") left 10px top no-repeat,
+          url("../../img/plus_large.png") 220px top no-repeat,
+          url("../../img/cube_large.png") right 30px top no-repeat;
     }
 
     .DescriptionBlock_userFoto {
         max-width: 400px;
     }
 
-    .DescriptionBlock_fotoWithFigures_cube {
-        position: absolute;
-        display: block;
-        margin-top: -80px;
-        margin-left: 470px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_plus {
-        position: absolute;
-        display: block;
-        margin-top: -70px;
-        margin-left: 260px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_zigzags {
-        position: absolute;
-        display: block;
-        margin-top: -50px;
-        margin-left: 55px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_ellipse {
-        position: absolute;
-        display: block;
-        margin-top: 450px;
-        margin-left: 70px;
-    }
-
     .DescriptionBlock_circles {
         position: absolute;
-        margin-top: 440px;
-        margin-left: -100px;
+        width: 180px;
+        margin-top: 430px;
+        margin-left: -130px;
     }
 
     .DescriptionBlock_name {
@@ -163,6 +144,7 @@
         max-width: 1440px;
         width: 95%;
         margin: 0 auto;
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -171,14 +153,21 @@
 
     .DescriptionBlock_contentPart {
         order: 1;
-        width: 55%;
+        width: 45%;
     }
 
     .DescriptionBlock_fotoWithFigures {
         order: 2;
+        width: 650px;
         width: 45%;
-        margin-top: 100px;
-        margin-left: 100px;
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
+          url("../../img/zigzags_large.png") left 10px top no-repeat,
+          url("../../img/plus_large.png") 220px top no-repeat,
+          url("../../img/cube_large.png") right 42px top no-repeat;
     }
 
     .DescriptionBlock_userFoto {
@@ -188,35 +177,7 @@
     .DescriptionBlock_circles {
         position: absolute;
         margin-top: 550px;
-        margin-left: -220px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_ellipse {
-        display: block;
-        position: absolute;
-        margin-top: 600px;
-        margin-left: -30px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_zigzags {
-        display: block;
-        position: absolute;
-        margin-top: -50px;
-        margin-left: -50px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_plus {
-        display: block;
-        position: absolute;
-        margin-top: -70px;
-        margin-left: 220px;
-    }
-
-    .DescriptionBlock_fotoWithFigures_cube {
-        display: block;
-        position: absolute;
-        margin-top: -70px;
-        margin-left: 500px;
+        margin-left: -180px;
     }
 
     .DescriptionBlock_name {

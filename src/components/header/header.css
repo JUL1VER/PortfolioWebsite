@@ -154,9 +154,9 @@
         border: none;
         display: flex;
         justify-content: space-between;
-        width: 35%;
+        width: 45%;
         align-items: center;
-        margin-right: 50px;
+        margin-right: 60px;
     }
     
     .Header_burgerBlock {
@@ -195,6 +195,7 @@
     .Header_navbar_projects,
     .Header_navbar_contactme {
         transition: all 0.5s;
+        width: 28%;
     }
 
     .Header_navbar_skills:hover,
