@@ -18,11 +18,11 @@ const ContactmeBlock = () => {
         switch (e.target.name) {
             case 'email':
                 setEmailDirty(true)
-                setButtonDirty(true)
+                // setButtonDirty(true)
                 break
             case 'text':
                 setTextDirty(true)
-                setButtonDirty(true)
+                // setButtonDirty(true)
                 break
             default: break
         }
@@ -91,9 +91,9 @@ const ContactmeBlock = () => {
                         onChange={handleMessageChange}
                         onBlur={e => blurHandler(e)}/>
                     <button
-                        disabled={disableButton ? 'disabled' : 'enabled'}
+                        disabled={(disableButton || buttonDirty) ? 'disabled' : 'enabled'}
                         // ВОТ ТУТ ПО АНАЛОГИИ ОН ДОЛЖЕН РАБОТАТЬ, ОН СРАБАТЫВАЕТ НА disableButton, НО НЕ НА buttonDirty. ВЕРОЯТНО, Я ГДЕ-ТО ОШИБСЯ В ЛОГИКЕ СВЕРХУ ИЛИ В ВЫРАЖЕНИИ
-                        className={(disableButton && buttonDirty) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
+                        className={(disableButton || buttonDirty) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
                         type='button' 
                         onClick={sendInfo}>
                         Send
