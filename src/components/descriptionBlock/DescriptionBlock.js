@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import userFoto from '../../img/fotowithfigures.png'
 import circles from '../../img/circles.png';
 import circles_large from '../../img/circles_large.png';
 import userFoto_large from '../../img/userFoto_large.png';
-import cube_large from '../../img/cube_large.png';
-import plus_large from '../../img/plus_large.png';
-import zigzags_large from '../../img/zigzags_large.png';
-import ellipse_large from '../../img/ellipse_large.png';
 import './descriptionBlock.css'
+import Modal from '../modal/Modal';
 
 const DescriptionBlock = () => {
+    const [modalActive, setModalActive] = useState(false)
+
     return (
         <div className='DescriptionBlock_wrapper'>
             <div className='DescriptionBlock_fotoWithFigures'>
@@ -33,10 +32,15 @@ const DescriptionBlock = () => {
                 </picture>
             </div>
             <div className="DescriptionBlock_contentPart">
-                <h2 className='DescriptionBlock_name'>John Doe</h2>
+                <h1 className='DescriptionBlock_name'>John Doe</h1>
                 <p className='DescriptionBlock_text'>Hello! Am a software developer and here is my portfolio website. Here you’ll learn about my journey as a software developer.</p>
-                <button className='DescriptionBlock_hireButton' type={'button'}>Hire me</button>
+                <button className='DescriptionBlock_hireButton' 
+                        type={'button'}
+                        onClick={() => setModalActive(true)}>
+                        Hire me
+                </button>
             </div>
+            <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     );
 };

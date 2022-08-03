@@ -1,8 +1,8 @@
 import React from 'react';
 import linkedin from '../../img/linkedin.png';
 import linkedin_large from '../../img/linkedin_large.svg';
-import whatsapp from '../../img/whatsapp.png';
-import whatsapp_large from '../../img/whatsapp_large.svg';
+import telegram from '../../img/telegram.svg';
+import telegram_large from '../../img/telegram_large.svg';
 import twitter from '../../img/twitter.png';
 import twitter_large from '../../img/twitter_large.svg';
 import gmail from '../../img/gmail.png';
@@ -16,7 +16,7 @@ const Footer = () => {
 
     const links = [
         {id: 1, imgprop: linkedin, img_largeprop: linkedin_large, src: 'https://github.com/JUL1VER'},
-        {id: 2, imgprop: whatsapp, img_largeprop: whatsapp_large, src: 'https://github.com/JUL1VER'},
+        {id: 2, imgprop: telegram, img_largeprop: telegram_large, src: 'https://github.com/JUL1VER'},
         {id: 3, imgprop: twitter, img_largeprop: twitter_large, src: 'https://github.com/JUL1VER'},
         {id: 4, imgprop: gmail, img_largeprop: gmail_large, src: 'https://github.com/JUL1VER'}
     ]
