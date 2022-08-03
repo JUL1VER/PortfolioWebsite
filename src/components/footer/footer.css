@@ -38,6 +38,7 @@
 
 .Footer_linksBlock_imgs {
     transition: all 0.2s;
+    width: 31px;
 }
 
 .Footer_linksBlock_imgs:hover {
