@@ -128,6 +128,13 @@
     transition: all 0.1s;
 }
 
+.ContactmeBlock_button.disabled {
+    background-color: #d4cfcf;
+    border-color: #d4cfcf;
+    color: #fff;
+    cursor: default;
+}
+
 @media (min-width: 650px) {
     .ContactmeBlock_header {
         font-size: 40px;

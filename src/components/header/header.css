@@ -138,6 +138,10 @@
     font-size: 30px;
 }
 
+.Header_overlay {
+    transition: 0.5s;
+}
+
 @media (min-width: 1440px) {
     .Header {
         display: flex;

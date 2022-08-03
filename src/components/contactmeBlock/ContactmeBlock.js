@@ -11,14 +11,18 @@ const ContactmeBlock = () => {
     const [emailError, setEmailError] = useState('Email cannot be empty');
     const [textError, setTextError] = useState('Message cannot be empty');
     const [info, setInfo] = useState({ email: '', message: '' });
+    const [buttonDirty, setButtonDirty] = useState(false);
+    const [disableButton, setDisableButton] = useState(false);
     
     const blurHandler = (e) => {
         switch (e.target.name) {
             case 'email':
                 setEmailDirty(true)
+                setButtonDirty(true)
                 break
             case 'text':
                 setTextDirty(true)
+                setButtonDirty(true)
                 break
             default: break
         }
@@ -29,8 +33,10 @@ const ContactmeBlock = () => {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         if (!re.test(String(e.target.value).toLowerCase())) {
             setEmailError('Incorrect email')
+            setDisableButton(true)
         } else {
             setEmailError('')
+            setDisableButton(false)
         }
     }
 
@@ -38,8 +44,10 @@ const ContactmeBlock = () => {
         setInfo(state => ({ ...state, message: e.target.value }))
         if (String(e.target.value).length < 1) {
             setTextError('Incorrect message')
+            setDisableButton(true)
         } else {
             setTextError('')
+            setDisableButton(false)
         }
     }
 
@@ -82,8 +90,10 @@ const ContactmeBlock = () => {
                         value={info.message}
                         onChange={handleMessageChange}
                         onBlur={e => blurHandler(e)}/>
-                    <button 
-                        className='ContactmeBlock_button' 
+                    <button
+                        disabled={disableButton ? 'disabled' : 'enabled'}
+                        // ВОТ ТУТ ПО АНАЛОГИИ ОН ДОЛЖЕН РАБОТАТЬ, ОН СРАБАТЫВАЕТ НА disableButton, НО НЕ НА buttonDirty. ВЕРОЯТНО, Я ГДЕ-ТО ОШИБСЯ В ЛОГИКЕ СВЕРХУ ИЛИ В ВЫРАЖЕНИИ
+                        className={(disableButton && buttonDirty) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
                         type='button' 
                         onClick={sendInfo}>
                         Send

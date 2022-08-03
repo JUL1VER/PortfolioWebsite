@@ -9,6 +9,10 @@ import Modal from '../modal/Modal';
 const DescriptionBlock = () => {
     const [modalActive, setModalActive] = useState(false)
 
+    const handleCloseModalClick = () => {
+        setModalActive(false);
+    }
+
     return (
         <div className='DescriptionBlock_wrapper'>
             <div className='DescriptionBlock_fotoWithFigures'>
@@ -40,7 +44,8 @@ const DescriptionBlock = () => {
                         Hire me
                 </button>
             </div>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            
+            <Modal active={modalActive} onCloseModalClick={handleCloseModalClick}/>
         </div>
     );
 };
