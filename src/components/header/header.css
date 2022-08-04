@@ -84,14 +84,6 @@
     left: 0;
 }
 
-.Header_navbar_projects {
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-    flex-direction: row;
-    align-items: center;
-}
-
 .Header_overlay.active {
     visibility: visible;
     opacity: 0.8;
@@ -104,6 +96,17 @@
     background-color: #000;
 }
 
+.Header_navbar_projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Header_navbar_Projects_text {
+    margin-left: 30px;
+}
+
 .Header_navbar_skills,
 .Header_navbar_projects,
 .Header_navbar_contactme {
@@ -112,6 +115,8 @@
     color: #000;
     font-size: 25px;
     cursor: pointer;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .Header_navbar_skills:hover,
@@ -129,7 +134,7 @@
 }
 
 .Header_overlay {
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 @media (min-width: 1440px) {
@@ -168,6 +173,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .Header_navbar_Projects_text {
+        margin-left: 0px;
     }
     
     .Header_navbar_gears{

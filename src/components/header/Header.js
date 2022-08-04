@@ -12,6 +12,10 @@ const Header = () => {
         setIsActive(!isActive);
     };
 
+    const closeMenuOnScroll = () => {
+        setIsActive(false);
+    }
+
     return (
         <div className="Header">
             <div className="Header_wrapper">
@@ -27,7 +31,8 @@ const Header = () => {
                         to='SkillsPart'
                         smooth={true}
                         offset={-80}
-                        duration={500}>
+                        duration={500}
+                        onClick={closeMenuOnScroll}>
                             Skills
                     </Link>
                     <Link  
@@ -35,7 +40,8 @@ const Header = () => {
                         to='ProjectsPart'
                         smooth={true}
                         offset={-80}
-                        duration={500}>
+                        duration={500}
+                        onClick={closeMenuOnScroll}>
                         <p className="Header_navbar_Projects_text">
                             Projects
                         </p>
@@ -52,7 +58,8 @@ const Header = () => {
                         to='ContactmePart'
                         smooth={true}
                         offset={-80}
-                        duration={500}>
+                        duration={500}
+                        onClick={closeMenuOnScroll}>
                             Contact me
                     </Link>
                 </nav>
