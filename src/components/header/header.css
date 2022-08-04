@@ -13,7 +13,7 @@
     box-shadow: 0px 0px 5px grey;
 }
 
-.Header_burgerBlock{
+.Header_burgerBlock {
     display: block;
     position: fixed;
     width: 40px;
@@ -84,27 +84,12 @@
     left: 0;
 }
 
-.Header_navbar_skills {
-    text-decoration: none;
-    color: #000;
-    font-size: 25px;
-}
-
 .Header_navbar_projects {
     display: flex;
     justify-content: center;
     margin-left: 20px;
     flex-direction: row;
     align-items: center;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000;
-}
-
-.Header_navbar_contactme {
-    text-decoration: none;
-    font-size: 25px;
-    color: #000;
 }
 
 .Header_overlay.active {
@@ -123,6 +108,10 @@
 .Header_navbar_projects,
 .Header_navbar_contactme {
     transition: all 0.5s;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .Header_navbar_skills:hover,
@@ -175,46 +164,13 @@
         line-height: 41px;
     }
 
-    .Header_navbar_skills {
-        text-decoration: none;
-        color: #000;
-    }
-
     .Header_navbar_projects {
         display: flex;
         flex-direction: row;
         align-items: center;
-        text-decoration: none;
-        color: #000;
-    }
-
-    .Header_navbar_contactme {
-        text-decoration: none;
-        color: #000;
     }
     
     .Header_navbar_gears{
         margin-left: 5px;
-    }
-
-    .Header_navbar_skills,
-    .Header_navbar_projects,
-    .Header_navbar_contactme {
-        transition: all 0.5s;
-        width: 28%;
-    }
-
-    .Header_navbar_skills:hover,
-    .Header_navbar_projects:hover,
-    .Header_navbar_contactme:hover {
-        color:#E84949;
-        font-size: 30px;
-    }
-
-    .Header_navbar_skills:active,
-    .Header_navbar_projects:active,
-    .Header_navbar_contactme:active {
-        color:#E84949;
-        font-size: 30px;
     }
 }

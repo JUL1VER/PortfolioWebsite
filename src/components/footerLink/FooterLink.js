@@ -8,7 +8,7 @@ const FooterLink = (props) => {
             <picture className='Footer_linksBlock_imgsPic'>
                 <source
                     className='Footer_linksBlock_imgs'
-                    media='(min-width: 1440px)'
+                    media='(min-width: 650px)'
                     srcSet={img_largeprop}/> 
                 <img src={imgprop} alt="linkIcon" className='Footer_linksBlock_imgs'/>
             </picture>
