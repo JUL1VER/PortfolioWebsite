@@ -37,7 +37,7 @@ const Footer = () => {
                 <p className='Footer_linksText'>More projects I've worked on</p>
                 <div className='Footer_githubBlock'>
                     <FooterLink imgprop={github} img_largeprop={github_large} src='https://github.com/JUL1VER'/>
-                    <p className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>john-doe</b> on github</p>
+                    <p className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>jul1ver</b> on github</p>
                 </div>
             </div>
         </div>

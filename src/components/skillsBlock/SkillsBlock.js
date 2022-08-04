@@ -2,22 +2,22 @@ import React from 'react';
 import './skillsBlock.css';
 import skillsImg from '../../img/skillsImg.png';
 import skillsImg_large from '../../img/skillsImg_large.png';
-import css from '../../img/css3.png';
-import js from '../../img/js.png';
-import html from '../../img/html5.png';
-import bootstrap from '../../img/bootstrap.png';
+import css from '../../img/csslogo.png';
+import js from '../../img/jslogo.png';
+import html from '../../img/htmllogo.png';
+import react from '../../img/reactlogo.png';
 import SkillIcon from '../skillIcon/SkillIcon';
 
 const SkillsBlock = () => {
     const technologies = [
-        {id: 1, imgprop: css},
-        {id: 2, imgprop: html},
-        {id: 3, imgprop: js},
-        {id: 4, imgprop: bootstrap}
+        {id: 1, imgprop: css, title: 'CSS'},
+        {id: 2, imgprop: html, title: 'HTML'},
+        {id: 3, imgprop: js, title: 'JS'},
+        {id: 4, imgprop: react, title: 'React'}
     ]
 
     const content = technologies.map(techno => 
-        <SkillIcon imgprop={techno.imgprop} key={techno.id}/>
+        <SkillIcon imgprop={techno.imgprop} key={techno.id} title={techno.title}/>
     )
 
     return (
@@ -32,7 +32,7 @@ const SkillsBlock = () => {
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
                 </picture>
                 <div className='SkillsBlock_skillsAndLogos'>
-                    <p className='SkillsBlock_text'>I have a vast experience in the following web technologies:</p>
+                    <p className='SkillsBlock_text'>I have a solid experience in the following web technologies:</p>
                     <div className='SkillsBlock_logoWrapper'>
                         {content}
                     </div>

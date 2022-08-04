@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import contactmeImg from '../../img/contactmeImg.png'
 import contactmeImg_large from '../../img/contactmeImg_large.png'
 import paperplane from '../../img/paperplane.png'
@@ -11,18 +11,20 @@ const ContactmeBlock = () => {
     const [emailError, setEmailError] = useState('Email cannot be empty');
     const [textError, setTextError] = useState('Message cannot be empty');
     const [info, setInfo] = useState({ email: '', message: '' });
-    const [buttonDirty, setButtonDirty] = useState(false);
-    const [disableButton, setDisableButton] = useState(false);
+    const [disableButton, setDisableButton] = useState(true);
     
+    useEffect(() => {
+        if (!info.email.length || !info.message.length) { setDisableButton(true) }
+        else { setDisableButton(false) }
+    }, [info])
+
     const blurHandler = (e) => {
         switch (e.target.name) {
             case 'email':
                 setEmailDirty(true)
-                // setButtonDirty(true)
                 break
             case 'text':
                 setTextDirty(true)
-                // setButtonDirty(true)
                 break
             default: break
         }
@@ -42,7 +44,7 @@ const ContactmeBlock = () => {
 
     const handleMessageChange = (e) => {
         setInfo(state => ({ ...state, message: e.target.value }))
-        if (String(e.target.value).length < 1) {
+        if (!String(e.target.value).length) {
             setTextError('Incorrect message')
             setDisableButton(true)
         } else {
@@ -91,9 +93,9 @@ const ContactmeBlock = () => {
                         onChange={handleMessageChange}
                         onBlur={e => blurHandler(e)}/>
                     <button
-                        disabled={(disableButton || buttonDirty) ? 'disabled' : 'enabled'}
+                        disabled={ disableButton || textError.length || emailError.length }
                         // ВОТ ТУТ ПО АНАЛОГИИ ОН ДОЛЖЕН РАБОТАТЬ, ОН СРАБАТЫВАЕТ НА disableButton, НО НЕ НА buttonDirty. ВЕРОЯТНО, Я ГДЕ-ТО ОШИБСЯ В ЛОГИКЕ СВЕРХУ ИЛИ В ВЫРАЖЕНИИ
-                        className={(disableButton || buttonDirty) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
+                        className={(disableButton || textError.length || emailError.length) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
                         type='button' 
                         onClick={sendInfo}>
                         Send

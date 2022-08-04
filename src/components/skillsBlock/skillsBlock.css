@@ -48,8 +48,14 @@
 }
 
 .SkillsBlock_logos {
-    width: 120px;
-    height: 145px;
+    width: 104px;
+    height: 106px;
+}
+
+.SkillsBlock_logos_text {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 900;
+    font-size: 25px;
 }
 
 @media (min-width: 650px) {
@@ -64,8 +70,7 @@
     }
 
     .SkillsBlock_logos {
-        width: 140px;
-        height: 170px;
+        
     }
 }
 
@@ -120,8 +125,7 @@
     }
 
     .SkillsBlock_logos {
-        width: 125px;
-        height: 150px;
+        
     }
 }
 

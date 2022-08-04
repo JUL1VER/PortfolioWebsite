@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import myfoto from '../../img/myfoto.jpeg';
 import userFoto from '../../img/fotowithfigures.png'
 import circles from '../../img/circles.png';
 import circles_large from '../../img/circles_large.png';
-import userFoto_large from '../../img/userFoto_large.png';
 import './descriptionBlock.css'
 import Modal from '../modal/Modal';
 
@@ -20,11 +20,11 @@ const DescriptionBlock = () => {
                     <source 
                         className='DescriptionBlock_userFoto'
                         media='(min-width: 650px)'
-                        srcSet={userFoto_large}/>
+                        srcSet={myfoto}/>
                     <source 
                         className='DescriptionBlock_userFoto'
                         media='(min-width: 1440px)'
-                        srcSet={userFoto_large}/>
+                        srcSet={myfoto}/>
                     <img src={userFoto} alt='userForo' className='DescriptionBlock_userFoto'/>
                 </picture>
                 <picture className='DescriptionBlock_circlesPic'>
@@ -36,12 +36,12 @@ const DescriptionBlock = () => {
                 </picture>
             </div>
             <div className="DescriptionBlock_contentPart">
-                <h1 className='DescriptionBlock_name'>John Doe</h1>
-                <p className='DescriptionBlock_text'>Hello! Am a software developer and here is my portfolio website. Here you’ll learn about my journey as a software developer.</p>
+                <h1 className='DescriptionBlock_name'>Vladislav Juliver</h1>
+                <p className='DescriptionBlock_text'>Hello! My name is Vlad and I am frontend developer. Here is my portfolio website where you'll learn about my journey as a frontend developer.</p>
                 <button className='DescriptionBlock_hireButton' 
                         type={'button'}
                         onClick={() => setModalActive(true)}>
-                        Hire me
+                        Say Hello
                 </button>
             </div>
             
