@@ -26,7 +26,7 @@
 .ContactmeBlock_form{
     display: flex;
     flex-direction: column;
-    margin-top: 75px;
+    margin-top: 30px;
 }
 
 .ContactmeBlock_email {
@@ -64,7 +64,6 @@
 .ContactmeBlock_message {
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 15px;
     padding: 10px 0px 0px 10px;
 
     width: 60%;
@@ -133,6 +132,17 @@
     border-color: #d4cfcf;
     color: #fff;
     cursor: default;
+}
+
+.ContactmeBlock_error {
+    width: 100%;
+    margin: 0 auto;
+    height: 38px;
+    margin-top: 0px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 650px) {
@@ -217,7 +227,7 @@
     .ContactmeBlock_message {
         width: 80%;
         max-width: 1000px;
-        margin-top: 30px;
+        margin-top: 0px;
         height: 55%;
         font-size: 30px;
         line-height: 44px;

@@ -74,7 +74,7 @@ const ContactmeBlock = () => {
                     <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
                 </picture>
                 <form className='ContactmeBlock_form'>
-                    {(emailDirty && emailError) && <div style={{color: 'red', margin: '0px 0px 10px 0px' }}>{emailError}</div>}
+                    <div className='ContactmeBlock_error'>{ emailDirty && emailError }</div>
                     <input 
                         name='email'
                         type='email'
@@ -83,7 +83,7 @@ const ContactmeBlock = () => {
                         value={info.email}
                         onChange={handleEmailChange}
                         onBlur={e => blurHandler(e)}/>
-                    {(textDirty && textError) && <div style={{color: 'red', margin: '20px 0px -10px 0px'}}>{textError}</div>}
+                    <div className='ContactmeBlock_error'>{ textDirty && textError }</div>
                     <textarea 
                         name='text'
                         type='text'

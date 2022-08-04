@@ -15,10 +15,10 @@ import FooterLink from '../footerLink/FooterLink';
 const Footer = () => {
 
     const links = [
-        {id: 1, imgprop: linkedin, img_largeprop: linkedin_large, src: 'https://github.com/JUL1VER'},
-        {id: 2, imgprop: telegram, img_largeprop: telegram_large, src: 'https://github.com/JUL1VER'},
-        {id: 3, imgprop: twitter, img_largeprop: twitter_large, src: 'https://github.com/JUL1VER'},
-        {id: 4, imgprop: gmail, img_largeprop: gmail_large, src: 'https://github.com/JUL1VER'}
+        {id: 1, imgprop: linkedin, img_largeprop: linkedin_large, src: 'https://linkedin.com/in/vladJ1'},
+        {id: 2, imgprop: telegram, img_largeprop: telegram_large, src: 'https://t.me/JUL1VER'},
+        {id: 3, imgprop: twitter, img_largeprop: twitter_large, src: 'https://twitter.com/jul1ver'},
+        {id: 4, imgprop: gmail, img_largeprop: gmail_large, src: 'mailto:jul1v3r@gmail.com'}
     ]
 
     const content = links.map((link) => 
@@ -37,7 +37,7 @@ const Footer = () => {
                 <p className='Footer_linksText'>More projects I've worked on</p>
                 <div className='Footer_githubBlock'>
                     <FooterLink imgprop={github} img_largeprop={github_large} src='https://github.com/JUL1VER'/>
-                    <p className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>jul1ver</b> on github</p>
+                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>jul1ver</b> on github</a>
                 </div>
             </div>
         </div>

@@ -162,7 +162,7 @@
         padding-left: 30px;
         padding-bottom: 40px;
         background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
-          url("../../img/zigzags_large.png") left 10px top no-repeat,
+          url("../../img/zigzags_large.png") left 0px top 20px no-repeat,
           url("../../img/plus_large.png") 220px top no-repeat,
           url("../../img/cube_large.png") right 42px top no-repeat;
     }

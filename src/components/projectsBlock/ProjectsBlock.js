@@ -13,13 +13,13 @@ import './projectsBlock.css';
 
 const ProjectsBlock = () => {
     const cards = [
-        {id: 1, imgprop: project1, img_largeprop: project1_large, description: 'Made a social media manager template using HTML 5, CSS and JS only.'},
-        {id: 2, imgprop: project2, img_largeprop: project2_large, description: 'Made a simple card page using HTML 5 and  CSS 3.'},
-        {id: 3, imgprop: project3, img_largeprop: project3_large, description: 'Made an I.P address tracking website.'}
+        {id: 1, link: 'https://github.com/JUL1VER/MarvelCharactersApp.React', imgprop: project1, img_largeprop: project1_large, description: 'Made a Marvel information portal with MarvelAPI connection using React and Redux.'},
+        {id: 2, link: 'https://github.com/JUL1VER/FoodServiceApp.JS', imgprop: project2, img_largeprop: project2_large, description: 'Made a website of food delivery company with calories per day calculations using JS.'},
+        {id: 3, link: 'https://github.com/JUL1VER/GitHubSearch.TS', imgprop: project3, img_largeprop: project3_large, description: 'Made a simple website connected to GithubAPI for user repos search using React and TS.'}
     ];
 
     const content = cards.map((oneCard) => 
-        <ProjectCard key={oneCard.id} imgprop={oneCard.imgprop} img_largeprop={oneCard.img_largeprop} description={oneCard.description}/>
+        <ProjectCard key={oneCard.id} imgprop={oneCard.imgprop} img_largeprop={oneCard.img_largeprop} description={oneCard.description} link={oneCard.link}/>
     )
 
     return (
@@ -34,7 +34,7 @@ const ProjectsBlock = () => {
                     <img src={gears} alt="gears" className="ProjectsBlock_header_img"/>
                 </picture>
             </div>
-            <p className='ProjectsBlock_text'>Some of my projects include:</p>
+            <p className='ProjectsBlock_text'>Here are some of my interesting projects:</p>
             <div className='ProjectsBlock_slides'>
                 {content}
             </div>

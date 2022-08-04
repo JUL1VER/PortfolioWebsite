@@ -12,7 +12,7 @@ const Modal = ({ active, onCloseModalClick }) => {
             <div className={active ? 'modal_content active' : 'modal_content'} onClick={e => e.stopPropagation()}>
                 <p className='modal_text'>Feel free to contact me by the following links below!</p>
                 <div className='modal_linksBlock'>
-                    <a href='https://github.com/JUL1VER' className='modal_link' target="blank">
+                    <a href='https://linkedin.com/in/vladJ1' className='modal_link' target="blank">
                         LinkedIn 
                         <picture
                             className='modal_linkImg'
@@ -21,7 +21,7 @@ const Modal = ({ active, onCloseModalClick }) => {
                             <img src={linkedin} alt='linkedin' className='modal_linkImg'/>
                         </picture>
                     </a>
-                    <a href="https://github.com/JUL1VER" className='modal_link' target="blank">
+                    <a href="https://t.me/JUL1VER" className='modal_link' target="blank">
                         Telegram 
                         <picture
                             className='modal_linkImg'
