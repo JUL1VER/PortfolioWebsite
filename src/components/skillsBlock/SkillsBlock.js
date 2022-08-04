@@ -1,5 +1,4 @@
 import React from 'react';
-import './skillsBlock.css';
 import skillsImg from '../../img/skillsImg.png';
 import skillsImg_large from '../../img/skillsImg_large.png';
 import css from '../../img/csslogo.png';
@@ -7,6 +6,8 @@ import js from '../../img/jslogo.png';
 import html from '../../img/htmllogo.png';
 import react from '../../img/reactlogo.png';
 import SkillIcon from '../skillIcon/SkillIcon';
+
+import './skillsBlock.css';
 
 const SkillsBlock = () => {
     const technologies = [

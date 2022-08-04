@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import gears from '../../img/gears.png';
 import gears_large from '../../img/gears_large.svg';
+
 import './header.css';
 
 const Header = () => {
