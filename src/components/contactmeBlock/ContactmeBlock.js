@@ -64,7 +64,7 @@ const ContactmeBlock = () => {
 
     return (
         <div className='ContactmeBlock_wrapper'>
-            <h3 className='ContactmeBlock_header'>Contact me</h3>
+            <h2 className='ContactmeBlock_header' id='ContactmePart'>Contact me</h2>
             <div className='ContactmeBlock_content'>
                 <picture className="ContactmeBlock_imgPic">
                     <source

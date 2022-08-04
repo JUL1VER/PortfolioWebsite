@@ -25,7 +25,7 @@ const ProjectsBlock = () => {
     return (
         <div className='ProjectsBlock_wrapper'>
             <div className='ProjectsBlock_header'>
-                <h3 className='ProjectsBlock_header_text'>Projects</h3>
+                <h2 className='ProjectsBlock_header_text' id='ProjectsPart'>Projects</h2>
                 <picture className="ProjectsBlock_header_gearsImg">
                     <source
                         className='ProjectsBlock_header_img'

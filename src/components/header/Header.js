@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import gears from '../../img/gears.png';
 import gears_large from '../../img/gears_large.svg';
 import './header.css';
@@ -20,9 +21,23 @@ const Header = () => {
                     <span></span>
                 </button>
                 <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
-                    <a href="https://github.com/JUL1VER" className='Header_navbar_skills'>Skills</a>
-                    <a href="https://github.com/JUL1VER" className='Header_navbar_projects'>
-                        <p className="Header_navbar_Projects_text">Projects</p>
+                    <Link  
+                        className='Header_navbar_skills'
+                        to='SkillsPart'
+                        smooth={true}
+                        offset={-80}
+                        duration={500}>
+                            Skills
+                    </Link>
+                    <Link  
+                        className='Header_navbar_projects'
+                        to='ProjectsPart'
+                        smooth={true}
+                        offset={-80}
+                        duration={500}>
+                        <p className="Header_navbar_Projects_text">
+                            Projects
+                        </p>
                         <picture className="Header_navbar_gearsImg">
                             <source
                                 className='Header_navbar_gears'
@@ -30,8 +45,15 @@ const Header = () => {
                                 srcSet={gears_large}/> 
                             <img src={gears} alt="gears" className="Header_navbar_gears"></img>
                         </picture>
-                    </a>
-                    <a href="https://github.com/JUL1VER" className='Header_navbar_contactme'>Contact me</a>
+                    </Link>
+                    <Link 
+                        className='Header_navbar_contactme'
+                        to='ContactmePart'
+                        smooth={true}
+                        offset={-80}
+                        duration={500}>
+                            Contact me
+                    </Link>
                 </nav>
                 <div className={`Header_overlay ${isActive ? 'active' : ''}`} onClick={ toggleActiveClass }></div>
             </div>

@@ -22,7 +22,7 @@ const SkillsBlock = () => {
 
     return (
         <div className='SkillsBlock_wrapper'>
-            <h3 className='SkillsBlock_header'>Skills</h3>
+            <h2 className='SkillsBlock_header' id='SkillsPart'>Skills</h2>
             <div className='SkillsBlock_content'>
                 <picture className='SkillsBlock_imgPic'>
                     <source 

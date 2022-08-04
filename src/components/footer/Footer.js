@@ -9,8 +9,10 @@ import gmail from '../../img/gmail.png';
 import gmail_large from '../../img/gmail_large.svg';
 import github from '../../img/github.png';
 import github_large from '../../img/github_large.svg';
-import './footer.css';
 import FooterLink from '../footerLink/FooterLink';
+
+import './footer.css';
+
 
 const Footer = () => {
 
