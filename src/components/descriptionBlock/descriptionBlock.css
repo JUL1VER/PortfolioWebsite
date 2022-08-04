@@ -2,13 +2,8 @@
     margin-top: 100px;
 }
 
-.DescriptionBlock_myFoto {
-    min-width: 257px;
-    min-height: 293px;
-}
-
 .DescriptionBlock_fotoWithFigures {
-    width: 360px;
+    width: 300px;
     margin: 0 auto;
     padding-top: 40px;
     padding-left: 5px;
@@ -21,12 +16,12 @@
 
 .DescriptionBlock_circles {
     position: absolute;
-    margin-top: 290px;
+    margin-top: 225px;
     margin-left: -100px;
 }
 
 .DescriptionBlock_contentPart {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .DescriptionBlock_name {
@@ -151,6 +146,7 @@
         order: 1;
         width: 45%;
         padding-left: 50px;
+        margin-top: 0px;
     }
 
     .DescriptionBlock_fotoWithFigures {
