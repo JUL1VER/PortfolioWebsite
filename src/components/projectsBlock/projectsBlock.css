@@ -115,12 +115,14 @@
     .ProjectsBlock_header_text {
         font-size: 40px;
         width: 170px;
+        height: 50px;
     }
 
     .ProjectsBlock_text {
         margin-top: 30px;
         font-size: 25px;
         width: 500px;
+        height: 50px;
     }
 
     .ProjectsBlock_header_img {

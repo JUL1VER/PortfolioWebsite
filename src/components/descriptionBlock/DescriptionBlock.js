@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import myfoto from '../../img/myfoto.jpeg';
-import userFoto from '../../img/fotowithfigures.png'
+import myfoto from '../../img/myfoto.png';
+import myfoto_large from '../../img/myfoto_large.png';
 import circles from '../../img/circles.png';
 import circles_large from '../../img/circles_large.png';
 import './descriptionBlock.css'
@@ -20,12 +20,12 @@ const DescriptionBlock = () => {
                     <source 
                         className='DescriptionBlock_userFoto'
                         media='(min-width: 650px)'
-                        srcSet={myfoto}/>
+                        srcSet={myfoto_large}/>
                     <source 
                         className='DescriptionBlock_userFoto'
                         media='(min-width: 1440px)'
-                        srcSet={myfoto}/>
-                    <img src={userFoto} alt='userForo' className='DescriptionBlock_userFoto'/>
+                        srcSet={myfoto_large}/>
+                    <img src={myfoto} alt='userForo' className='DescriptionBlock_userFoto'/>
                 </picture>
                 <picture className='DescriptionBlock_circlesPic'>
                     <source

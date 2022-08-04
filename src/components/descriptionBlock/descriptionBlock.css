@@ -7,26 +7,22 @@
     min-height: 293px;
 }
 
+.DescriptionBlock_fotoWithFigures {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+    background: url("../../img/ellipse.png") left 30px bottom 18px no-repeat,
+      url("../../img/zigzags.png") left 10px top 11px no-repeat,
+      url("../../img/plus.png") 150px top no-repeat,
+      url("../../img/cube.png") right 37px top no-repeat;
+}
+
 .DescriptionBlock_circles {
     position: absolute;
-    margin-top: 260px;
-    margin-left: -125px;
-}
-
-.DescriptionBlock_fotoWithFigures_cube {
-    display: none;
-}
-
-.DescriptionBlock_fotoWithFigures_plus {
-    display: none;
-}
-
-.DescriptionBlock_fotoWithFigures_zigzags {
-    display: none;
-}
-
-.DescriptionBlock_fotoWithFigures_ellipse {
-    display: none;
+    margin-top: 290px;
+    margin-left: -100px;
 }
 
 .DescriptionBlock_contentPart {
@@ -116,7 +112,7 @@
     .DescriptionBlock_circles {
         position: absolute;
         width: 180px;
-        margin-top: 500px;
+        margin-top: 445px;
         margin-left: -130px;
     }
 
@@ -177,7 +173,7 @@
 
     .DescriptionBlock_circles {
         position: absolute;
-        margin-top: 640px;
+        margin-top: 575px;
         margin-left: -180px;
     }
 

@@ -94,7 +94,6 @@ const ContactmeBlock = () => {
                         onBlur={e => blurHandler(e)}/>
                     <button
                         disabled={ disableButton || textError.length || emailError.length }
-                        // ВОТ ТУТ ПО АНАЛОГИИ ОН ДОЛЖЕН РАБОТАТЬ, ОН СРАБАТЫВАЕТ НА disableButton, НО НЕ НА buttonDirty. ВЕРОЯТНО, Я ГДЕ-ТО ОШИБСЯ В ЛОГИКЕ СВЕРХУ ИЛИ В ВЫРАЖЕНИИ
                         className={(disableButton || textError.length || emailError.length) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
                         type='button' 
                         onClick={sendInfo}>
