@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import contactmeImg from '../../img/contactmeImg.png'
-import contactmeImg_large from '../../img/contactmeImg_large.png'
-import paperplane from '../../img/paperplane.png'
-import paperplane_large from '../../img/paperplane_large.png'
+import contactmeImg from '../../img/contactmeImg.png';
+import contactmeImg_large from '../../img/contactmeImg_large.png';
+import paperplane from '../../img/paperplane.png';
+import paperplane_large from '../../img/paperplane_large.png';
+
 import './contactmeBlock.css';
 
 const ContactmeBlock = () => {
@@ -60,6 +61,9 @@ const ContactmeBlock = () => {
         }
 
         console.log(postInfo);
+
+        setInfo(state => ({ ...state, email: ''}))
+        setInfo(state => ({ ...state, message: ''}))
     }
 
     return (

@@ -2,7 +2,7 @@
     margin-top: 100px;
 }
 
-.DescriptionBlock_userFoto {
+.DescriptionBlock_myFoto {
     min-width: 257px;
     min-height: 293px;
 }
@@ -56,7 +56,7 @@
     color: #838383;
 }
 
-.DescriptionBlock_hireButton{
+.DescriptionBlock_helloButton{
     width: 114px;
     height: 46px;
     margin-top: 30px;
@@ -75,13 +75,13 @@
     transition: all 0.5s;
 }
 
-.DescriptionBlock_hireButton:hover {
+.DescriptionBlock_helloButton:hover {
     color:#E84949;
     background: #fff;
     border: 2px solid #E84949;
 }
 
-.DescriptionBlock_hireButton:active {
+.DescriptionBlock_helloButton:active {
     color: #fff;
     background: #E84949;
     transition: all 0.1s;
@@ -105,7 +105,7 @@
           url("../../img/cube_large.png") right 30px top no-repeat;
     }
 
-    .DescriptionBlock_userFoto {
+    .DescriptionBlock_myFoto {
         max-width: 400px;
     }
 
@@ -125,7 +125,7 @@
         font-size: 25px;
     }
 
-    .DescriptionBlock_hireButton {
+    .DescriptionBlock_helloButton {
         padding: 10px 24px;
         font-size: 25px;
         line-height: 51px;
@@ -167,7 +167,7 @@
           url("../../img/cube_large.png") right 42px top no-repeat;
     }
 
-    .DescriptionBlock_userFoto {
+    .DescriptionBlock_myFoto {
         max-width: 510px;
     }
 
@@ -196,7 +196,7 @@
         line-height: 157%;
     }
 
-    .DescriptionBlock_hireButton {
+    .DescriptionBlock_helloButton {
         display: flex;
         justify-content: center;
         align-items: center;

@@ -3,8 +3,9 @@ import myfoto from '../../img/myfoto.png';
 import myfoto_large from '../../img/myfoto_large.png';
 import circles from '../../img/circles.png';
 import circles_large from '../../img/circles_large.png';
-import './descriptionBlock.css'
 import Modal from '../modal/Modal';
+
+import './descriptionBlock.css';
 
 const DescriptionBlock = () => {
     const [modalActive, setModalActive] = useState(false)
@@ -18,14 +19,14 @@ const DescriptionBlock = () => {
             <div className='DescriptionBlock_fotoWithFigures'>
                 <picture className='DescriptionBlock_foto'>
                     <source 
-                        className='DescriptionBlock_userFoto'
+                        className='DescriptionBlock_myFoto'
                         media='(min-width: 650px)'
                         srcSet={myfoto_large}/>
                     <source 
-                        className='DescriptionBlock_userFoto'
+                        className='DescriptionBlock_myFoto'
                         media='(min-width: 1440px)'
                         srcSet={myfoto_large}/>
-                    <img src={myfoto} alt='userForo' className='DescriptionBlock_userFoto'/>
+                    <img src={myfoto} alt='myForo' className='DescriptionBlock_myFoto'/>
                 </picture>
                 <picture className='DescriptionBlock_circlesPic'>
                     <source
@@ -38,7 +39,7 @@ const DescriptionBlock = () => {
             <div className="DescriptionBlock_contentPart">
                 <h1 className='DescriptionBlock_name'>Vladislav Juliver</h1>
                 <p className='DescriptionBlock_text'>Hello! My name is Vlad and I am frontend developer. Here is my portfolio website where you'll learn about my journey as a frontend developer.</p>
-                <button className='DescriptionBlock_hireButton' 
+                <button className='DescriptionBlock_helloButton' 
                         type={'button'}
                         onClick={() => setModalActive(true)}>
                         Say Hello
