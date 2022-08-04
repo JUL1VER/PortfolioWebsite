@@ -26,11 +26,11 @@
 }
 
 .ProjectsBlock_text {
-    width: 250px;
-    height: 26px;
+    width: 80%;
+    height: 50px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
     font-family: "Be Vietnam Pro";
     font-weight: 400;
