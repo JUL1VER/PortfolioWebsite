@@ -26,7 +26,7 @@ const DescriptionBlock = () => {
                         className='DescriptionBlock_myFoto'
                         media='(min-width: 1440px)'
                         srcSet={myfoto_large}/>
-                    <img src={myfoto} alt='myForo' className='DescriptionBlock_myFoto'/>
+                    <img src={myfoto} alt='myFoto' className='DescriptionBlock_myFoto'/>
                 </picture>
                 <picture className='DescriptionBlock_circlesPic'>
                     <source
