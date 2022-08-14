@@ -5,7 +5,7 @@
   padding-bottom: 10px;
   width: 100%;
   height: 100%;
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
@@ -62,7 +62,7 @@
 .Footer_githubBlock_text {
   margin: 0px 0px 0px 0px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
@@ -158,6 +158,6 @@
   }
 
   .Footer_githubBlock_text_name {
-    font-weight: 400;
+    font-weight: 600;
   }
 }

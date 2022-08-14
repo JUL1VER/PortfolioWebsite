@@ -11,10 +11,11 @@
   height: 37px;
   margin-bottom: 0px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 37px;
+  letter-spacing: 4px;
 
   color: #1cd119;
 }
@@ -32,7 +33,7 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -66,7 +67,7 @@
   margin-top: 20px;
   margin-bottom: 0px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -96,9 +97,9 @@
 
 .ProjectsBlock_containers_footer_text {
   margin: 0px 0px 0px 7px;
-  width: 40%;
+  width: 50%;
 
-  font-family: "Padauk";
+  font-family: "Zilla Slab", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
