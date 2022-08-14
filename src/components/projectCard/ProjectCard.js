@@ -1,5 +1,5 @@
 import React from 'react';
-import internet_large from '../../img/internet_large.png';
+import githublogo from '../../img/githublogo.svg';
 
 const ProjectCard = (props) => {
     const {imgprop, img_largeprop, description, link} = props;
@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
                 </picture>
                 <p className='ProjectsBlock_containers_text'>{description}</p>
                 <a href={link} className='ProjectsBlock_containers_footer' target="blank">
-                    <img src={internet_large} alt="internet" className='ProjectsBlock_containers_footer_img'/>
+                    <img src={githublogo} alt="github logo" className='ProjectsBlock_containers_footer_img'/>
                     <p className='ProjectsBlock_containers_footer_text'>Visit github</p>
                 </a>
             </div>

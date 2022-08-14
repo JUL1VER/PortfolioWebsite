@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.DescriptionBlock_myFoto {
+  border-radius: 15px;
+}
+
 .DescriptionBlock_circles {
   position: absolute;
   margin-top: 225px;
@@ -21,9 +25,10 @@
   width: 150px;
   margin: 0 auto;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 32px;
+  letter-spacing: 4px;
 
   color: #1cd119;
 }
@@ -35,7 +40,7 @@
   margin: 0 auto;
   margin-top: 16px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -56,7 +61,7 @@
   border-radius: 4px;
   cursor: pointer;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -156,7 +161,7 @@
   .DescriptionBlock_name {
     display: flex;
     justify-content: flex-start;
-    font-size: 50px;
+    font-size: 65px;
     line-height: 73px;
     width: 100%;
   }

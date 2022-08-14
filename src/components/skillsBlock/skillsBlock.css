@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: center;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 37px;
@@ -19,6 +19,7 @@
 
 .SkillsBlock_header_text {
   margin: 0;
+  letter-spacing: 4px;
 }
 
 .SkillsBlock_header_headImg {
@@ -40,7 +41,7 @@
   margin: 0 auto;
   margin-top: 45px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -62,7 +63,7 @@
 }
 
 .SkillsBlock_logos_text {
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 25px;
   margin: 0;

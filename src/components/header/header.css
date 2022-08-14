@@ -1,6 +1,7 @@
 .Header {
   display: flex;
   justify-content: flex-start;
+  font-family: "Zilla Slab", serif;
 }
 
 .Header_wrapper {

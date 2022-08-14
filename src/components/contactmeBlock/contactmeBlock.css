@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: center;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 25px;
@@ -20,6 +20,7 @@
 
 .ContactmeBlock_header_text {
   margin: 0;
+  letter-spacing: 4px;
 }
 
 .ContactmeBlock_header_logo {
@@ -54,7 +55,7 @@
   box-shadow: 0px 0px 4px #1cd119;
   border-radius: 8px;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -97,7 +98,7 @@
   border: 2px solid #242222;
   cursor: pointer;
 
-  font-family: "Be Vietnam Pro";
+  font-family: "Zilla Slab", serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 23px;
