@@ -1,12 +1,12 @@
 import React from 'react';
-import gears from '../../img/gears.png';
+import projectLogo from '../../img/projectImg.png';
+import projectLogo_large from '../../img/projectImg_large.png';
 import project1 from '../../img/project1.png';
 import project1_large from '../../img/project1_large.png';
 import project2 from '../../img/project2.png';
 import project2_large from '../../img/project2_large.png';
 import project3 from '../../img/project3.png';
 import project3_large from '../../img/project3_large.png';
-import gears_large from '../../img/gears_large.svg';
 import ProjectCard from '../projectCard/ProjectCard';
 
 import './projectsBlock.css';
@@ -30,8 +30,8 @@ const ProjectsBlock = () => {
                     <source
                         className='ProjectsBlock_header_img'
                         media='(min-width: 650px)'
-                        srcSet={gears_large}/> 
-                    <img src={gears} alt="gears" className="ProjectsBlock_header_img"/>
+                        srcSet={projectLogo_large}/> 
+                    <img src={projectLogo} alt="gears" className="ProjectsBlock_header_img"/>
                 </picture>
             </div>
             <p className='ProjectsBlock_text'>Here are some of my interesting projects:</p>

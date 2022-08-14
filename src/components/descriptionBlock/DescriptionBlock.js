@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import myfoto from '../../img/myfoto.png';
 import myfoto_large from '../../img/myfoto_large.png';
-import circles from '../../img/circles.png';
-import circles_large from '../../img/circles_large.png';
 import Modal from '../modal/Modal';
 
 import './descriptionBlock.css';
@@ -27,13 +25,6 @@ const DescriptionBlock = () => {
                         media='(min-width: 1440px)'
                         srcSet={myfoto_large}/>
                     <img src={myfoto} alt='myFoto' className='DescriptionBlock_myFoto'/>
-                </picture>
-                <picture className='DescriptionBlock_circlesPic'>
-                    <source
-                        className='DescriptionBlock_circles'
-                        media='(min-width: 650px)'
-                        srcSet={circles_large}/>
-                    <img src={circles} alt='circles' className='DescriptionBlock_circles'/>
                 </picture>
             </div>
             <div className="DescriptionBlock_contentPart">
