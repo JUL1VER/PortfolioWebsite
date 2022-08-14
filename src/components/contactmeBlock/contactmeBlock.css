@@ -1,233 +1,233 @@
 .ContactmeBlock_wrapper {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .ContactmeBlock_header {
-    width: 142px;
-    margin: 0 auto;
+  width: 142px;
+  margin: 0 auto;
 
-    font-family: "Be Vietnam Pro";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 37px;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 37px;
 
-    color: #f37a7a;
+  color: #1cd119;
 }
 
 .ContactmeBlock_img {
-    width: 70%;
-    min-width: 250px;
-    max-width: 500px;
-    min-height: 187px;
-    margin-top: 45px;
+  width: 70%;
+  min-width: 250px;
+  max-width: 500px;
+  min-height: 187px;
+  margin-top: 45px;
 }
 
 .ContactmeBlock_form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .ContactmeBlock_email,
 .ContactmeBlock_message {
-    margin: 0 auto;
-    box-sizing: border-box;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-    width: 60%;
-    min-width: 251px;
-    max-width: 500px;
+  width: 60%;
+  min-width: 251px;
+  max-width: 500px;
 
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
-    border-radius: 8px;
+  background: #242222;
+  border: 1px solid #1cd119;
+  box-shadow: 0px 0px 4px #1cd119;
+  border-radius: 8px;
 
-    font-family: "Be Vietnam Pro";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
 
-    color: #838383;
+  color: #1cd119;
 }
 
 .ContactmeBlock_email {
-    height: 45px;
-    padding-top: 15px;
-    padding-left: 10px;
+  height: 45px;
+  padding-top: 15px;
+  padding-left: 10px;
 }
 
 .ContactmeBlock_message {
-    resize: none;
-    height: 120px;
-    padding: 10px 0px 0px 10px;
+  resize: none;
+  height: 120px;
+  padding: 10px 0px 0px 10px;
 }
 
 .ContactmeBlock_email:focus,
 .ContactmeBlock_message:focus {
-    color:#6860E2;
-    text-decoration: none;
+  color: #1cd119;
+  text-decoration: none;
 }
 
 .ContactmeBlock_button {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 10%;
-    min-width: 82px;
-    max-width: 120px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-top: 3px;
-    
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 10%;
+  min-width: 82px;
+  max-width: 120px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 3px;
 
-    background: #6860E2;
-    border-radius: 3px;
-    border: 2px solid #6860E2;
-    cursor: pointer;
+  background: #1cd119;
+  border-radius: 3px;
+  border: 2px solid #242222;
+  cursor: pointer;
 
-    font-family: "Be Vietnam Pro";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 23px;
-    transition: all 0.5s;
+  font-family: "Be Vietnam Pro";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  transition: all 0.5s;
 
-    color: #fffdfd;
+  color: #242222;
 }
 
 .ContactmeBlock_button:hover {
-    color:#6860E2;
-    background: #fff;
+  color: #1cd119;
+  background: #242222;
+  border: 2px solid #1cd119;
 }
 
 .ContactmeBlock_button:active {
-    color: #fff;
-    background: #6860E2;
-    transition: all 0.1s;
+  color: #242222;
+  background: #1cd119;
+  transition: all 0.1s;
 }
 
 .ContactmeBlock_button.disabled {
-    background-color: #d4cfcf;
-    border-color: #d4cfcf;
-    color: #fff;
-    cursor: default;
+  background-color: #615b5b;
+  border-color: #615b5b;
+  color: #242222;
+  cursor: default;
 }
 
 .ContactmeBlock_error {
-    width: 100%;
-    margin: 0 auto;
-    height: 38px;
-    margin-top: 0px;
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 38px;
+  margin-top: 0px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 650px) {
-    .ContactmeBlock_header {
-        font-size: 40px;
-        width: 400px;
-    }
+  .ContactmeBlock_header {
+    font-size: 40px;
+    width: 400px;
+  }
 
-    .ContactmeBlock_email {
-        font-size: 20px;
-        height: 60px;
-    }
+  .ContactmeBlock_email {
+    font-size: 20px;
+    height: 60px;
+  }
 
-    .ContactmeBlock_message {
-        font-size: 20px;
-        height: 220px;
-    }
+  .ContactmeBlock_message {
+    font-size: 20px;
+    height: 220px;
+  }
 
-    .ContactmeBlock_button {
-        width: 150px;
-        max-width: 250px;
-        height: 50px;
-        margin-top: 30px;
-        padding-top: 0px;
-        font-size: 30px;
-        line-height: 50px;
-    }
+  .ContactmeBlock_button {
+    width: 150px;
+    max-width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 0px;
+    font-size: 30px;
+    line-height: 50px;
+  }
 
-    .ContactmeBlock_button_img {
-        width: 35px;
-        margin-top: 7px;
-    }
+  .ContactmeBlock_button_img {
+    width: 35px;
+    margin-top: 7px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .ContactmeBlock_wrapper {
-        max-width: 1440px;
-        width: 95%;
-        margin: 0 auto;
-        margin-top: 100px;
-    }
-    .ContactmeBlock_content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-    }
+  .ContactmeBlock_wrapper {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .ContactmeBlock_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
-    .ContactmeBlock_header {
-        width: 45%;
-        font-size: 40px;
-        line-height: 58px;
-    }
+  .ContactmeBlock_header {
+    width: 45%;
+    font-size: 40px;
+    line-height: 58px;
+  }
 
-    .ContactmeBlock_img {
-        order: 1;
-        width: 100%;
-        max-width: 1000px;
-        max-height: 1000px;
-        margin-top: 0px;
-    }
+  .ContactmeBlock_img {
+    order: 1;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin-top: 0px;
+  }
 
-    .ContactmeBlock_form {
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        width: 55%;
-        margin-top: 0px;
-    }
+  .ContactmeBlock_form {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 0px;
+  }
 
-    .ContactmeBlock_email {
-        width: 80%;
-        max-width: 1000px;
-        height: 20%;
-        margin-top: 0px;
-        font-size: 30px;
-        line-height: 44px;
-        padding-top: 25px;
-        padding-left: 15px;
-    }
+  .ContactmeBlock_email {
+    width: 80%;
+    max-width: 1000px;
+    height: 20%;
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 44px;
+    padding-top: 25px;
+    padding-left: 15px;
+  }
 
-    .ContactmeBlock_message {
-        width: 80%;
-        max-width: 1000px;
-        margin-top: 0px;
-        height: 55%;
-        font-size: 30px;
-        line-height: 44px;
-        padding-top: 10px;
-        padding-left: 15px;
-    }
+  .ContactmeBlock_message {
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 0px;
+    height: 55%;
+    font-size: 30px;
+    line-height: 44px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
 
-    .ContactmeBlock_button {
-        width: 181px;
-        max-width: 300px;
-        height: 66px;
-        max-height: 150px;
-        margin-top: 30px;
-        padding-top: 5px;
-        font-size: 36px;
-        line-height: 53px;
-    }
+  .ContactmeBlock_button {
+    width: 181px;
+    max-width: 300px;
+    height: 66px;
+    max-height: 150px;
+    margin-top: 30px;
+    padding-top: 5px;
+    font-size: 36px;
+    line-height: 53px;
+  }
 
-    .ContactmeBlock_button_img {
-        width: 40px;
-        margin-top: 8px;
-    }
+  .ContactmeBlock_button_img {
+    width: 40px;
+    margin-top: 8px;
+  }
 }

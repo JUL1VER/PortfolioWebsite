@@ -1,0 +1,30 @@
+import React from 'react'
+import MatrixCard from 'matrix-card'
+
+const BackgroundCanvas = () => {
+	return (
+		<div style={{
+			position: "fixed",
+            top: '0',
+            left: '0',
+            width: '100vw',
+            height: '100vh',
+            zIndex: '-1'
+		}}>
+            <MatrixCard
+                id={"my-id-1"}
+                matrixText={"ANIMATE ME"}
+                delay={40}
+                backgroundColor={"rgba(34 , 34, 34, 0.2)"}
+                textFontSize={"16"}
+                textMainColor={"#1cd119"}
+                textAlternateColorRatio={0.1}
+                textAlternateColorList={["#808080", "#989898", "#A9A9A9", "#C0C0C0"]}
+                styleOverrideForContainerDiv={{ backgroundColor: "rgba(42, 40, 45)", }}
+                styleOverrideForChildrenDiv={{display: "none"}}
+            >
+            </MatrixCard>
+		</div>
+	)
+}
+export default BackgroundCanvas;

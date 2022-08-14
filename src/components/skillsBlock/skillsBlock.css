@@ -1,126 +1,126 @@
 .SkillsBlock_wrapper {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .SkillsBlock_header {
-    width: 65px;
-    height: 37px;
-    margin: 0 auto;
+  width: 65px;
+  height: 37px;
+  margin: 0 auto;
 
-    font-family: "Be Vietnam Pro";
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 37px;
-    color: #F37A7A;
+  font-family: "Be Vietnam Pro";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 37px;
+  color: #1cd119;
 }
 
 .SkillsBlock_img {
-    width: 70%;
-    min-width: 250px;
-    max-width: 500px;
-    min-height: 186px;
-    max-height: 370px;
-    margin: 0 auto;
-    margin-top: 15px;
+  width: 70%;
+  min-width: 250px;
+  max-width: 500px;
+  min-height: 186px;
+  max-height: 370px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .SkillsBlock_text {
-    width: 80%;
-    min-width: 293px;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 45px;
+  width: 80%;
+  min-width: 293px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 45px;
 
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #818080;
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
 }
 
 .SkillsBlock_logoWrapper {
-    margin-top: 20px;
-    display: grid;
-    column-gap: 60px;
-    row-gap: 50px;
-    grid-template-columns: auto auto;
-    justify-content: center;
+  margin-top: 20px;
+  display: grid;
+  column-gap: 60px;
+  row-gap: 50px;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 .SkillsBlock_logos {
-    width: 104px;
-    height: 106px;
+  width: 104px;
+  height: 106px;
 }
 
 .SkillsBlock_logos_text {
-    font-family: "Be Vietnam Pro";
-    font-weight: 900;
-    font-size: 25px;
-    margin: 20px 0px 0px 0px;
+  font-family: "Be Vietnam Pro";
+  font-weight: 900;
+  font-size: 25px;
+  margin: 20px 0px 0px 0px;
+  color: #fff;
 }
 
 @media (min-width: 650px) {
-    .SkillsBlock_header {
-        width: 20%;
-        font-size: 40px;
-    }
+  .SkillsBlock_header {
+    width: 20%;
+    font-size: 40px;
+  }
 
-    .SkillsBlock_text {
-        font-size: 25px;
-        line-height: 35px;
-    }
+  .SkillsBlock_text {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .SkillsBlock_wrapper {
-        max-width: 1440px;
-        width: 95%;
-        margin: 0 auto;
-        margin-top: 180px;
-    }
+  .SkillsBlock_wrapper {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 180px;
+  }
 
-    .SkillsBlock_content {
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-    }
+  .SkillsBlock_content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
 
-    .SkillsBlock_header {
-        width: 15%;
-        font-size: 40px;
-        line-height: 58px;
-        height: 55px;
-    }
+  .SkillsBlock_header {
+    width: 15%;
+    font-size: 40px;
+    line-height: 58px;
+    height: 55px;
+  }
 
-    .SkillsBlock_skillsAndLogos {
-        order: 1;
-        width: 50%;
-    }
+  .SkillsBlock_skillsAndLogos {
+    order: 1;
+    width: 50%;
+  }
 
-    .SkillsBlock_text {
-        width: 100%;
-        font-size: 35px;
-        line-height: 51px;
-        height: 25%;
-    }
+  .SkillsBlock_text {
+    width: 100%;
+    font-size: 35px;
+    line-height: 51px;
+    height: 25%;
+  }
 
-    .SkillsBlock_imgPic{
-        order: 2;
-        margin: 0 auto;
-    }
+  .SkillsBlock_imgPic {
+    order: 2;
+    margin: 0 auto;
+  }
 
-    .SkillsBlock_img {
-        width: 100%;
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .SkillsBlock_img {
+    width: 100%;
+    max-width: 550px;
+    max-height: 550px;
+  }
 
-    .SkillsBlock_logoWrapper {
-        margin-top: 60px;
-        display: grid;
-        column-gap: 60px;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
-    }
+  .SkillsBlock_logoWrapper {
+    margin-top: 60px;
+    display: grid;
+    column-gap: 60px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
 }
-
