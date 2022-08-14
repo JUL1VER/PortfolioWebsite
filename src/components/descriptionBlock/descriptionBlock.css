@@ -1,208 +1,209 @@
 .DescriptionBlock_wrapper {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .DescriptionBlock_fotoWithFigures {
-    width: 300px;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-left: 5px;
-    padding-bottom: 40px;
-    background: url("../../img/ellipse.png") left 30px bottom 18px no-repeat,
-      url("../../img/zigzags.png") left 10px top 11px no-repeat,
-      url("../../img/plus.png") 150px top no-repeat,
-      url("../../img/cube.png") right 37px top no-repeat;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-bottom: 40px;
+  background: url("../../img/ellipse.png") left 30px bottom 18px no-repeat,
+    url("../../img/zigzags.png") left 10px top 11px no-repeat,
+    url("../../img/plus.png") 150px top no-repeat,
+    url("../../img/cube.png") right 37px top no-repeat;
 }
 
 .DescriptionBlock_circles {
-    position: absolute;
-    margin-top: 225px;
-    margin-left: -110px;
+  position: absolute;
+  margin-top: 225px;
+  margin-left: -110px;
 }
 
 .DescriptionBlock_contentPart {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .DescriptionBlock_name {
-    width: 150px;
-    margin: 0 auto;
+  width: 150px;
+  margin: 0 auto;
 
-    font-family: 'Be Vietnam Pro';
-    font-weight: 900;
-    font-size: 32px;
+  font-family: "Be Vietnam Pro";
+  font-weight: 900;
+  font-size: 32px;
 
-    color: #3A3A3A;
+  color: #1cd119;
 }
 
-.DescriptionBlock_text{
-    width: 80%;
-    min-width: 298px;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 16px;
+.DescriptionBlock_text {
+  width: 80%;
+  min-width: 298px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
 
-    font-family: "Be Vietnam Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 157%;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157%;
 
-    color: #838383;
+  color: #fff;
 }
 
-.DescriptionBlock_helloButton{
-    width: 114px;
-    height: 46px;
-    margin-top: 30px;
+.DescriptionBlock_helloButton {
+  width: 114px;
+  height: 46px;
+  margin-top: 30px;
 
-    background: #E84949;
-    border: 2px solid #E84949;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
+  background: #1cd119;
+  border: 2px solid #1cd119;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
 
-    font-family: "Be Vietnam Pro";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    color: #FFFFFF;
-    transition: all 0.5s;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.5s;
 }
 
 .DescriptionBlock_helloButton:hover {
-    color:#E84949;
-    background: #fff;
-    border: 2px solid #E84949;
+  color: #1cd119;
+  background: #242222;
+  border: 2px solid #1cd119;
 }
 
 .DescriptionBlock_helloButton:active {
-    color: #fff;
-    background: #E84949;
-    transition: all 0.1s;
+  color: #fff;
+  background: #e84949;
+  transition: all 0.1s;
 }
 
 @media (min-width: 650px) {
-    .DescriptionBlock_wrapper {
-        margin-top: 150px;
-    }
+  .DescriptionBlock_wrapper {
+    margin-top: 150px;
+  }
 
-    .DescriptionBlock_fotoWithFigures {
-        order: 2;
-        width: 500px;
-        margin: 0 auto;
-        padding-top: 70px;
-        padding-left: 30px;
-        padding-bottom: 40px;
-        background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
-          url("../../img/zigzags_large.png") left 10px top no-repeat,
-          url("../../img/plus_large.png") 220px top no-repeat,
-          url("../../img/cube_large.png") right 30px top no-repeat;
-    }
+  .DescriptionBlock_fotoWithFigures {
+    order: 2;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
+      url("../../img/zigzags_large.png") left 10px top no-repeat,
+      url("../../img/plus_large.png") 220px top no-repeat,
+      url("../../img/cube_large.png") right 30px top no-repeat;
+  }
 
-    .DescriptionBlock_myFoto {
-        max-width: 400px;
-    }
+  .DescriptionBlock_myFoto {
+    max-width: 400px;
+  }
 
-    .DescriptionBlock_circles {
-        position: absolute;
-        width: 180px;
-        margin-top: 445px;
-        margin-left: -130px;
-    }
+  .DescriptionBlock_circles {
+    position: absolute;
+    width: 180px;
+    margin-top: 445px;
+    margin-left: -130px;
+  }
 
-    .DescriptionBlock_name {
-        width: 500px;
-        font-size: 40px;
-    }
+  .DescriptionBlock_name {
+    width: 500px;
+    font-size: 40px;
+  }
 
-    .DescriptionBlock_text {
-        font-size: 25px;
-    }
+  .DescriptionBlock_text {
+    font-size: 25px;
+  }
 
-    .DescriptionBlock_helloButton {
-        padding: 10px 24px;
-        font-size: 25px;
-        line-height: 51px;
+  .DescriptionBlock_helloButton {
+    padding: 10px 24px;
+    font-size: 25px;
+    line-height: 51px;
 
-        width: 180px;
-        height: 70px;
-    }
+    width: 180px;
+    height: 70px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .DescriptionBlock_wrapper {
-        max-width: 1440px;
-        width: 95%;
-        margin: 0 auto;
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+  .DescriptionBlock_wrapper {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .DescriptionBlock_contentPart {
-        order: 1;
-        width: 45%;
-        padding-left: 50px;
-        margin-top: 0px;
-    }
+  .DescriptionBlock_contentPart {
+    order: 1;
+    width: 45%;
+    padding-left: 50px;
+    margin-top: 0px;
+  }
 
-    .DescriptionBlock_fotoWithFigures {
-        order: 2;
-        width: 650px;
-        width: 45%;
-        margin: 0 auto;
-        padding-top: 70px;
-        padding-left: 30px;
-        padding-bottom: 40px;
-        background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
-          url("../../img/zigzags_large.png") left 0px top 20px no-repeat,
-          url("../../img/plus_large.png") 220px top no-repeat,
-          url("../../img/cube_large.png") right 42px top no-repeat;
-    }
+  .DescriptionBlock_fotoWithFigures {
+    order: 2;
+    width: 650px;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    background: url("../../img/ellipse_large.png") left 30px bottom no-repeat,
+      url("../../img/zigzags_large.png") left 0px top 20px no-repeat,
+      url("../../img/plus_large.png") 220px top no-repeat,
+      url("../../img/cube_large.png") right 42px top no-repeat;
+  }
 
-    .DescriptionBlock_myFoto {
-        max-width: 510px;
-    }
+  .DescriptionBlock_myFoto {
+    max-width: 510px;
+  }
 
-    .DescriptionBlock_circles {
-        position: absolute;
-        margin-top: 575px;
-        margin-left: -180px;
-    }
+  .DescriptionBlock_circles {
+    position: absolute;
+    margin-top: 575px;
+    margin-left: -180px;
+  }
 
-    .DescriptionBlock_name {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 50px;
-        line-height: 73px;
-        width: 100%;
-    }
+  .DescriptionBlock_name {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    line-height: 73px;
+    width: 100%;
+  }
 
-    .DescriptionBlock_text {
-        margin-top: 50px;
-        display: flex;
-        justify-content: flex-start;
-        text-align: start;
-        width: 100%;
-        max-width: 750px;
-        font-size: 35px;
-        line-height: 157%;
-    }
+  .DescriptionBlock_text {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+    max-width: 750px;
+    font-size: 35px;
+    line-height: 157%;
+  }
 
-    .DescriptionBlock_helloButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
+  .DescriptionBlock_helloButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 
-        padding: 10px 25px;
-        font-size: 35px;
-        line-height: 51px;
+    padding: 10px 25px;
+    font-size: 35px;
+    line-height: 51px;
 
-        width: 220px;
-        height: 80px;
-    }
+    width: 220px;
+    height: 80px;
+  }
 }

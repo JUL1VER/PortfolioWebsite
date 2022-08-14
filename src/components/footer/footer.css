@@ -1,175 +1,175 @@
 .Footer_wrapper {
-    margin: 0 auto;
-    margin-top: 100px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    width: 100%;
-    background-image: url('../../img/wave.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 37px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-image: url("../../img/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
 
-    color: #fff;
+  color: #fff;
 }
 
 .Footer_media {
-    margin: 0 auto;
-    margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .Footer_linksText {
-    text-align: center;
-    margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 .Footer_linksBlock {
-    margin: 0 auto;
-    margin-top: 10px;
-    max-width: 400px;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .Footer_linksBlock_imgs {
-    transition: all 0.2s;
-    width: 31px;
+  transition: all 0.2s;
+  width: 31px;
 }
 
 .Footer_linksBlock_imgs:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.Footer_projectsText{
-    margin: 0;
+.Footer_projectsText {
+  margin: 0;
 }
 
-.Footer_githubBlock{
-    margin: 0 auto;
-    margin-top: 10px;
-    max-width: 350px;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
+.Footer_githubBlock {
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
 }
 
-.Footer_githubBlock_img{
-    width: 30px;
-    height: 30px;
+.Footer_githubBlock_img {
+  width: 30px;
+  height: 30px;
 }
 
-.Footer_githubBlock_text{
-    margin: 0px 0px 0px 0px;
+.Footer_githubBlock_text {
+  margin: 0px 0px 0px 0px;
 
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 37px;
-    text-decoration: none;
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-decoration: none;
 
-    color: #fffafa;
+  color: #fffafa;
 }
 
-.Footer_githubBlock_text_name{
-    color: #0ACBBF;
-    font-weight: 400;
+.Footer_githubBlock_text_name {
+  color: #1cd119;
+  font-weight: 400;
 }
 
 @media (min-width: 650px) {
-    .Footer_wrapper {
-        background-image: url('../../img/waveBig.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .Footer_wrapper {
+    background-image: url("../../img/waveBig.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    .Footer_linksText {
-        font-size: 30px;
-    }
+  .Footer_linksText {
+    font-size: 30px;
+  }
 
-    .Footer_linksBlock {
-        margin-top: 20px;
-    }
+  .Footer_linksBlock {
+    margin-top: 20px;
+  }
 
-    .Footer_linksBlock_imgs {
-        width: 40px;
-    }
+  .Footer_linksBlock_imgs {
+    width: 40px;
+  }
 
-    .Footer_githubBlock {
-        max-width: 400px;
-    }
+  .Footer_githubBlock {
+    max-width: 400px;
+  }
 
-    .Footer_githubBlock_text {
-        font-size: 30px;
-    }
+  .Footer_githubBlock_text {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .Footer_wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-image: url('../../img/waveBig.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 35px;
-        line-height: 51px;
-    }
+  .Footer_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url("../../img/waveBig.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 35px;
+    line-height: 51px;
+  }
 
-    .Footer_media {
-        display: flex;
-        flex-direction: column;
-        margin: 150px 0px 50px 0px;
-        width: 30%;
-    }
+  .Footer_media {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0px 50px 0px;
+    width: 30%;
+  }
 
-    .Footer_linksBlock {
-        display: flex;
-        margin: 20px 0px 0px 10px;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 600px;
-    }
+  .Footer_linksBlock {
+    display: flex;
+    margin: 20px 0px 0px 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+  }
 
-    .Footer_linksBlock_imgs {
-        width: 60px;
-        height: 60px;
-    }
+  .Footer_linksBlock_imgs {
+    width: 60px;
+    height: 60px;
+  }
 
-    .Footer_linksText{
-        display: flex;
-        margin-top: 0px;
-        font-size: 35px;
-        margin-left: 20px;
-    }
+  .Footer_linksText {
+    display: flex;
+    margin-top: 0px;
+    font-size: 35px;
+    margin-left: 20px;
+  }
 
-    .Footer_github {
-        display: flex;
-        flex-direction: column;
-        margin-top: 150px;
-    }
+  .Footer_github {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
 
-    .Footer_githubBlock {
-        max-width: 700px;
-    }
+  .Footer_githubBlock {
+    max-width: 700px;
+  }
 
-    .Footer_githubBlock_text {
-        font-size: 35px;
-        line-height: 51px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
+  .Footer_githubBlock_text {
+    font-size: 35px;
+    line-height: 51px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
 
-    .Footer_githubBlock_img {
-        width: 65px;
-        height: 65px;
-    }
+  .Footer_githubBlock_img {
+    width: 65px;
+    height: 65px;
+  }
 
-    .Footer_githubBlock_text_name {
-        font-weight: 400;
-    }
+  .Footer_githubBlock_text_name {
+    font-weight: 400;
+  }
 }
