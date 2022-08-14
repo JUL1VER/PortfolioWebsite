@@ -3,10 +3,9 @@
 }
 
 .SkillsBlock_header {
-  width: 150px;
-  height: 37px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
 
@@ -22,8 +21,8 @@
   letter-spacing: 4px;
 }
 
-.SkillsBlock_header_headImg {
-  margin: 5px 0px 0px 10px;
+.SkillsBlock_header_logoImg {
+  margin: 10px 0px 0px 10px;
 }
 
 .SkillsBlock_img {
@@ -71,9 +70,8 @@
 }
 
 @media (min-width: 650px) {
-  .SkillsBlock_header {
-    width: 20%;
-    font-size: 40px;
+  .SkillsBlock_header_text {
+    font-size: 50px;
   }
 
   .SkillsBlock_text {
@@ -96,11 +94,8 @@
     margin-top: 50px;
   }
 
-  .SkillsBlock_header {
-    width: 15%;
-    font-size: 40px;
-    line-height: 58px;
-    height: 55px;
+  .SkillsBlock_header_text {
+    font-size: 60px;
   }
 
   .SkillsBlock_skillsAndLogos {

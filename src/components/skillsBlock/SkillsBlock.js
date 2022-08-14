@@ -31,12 +31,12 @@ const SkillsBlock = () => {
         <div className='SkillsBlock_wrapper'>
             <div className='SkillsBlock_header' id='SkillsPart'>
                 <h2 className='SkillsBlock_header_text'>Skills</h2>
-                <picture className="SkillsBlock_header_headImg">
+                <picture className="SkillsBlock_header_logoImg">
                     <source
-                        className='SkillsBlock_header_head'
+                        className='SkillsBlock_header_logo'
                         media='(min-width: 650px)'
                         srcSet={skillsHead_large}/> 
-                    <img src={skillsHead} alt="skillsHeadIcon" className="SkillsBlock_header_head"/>
+                    <img src={skillsHead} alt="skillsHeadIcon" className="SkillsBlock_header_logo"/>
                 </picture>
             </div>
             <div className='SkillsBlock_content'>

@@ -22,12 +22,11 @@
 }
 
 .DescriptionBlock_name {
-  width: 150px;
   margin: 0 auto;
 
   font-family: "Zilla Slab", serif;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 45px;
   letter-spacing: 4px;
 
   color: #1cd119;
@@ -104,8 +103,7 @@
   }
 
   .DescriptionBlock_name {
-    width: 500px;
-    font-size: 40px;
+    font-size: 55px;
   }
 
   .DescriptionBlock_text {
@@ -162,8 +160,6 @@
     display: flex;
     justify-content: flex-start;
     font-size: 65px;
-    line-height: 73px;
-    width: 100%;
   }
 
   .DescriptionBlock_text {

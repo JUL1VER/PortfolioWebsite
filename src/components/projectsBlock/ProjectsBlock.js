@@ -28,10 +28,10 @@ const ProjectsBlock = () => {
                 <h2 className='ProjectsBlock_header_text' id='ProjectsPart'>Projects</h2>
                 <picture className="ProjectsBlock_header_gearsImg">
                     <source
-                        className='ProjectsBlock_header_img'
+                        className='ProjectsBlock_header_logoImg'
                         media='(min-width: 650px)'
                         srcSet={projectLogo_large}/> 
-                    <img src={projectLogo} alt="gears" className="ProjectsBlock_header_img"/>
+                    <img src={projectLogo} alt="gears" className="ProjectsBlock_header_logoImg"/>
                 </picture>
             </div>
             <p className='ProjectsBlock_text'>Here are some of my interesting projects:</p>

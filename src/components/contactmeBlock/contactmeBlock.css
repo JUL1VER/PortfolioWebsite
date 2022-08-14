@@ -3,11 +3,11 @@
 }
 
 .ContactmeBlock_header {
-  width: 142px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
   font-family: "Zilla Slab", serif;
   font-style: normal;
@@ -24,7 +24,7 @@
 }
 
 .ContactmeBlock_header_logo {
-  margin: 5px 0 0 8px;
+  margin: 8px 0px 0px 8px;
 }
 
 .ContactmeBlock_img {
@@ -138,9 +138,8 @@
 }
 
 @media (min-width: 650px) {
-  .ContactmeBlock_header {
-    font-size: 40px;
-    width: 400px;
+  .ContactmeBlock_header_text {
+    font-size: 50px;
   }
 
   .ContactmeBlock_email {
@@ -183,10 +182,8 @@
     margin-top: 50px;
   }
 
-  .ContactmeBlock_header {
-    width: 45%;
-    font-size: 40px;
-    line-height: 58px;
+  .ContactmeBlock_header_text {
+    font-size: 60px;
   }
 
   .ContactmeBlock_img {
