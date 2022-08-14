@@ -22,7 +22,7 @@
 .ProjectsBlock_header_img {
   width: 36px;
   height: 32px;
-  margin-top: 20px;
+  margin: 25px 0 0 2px;
 }
 
 .ProjectsBlock_text {
@@ -174,9 +174,9 @@
 
 @media (min-width: 1440px) {
   .ProjectsBlock_header_text {
-    font-size: 40px;
+    font-size: 60px;
     line-height: 58px;
-    width: 170px;
+    width: 250px;
     margin-top: 15px;
   }
 

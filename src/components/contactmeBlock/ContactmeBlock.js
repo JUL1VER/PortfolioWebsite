@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import contactmeLogo from '../../img/contactmeLogo.png';
+import contactmeLogo_large from '../../img/contactmeLogo_large.png';
 import contactmeImg from '../../img/contactmeImg.png';
 import contactmeImg_large from '../../img/contactmeImg_large.png';
 import paperplane from '../../img/paperplane.png';
@@ -68,7 +70,16 @@ const ContactmeBlock = () => {
 
     return (
         <div className='ContactmeBlock_wrapper'>
-            <h2 className='ContactmeBlock_header' id='ContactmePart'>Contact me</h2>
+            <div className='ContactmeBlock_header'>
+                <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
+                <picture className="ContactmeBlock_header_logoImg">
+                    <source
+                        className='ContactmeBlock_header_logo'
+                        media='(min-width: 650px)'
+                        srcSet={contactmeLogo_large}/> 
+                    <img src={contactmeLogo} alt="gears" className="ContactmeBlock_header_logo"/>
+                </picture>
+            </div>
             <div className='ContactmeBlock_content'>
                 <picture className="ContactmeBlock_imgPic">
                     <source

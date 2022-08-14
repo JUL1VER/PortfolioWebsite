@@ -5,6 +5,9 @@
 .ContactmeBlock_header {
   width: 142px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   font-family: "Be Vietnam Pro";
   font-style: normal;
@@ -13,6 +16,14 @@
   line-height: 37px;
 
   color: #1cd119;
+}
+
+.ContactmeBlock_header_text {
+  margin: 0;
+}
+
+.ContactmeBlock_header_logo {
+  margin: 5px 0 0 8px;
 }
 
 .ContactmeBlock_img {
