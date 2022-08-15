@@ -128,14 +128,14 @@
   transition: all 0.5s;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .Header {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
     padding-top: 20px;
     width: 95%;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
@@ -144,9 +144,9 @@
     border: none;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 55%;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 20px;
     box-shadow: none;
     background: none;
   }
@@ -163,5 +163,9 @@
 
   .Header_navbar_logo {
     width: 40px;
+  }
+
+  .Header_navbar_navLinks {
+    width: 30%;
   }
 }

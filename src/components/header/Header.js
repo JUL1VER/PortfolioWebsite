@@ -4,8 +4,8 @@ import skillsHead from '../../img/skillsHead.png';
 import skillsHead_large from '../../img/skillsHead_large.png';
 import projectLogo from '../../img/projectImg.png';
 import projectLogo_large from '../../img/projectImg_large.png';
-import contactmeLogo from '../../img/contactmeLogo.png';
-import contactmeLogo_large from '../../img/contactmeLogo_large.png';
+import contactmeLogo from '../../img/contactme_Logo.png';
+import contactmeLogo_large from '../../img/contactme_Logo_large.png';
 
 import './header.css';
 
@@ -43,7 +43,7 @@ const Header = () => {
                         <picture className="Header_navbar_logos">
                             <source
                                 className='Header_navbar_logo'
-                                media='(min-width: 1440px)'
+                                media='(min-width: 1280px)'
                                 srcSet={skillsHead_large}/> 
                             <img src={skillsHead} alt="gears" className="Header_navbar_logo"></img>
                         </picture>
@@ -61,7 +61,7 @@ const Header = () => {
                         <picture className="Header_navbar_logos">
                             <source
                                 className='Header_navbar_logo'
-                                media='(min-width: 1440px)'
+                                media='(min-width: 1280px)'
                                 srcSet={projectLogo_large}/> 
                             <img src={projectLogo} alt="gears" className="Header_navbar_logo"></img>
                         </picture>
@@ -79,7 +79,7 @@ const Header = () => {
                         <picture className="Header_navbar_logos">
                             <source
                                 className='Header_navbar_logo'
-                                media='(min-width: 1440px)'
+                                media='(min-width: 1280px)'
                                 srcSet={contactmeLogo_large}/> 
                             <img src={contactmeLogo} alt="gears" className="Header_navbar_logo"></img>
                         </picture>

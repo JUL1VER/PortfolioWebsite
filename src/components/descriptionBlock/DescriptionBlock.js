@@ -14,7 +14,8 @@ const DescriptionBlock = () => {
 
     return (
         <div className='DescriptionBlock_wrapper'>
-            <div className='DescriptionBlock_fotoWithFigures'>
+            <div className='DescriptionBlock_fotoWithHover'>
+                <div className='DescriptionBlock_hover'/>
                 <picture className='DescriptionBlock_foto'>
                     <source 
                         className='DescriptionBlock_myFoto'
@@ -22,7 +23,7 @@ const DescriptionBlock = () => {
                         srcSet={myfoto_large}/>
                     <source 
                         className='DescriptionBlock_myFoto'
-                        media='(min-width: 1440px)'
+                        media='(min-width: 1280px)'
                         srcSet={myfoto_large}/>
                     <img src={myfoto} alt='myFoto' className='DescriptionBlock_myFoto'/>
                 </picture>
