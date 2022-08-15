@@ -2,6 +2,7 @@ import Header from './components/header/Header';
 import MainPage from './components/mainPage/MainPage';
 import Footer from './components/footer/Footer';
 import BackgroundCanvas from './components/backgroundCanvas/BackgroundCanvas';
+import './app.css';
 
 function App() {
   return (
