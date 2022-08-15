@@ -6,7 +6,8 @@ import projectLogo from '../../img/projectImg.png';
 import projectLogo_large from '../../img/projectImg_large.png';
 import contactmeLogo from '../../img/contactme_Logo.png';
 import contactmeLogo_large from '../../img/contactme_Logo_large.png';
-
+import Vlogo from '../../img/V_logo_44.svg';
+import Vlogo_large from '../../img/V_logo_88.svg';
 import './header.css';
 
 const Header = () => {
@@ -23,6 +24,13 @@ const Header = () => {
     return (
         <div className="Header">
             <div className="Header_wrapper">
+                <picture className="Header_VlogoPic">
+                    <source
+                        className='Header_Vlogo'
+                        media='(min-width: 1280px)'
+                        srcSet={Vlogo_large}/>
+                    <img src={Vlogo} alt="gears" className="Header_Vlogo"></img>
+                </picture>
                 <button 
                     type='button'
                     className={`Header_burgerBlock ${isActive ? 'active' : ''}`}
