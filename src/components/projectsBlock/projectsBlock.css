@@ -268,6 +268,10 @@
 }
 
 @media (min-width: 1280px) {
+  .ProjectsBlock_wrapper {
+    margin-top: 300px;
+  }
+
   .ProjectsBlock_header_text {
     font-size: 60px;
   }
@@ -276,7 +280,7 @@
     font-size: 35px;
     line-height: 51px;
     width: 50%;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
   .ProjectsBlock_slides {
