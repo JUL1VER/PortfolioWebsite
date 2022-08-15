@@ -30,7 +30,7 @@
   height: 50px;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 
   font-family: "Zilla Slab", serif;
   font-weight: 400;
@@ -107,9 +107,87 @@
   color: #1cd119;
 }
 
+.ProjectsBlock_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectsBlock_conteiner {
+  margin: 0 auto;
+  position: relative;
+  order: 1;
+}
+
+.ProjectsBlock_conteiner_PCImg {
+  position: relative;
+}
+
+.ProjectsBlock_conteiner_PC {
+  position: relative;
+}
+
+.ProjectsBlock_conteiner_projectImgs {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 35px;
+  z-index: 2;
+}
+
+.ProjectsBlock_conteiner_projectPic {
+  border-radius: 23px;
+}
+
+.ProjectsBlock_content_textBlock {
+  order: 2;
+  width: 80%;
+  max-width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.ProjectsBlock_content_text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Zilla Slab", serif;
+  font-size: 20px;
+  color: #fff;
+  background: #242222;
+  box-shadow: 0 0 0 2px #1cd119;
+}
+
+.ProjectsBlock_pagButton {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  background: #1cd119;
+  color: #242222;
+  border: 1px solid #1cd119;
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.ProjectsBlock_pagButton:hover {
+  background: #242222;
+  color: #1cd119;
+  border: 1px solid #1cd119;
+}
+
+.ProjectsBlock_pagButton:active {
+  background: #1cd119;
+  color: #242222;
+  border: 1px solid #1cd119;
+  transition: 0.1s;
+}
+
 @media (min-width: 650px) {
   .ProjectsBlock_wrapper {
-    max-width: 1440px;
+    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
   }
@@ -168,9 +246,28 @@
     width: 35px;
     height: 35px;
   }
+
+  .ProjectsBlock_conteiner_projectImgs {
+    margin-top: 35px;
+    margin-left: 65px;
+  }
+
+  .ProjectsBlock_conteiner_projectPic {
+    border-radius: 37px;
+  }
+
+  .ProjectsBlock_content_text {
+    font-size: 25px;
+  }
+
+  .ProjectsBlock_pagButton {
+    width: 180px;
+    height: 60px;
+    font-size: 23px;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .ProjectsBlock_header_text {
     font-size: 60px;
   }
@@ -186,5 +283,34 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+  }
+
+  .ProjectsBlock_content {
+    flex-direction: row;
+  }
+
+  .ProjectsBlock_conteiner_projectImgs {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  .ProjectsBlock_conteiner_projectPic {
+    border-radius: 62px;
+  }
+
+  .ProjectsBlock_content_textBlock {
+    margin-top: 70px;
+    order: 1;
+  }
+
+  .ProjectsBlock_content_text {
+    font-size: 35px;
+  }
+
+  .ProjectsBlock_pagButton {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    margin-top: 60px;
   }
 }

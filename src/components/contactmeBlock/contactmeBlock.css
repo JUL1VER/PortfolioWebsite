@@ -120,8 +120,8 @@
 }
 
 .ContactmeBlock_button.disabled {
-  background-color: #615b5b;
-  border-color: #615b5b;
+  background-color: #22421d;
+  border-color: #22421d;
   color: #242222;
   cursor: default;
 }
@@ -168,9 +168,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .ContactmeBlock_wrapper {
-    max-width: 1440px;
+    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
     margin-top: 100px;

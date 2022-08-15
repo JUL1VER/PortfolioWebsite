@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import contactmeLogo from '../../img/contactmeLogo.png';
-import contactmeLogo_large from '../../img/contactmeLogo_large.png';
-import contactmeImg from '../../img/contactmeImg.png';
-import contactmeImg_large from '../../img/contactmeImg_large.png';
+import contactmeLogo from '../../img/contactme_Logo.png';
+import contactmeLogo_large from '../../img/contactme_Logo_large.png';
+import handsWithPills from '../../img/handsWithPills.png';
+import handsWithPills_large from '../../img/handsWithPills_large.png';
 import paperplane from '../../img/paperplane.png';
 import paperplane_large from '../../img/paperplane_large.png';
 
@@ -85,8 +85,8 @@ const ContactmeBlock = () => {
                     <source
                         className='ContactmeBlock_img'
                         media='(min-width: 500px)'
-                        srcSet={contactmeImg_large}/> 
-                    <img src={contactmeImg} alt="ContactmeImg" className='ContactmeBlock_img'/>
+                        srcSet={handsWithPills_large}/> 
+                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img'/>
                 </picture>
                 <form className='ContactmeBlock_form'>
                     <div className='ContactmeBlock_error'>{ emailDirty && emailError }</div>

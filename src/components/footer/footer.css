@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .Footer_wrapper {
     width: 100%;
     display: flex;

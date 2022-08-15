@@ -80,9 +80,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .SkillsBlock_wrapper {
-    max-width: 1440px;
+    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
     margin-top: 180px;
@@ -99,7 +99,7 @@
   }
 
   .SkillsBlock_skillsAndLogos {
-    order: 1;
+    order: 2;
     width: 50%;
   }
 
@@ -111,7 +111,7 @@
   }
 
   .SkillsBlock_imgPic {
-    order: 2;
+    order: 1;
     margin: 0 auto;
   }
 
