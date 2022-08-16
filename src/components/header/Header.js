@@ -37,63 +37,65 @@ const Header = () => {
                     onClick={ toggleActiveClass }>
                     <span></span>
                 </button>
-                <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
-                    <Link  
-                        className='Header_navbar_navLinks'
-                        to='SkillsPart'
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
-                        onClick={closeMenuOnScroll}>
-                        <p className="Header_navbar_text">
-                            Skills
-                        </p>
-                        <picture className="Header_navbar_logos">
-                            <source
-                                className='Header_navbar_logo'
-                                media='(min-width: 1280px)'
-                                srcSet={skillsHead_large}/> 
-                            <img src={skillsHead} alt="gears" className="Header_navbar_logo"></img>
-                        </picture>
-                    </Link>
-                    <Link  
-                        className='Header_navbar_navLinks'
-                        to='ProjectsPart'
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
-                        onClick={closeMenuOnScroll}>
-                        <p className="Header_navbar_text">
-                            Projects
-                        </p>
-                        <picture className="Header_navbar_logos">
-                            <source
-                                className='Header_navbar_logo'
-                                media='(min-width: 1280px)'
-                                srcSet={projectLogo_large}/> 
-                            <img src={projectLogo} alt="gears" className="Header_navbar_logo"></img>
-                        </picture>
-                    </Link>
-                    <Link 
-                        className='Header_navbar_navLinks'
-                        to='ContactmePart'
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
-                        onClick={closeMenuOnScroll}>
-                        <p className="Header_navbar_text">
-                            Contact me
-                        </p>
-                        <picture className="Header_navbar_logos">
-                            <source
-                                className='Header_navbar_logo'
-                                media='(min-width: 1280px)'
-                                srcSet={contactmeLogo_large}/> 
-                            <img src={contactmeLogo} alt="gears" className="Header_navbar_logo"></img>
-                        </picture>
-                    </Link>
-                </nav>
-                <div className={`Header_overlay ${isActive ? 'active' : ''}`} onClick={ toggleActiveClass }></div>
+                <div className="Header_navbarBlock">
+                    <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
+                        <Link  
+                            className='Header_navbar_navLinks'
+                            to='SkillsPart'
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            onClick={closeMenuOnScroll}>
+                            <p className="Header_navbar_text">
+                                Skills
+                            </p>
+                            <picture className="Header_navbar_logos">
+                                <source
+                                    className='Header_navbar_logo'
+                                    media='(min-width: 1280px)'
+                                    srcSet={skillsHead_large}/> 
+                                <img src={skillsHead} alt="gears" className="Header_navbar_logo"></img>
+                            </picture>
+                        </Link>
+                        <Link  
+                            className='Header_navbar_navLinks'
+                            to='ProjectsPart'
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            onClick={closeMenuOnScroll}>
+                            <p className="Header_navbar_text">
+                                Projects
+                            </p>
+                            <picture className="Header_navbar_logos">
+                                <source
+                                    className='Header_navbar_logo'
+                                    media='(min-width: 1280px)'
+                                    srcSet={projectLogo_large}/> 
+                                <img src={projectLogo} alt="gears" className="Header_navbar_logo"></img>
+                            </picture>
+                        </Link>
+                        <Link 
+                            className='Header_navbar_navLinks'
+                            to='ContactmePart'
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            onClick={closeMenuOnScroll}>
+                            <p className="Header_navbar_text">
+                                Contact me
+                            </p>
+                            <picture className="Header_navbar_logos">
+                                <source
+                                    className='Header_navbar_logo'
+                                    media='(min-width: 1280px)'
+                                    srcSet={contactmeLogo_large}/> 
+                                <img src={contactmeLogo} alt="gears" className="Header_navbar_logo"></img>
+                            </picture>
+                        </Link>
+                    </nav>
+                    <div className={`Header_overlay ${isActive ? 'active' : ''}`} onClick={ toggleActiveClass }></div>
+                </div>
             </div>
         </div>
     );

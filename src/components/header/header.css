@@ -1,7 +1,5 @@
 .Header {
   display: flex;
-  justify-content: flex-start;
-  font-family: "Zilla Slab", serif;
 }
 
 .Header_wrapper {
@@ -15,12 +13,6 @@
   background: #242222;
 }
 
-.Header_VlogoPic {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-}
-
 .Header_burgerBlock {
   display: block;
   position: fixed;
@@ -28,8 +20,8 @@
   height: 30px;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 20px;
+  right: 20px;
+  top: 20px;
   z-index: 4;
   background-color: #242222;
 }
@@ -79,7 +71,7 @@
 .Header_navbar {
   position: fixed;
   top: 0;
-  left: -100%;
+  right: -100%;
   width: 50%;
   height: 100%;
   background-color: #242222;
@@ -89,7 +81,7 @@
 }
 
 .Header_navbar.active {
-  left: 0;
+  right: 0;
 }
 
 .Header_overlay.active {
@@ -138,25 +130,18 @@
 @media (min-width: 1280px) {
   .Header {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-    padding-top: 20px;
-    width: 95%;
-    margin: 0 auto;
+    justify-content: center;
   }
 
   .Header_wrapper {
-    position: relative;
+    position: fixed;
     border: none;
-    width: 45%;
-    margin-right: 20px;
+    width: 95%;
+    height: 100px;
     box-shadow: none;
     background: none;
-  }
-
-  .Header_VlogoPic {
-    top: 10px;
-    right: 200%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .Header_burgerBlock {
@@ -169,11 +154,17 @@
     display: contents;
   }
 
+  .Header_navbarBlock {
+    width: 51%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .Header_navbar_logo {
     width: 40px;
   }
 
   .Header_navbar_navLinks {
-    width: 220px;
+    width: 200px;
   }
 }

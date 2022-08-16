@@ -1,5 +1,8 @@
-.ProjectsBlock_header {
+.ProjectsBlock_wrapper {
   margin-top: 100px;
+}
+
+.ProjectsBlock_header {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -269,7 +272,7 @@
 
 @media (min-width: 1280px) {
   .ProjectsBlock_wrapper {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .ProjectsBlock_header_text {

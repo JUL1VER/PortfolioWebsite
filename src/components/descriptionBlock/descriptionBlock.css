@@ -141,9 +141,9 @@
 @media (min-width: 1280px) {
   .DescriptionBlock_wrapper {
     max-width: 1280px;
+    min-height: 100vh;
     width: 95%;
     margin: 0 auto;
-    margin-top: 220px;
     display: flex;
     flex-direction: row;
     justify-content: center;
