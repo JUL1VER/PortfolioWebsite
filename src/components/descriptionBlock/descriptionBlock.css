@@ -5,11 +5,11 @@
 .DescriptionBlock_fotoWithHover {
   margin: 0 auto;
   position: relative;
-  width: fit-content;
   outline: 2px solid #1cd119;
   outline-offset: 10px;
   border-radius: 15px;
   transition: 0.5s;
+  width: 75%;
 }
 
 .DescriptionBlock_fotoWithHover:hover {
@@ -22,6 +22,7 @@
 }
 
 .DescriptionBlock_myFoto {
+  width: 100%;
   border-radius: 15px;
   position: relative;
 }
@@ -116,10 +117,6 @@
     margin: 0 auto;
   }
 
-  .DescriptionBlock_myFoto {
-    max-width: 400px;
-  }
-
   .DescriptionBlock_name {
     font-size: 55px;
   }
@@ -160,9 +157,6 @@
   .DescriptionBlock_fotoWithHover {
     order: 2;
     margin: 0 auto;
-  }
-
-  .DescriptionBlock_myFoto {
     max-width: 510px;
   }
 
