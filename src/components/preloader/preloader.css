@@ -1,0 +1,40 @@
+.Preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  height: 200vh;
+  top: -50%;
+  left: -50%;
+  color: #1cd119;
+  background: #242222;
+}
+
+.MatrixConsole {
+  width: 14ch;
+  font-family: monospace;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 20px solid #1cd119;
+  animation: flashing-console 0.75s step-end infinite, print-text 2.5s steps(14);
+}
+
+@keyframes flashing-console {
+  0% {
+    border-color: #1cd119;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #1cd119;
+  }
+}
+
+@keyframes print-text {
+  from {
+    width: 0;
+  }
+}

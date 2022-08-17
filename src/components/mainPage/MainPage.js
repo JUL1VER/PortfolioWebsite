@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ContactmeBlock from '../contactmeBlock/ContactmeBlock';
 import DescriptionBlock from '../descriptionBlock/DescriptionBlock';
 import ProjectsBlock from '../projectsBlock/ProjectsBlock';
-import Preloader from '../proloader/Preloader';
+import Preloader from '../preloader/Preloader';
 import SkillsBlock from '../skillsBlock/SkillsBlock';
 import WelcomeBlock from '../welcomeBlock/WelcomeBlock';
 import Header from '../header/Header';
@@ -19,13 +19,13 @@ const MainPage = () => {
         setLoadong(true);
         setTimeout(() => {
         setLoadong(false)
-        }, 3000)
+        }, 4000)
     }, [])
 
     return (
         <>
             <Preloader className={classNames( loading ? '' : 'PreloaderHidden')}/>
-            <div className={ loading ? 'MainpageHidden' : ''}>
+            <div className={classNames(loading ? 'MainpageHidden' : 'mainpdone')}>
                 <Header/>
                 <WelcomeBlock/>
                 <DescriptionBlock/>

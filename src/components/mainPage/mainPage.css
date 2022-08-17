@@ -1,5 +1,7 @@
 .PreloaderHidden {
-  display: none;
+  transition: 3s;
+  transform: scale(0);
+  top: 100%;
 }
 
 .MainpageHidden {
