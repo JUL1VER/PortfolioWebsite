@@ -102,7 +102,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 23px;
-  transition: all 0.5s;
+  transition: 0.5s;
 
   color: #242222;
 }
@@ -116,7 +116,7 @@
 .ContactmeBlock_button:active {
   color: #242222;
   background: #1cd119;
-  transition: all 0.1s;
+  transition: 0.1s;
 }
 
 .ContactmeBlock_button.disabled {

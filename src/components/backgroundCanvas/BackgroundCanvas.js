@@ -15,7 +15,7 @@ const BackgroundCanvas = () => {
                 id={"matrix-1"}
                 matrixText={"ANIMATE ME"}
                 delay={40}
-                backgroundColor={"rgba(34 , 34, 34, 0.2)"}
+                backgroundColor={"rgba(34, 34, 34, 0.2)"}
                 textFontSize={"16"}
                 textMainColor={"#1cd119"}
                 // textMainColor={"#A9A9A9"}
