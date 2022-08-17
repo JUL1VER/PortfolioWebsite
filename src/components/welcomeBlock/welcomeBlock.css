@@ -1,0 +1,79 @@
+.WelcomeBlock_wrapper {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #1cd119;
+  font-family: "Zilla Slab", serif;
+  text-align: start;
+}
+
+.WelcomeBlock_hello {
+  font-size: 25px;
+  margin: 0;
+}
+
+.WelcomeBlock_name {
+  font-size: 30px;
+  margin: 20px 0 0 0;
+}
+
+.WelcomeBlock_creater {
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+
+.WelcomeBlock_potrfolio {
+  font-size: 18px;
+  margin: 20px 0 0 0;
+  max-width: 370px;
+}
+
+@media (min-width: 650px) {
+  .WelcomeBlock_hello {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .WelcomeBlock_name {
+    font-size: 50px;
+    margin: 20px 0 0 0;
+  }
+
+  .WelcomeBlock_creater {
+    font-size: 35px;
+    margin: 20px 0 0 0;
+  }
+
+  .WelcomeBlock_potrfolio {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .WelcomeBlock_hello {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .WelcomeBlock_name {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+  }
+
+  .WelcomeBlock_creater {
+    font-size: 45px;
+    margin: 20px 0 0 0;
+  }
+
+  .WelcomeBlock_potrfolio {
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    max-width: 600px;
+  }
+}

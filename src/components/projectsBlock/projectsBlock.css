@@ -55,7 +55,7 @@
 .ProjectsBlock_containers_content {
   margin: 0 auto;
   width: 263px;
-  background-color: #242222;
+  background-color: #0a0a0a;
 }
 
 .ProjectsBlock_containers_img {
@@ -156,7 +156,7 @@
   font-family: "Zilla Slab", serif;
   font-size: 20px;
   color: #fff;
-  background: #242222;
+  background: #0a0a0a;
   box-shadow: 0 0 0 2px #1cd119;
 }
 
@@ -166,7 +166,7 @@
   width: 150px;
   height: 50px;
   background: #1cd119;
-  color: #242222;
+  color: #0a0a0a;
   border: 1px solid #1cd119;
   font-family: "Zilla Slab", serif;
   font-size: 18px;
@@ -176,14 +176,14 @@
 }
 
 .ProjectsBlock_pagButton:hover {
-  background: #242222;
+  background: #0a0a0a;
   color: #1cd119;
   border: 1px solid #1cd119;
 }
 
 .ProjectsBlock_pagButton:active {
   background: #1cd119;
-  color: #242222;
+  color: #0a0a0a;
   border: 1px solid #1cd119;
   transition: 0.1s;
 }

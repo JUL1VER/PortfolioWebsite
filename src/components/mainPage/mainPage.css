@@ -1,0 +1,9 @@
+.PreloaderHidden {
+  transition: 2s;
+  opacity: 0;
+  top: 100%;
+}
+
+.MainpageHidden {
+  display: none;
+}

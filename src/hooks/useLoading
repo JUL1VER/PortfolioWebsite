@@ -1,0 +1,14 @@
+// import { useEffect, useState } from "react";
+
+// export const useLoading = () => {
+//     const [loading, setLoadong] = useState();
+
+//     useEffect(() => {
+//         setLoadong(true);
+//         setTimeout(() => {
+//         setLoadong(false)
+//         }, 3000)
+//     }, [])
+
+//     return { loading };
+// }

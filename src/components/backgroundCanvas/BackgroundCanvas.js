@@ -5,17 +5,13 @@ const BackgroundCanvas = () => {
 	return (
 		<div style={{
 			position: "fixed",
-            top: '0',
-            left: '0',
-            width: '100vw',
-            height: '100vh',
             zIndex: '-1'
 		}}>
             <MatrixCard
                 id={"matrix-1"}
                 matrixText={"ANIMATE ME"}
                 delay={40}
-                backgroundColor={"rgba(34 , 34, 34, 0.2)"}
+                backgroundColor={"rgba(34, 34, 34, 0.2)"}
                 textFontSize={"16"}
                 textMainColor={"#1cd119"}
                 // textMainColor={"#A9A9A9"}
