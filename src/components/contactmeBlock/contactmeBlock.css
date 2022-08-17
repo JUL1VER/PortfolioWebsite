@@ -50,7 +50,7 @@
   min-width: 251px;
   max-width: 500px;
 
-  background: #242222;
+  background: #0a0a0a;
   border: 1px solid #1cd119;
   box-shadow: 0px 0px 4px #1cd119;
   border-radius: 8px;
@@ -95,7 +95,7 @@
 
   background: #1cd119;
   border-radius: 3px;
-  border: 2px solid #242222;
+  border: 2px solid #0a0a0a;
   cursor: pointer;
 
   font-family: "Zilla Slab", serif;
@@ -104,17 +104,17 @@
   line-height: 23px;
   transition: 0.5s;
 
-  color: #242222;
+  color: #0a0a0a;
 }
 
 .ContactmeBlock_button:hover {
   color: #1cd119;
-  background: #242222;
+  background: #0a0a0a;
   border: 2px solid #1cd119;
 }
 
 .ContactmeBlock_button:active {
-  color: #242222;
+  color: #0a0a0a;
   background: #1cd119;
   transition: 0.1s;
 }
@@ -122,7 +122,7 @@
 .ContactmeBlock_button.disabled {
   background-color: #22421d;
   border-color: #22421d;
-  color: #242222;
+  color: #0a0a0a;
   cursor: default;
 }
 

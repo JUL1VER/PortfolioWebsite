@@ -1,6 +1,6 @@
 .PreloaderHidden {
-  transition: 3s;
-  transform: scale(0);
+  transition: 2s;
+  opacity: 0;
   top: 100%;
 }
 
