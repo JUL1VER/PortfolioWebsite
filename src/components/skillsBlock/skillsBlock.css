@@ -12,7 +12,6 @@
   font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 25px;
-  line-height: 37px;
   color: #1cd119;
 }
 
@@ -85,6 +84,7 @@
     max-width: 1280px;
     width: 95%;
     margin: 0 auto;
+    margin-top: 200px;
   }
 
   .SkillsBlock_content {

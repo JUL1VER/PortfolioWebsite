@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import question from '../../img/question.png';
+import question_large from '../../img/question_large.png';
 import skillsHead from '../../img/skillsHead.png';
 import skillsHead_large from '../../img/skillsHead_large.png';
 import projectLogo from '../../img/projectImg.png';
@@ -39,6 +41,24 @@ const Header = () => {
                 </button>
                 <div className="Header_navbarBlock">
                     <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
+                        <Link  
+                            className='Header_navbar_navLinks'
+                            to='WhoAmI'
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            onClick={closeMenuOnScroll}>
+                            <p className="Header_navbar_text">
+                                Who Am I
+                            </p>
+                            <picture className="Header_navbar_logos">
+                                <source
+                                    className='Header_navbar_logo'
+                                    media='(min-width: 1280px)'
+                                    srcSet={question_large}/> 
+                                <img src={question} alt="gears" className="Header_navbar_logo"></img>
+                            </picture>
+                        </Link>
                         <Link  
                             className='Header_navbar_navLinks'
                             to='SkillsPart'
