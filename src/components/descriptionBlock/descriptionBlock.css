@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.DescriptionBlock_description {
+  margin-top: 50px;
+}
+
 .DescriptionBlock_fotoWithHover {
   order: 1;
   margin: 0 auto;

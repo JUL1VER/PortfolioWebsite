@@ -29,89 +29,20 @@
 
 .ProjectsBlock_text {
   width: 80%;
-  height: 50px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 50px;
 
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 26px;
 
   color: #fff;
-}
-
-.ProjectsBlock_containers {
-  width: 273px;
-  margin: 0 auto;
-  margin-bottom: 75px;
-  padding: 3px 0px 3px 0px;
-
-  background: linear-gradient(302.35deg, #1cd119 4.37%, #1cc70d 95.31%);
-}
-
-.ProjectsBlock_containers_content {
-  margin: 0 auto;
-  width: 263px;
-  background-color: #0a0a0a;
-}
-
-.ProjectsBlock_containers_img {
-  width: 263px;
-  height: 160px;
-}
-
-.ProjectsBlock_containers_text {
-  width: 252px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 0px;
-
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #fff;
-}
-
-.ProjectsBlock_containers_footer {
-  margin-top: 20px;
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: row;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.ProjectsBlock_containers_footer_img {
-  width: 25px;
-  height: 21px;
-  margin-top: 2px;
-}
-
-.ProjectsBlock_containers_footer_text {
-  margin: 0px 0px 0px 7px;
-  width: 50%;
-
-  font-family: "Zilla Slab", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-
-  color: #1cd119;
 }
 
 .ProjectsBlock_content {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .ProjectsBlock_conteiner {
@@ -163,7 +94,7 @@
 
 .ProjectsBlock_pagButton {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 150px;
   height: 50px;
   background: #1cd119;
@@ -196,6 +127,7 @@
     max-width: 1280px;
     width: 95%;
     margin: 0 auto;
+    margin-top: 100px;
   }
 
   .ProjectsBlock_header_text {
@@ -212,45 +144,6 @@
   .ProjectsBlock_header_logoImg {
     width: 45px;
     height: 45px;
-  }
-
-  .ProjectsBlock_containers {
-    width: 391px;
-    height: 550px;
-  }
-
-  .ProjectsBlock_containers_content {
-    width: 97%;
-    height: 100%;
-  }
-
-  .ProjectsBlock_containers_img {
-    width: 377px;
-    height: 230px;
-  }
-
-  .ProjectsBlock_containers_text {
-    height: 45%;
-    width: 85%;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 30px;
-    line-height: 44px;
-  }
-
-  .ProjectsBlock_containers_footer {
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  .ProjectsBlock_containers_footer_text {
-    font-size: 30px;
-    line-height: 44px;
-  }
-
-  .ProjectsBlock_containers_footer_img {
-    width: 35px;
-    height: 35px;
   }
 
   .ProjectsBlock_conteiner_projectImgs {
@@ -270,6 +163,7 @@
     width: 180px;
     height: 60px;
     font-size: 23px;
+    margin-top: 30px;
   }
 }
 
