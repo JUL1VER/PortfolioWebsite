@@ -16,8 +16,7 @@
   font-family: "Zilla Slab", serif;
   font-weight: 900;
   font-size: 35px;
-  line-height: 37px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 
   color: #1cd119;
 }
@@ -157,7 +156,9 @@
   font-size: 20px;
   color: #fff;
   background: #0a0a0a;
-  box-shadow: 0 0 0 2px #1cd119;
+  border: 2px solid #1cd119;
+  box-shadow: 0 0 10px 2px #1cd119;
+  border-radius: 10px;
 }
 
 .ProjectsBlock_pagButton {
@@ -179,12 +180,14 @@
   background: #0a0a0a;
   color: #1cd119;
   border: 1px solid #1cd119;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 .ProjectsBlock_pagButton:active {
   background: #1cd119;
   color: #0a0a0a;
   border: 1px solid #1cd119;
+  text-shadow: 0 0 5px #1cd119;
   transition: 0.1s;
 }
 

@@ -3,8 +3,25 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   font-family: "Zilla Slab", serif;
+}
+
+.DescriptionBlock_header {
+  color: #1cd119;
+  font-size: 20px;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+.DescriptionBlock_header_text {
+  margin: 0;
+}
+
+.DescriptionBlock_header_logoImg {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .DescriptionBlock_fotoWithHover {
@@ -16,7 +33,7 @@
   border-radius: 15px;
   transition: 0.5s;
   width: 75%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .DescriptionBlock_fotoWithHover:hover {
@@ -54,16 +71,6 @@
 .DescriptionBlock_contentPart {
   margin-top: 50px;
   order: 2;
-}
-
-.DescriptionBlock_name {
-  margin: 0 auto;
-
-  font-weight: 900;
-  font-size: 45px;
-  letter-spacing: 4px;
-
-  color: #1cd119;
 }
 
 .DescriptionBlock_text {
@@ -104,15 +111,22 @@
   color: #1cd119;
   background: #0a0a0a;
   border: 2px solid #1cd119;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 .DescriptionBlock_helloButton:active {
   color: #0a0a0a;
   background: #1cd119;
   transition: 0.1s;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 @media (min-width: 650px) {
+  .DescriptionBlock_header {
+    color: #1cd119;
+    font-size: 30px;
+  }
+
   .DescriptionBlock_fotoWithHover {
     margin: 0 auto;
     order: 1;
@@ -120,10 +134,6 @@
 
   .DescriptionBlock_contentPart {
     order: 2;
-  }
-
-  .DescriptionBlock_name {
-    font-size: 55px;
   }
 
   .DescriptionBlock_text {
@@ -145,7 +155,18 @@
     max-width: 1280px;
     width: 95%;
     margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .DescriptionBlock_header_text {
+    font-size: 50px;
+  }
+
+  .DescriptionBlock_description {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
   }
 
   .DescriptionBlock_contentPart {
@@ -158,13 +179,7 @@
   .DescriptionBlock_fotoWithHover {
     order: 2;
     margin: 0 auto;
-    max-width: 510px;
-  }
-
-  .DescriptionBlock_name {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 65px;
+    max-width: 450px;
   }
 
   .DescriptionBlock_text {

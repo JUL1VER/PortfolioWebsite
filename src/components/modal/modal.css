@@ -24,7 +24,8 @@
   padding: 20px;
   border-radius: 12px;
   background-color: #0a0a0a;
-  box-shadow: 0 0 0 2px #1cd119;
+  border: 2px solid #1cd119;
+  box-shadow: 0 0 15px 1px #1cd119;
   transform: scale(0.5);
   transition: 0.4s;
   display: flex;

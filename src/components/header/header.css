@@ -117,11 +117,13 @@
 .Header_navbar_navLinks:hover {
   color: #1cd119;
   font-size: 30px;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 .Header_navbar_navLinks:active {
   color: #1cd119;
   font-size: 30px;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 .Header_navbar_logos {

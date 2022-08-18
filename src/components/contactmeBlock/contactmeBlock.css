@@ -13,7 +13,6 @@
   font-style: normal;
   font-weight: 900;
   font-size: 25px;
-  line-height: 37px;
 
   color: #1cd119;
 }
@@ -52,7 +51,7 @@
 
   background: #0a0a0a;
   border: 1px solid #1cd119;
-  box-shadow: 0px 0px 4px #1cd119;
+  box-shadow: 0px 0px 10px #1cd119;
   border-radius: 8px;
 
   font-family: "Zilla Slab", serif;
@@ -111,17 +110,20 @@
   color: #1cd119;
   background: #0a0a0a;
   border: 2px solid #1cd119;
+  text-shadow: 0 0 5px #1cd119;
 }
 
 .ContactmeBlock_button:active {
   color: #0a0a0a;
   background: #1cd119;
+  text-shadow: 0 0 5px #1cd119;
   transition: 0.1s;
 }
 
 .ContactmeBlock_button.disabled {
   background-color: #22421d;
   border-color: #22421d;
+  text-shadow: none;
   color: #0a0a0a;
   cursor: default;
 }
