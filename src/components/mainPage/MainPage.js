@@ -13,14 +13,14 @@ import classNames from 'classnames';
 import './mainPage.css';
 
 const MainPage = () => {
-    const [loading, setLoadong] = useState(true);
+    const [loading, setLoadong] = useState();
 
-    useEffect(() => {
-        setLoadong(true);
-        setTimeout(() => {
-        setLoadong(false)
-        }, 4000)
-    }, [])
+    // useEffect(() => {
+    //     setLoadong(true);
+    //     setTimeout(() => {
+    //     setLoadong(false)
+    //     }, 4000)
+    // }, [])
 
     return (
         <>

@@ -24,7 +24,7 @@
   overflow: hidden;
   width: 7.3em;
   border-right: 15px solid #1cd119;
-  animation: type_mobile 1s steps(13, end);
+  animation: type_mobile_border15 1s steps(13, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
@@ -37,7 +37,7 @@
   width: 9.5em;
   opacity: 0;
   border-right: 15px solid #1cd119;
-  animation: type_mobile 1.5s steps(23, end);
+  animation: type_mobile_border15 1.5s steps(23, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
@@ -50,7 +50,7 @@
   width: 12em;
   opacity: 0;
   border-right: 15px solid #1cd119;
-  animation: type_mobile 1.5s steps(23, end);
+  animation: type_mobile_border15 1.5s steps(23, end);
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
 }
@@ -63,7 +63,7 @@
   width: 11.3em;
   opacity: 0;
   border-right: 15px solid #1cd119;
-  animation: type_mobile 1.5s steps(23, end);
+  animation: type_mobile_border15 1.5s steps(23, end);
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
@@ -76,7 +76,7 @@
   width: 20em;
   opacity: 0;
   border-right: 10px solid #1cd119;
-  animation: type1_mobile 1.5s steps(30, end);
+  animation: type_mobile_border10_2ver 1.5s steps(30, end);
   animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
@@ -89,7 +89,7 @@
   width: 18.8em;
   opacity: 0;
   border-right: 10px solid #1cd119;
-  animation: type1_mobile 1.5s steps(30, end);
+  animation: type_mobile_border10_2ver 1.5s steps(30, end);
   animation-delay: 8s;
   animation-fill-mode: forwards;
 }
@@ -109,7 +109,8 @@
     width: 6.8em;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop 1s steps(13, end);
+    animation: type_desktop_border20 1s steps(13, end);
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
@@ -118,8 +119,8 @@
     width: 9.7em;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop 1.5s steps(25, end);
-    animation-delay: 1s;
+    animation: type_desktop_border25 1.5s steps(25, end);
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
@@ -127,8 +128,8 @@
     font-size: 35px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop 1.5s steps(25, end);
-    animation-delay: 2.5s;
+    animation: type_desktop_border25 1.5s steps(25, end);
+    animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
 
@@ -136,23 +137,27 @@
     font-size: 35px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop 1.5s steps(25, end);
-    animation-delay: 4s;
+    animation: type_desktop_border25 1.5s steps(25, end);
+    animation-delay: 5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_1 {
     font-size: 18px;
-    animation-delay: 5.5s;
+    animation: type_mobile_border10 1.5s steps(30, end);
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_2 {
     font-size: 18px;
-    animation-delay: 7s;
+    animation: type_mobile_border10 1.5s steps(30, end);
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_console {
-    animation-delay: 8.5s;
+    animation-delay: 9.5s;
   }
 }
 
@@ -168,7 +173,7 @@
     width: 7em;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop 1s steps(13, end);
+    animation: type_desktop_border25 1s steps(13, end);
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
@@ -181,7 +186,7 @@
     width: 9.5em;
     opacity: 0;
     border-right: 30px solid #1cd119;
-    animation: type_desktop_name 1.5s steps(23, end);
+    animation: type_desktop_border30 1.5s steps(23, end);
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
@@ -194,7 +199,7 @@
     width: 23.4em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type_desktop 1.5s steps(35, end);
+    animation: type_desktop_border25 1.5s steps(35, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
@@ -206,7 +211,7 @@
     width: 20em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type1_desktop 1.5s steps(30, end);
+    animation: type_desktop_border20 1.5s steps(30, end);
     animation-delay: 5s;
     animation-fill-mode: forwards;
   }
@@ -218,7 +223,7 @@
     width: 18.7em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type1_desktop 1.5s steps(30, end);
+    animation: type_desktop_border20 1.5s steps(30, end);
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
   }
@@ -228,7 +233,7 @@
   }
 }
 
-@keyframes type_mobile {
+@keyframes type_mobile_border15 {
   0% {
     width: 0;
   }
@@ -244,7 +249,7 @@
   }
 }
 
-@keyframes type1_mobile {
+@keyframes type_mobile_border10 {
   0% {
     width: 0;
   }
@@ -260,7 +265,23 @@
   }
 }
 
-@keyframes type_desktop {
+@keyframes type_mobile_border10_2ver {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 10px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type_desktop_border25 {
   0% {
     width: 0;
   }
@@ -276,7 +297,7 @@
   }
 }
 
-@keyframes type_desktop_name {
+@keyframes type_desktop_border30 {
   0% {
     width: 0;
   }
@@ -292,7 +313,7 @@
   }
 }
 
-@keyframes type1_desktop {
+@keyframes type_desktop_border20 {
   0% {
     width: 0;
   }
