@@ -13,7 +13,7 @@ import classNames from 'classnames';
 import './mainPage.css';
 
 const MainPage = () => {
-    const [loading, setLoadong] = useState();
+    const [loading, setLoadong] = useState(true);
 
     useEffect(() => {
         setLoadong(true);

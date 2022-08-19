@@ -12,25 +12,28 @@
 }
 
 .MatrixConsole {
-  width: 14ch;
+  width: 15ch;
   font-family: monospace;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
   border-right: 20px solid #1cd119;
-  animation: flashing-console 0.75s step-end infinite, print-text 2.5s steps(14);
+  animation: flashing-console 0.75s step-end infinite, print-text 2.5s steps(15);
   text-shadow: 0 0 5px #1cd119;
+  cursor: default;
 }
 
 @media (min-width: 650px) {
   .MatrixConsole {
     font-size: 45px;
+    border-right: 30px solid #1cd119;
   }
 }
 
 @media (min-width: 1280px) {
   .MatrixConsole {
     font-size: 60px;
+    border-right: 40px solid #1cd119;
   }
 }
 

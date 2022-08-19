@@ -11,52 +11,148 @@
   text-align: start;
 }
 
+.WelcomeBlock_greenText {
+  color: #1cd119;
+}
+
 .WelcomeBlock_hello {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
+  opacity: 0;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 7.3em;
+  border-right: 15px solid #1cd119;
+  animation: type_mobile 1s steps(13, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .WelcomeBlock_name {
   font-size: 30px;
-  letter-spacing: 3px;
   margin: 20px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 9.5em;
+  opacity: 0;
+  border-right: 15px solid #1cd119;
+  animation: type_mobile 1.5s steps(23, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_creater {
-  font-size: 20px;
+.WelcomeBlock_creater_mobile1 {
+  font-size: 25px;
   margin: 20px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12em;
+  opacity: 0;
+  border-right: 15px solid #1cd119;
+  animation: type_mobile 1.5s steps(23, end);
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_potrfolio {
-  font-size: 18px;
-  margin: 20px 0 0 0;
-  max-width: 370px;
+.WelcomeBlock_creater_mobile2 {
+  font-size: 25px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 11.3em;
+  opacity: 0;
+  border-right: 15px solid #1cd119;
+  animation: type_mobile 1.5s steps(23, end);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_greenText {
+.WelcomeBlock_potrfolio_1 {
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20em;
+  opacity: 0;
+  border-right: 10px solid #1cd119;
+  animation: type1_mobile 1.5s steps(30, end);
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+}
+
+.WelcomeBlock_potrfolio_2 {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 18.8em;
+  opacity: 0;
+  border-right: 10px solid #1cd119;
+  animation: type1_mobile 1.5s steps(30, end);
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+.WelcomeBlock_console {
+  background: #1cd119;
   color: #1cd119;
+  animation: blinkConsole 0.5s step-end infinite alternate;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  margin-left: 3px;
 }
 
 @media (min-width: 650px) {
   .WelcomeBlock_hello {
     font-size: 40px;
-    margin: 0;
+    width: 6.8em;
+    opacity: 0;
+    border-right: 25px solid #1cd119;
+    animation: type_desktop 1s steps(13, end);
+    animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_name {
     font-size: 50px;
-    margin: 20px 0 0 0;
+    width: 9.7em;
+    opacity: 0;
+    border-right: 25px solid #1cd119;
+    animation: type_desktop 1.5s steps(25, end);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_creater {
+  .WelcomeBlock_creater_mobile1 {
     font-size: 35px;
-    margin: 20px 0 0 0;
+    opacity: 0;
+    border-right: 25px solid #1cd119;
+    animation: type_desktop 1.5s steps(25, end);
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio {
-    font-size: 25px;
-    margin: 20px 0 0 0;
-    max-width: 500px;
+  .WelcomeBlock_creater_mobile2 {
+    font-size: 35px;
+    opacity: 0;
+    border-right: 25px solid #1cd119;
+    animation: type_desktop 1.5s steps(25, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  .WelcomeBlock_potrfolio_1 {
+    font-size: 18px;
+    animation-delay: 5.5s;
+  }
+
+  .WelcomeBlock_potrfolio_2 {
+    font-size: 18px;
+    animation-delay: 7s;
+  }
+
+  .WelcomeBlock_console {
+    animation-delay: 8.5s;
   }
 }
 
@@ -67,21 +163,153 @@
   .WelcomeBlock_hello {
     font-size: 40px;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 7em;
+    opacity: 0;
+    border-right: 25px solid #1cd119;
+    animation: type_desktop 1s steps(13, end);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_name {
     font-size: 60px;
     margin: 20px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 9.5em;
+    opacity: 0;
+    border-right: 30px solid #1cd119;
+    animation: type_desktop_name 1.5s steps(23, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_creater {
-    font-size: 45px;
+  .WelcomeBlock_creater_desktop {
+    font-size: 40px;
     margin: 20px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 23.4em;
+    opacity: 0;
+    border-right: 20px solid #1cd119;
+    animation: type_desktop 1.5s steps(35, end);
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio {
+  .WelcomeBlock_potrfolio_1 {
     font-size: 30px;
-    margin: 20px 0 0 0;
-    max-width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20em;
+    opacity: 0;
+    border-right: 20px solid #1cd119;
+    animation: type1_desktop 1.5s steps(30, end);
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .WelcomeBlock_potrfolio_2 {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 18.7em;
+    opacity: 0;
+    border-right: 20px solid #1cd119;
+    animation: type1_desktop 1.5s steps(30, end);
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .WelcomeBlock_console {
+    animation-delay: 8.5s;
+  }
+}
+
+@keyframes type_mobile {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 15px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type1_mobile {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 10px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type_desktop {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 25px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type_desktop_name {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 30px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type1_desktop {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 20px solid #1cd119;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blinkConsole {
+  50% {
+    opacity: 0;
   }
 }
