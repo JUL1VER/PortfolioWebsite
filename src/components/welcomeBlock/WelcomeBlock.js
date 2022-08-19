@@ -28,7 +28,7 @@ const WelcomeBlock = () => {
                 </>
             }
                 <p className='WelcomeBlock_potrfolio_1'>This is my portfolio website where you'll learn</p> 
-                <p className='WelcomeBlock_potrfolio_2'>about my journey as a <span className='WelcomeBlock_greenText'>frontend developer.</span><span className='WelcomeBlock_console'>VJ</span></p> 
+                <p className='WelcomeBlock_potrfolio_2'>about my journey as a <span className='WelcomeBlock_greenText'>frontend developer.</span><span className='WelcomeBlock_console'>NEO</span></p> 
         </div>
     );
 };
