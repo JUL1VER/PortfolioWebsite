@@ -30,19 +30,15 @@
 
 .Header_burgerBlock {
   display: block;
-  position: fixed;
+  position: absolute;
   width: 40px;
   height: 30px;
   border: none;
   cursor: pointer;
+  z-index: 4;
   right: 20px;
   top: 20px;
-  z-index: 4;
   background-color: #0a0a0a;
-  margin-top: -200px;
-  animation: moving-header 0.5s steps(50, end);
-  animation-delay: 9.5s;
-  animation-fill-mode: forwards;
 }
 
 .Header_burgerBlock:before,
