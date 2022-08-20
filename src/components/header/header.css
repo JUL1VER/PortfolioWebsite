@@ -146,7 +146,7 @@
     width: 95%;
     height: 100px;
     box-shadow: none;
-    background: none;
+    background: rgba(10, 10, 10, 0.5);
     justify-content: space-between;
     align-items: center;
   }
