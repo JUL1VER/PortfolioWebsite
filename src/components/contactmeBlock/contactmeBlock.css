@@ -51,7 +51,7 @@
 
   background: #0a0a0a;
   border: 1px solid #1cd119;
-  box-shadow: 0px 0px 10px #1cd119;
+  box-shadow: 0px 0px 15px #1cd119;
   border-radius: 8px;
 
   font-family: "Zilla Slab", serif;
@@ -78,43 +78,40 @@
 .ContactmeBlock_message:focus {
   color: #1cd119;
   text-decoration: none;
+  outline: 2px solid #1cd119;
 }
 
 .ContactmeBlock_button {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  width: 100px;
+  width: 80px;
   height: 35px;
   margin: 0 auto;
   margin-top: 20px;
   padding-top: 3px;
+  border-radius: 5px;
 
-  background: #1cd119;
-  border-radius: 3px;
-  border: 2px solid #0a0a0a;
-  cursor: pointer;
-
-  font-family: "Zilla Slab", serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 23px;
-  transition: 0.5s;
-
-  color: #0a0a0a;
-}
-
-.ContactmeBlock_button:hover {
   color: #1cd119;
   background: #0a0a0a;
   border: 2px solid #1cd119;
+  box-shadow: 0 0 5px 1px #1cd119;
   text-shadow: 0 0 5px #1cd119;
+  cursor: pointer;
+
+  font-family: "Zilla Slab", serif;
+  font-weight: 900;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.ContactmeBlock_button:hover {
+  color: #0a0a0a;
+  background: #1cd119;
+  border: 2px solid #1cd119;
+  box-shadow: none;
 }
 
 .ContactmeBlock_button:active {
-  color: #0a0a0a;
-  background: #1cd119;
+  color: #1cd119;
+  background: #0a0a0a;
   text-shadow: 0 0 5px #1cd119;
   transition: 0.1s;
 }
@@ -122,13 +119,10 @@
 .ContactmeBlock_button.disabled {
   background-color: #22421d;
   border-color: #22421d;
+  box-shadow: none;
   text-shadow: none;
   color: #0a0a0a;
   cursor: default;
-}
-
-.ContactmeBlock_button_img {
-  margin-top: 7px;
 }
 
 .ContactmeBlock_error {
@@ -158,17 +152,12 @@
   }
 
   .ContactmeBlock_button {
-    width: 160px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
     margin-top: 30px;
     padding-top: 0px;
     font-size: 30px;
     line-height: 50px;
-  }
-
-  .ContactmeBlock_button_img {
-    width: 35px;
-    margin-top: 20px;
   }
 }
 
@@ -229,16 +218,12 @@
   }
 
   .ContactmeBlock_button {
-    width: 181px;
-    height: 66px;
+    width: 150px;
+    height: 70px;
     margin-top: 30px;
     font-size: 36px;
     line-height: 53px;
     padding: 0 20px;
-  }
-
-  .ContactmeBlock_button_img {
-    width: 40px;
-    margin-top: 20px;
+    box-shadow: 0 0 10px 2px #1cd119;
   }
 }

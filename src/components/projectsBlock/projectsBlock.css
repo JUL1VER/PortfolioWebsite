@@ -42,7 +42,6 @@
 .ProjectsBlock_content {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 
 .ProjectsBlock_conteiner {
@@ -55,32 +54,46 @@
   position: relative;
 }
 
+.ProjectsBlock_hover {
+  background: #1cd119;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4;
+  border-radius: 5px;
+  transition: 0.5s;
+  height: 98%;
+}
+
+.ProjectsBlock_hover:hover {
+  opacity: 0;
+}
+
 .ProjectsBlock_conteiner_PC {
   position: relative;
+  margin: 0 auto;
 }
 
 .ProjectsBlock_conteiner_projectImgs {
   position: absolute;
-  margin-top: 18px;
-  margin-left: 35px;
+  margin-top: 26px;
+  margin-left: 50px;
   z-index: 2;
-}
-
-.ProjectsBlock_conteiner_projectPic {
-  border-radius: 23px;
 }
 
 .ProjectsBlock_content_textBlock {
   order: 2;
   width: 80%;
-  max-width: 500px;
-  height: 100%;
+  max-width: 450px;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
-.ProjectsBlock_content_text {
-  width: 90%;
+.ProjectsBlock_content_text,
+.ProjectsBlock_contect_tecnho {
+  width: 85%;
   margin: 0 auto;
   padding: 20px;
   font-family: "Zilla Slab", serif;
@@ -90,6 +103,14 @@
   border: 2px solid #1cd119;
   box-shadow: 0 0 10px 2px #1cd119;
   border-radius: 10px;
+  list-style-type: none;
+}
+
+.ProjectsBlock_contect_tecnho {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
 }
 
 .ProjectsBlock_pagButton {
@@ -105,6 +126,62 @@
   font-weight: 600;
   transition: 0.5s;
   border-radius: 5px;
+}
+
+.ProjectsBlock_conteiner_prevButton,
+.ProjectsBlock_conteiner_nextButton {
+  width: 120px;
+  height: 25px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: "Zilla Slab", serif;
+  font-weight: 900;
+  border-radius: 5px;
+  color: #1cd119;
+  background: #0a0a0a;
+  border: 1px solid #1cd119;
+  box-shadow: 0 0 2px 2px #1cd119;
+  text-shadow: 0 0 5px #1cd119;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.ProjectsBlock_conteiner_prevButton {
+  transform: rotate(-90deg);
+  top: 80px;
+  left: -35px;
+}
+
+.ProjectsBlock_conteiner_nextButton {
+  transform: rotate(90deg);
+  top: 80px;
+  right: -35px;
+}
+
+.ProjectsBlock_conteiner_prevButton:hover {
+  color: #fff;
+  background: #2a7ede;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px 2px #fff;
+  text-shadow: none;
+}
+
+.ProjectsBlock_conteiner_nextButton:hover {
+  color: #fff;
+  background: #e84949;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px 2px #fff;
+  text-shadow: none;
+}
+
+.ProjectsBlock_conteiner_prevButton:active,
+.ProjectsBlock_conteiner_nextButton:active {
+  color: #fff;
+  background: #0a0a0a;
+  border: 2px solid #0a0a0a;
+  box-shadow: 0 0 5px 2px #1cd119;
+  transition: 0.1s;
 }
 
 .ProjectsBlock_pagButton:hover {
@@ -137,8 +214,6 @@
   .ProjectsBlock_text {
     margin-top: 30px;
     font-size: 25px;
-    width: 500px;
-    height: 50px;
   }
 
   .ProjectsBlock_header_logoImg {
@@ -147,16 +222,17 @@
   }
 
   .ProjectsBlock_conteiner_projectImgs {
-    margin-top: 35px;
-    margin-left: 65px;
-  }
-
-  .ProjectsBlock_conteiner_projectPic {
-    border-radius: 37px;
+    margin-top: 39px;
+    margin-left: 75px;
   }
 
   .ProjectsBlock_content_text {
     font-size: 25px;
+  }
+
+  .ProjectsBlock_contect_tecnho {
+    font-size: 20px;
+    margin-top: 30px;
   }
 
   .ProjectsBlock_pagButton {
@@ -164,6 +240,36 @@
     height: 60px;
     font-size: 23px;
     margin-top: 30px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton,
+  .ProjectsBlock_conteiner_nextButton {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 0 5px 2px #1cd119;
+  }
+
+  .ProjectsBlock_conteiner_prevButton {
+    top: 115px;
+    left: -52px;
+  }
+
+  .ProjectsBlock_conteiner_nextButton {
+    top: 115px;
+    right: -52px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton:hover {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  .ProjectsBlock_conteiner_nextButton:hover {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  .ProjectsBlock_hover {
+    border-radius: 10px;
   }
 }
 
@@ -179,7 +285,7 @@
   .ProjectsBlock_text {
     font-size: 35px;
     line-height: 51px;
-    width: 50%;
+    width: 80%;
     margin-top: 100px;
   }
 
@@ -194,21 +300,25 @@
   }
 
   .ProjectsBlock_conteiner_projectImgs {
-    margin-top: 50px;
-    margin-left: 100px;
-  }
-
-  .ProjectsBlock_conteiner_projectPic {
-    border-radius: 62px;
+    margin-top: 60px;
+    margin-left: 113px;
   }
 
   .ProjectsBlock_content_textBlock {
-    margin-top: 70px;
+    margin-top: 65px;
     order: 1;
   }
 
   .ProjectsBlock_content_text {
+    display: flex;
+    align-items: center;
     font-size: 35px;
+    height: 200px;
+  }
+
+  .ProjectsBlock_contect_tecnho {
+    font-size: 25px;
+    margin-top: 30px;
   }
 
   .ProjectsBlock_pagButton {
@@ -216,5 +326,40 @@
     height: 70px;
     font-size: 30px;
     margin-top: 60px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton,
+  .ProjectsBlock_conteiner_nextButton {
+    width: 290px;
+    height: 60px;
+    font-size: 30px;
+    border: 2px solid #1cd119;
+    box-shadow: 0 0 10px 2px #1cd119;
+    border-radius: 10px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton {
+    top: 180px;
+    left: -85px;
+  }
+
+  .ProjectsBlock_conteiner_nextButton {
+    top: 180px;
+    right: -85px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+
+  .ProjectsBlock_conteiner_nextButton:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+
+  .ProjectsBlock_hover {
+    height: 99%;
+    border-radius: 15px;
   }
 }

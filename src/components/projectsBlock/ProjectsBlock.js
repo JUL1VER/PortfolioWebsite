@@ -31,7 +31,7 @@ const ProjectsBlock = () => {
                     <img src={projectLogo} alt="gears" className="ProjectsBlock_header_logoImg"/>
                 </picture>
             </div>
-            <p className='ProjectsBlock_text'>Here are some of my interesting projects:</p>
+            <p className='ProjectsBlock_text'>Check out some of my interesting projects:</p>
             <ProjectSlide/>
         </div>
     );

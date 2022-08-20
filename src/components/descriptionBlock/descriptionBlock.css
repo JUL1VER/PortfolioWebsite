@@ -25,12 +25,14 @@
 }
 
 .DescriptionBlock_description {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .DescriptionBlock_fotoWithHover {
-  order: 1;
+  order: 2;
   margin: 0 auto;
+  margin-top: 40px;
   position: relative;
   outline: 2px solid #1cd119;
   outline-offset: 10px;
@@ -73,56 +75,59 @@
 }
 
 .DescriptionBlock_contentPart {
-  margin-top: 50px;
-  order: 2;
+  order: 1;
 }
 
 .DescriptionBlock_text {
   width: 80%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 16px;
 
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 157%;
+  font-size: 20px;
+  line-height: 130%;
 
   color: #fff;
 }
 
+.DescriptionBlock_link {
+  color: #1cd119;
+  text-decoration: none;
+}
+
 .DescriptionBlock_helloButton {
-  width: 114px;
-  height: 46px;
+  width: 120px;
+  height: 50px;
   margin-top: 30px;
 
-  background: #1cd119;
+  background: #0a0a0a;
+  color: #1cd119;
+  text-shadow: 0 0 5px #1cd119;
+  box-shadow: 0 0 5px 1px #1cd119;
   border: 2px solid #1cd119;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12),
-    0px 1px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 
   font-family: "Zilla Slab", serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  color: #000;
   transition: 0.5s;
 }
 
 .DescriptionBlock_helloButton:hover {
-  color: #1cd119;
-  background: #0a0a0a;
+  color: #0a0a0a;
+  background: #1cd119;
   border: 2px solid #1cd119;
+  box-shadow: none;
   text-shadow: 0 0 5px #1cd119;
 }
 
 .DescriptionBlock_helloButton:active {
-  color: #0a0a0a;
-  background: #1cd119;
+  color: #1cd119;
+  background: #0a0a0a;
   transition: 0.1s;
-  text-shadow: 0 0 5px #1cd119;
 }
 
 @media (min-width: 650px) {
@@ -133,11 +138,12 @@
 
   .DescriptionBlock_fotoWithHover {
     margin: 0 auto;
-    order: 1;
+    margin-top: 40px;
+    order: 2;
   }
 
   .DescriptionBlock_contentPart {
-    order: 2;
+    order: 1;
   }
 
   .DescriptionBlock_text {
@@ -145,7 +151,6 @@
   }
 
   .DescriptionBlock_helloButton {
-    padding: 10px 24px;
     font-size: 25px;
     line-height: 51px;
 
@@ -169,13 +174,13 @@
   .DescriptionBlock_description {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 100px;
   }
 
   .DescriptionBlock_contentPart {
     order: 1;
-    width: 45%;
+    width: 55%;
     padding-left: 50px;
     margin-top: 0px;
   }
@@ -184,28 +189,24 @@
     order: 2;
     margin: 0 auto;
     max-width: 450px;
+    width: 40%;
+    margin-top: 20px;
   }
 
   .DescriptionBlock_text {
-    margin-top: 50px;
-    display: flex;
-    justify-content: flex-start;
+    margin-top: 25px;
     text-align: start;
     width: 100%;
     max-width: 750px;
-    font-size: 35px;
-    line-height: 157%;
+    font-size: 22px;
+    line-height: 145%;
   }
 
   .DescriptionBlock_helloButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
+    box-shadow: 0 0 10px 2px #1cd119;
 
-    padding: 10px 25px;
     font-size: 35px;
-    line-height: 51px;
 
     width: 220px;
     height: 80px;

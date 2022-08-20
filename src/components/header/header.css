@@ -127,7 +127,7 @@
 }
 
 .Header_navbar_logos {
-  margin: 10px 0 0 5px;
+  margin: 5px 0 0 5px;
 }
 
 .Header_overlay {
@@ -168,6 +168,10 @@
   .Header_navbarBlock {
     display: flex;
     flex-direction: row;
+  }
+
+  .Header_navbar_logos {
+    margin: 10px 0 0 5px;
   }
 
   .Header_navbar_logo {

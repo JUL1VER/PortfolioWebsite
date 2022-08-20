@@ -42,7 +42,9 @@ const DescriptionBlock = () => {
                     </picture>
                 </div>
                 <div className="DescriptionBlock_contentPart">
-                    <p className='DescriptionBlock_text'>Hello! My name is Vlad and I am frontend developer. Here is my portfolio website where you'll learn about my journey as a frontend developer.</p>
+                    <p className='DescriptionBlock_text'>Hello, my name is Vlad and I like to create cool things! Interesting fact about me: just like I'm obsessed with programming, I love to wrire <a href="https://stihi.ru/avtor/jul1ver" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>poems</a>, that's why I can say programming is a poetry too.</p>
+                    <p className='DescriptionBlock_text'>Currently I'm developing well desingned impressive apps in <a href="https://mish.design/" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Mish.design</a>. Mostly I work using React and Typescript, but I also like native JavaScript. The power and possibilities of CSS never cease to amaze me!</p>
+                    <p className='DescriptionBlock_text'>I am interessted in many things including science, poetry, music, history, phylosophy and traveling. But programming is one of my favourites! And I also like to talk with people, so feel free to <a href="mailto:jul1v3r@gmail.com" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>say</a> me something :)</p>
                     <button className='DescriptionBlock_helloButton' 
                             type={'button'}
                             onClick={() => setModalActive(true)}>

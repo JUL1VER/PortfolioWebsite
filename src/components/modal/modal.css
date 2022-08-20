@@ -60,15 +60,17 @@
   align-items: center;
   justify-content: center;
   width: 45%;
-  background-color: #1cd119;
-  border-radius: 10px;
-  box-shadow: 0px 2px 3px 2px grey;
   font-family: "Zilla Slab", serif;
   font-size: 10px;
   font-weight: 600;
+  border-radius: 10px;
   color: #fff;
+  background-color: #0a0a0a;
+  box-shadow: 0 0 5px 2px #1cd119;
+  text-shadow: 0 0 5px #1cd119;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .modal_linkImg {
@@ -78,11 +80,17 @@
 
 .modal_link_right:hover,
 .modal_link_rigth:active {
+  color: #fff;
+  box-shadow: 0 0 5px 2px #fff;
+  text-shadow: none;
   background-color: #e84949;
 }
 
 .modal_link_left:hover,
 .modal_link_left:active {
+  color: #fff;
+  box-shadow: 0 0 5px 2px #fff;
+  text-shadow: none;
   background-color: #2a7ede;
 }
 

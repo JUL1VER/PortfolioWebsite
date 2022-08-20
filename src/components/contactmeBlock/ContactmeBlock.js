@@ -3,8 +3,6 @@ import contactmeLogo from '../../img/contactme_Logo.png';
 import contactmeLogo_large from '../../img/contactme_Logo_large.png';
 import handsWithPills from '../../img/handsWithPills.png';
 import handsWithPills_large from '../../img/handsWithPills_large.png';
-import paperplane from '../../img/paperplane.png';
-import paperplane_large from '../../img/paperplane_large.png';
 
 import './contactmeBlock.css';
 
@@ -113,13 +111,6 @@ const ContactmeBlock = () => {
                         type='button' 
                         onClick={sendInfo}>
                         Send
-                        <picture className="ContactmeBlock_button_imgPic">
-                            <source
-                                className='ContactmeBlock_button_img'
-                                media='(min-width: 650px)'
-                                srcSet={paperplane_large}/> 
-                            <img src={paperplane} alt="Paperplane" className='ContactmeBlock_button_img'/>
-                        </picture>
                     </button>
                 </form>
             </div>
