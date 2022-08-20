@@ -30,7 +30,7 @@
 .ProjectsBlock_text {
   width: 80%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
 
   font-family: "Zilla Slab", serif;
   font-weight: 400;
@@ -212,7 +212,6 @@
   }
 
   .ProjectsBlock_text {
-    margin-top: 30px;
     font-size: 25px;
   }
 
@@ -286,7 +285,7 @@
     font-size: 35px;
     line-height: 51px;
     width: 80%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .ProjectsBlock_slides {
