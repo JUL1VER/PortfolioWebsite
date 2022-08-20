@@ -1,5 +1,15 @@
 .Header {
   display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: -200px;
+  animation: moving-header 0.5s steps(50, end);
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
 }
 
 .Header_wrapper {
@@ -29,6 +39,10 @@
   top: 20px;
   z-index: 4;
   background-color: #0a0a0a;
+  margin-top: -200px;
+  animation: moving-header 0.5s steps(50, end);
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
 }
 
 .Header_burgerBlock:before,
@@ -180,5 +194,14 @@
 
   .Header_navbar_navLinks {
     width: 220px;
+  }
+}
+
+@keyframes moving-header {
+  0% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0px;
   }
 }
