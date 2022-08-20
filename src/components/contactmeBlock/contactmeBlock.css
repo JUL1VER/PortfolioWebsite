@@ -86,7 +86,6 @@
   height: 35px;
   margin: 0 auto;
   margin-top: 20px;
-  padding-top: 3px;
   border-radius: 5px;
 
   color: #1cd119;
@@ -157,7 +156,6 @@
     margin-top: 30px;
     padding-top: 0px;
     font-size: 30px;
-    line-height: 50px;
   }
 }
 
@@ -222,7 +220,6 @@
     height: 70px;
     margin-top: 30px;
     font-size: 36px;
-    line-height: 53px;
     padding: 0 20px;
     box-shadow: 0 0 10px 2px #1cd119;
   }

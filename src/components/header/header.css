@@ -21,6 +21,7 @@
   z-index: 3;
   box-shadow: 0px 0px 5px #1cd119;
   background: #0a0a0a;
+  backdrop-filter: blur(3px);
 }
 
 .Header_VlogoPic {
