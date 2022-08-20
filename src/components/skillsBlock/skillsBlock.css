@@ -77,6 +77,14 @@
     font-size: 25px;
     line-height: 35px;
   }
+
+  .SkillsBlock_logoWrapper {
+    display: grid;
+    margin-top: 0px;
+    column-gap: 60px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -117,13 +125,5 @@
   .SkillsBlock_img {
     width: 100%;
     max-width: 750px;
-  }
-
-  .SkillsBlock_logoWrapper {
-    display: grid;
-    margin-top: 0px;
-    column-gap: 60px;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
   }
 }
