@@ -152,6 +152,8 @@
   .Header {
     display: flex;
     justify-content: center;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
   }
 
   .Header_wrapper {
