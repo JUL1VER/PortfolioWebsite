@@ -1,3 +1,4 @@
+import './header.css';
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import question from '../../img/question.png';
@@ -10,7 +11,7 @@ import contactmeLogo from '../../img/contactme_Logo.png';
 import contactmeLogo_large from '../../img/contactme_Logo_large.png';
 import Vlogo from '../../img/V_logo_44.svg';
 import Vlogo_large from '../../img/V_logo_88.svg';
-import './header.css';
+import classNames from 'classnames';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -35,12 +36,12 @@ const Header = () => {
                 </picture>
                 <button 
                     type='button'
-                    className={`Header_burgerBlock ${isActive ? 'active' : ''}`}
+                    className={classNames('Header_burgerBlock', {'active': isActive})}
                     onClick={ toggleActiveClass }>
                     <span></span>
                 </button>
                 <div className="Header_navbarBlock">
-                    <nav className={`Header_navbar ${isActive ? 'active' : ''}`}>
+                    <nav className={classNames('Header_navbar', {'active': isActive})}>
                         <Link  
                             className='Header_navbar_navLinks'
                             to='WhoAmI'
@@ -114,7 +115,7 @@ const Header = () => {
                             </picture>
                         </Link>
                     </nav>
-                    <div className={`Header_overlay ${isActive ? 'active' : ''}`} onClick={ toggleActiveClass }></div>
+                    <div className={classNames('Header_overlay', {'active': isActive})} onClick={ toggleActiveClass }></div>
                 </div>
             </div>
         </div>

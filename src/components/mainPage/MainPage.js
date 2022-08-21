@@ -24,8 +24,8 @@ const MainPage = () => {
 
     return (
         <>
-            <Preloader className={classNames( loading ? '' : 'PreloaderHidden')}/>
-            <div className={classNames(loading ? 'MainpageHidden' : 'mainpdone')}>
+            <Preloader className={classNames({ 'PreloaderHidden': !loading })} />
+            <div className={classNames({ 'MainpageHidden': loading })}>
                 <Header/>
                 <WelcomeBlock/>
                 <DescriptionBlock/>

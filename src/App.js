@@ -1,6 +1,6 @@
 import './app.css';
 import MainPage from './components/mainPage/MainPage';
-import MatrixBackground from './components/matrixBackground/MatrixBackground';
+import MatrixBackground from './components/MatrixBackground/MatrixBackground';
 
 function App() {
   return (

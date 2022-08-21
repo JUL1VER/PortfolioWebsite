@@ -97,6 +97,7 @@
 }
 
 .Header_navbar.active {
+  height: 100vh;
   right: 0;
 }
 
