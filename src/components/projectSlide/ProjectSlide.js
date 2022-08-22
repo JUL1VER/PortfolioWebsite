@@ -5,10 +5,11 @@ import projectsPC_large from '../../img/projectsPC_large.png';
 import project1 from '../../img/project1.png';
 import project2 from '../../img/project2.png';
 import project3 from '../../img/project3.png';
-import SwiperCore, { Navigation, Lazy, EffectFade } from 'swiper'
+import SwiperCore, { Navigation, Lazy, EffectFade, EffectFlip } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import 'swiper/css/effect-flip';
 
 SwiperCore.use([Navigation]);
 
@@ -45,6 +46,8 @@ const ProjectSlide = () => {
             <div className='ProjectsBlock_content_textBlock'>
                 <div className='ProjectsBlock_content_text'>
                     <Swiper
+                        modules={[EffectFlip]}
+                        effect='flip'
                         loop={true}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -64,6 +67,8 @@ const ProjectSlide = () => {
                 </div>
                 <div className='ProjectsBlock_contect_tecnho'>
                     <Swiper
+                        modules={[EffectFlip]}
+                        effect='flip'
                         loop={true}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -92,8 +97,8 @@ const ProjectSlide = () => {
                 </button>
                 <Swiper
                     modules={[Lazy, EffectFade]}
-                    lazy={true}
                     effect='fade'
+                    lazy={true}
                     loop={true}
                     className='ProjectsBlock_Swiper'
                     onBeforeInit={(swiper) => {
