@@ -5,6 +5,7 @@ import projectsPC_large from '../../img/projectsPC_large.png';
 import project1 from '../../img/project1.png';
 import project2 from '../../img/project2.png';
 import project3 from '../../img/project3.png';
+import project4 from '../../img/project4.png';
 import SwiperCore, { Navigation, Lazy, EffectFade, EffectFlip } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -35,6 +36,13 @@ const ProjectSlide = () => {
             imgprop: project3,
             description: 'Made a simple website connected to GithubAPI for user repos search using React and TS.',
             techno: ['TypeScript', 'React', 'Redux', 'Tailwind']
+        },
+        {
+            id: 4,
+            link: 'https://github.com/JUL1VER/PortfolioWebsite.React',
+            imgprop: project4,
+            description: 'Made collapse of the universe using recursion and my own website :)',
+            techno: ['React', 'Screenshots', 'Meme']
         }
     ];
 
