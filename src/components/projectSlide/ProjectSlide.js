@@ -34,7 +34,7 @@ const ProjectSlide = () => {
             id: 3,
             link: 'https://github.com/JUL1VER/GitHubSearch.TS',
             imgprop: project3,
-            description: 'Made a simple website connected to GithubAPI for user repos search using React and TS.',
+            description: 'Made a simple website connected to GithubAPI for user repos search and fav using React and TS.',
             techno: ['TypeScript', 'React', 'Redux', 'Tailwind']
         },
         {

@@ -2,6 +2,10 @@
   margin-top: 100px;
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
 .ProjectsBlock_header {
   display: flex;
   flex-direction: row;
@@ -116,6 +120,8 @@
 }
 
 .ProjectsBlock_content_textInside {
+  display: flex;
+  align-items: center;
   margin: 0;
   font-size: 20px;
 }
@@ -339,8 +345,6 @@
   }
 
   .ProjectsBlock_content_textInside {
-    display: flex;
-    align-items: center;
     font-size: 35px;
     height: 200px;
   }
