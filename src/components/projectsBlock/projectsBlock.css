@@ -101,24 +101,36 @@
 
 .ProjectsBlock_content_text,
 .ProjectsBlock_contect_tecnho {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
-  padding: 20px;
   font-family: "Zilla Slab", serif;
-  font-size: 20px;
   color: #fff;
   background: #0a0a0a;
   border: 2px solid #1cd119;
   box-shadow: 0 0 10px 2px #1cd119;
   border-radius: 10px;
-  list-style-type: none;
+}
+
+.ProjectsBlock_content_text {
+  padding: 20px;
+}
+
+.ProjectsBlock_content_textInside {
+  margin: 0;
+  font-size: 20px;
 }
 
 .ProjectsBlock_contect_tecnho {
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.ProjectsBlock_contect_tecnhoList {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
   font-size: 18px;
+  padding: 0;
 }
 
 .ProjectsBlock_pagButton {
@@ -236,13 +248,12 @@
     border-radius: 18px;
   }
 
-  .ProjectsBlock_content_text {
+  .ProjectsBlock_content_textInside {
     font-size: 25px;
   }
 
-  .ProjectsBlock_contect_tecnho {
+  .ProjectsBlock_contect_tecnhoList {
     font-size: 20px;
-    margin-top: 30px;
   }
 
   .ProjectsBlock_pagButton {
@@ -327,16 +338,15 @@
     order: 1;
   }
 
-  .ProjectsBlock_content_text {
+  .ProjectsBlock_content_textInside {
     display: flex;
     align-items: center;
     font-size: 35px;
     height: 200px;
   }
 
-  .ProjectsBlock_contect_tecnho {
+  .ProjectsBlock_contect_tecnhoList {
     font-size: 25px;
-    margin-top: 40px;
   }
 
   .ProjectsBlock_pagButton {
