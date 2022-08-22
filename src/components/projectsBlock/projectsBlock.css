@@ -54,6 +54,21 @@
   position: relative;
 }
 
+.ProjectsBlock_Swiper {
+  width: 200px;
+  height: 127px;
+  position: absolute;
+  margin-top: 26px;
+  margin-left: 50px;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.ProjectsBlock_conteiner_projectPic {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .ProjectsBlock_hover {
   background: #1cd119;
   position: absolute;
@@ -75,13 +90,6 @@
 .ProjectsBlock_conteiner_PC {
   position: relative;
   margin: 0 auto;
-}
-
-.ProjectsBlock_conteiner_projectImgs {
-  position: absolute;
-  margin-top: 26px;
-  margin-left: 50px;
-  z-index: 2;
 }
 
 .ProjectsBlock_content_textBlock {
@@ -220,9 +228,12 @@
     height: 45px;
   }
 
-  .ProjectsBlock_conteiner_projectImgs {
-    margin-top: 39px;
+  .ProjectsBlock_Swiper {
+    width: 300px;
+    height: 189px;
+    margin-top: 40px;
     margin-left: 75px;
+    border-radius: 18px;
   }
 
   .ProjectsBlock_content_text {
@@ -298,9 +309,16 @@
     flex-direction: row;
   }
 
-  .ProjectsBlock_conteiner_projectImgs {
+  .ProjectsBlock_Swiper {
+    width: 475px;
+    height: 297px;
     margin-top: 60px;
     margin-left: 113px;
+    border-radius: 20px;
+  }
+
+  .ProjectsBlock_conteiner_projectPic {
+    border-radius: 15px;
   }
 
   .ProjectsBlock_content_textBlock {

@@ -1,13 +1,25 @@
 import React from 'react';
-import project1 from '../../img/project1.png';
-import project1_medium from '../../img/project1_medium.png';
-import project1_large from '../../img/project1_large.png';
 import projectsPC from '../../img/projectsPC.png';
 import projectsPC_medium from '../../img/projectsPC_medium.png';
 import projectsPC_large from '../../img/projectsPC_large.png';
+import project1 from '../../img/project1_large.png';
+import project2 from '../../img/project2_large.png';
+import project3 from '../../img/project3_large.png';
+import SwiperCore, { Navigation} from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-const ProjectSlide = (props) => {
-    const {imgprop, img_largeprop, description, link} = props;
+SwiperCore.use([Navigation]);
+
+const ProjectSlide = () => {
+    const cards = [
+        {id: 1, link: 'https://github.com/JUL1VER/MarvelCharactersApp.React', imgprop: project1, description: 'Made a Marvel information portal with MarvelAPI connection using React and Redux.'},
+        {id: 2, link: 'https://github.com/JUL1VER/FoodServiceApp.JS', imgprop: project2, description: 'Made a website of food delivery company with calories per day calculations using JS.'},
+        {id: 3, link: 'https://github.com/JUL1VER/GitHubSearch.TS', imgprop: project3, description: 'Made a simple website connected to GithubAPI for user repos search using React and TS.'}
+    ];
+
+    const navigationPrevRef = React.useRef(null)
+    const navigationNextRef = React.useRef(null)
 
     return (
         <div className='ProjectsBlock_content'>
@@ -18,24 +30,30 @@ const ProjectSlide = (props) => {
                     <li>Redux</li>
                     <li>SCSS</li>
                 </ul>
-                {/* <button className='ProjectsBlock_pagButton'>Next project</button> */}
             </div>
             <div className='ProjectsBlock_conteiner'>
-                <button className='ProjectsBlock_conteiner_prevButton'>
+                <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>
-                <picture className="ProjectsBlock_conteiner_projectImgs">
-                    <div className='ProjectsBlock_hover'/>
-                    <source
-                        className='ProjectsBlock_conteiner_projectPic'
-                        media='(min-width: 1280px)'
-                        srcSet={project1_large}/>
-                    <source
-                        className='ProjectsBlock_conteiner_projectPic'
-                        media='(min-width: 650px)'
-                        srcSet={project1_medium}/>
-                    <img src={project1} alt="Project" className="ProjectsBlock_conteiner_projectPic"/>
-                </picture>
+                <Swiper 
+                    loop={true}
+                    className='ProjectsBlock_Swiper'
+                    onBeforeInit={(swiper) => {
+                        swiper.params.navigation.prevEl = navigationPrevRef.current;
+                        swiper.params.navigation.nextEl = navigationNextRef.current;
+                   }}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    { cards.map(card => (
+                        <SwiperSlide key={card.id}>
+                            <div className='ProjectsBlock_hover'/>
+                            <img src={card.imgprop} alt="Project" className="ProjectsBlock_conteiner_projectPic"/>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
                 <picture className="ProjectsBlock_conteiner_PCImg">
                     <source
                         className='ProjectsBlock_conteiner_PC'
@@ -47,7 +65,7 @@ const ProjectSlide = (props) => {
                         srcSet={projectsPC_medium}/>
                     <img src={projectsPC} alt="PC" className="ProjectsBlock_conteiner_PC"/>
                 </picture>
-                <button className='ProjectsBlock_conteiner_nextButton'>
+                <button ref={navigationNextRef} className='ProjectsBlock_conteiner_nextButton'>
                     Next
                 </button>
             </div>

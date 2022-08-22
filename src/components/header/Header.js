@@ -46,7 +46,7 @@ const Header = () => {
                             className='Header_navbar_navLinks'
                             to='WhoAmI'
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
                             <p className="Header_navbar_text">
@@ -64,7 +64,7 @@ const Header = () => {
                             className='Header_navbar_navLinks'
                             to='SkillsPart'
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
                             <p className="Header_navbar_text">
@@ -82,7 +82,7 @@ const Header = () => {
                             className='Header_navbar_navLinks'
                             to='ProjectsPart'
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
                             <p className="Header_navbar_text">
@@ -100,7 +100,7 @@ const Header = () => {
                             className='Header_navbar_navLinks'
                             to='ContactmePart'
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
                             <p className="Header_navbar_text">
