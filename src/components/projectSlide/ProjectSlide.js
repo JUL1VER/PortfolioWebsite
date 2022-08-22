@@ -2,9 +2,9 @@ import React from 'react';
 import projectsPC from '../../img/projectsPC.png';
 import projectsPC_medium from '../../img/projectsPC_medium.png';
 import projectsPC_large from '../../img/projectsPC_large.png';
-import project1 from '../../img/project1_large.png';
-import project2 from '../../img/project2_large.png';
-import project3 from '../../img/project3_large.png';
+import project1 from '../../img/project1.png';
+import project2 from '../../img/project2.png';
+import project3 from '../../img/project3.png';
 import SwiperCore, { Navigation} from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -23,14 +23,29 @@ const ProjectSlide = () => {
 
     return (
         <div className='ProjectsBlock_content'>
-            <div className='ProjectsBlock_content_textBlock'>
-                <p className='ProjectsBlock_content_text'>Made a Marvel information portal with MarvelAPI connection using React and Redux.</p>
-                <ul className='ProjectsBlock_contect_tecnho'>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>SCSS</li>
-                </ul>
-            </div>
+            <Swiper 
+                loop={true}
+                className='ProjectsBlock_content_textBlock'
+                onBeforeInit={(swiper) => {
+                    swiper.params.navigation.prevEl = navigationPrevRef.current;
+                    swiper.params.navigation.nextEl = navigationNextRef.current;
+                }}
+                spaceBetween={500}
+                slidesPerView={1}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                { cards.map(card => (
+                    <SwiperSlide key={card.id}>
+                        <p className='ProjectsBlock_content_text'>{card.description}</p>
+                        <ul className='ProjectsBlock_contect_tecnho'>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>SCSS</li>
+                        </ul>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             <div className='ProjectsBlock_conteiner'>
                 <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
                     Prev

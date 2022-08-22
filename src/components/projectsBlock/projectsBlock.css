@@ -322,7 +322,8 @@
   }
 
   .ProjectsBlock_content_textBlock {
-    margin-top: 65px;
+    padding: 10px;
+    margin-top: 55px;
     order: 1;
   }
 
@@ -335,7 +336,7 @@
 
   .ProjectsBlock_contect_tecnho {
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .ProjectsBlock_pagButton {
