@@ -41,7 +41,7 @@ const ProjectSlide = () => {
             id: 4,
             link: 'https://github.com/JUL1VER/PortfolioWebsite.React',
             imgprop: project4,
-            description: 'Made collapse of the universe using recursion and my own website :)',
+            description: 'Made a collapse of the universe using recursion and my own website :)',
             techno: ['React', 'Screenshots', 'Meme']
         }
     ];
@@ -56,6 +56,8 @@ const ProjectSlide = () => {
                     <Swiper
                         modules={[EffectFlip]}
                         effect='flip'
+                        noSwiping={true}
+                        noSwipingClass='ProjectsBlock_content_textInside'
                         loop={true}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -77,6 +79,8 @@ const ProjectSlide = () => {
                     <Swiper
                         modules={[EffectFlip]}
                         effect='flip'
+                        noSwiping={true}
+                        noSwipingClass='ProjectsBlock_contect_tecnhoList'
                         loop={true}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -108,6 +112,8 @@ const ProjectSlide = () => {
                     effect='fade'
                     lazy={true}
                     loop={true}
+                    noSwiping={true}
+                    noSwipingClass='ProjectsBlock_conteiner_slidePic'
                     className='ProjectsBlock_Swiper'
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -120,7 +126,7 @@ const ProjectSlide = () => {
                 >
                     { cards.map(card => (
                         <SwiperSlide key={card.id}>
-                            <a href={card.link} target='_blank' rel="noreferrer">
+                            <a href={card.link} target='_blank' rel="noreferrer" className='ProjectsBlock_conteiner_slidePic'>
                                 <div className='ProjectsBlock_hover'/>
                                 <img src={card.imgprop} alt="Project" className="ProjectsBlock_conteiner_projectPic"/>
                             </a>
