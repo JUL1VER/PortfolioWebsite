@@ -91,7 +91,7 @@ const ContactmeBlock = () => {
                     <input 
                         name='email'
                         type='email'
-                        placeholder='Enter email address' 
+                        placeholder='Enter your email address' 
                         className='ContactmeBlock_email'
                         value={info.email}
                         onChange={handleEmailChange}
@@ -100,7 +100,7 @@ const ContactmeBlock = () => {
                     <textarea 
                         name='text'
                         type='text'
-                        placeholder='Enter message...' 
+                        placeholder='Enter your message...' 
                         className='ContactmeBlock_message'
                         value={info.message}
                         onChange={handleMessageChange}
