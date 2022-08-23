@@ -65,10 +65,11 @@ const ProjectSlide = () => {
                         }}
                         spaceBetween={500}
                         slidesPerView={1}
+                        // Функции с консоль логами можно поубирать, они вроде не нужны :)
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
-                        { cards.map(card => (
+                        {cards.map(card => (
                             <SwiperSlide key={card.id}>
                                 <p className='ProjectsBlock_content_textInside'>{card.description}</p>
                             </SwiperSlide>
@@ -91,10 +92,10 @@ const ProjectSlide = () => {
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
-                        { cards.map(card => (
+                        {cards.map(card => (
                             <SwiperSlide key={card.id}>
                                 <ul className='ProjectsBlock_contect_tecnhoList'>
-                                    { card.techno.map(technology => (
+                                    {card.techno.map(technology => (
                                         <li>{technology}</li>
                                     ))}
                                 </ul>
@@ -118,17 +119,17 @@ const ProjectSlide = () => {
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = navigationPrevRef.current;
                         swiper.params.navigation.nextEl = navigationNextRef.current;
-                   }}
+                    }}
                     spaceBetween={0}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    { cards.map(card => (
+                    {cards.map(card => (
                         <SwiperSlide key={card.id}>
                             <a href={card.link} target='_blank' rel="noreferrer" className='ProjectsBlock_conteiner_slidePic'>
-                                <div className='ProjectsBlock_hover'/>
-                                <img src={card.imgprop} alt="Project" className="ProjectsBlock_conteiner_projectPic"/>
+                                <div className='ProjectsBlock_hover' />
+                                <img src={card.imgprop} alt="Project" className="ProjectsBlock_conteiner_projectPic" />
                             </a>
                         </SwiperSlide>
                     ))}
@@ -137,12 +138,12 @@ const ProjectSlide = () => {
                     <source
                         className='ProjectsBlock_conteiner_PC'
                         media='(min-width: 1280px)'
-                        srcSet={projectsPC_large}/>
+                        srcSet={projectsPC_large} />
                     <source
                         className='ProjectsBlock_conteiner_PC'
                         media='(min-width: 650px)'
-                        srcSet={projectsPC_medium}/>
-                    <img src={projectsPC} alt="PC" className="ProjectsBlock_conteiner_PC"/>
+                        srcSet={projectsPC_medium} />
+                    <img src={projectsPC} alt="PC" className="ProjectsBlock_conteiner_PC" />
                 </picture>
                 <button ref={navigationNextRef} className='ProjectsBlock_conteiner_nextButton'>
                     Next

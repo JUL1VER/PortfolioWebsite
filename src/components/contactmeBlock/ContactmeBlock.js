@@ -13,7 +13,7 @@ const ContactmeBlock = () => {
     const [textError, setTextError] = useState('Message cannot be empty');
     const [info, setInfo] = useState({ email: '', message: '' });
     const [disableButton, setDisableButton] = useState(true);
-    
+
     useEffect(() => {
         if (!info.email.length || !info.message.length) { setDisableButton(true) }
         else { setDisableButton(false) }
@@ -62,20 +62,21 @@ const ContactmeBlock = () => {
 
         console.log(postInfo);
 
-        setInfo(state => ({ ...state, email: ''}))
-        setInfo(state => ({ ...state, message: ''}))
+        setInfo(state => ({ ...state, email: '' }))
+        setInfo(state => ({ ...state, message: '' }))
     }
 
     return (
         <div className='ContactmeBlock_wrapper'>
             <div className='ContactmeBlock_header'>
                 <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
+                {/* Эту иконку тоже лучше вставить через псевдоэлемент */}
                 <picture className="ContactmeBlock_header_logoImg">
                     <source
                         className='ContactmeBlock_header_logo'
                         media='(min-width: 650px)'
-                        srcSet={contactmeLogo_large}/> 
-                    <img src={contactmeLogo} alt="gears" className="ContactmeBlock_header_logo"/>
+                        srcSet={contactmeLogo_large} />
+                    <img src={contactmeLogo} alt="gears" className="ContactmeBlock_header_logo" />
                 </picture>
             </div>
             <div className='ContactmeBlock_content'>
@@ -83,32 +84,32 @@ const ContactmeBlock = () => {
                     <source
                         className='ContactmeBlock_img'
                         media='(min-width: 500px)'
-                        srcSet={handsWithPills_large}/> 
-                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img'/>
+                        srcSet={handsWithPills_large} />
+                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img' />
                 </picture>
                 <form className='ContactmeBlock_form'>
-                    <div className='ContactmeBlock_error'>{ emailDirty && emailError }</div>
-                    <input 
+                    <div className='ContactmeBlock_error'>{emailDirty && emailError}</div>
+                    <input
                         name='email'
                         type='email'
-                        placeholder='Enter your email address' 
+                        placeholder='Enter your email address'
                         className='ContactmeBlock_email'
                         value={info.email}
                         onChange={handleEmailChange}
-                        onBlur={e => blurHandler(e)}/>
-                    <div className='ContactmeBlock_error'>{ textDirty && textError }</div>
-                    <textarea 
+                        onBlur={e => blurHandler(e)} />
+                    <div className='ContactmeBlock_error'>{textDirty && textError}</div>
+                    <textarea
                         name='text'
                         type='text'
-                        placeholder='Enter your message...' 
+                        placeholder='Enter your message...'
                         className='ContactmeBlock_message'
                         value={info.message}
                         onChange={handleMessageChange}
-                        onBlur={e => blurHandler(e)}/>
+                        onBlur={e => blurHandler(e)} />
                     <button
-                        disabled={ disableButton || textError.length || emailError.length }
+                        disabled={disableButton || textError.length || emailError.length}
                         className={(disableButton || textError.length || emailError.length) ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
-                        type='button' 
+                        type='button'
                         onClick={sendInfo}>
                         Send
                     </button>

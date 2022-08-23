@@ -18,6 +18,7 @@ const DescriptionBlock = () => {
         <div className='DescriptionBlock_wrapper'>
             <div className='DescriptionBlock_header'>
                 <h2 className='DescriptionBlock_header_text' id='WhoAmI'>Who Am I</h2>
+                {/* Здесь элемент picture вряд ли нужен, иконка даже на большом экране совсем немного весит. Её лучше следать одним размером и вставить через псевдоэлемент ::after, чтобы не засорять разметку */}
                 <picture className="DescriptionBlock_header_logoImg">
                     <source
                         className='DescriptionBlock_header_logo'
