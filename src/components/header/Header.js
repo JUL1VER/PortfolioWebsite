@@ -1,5 +1,5 @@
 import './header.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import question from '../../img/question.png';
 import question_large from '../../img/question_large.png';
@@ -24,8 +24,26 @@ const Header = () => {
         setIsActive(false);
     }
 
+    const [position, setPosition] = useState(window.pageYOffset)
+    const [visible, setVisible] = useState(true) 
+
+    useEffect(() => {
+        const handleScroll = () => {
+           let moving = window.pageYOffset
+           
+           setVisible(position > moving);
+           setPosition(moving)
+        };
+        window.addEventListener("scroll", handleScroll);
+        return(() => {
+           window.removeEventListener("scroll", handleScroll);
+        })
+    })
+
+    const headerVision = visible ? "visible" : "hidden";
+
     return (
-        <div className="Header">
+        <div className={classNames("Header", headerVision)}>
             <div className="Header_wrapper">
                 <picture className="Header_VlogoPic">
                     <source

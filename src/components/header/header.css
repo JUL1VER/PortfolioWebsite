@@ -12,6 +12,16 @@
   animation-fill-mode: forwards;
 }
 
+.visible {
+  top: 0;
+  transition: top 0.5s ease-out;
+}
+
+.hidden {
+  top: -100px;
+  transition: top 0.5s ease-out;
+}
+
 .Header_wrapper {
   display: flex;
   position: fixed;
