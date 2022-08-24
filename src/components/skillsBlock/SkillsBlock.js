@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import skillsHead from '../../img/skillsHead.png';
 import skillsHead_large from '../../img/skillsHead_large.png';
 import skillsImg from '../../img/skillsImg.png';
@@ -10,6 +10,8 @@ import react from '../../img/reactlogo.png';
 import redux from '../../img/reduxlogo.png';
 import ts from '../../img/tslogo.png';
 import SkillIcon from '../skillIcon/SkillIcon';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import './skillsBlock.css';
 
@@ -27,9 +29,12 @@ const SkillsBlock = () => {
         <SkillIcon imgprop={techno.imgprop} key={techno.id} title={techno.title}/>
     )
 
+    useEffect(() => {
+        Aos.init({duration: 2500});
+    }, [])
     return (
         <div className='SkillsBlock_wrapper'>
-            <div className='SkillsBlock_header' id='SkillsPart'>
+            <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_header' id='SkillsPart'>
                 <h2 className='SkillsBlock_header_text'>Skills</h2>
                 <picture className="SkillsBlock_header_logoImg">
                     <source
@@ -40,14 +45,14 @@ const SkillsBlock = () => {
                 </picture>
             </div>
             <div className='SkillsBlock_content'>
-                <picture className='SkillsBlock_imgPic'>
+                <picture data-aos='fade-right' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_imgPic'>
                     <source 
                         className='SkillsBlock_img'
                         media='(min-width: 500px)'
                         srcSet={skillsImg_large}/>
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
                 </picture>
-                <div className='SkillsBlock_skillsAndLogos'>
+                <div data-aos='fade-left' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_skillsAndLogos'>
                     <p className='SkillsBlock_text'>I have a solid experience in the following web technologies:</p>
                     <div className='SkillsBlock_logoWrapper'>
                         {content}

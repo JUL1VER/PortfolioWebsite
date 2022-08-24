@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import projectsPC from '../../img/projectsPC.png';
 import projectsPC_medium from '../../img/projectsPC_medium.png';
 import projectsPC_large from '../../img/projectsPC_large.png';
@@ -11,6 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 SwiperCore.use([Navigation]);
 
@@ -49,9 +51,13 @@ const ProjectSlide = () => {
     const navigationPrevRef = React.useRef(null)
     const navigationNextRef = React.useRef(null)
 
+    useEffect(() => {
+        Aos.init({duration: 2500});
+    }, [])
+
     return (
         <div className='ProjectsBlock_content'>
-            <div className='ProjectsBlock_content_textBlock'>
+            <div data-aos='fade-right' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
                 <div className='ProjectsBlock_content_text'>
                     <Swiper
                         modules={[EffectFlip]}
@@ -103,7 +109,7 @@ const ProjectSlide = () => {
                     </Swiper>
                 </div>
             </div>
-            <div className='ProjectsBlock_conteiner'>
+            <div data-aos='fade-left' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_conteiner'>
                 <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>

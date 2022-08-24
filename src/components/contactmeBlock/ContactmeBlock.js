@@ -3,6 +3,8 @@ import contactmeLogo from '../../img/contactme_Logo.png';
 import contactmeLogo_large from '../../img/contactme_Logo_large.png';
 import handsWithPills from '../../img/handsWithPills.png';
 import handsWithPills_large from '../../img/handsWithPills_large.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import './contactmeBlock.css';
 
@@ -18,6 +20,10 @@ const ContactmeBlock = () => {
         if (!info.email.length || !info.message.length) { setDisableButton(true) }
         else { setDisableButton(false) }
     }, [info])
+
+    useEffect(() => {
+        Aos.init({duration: 2500});
+    }, [])
 
     const blurHandler = (e) => {
         switch (e.target.name) {
@@ -68,7 +74,7 @@ const ContactmeBlock = () => {
 
     return (
         <div className='ContactmeBlock_wrapper'>
-            <div className='ContactmeBlock_header'>
+            <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_header'>
                 <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
                 <picture className="ContactmeBlock_header_logoImg">
                     <source
@@ -78,7 +84,7 @@ const ContactmeBlock = () => {
                     <img src={contactmeLogo} alt="gears" className="ContactmeBlock_header_logo"/>
                 </picture>
             </div>
-            <div className='ContactmeBlock_content'>
+            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>
                 <picture className="ContactmeBlock_imgPic">
                     <source
                         className='ContactmeBlock_img'
