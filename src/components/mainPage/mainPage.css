@@ -7,3 +7,13 @@
 .MainpageHidden {
   display: none;
 }
+
+.MainPage {
+  padding: 0 25px;
+}
+
+@media (min-width: 650px) {
+  .MainPage {
+    padding: 0 50px;
+  }
+}

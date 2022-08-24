@@ -57,7 +57,7 @@ const ProjectSlide = () => {
 
     return (
         <div className='ProjectsBlock_content'>
-            <div data-aos='fade-right' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
+            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
                 <div className='ProjectsBlock_content_text'>
                     <Swiper
                         modules={[EffectFlip]}
@@ -109,7 +109,7 @@ const ProjectSlide = () => {
                     </Swiper>
                 </div>
             </div>
-            <div data-aos='fade-left' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_conteiner'>
+            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_conteiner'>
                 <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>

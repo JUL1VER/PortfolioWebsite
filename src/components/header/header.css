@@ -5,11 +5,11 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   margin-top: -200px;
   animation: moving-header 0.5s steps(50, end);
   animation-delay: 9.5s;
   animation-fill-mode: forwards;
+  overflow-x: hidden;
 }
 
 .visible {

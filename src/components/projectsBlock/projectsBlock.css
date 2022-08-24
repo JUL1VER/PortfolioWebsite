@@ -1,5 +1,7 @@
 .ProjectsBlock_wrapper {
   margin-top: 100px;
+  overflow-x: hidden;
+  padding: 50px 0;
 }
 
 .swiper-wrapper {
@@ -228,9 +230,9 @@
 @media (min-width: 650px) {
   .ProjectsBlock_wrapper {
     max-width: 1280px;
-    width: 95%;
     margin: 0 auto;
     margin-top: 100px;
+    padding: 75px 0;
   }
 
   .ProjectsBlock_header_text {
@@ -303,6 +305,7 @@
 @media (min-width: 1280px) {
   .ProjectsBlock_wrapper {
     margin-top: 200px;
+    padding: 100px 0;
   }
 
   .ProjectsBlock_header_text {

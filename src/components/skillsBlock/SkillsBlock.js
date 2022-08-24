@@ -45,14 +45,14 @@ const SkillsBlock = () => {
                 </picture>
             </div>
             <div className='SkillsBlock_content'>
-                <picture data-aos='fade-right' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_imgPic'>
+                <picture data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_imgPic'>
                     <source 
                         className='SkillsBlock_img'
                         media='(min-width: 500px)'
                         srcSet={skillsImg_large}/>
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
                 </picture>
-                <div data-aos='fade-left' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_skillsAndLogos'>
+                <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_skillsAndLogos'>
                     <p className='SkillsBlock_text'>I have a solid experience in the following web technologies:</p>
                     <div className='SkillsBlock_logoWrapper'>
                         {content}

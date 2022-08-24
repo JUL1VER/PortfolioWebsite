@@ -9,6 +9,7 @@
   left: -50%;
   color: #1cd119;
   background: #0a0a0a;
+  overflow-x: hidden;
 }
 
 .MatrixConsole {

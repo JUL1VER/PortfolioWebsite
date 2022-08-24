@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   font-family: "Zilla Slab", serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 50px 0;
 }
 
 .DescriptionBlock_header {
@@ -132,6 +135,10 @@
 }
 
 @media (min-width: 650px) {
+  .DescriptionBlock_wrapper {
+    padding: 75px 0;
+  }
+
   .DescriptionBlock_header {
     color: #1cd119;
     font-size: 30px;
@@ -163,9 +170,9 @@
 @media (min-width: 1280px) {
   .DescriptionBlock_wrapper {
     max-width: 1280px;
-    width: 95%;
     margin: 0 auto;
     flex-direction: column;
+    padding: 100px 0;
   }
 
   .DescriptionBlock_header_text {

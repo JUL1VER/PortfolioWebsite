@@ -15,26 +15,28 @@ import './mainPage.css';
 const MainPage = () => {
     const [loading, setLoadong] = useState();
 
-    useEffect(() => {
-        setLoadong(true);
-        setTimeout(() => {
-        setLoadong(false)
-        }, 4000)
-    }, [])
+    // useEffect(() => {
+    //     setLoadong(true);
+    //     setTimeout(() => {
+    //     setLoadong(false)
+    //     }, 4000)
+    // }, [])
 
     return (
         <>
             <Preloader className={classNames({ 'PreloaderHidden': !loading })} />
-            <div className={classNames({ 'MainpageHidden': loading })}>
-                <Header/>
-                <WelcomeBlock/>
-                <DescriptionBlock/>
-                <SkillsBlock/>
-                <ProjectsBlock/>
-                <ContactmeBlock/>
-                <Footer/>
-            </div>
+            <Header/>
+                <div className={classNames('MainPage', { 'MainpageHidden': loading })}>
+                    <WelcomeBlock/>
+                    <DescriptionBlock/>
+                    <SkillsBlock/>
+                    <ProjectsBlock/>
+                    <ContactmeBlock/>
+                </div>
+            <Footer/>
         </>
+        
+
     );
 };
 
