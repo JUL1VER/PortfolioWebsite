@@ -135,10 +135,6 @@
 }
 
 @media (min-width: 650px) {
-  .DescriptionBlock_wrapper {
-    padding: 75px 0;
-  }
-
   .DescriptionBlock_header {
     color: #1cd119;
     font-size: 30px;
@@ -172,7 +168,6 @@
     max-width: 1280px;
     margin: 0 auto;
     flex-direction: column;
-    padding: 100px 0;
   }
 
   .DescriptionBlock_header_text {
