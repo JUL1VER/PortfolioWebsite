@@ -81,7 +81,7 @@ const ContactmeBlock = () => {
                         className='ContactmeBlock_header_logo'
                         media='(min-width: 650px)'
                         srcSet={contactmeLogo_large}/> 
-                    <img src={contactmeLogo} alt="gears" className="ContactmeBlock_header_logo"/>
+                    <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
                 </picture>
             </div>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>

@@ -41,7 +41,7 @@ const SkillsBlock = () => {
                         className='SkillsBlock_header_logo'
                         media='(min-width: 650px)'
                         srcSet={skillsHead_large}/> 
-                    <img src={skillsHead} alt="skillsHeadIcon" className="SkillsBlock_header_logo"/>
+                    <img src={skillsHead} alt="Neo" className="SkillsBlock_header_logo"/>
                 </picture>
             </div>
             <div className='SkillsBlock_content'>

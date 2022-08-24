@@ -20,7 +20,7 @@ const ProjectsBlock = () => {
                         className='ProjectsBlock_header_logoImg'
                         media='(min-width: 650px)'
                         srcSet={projectLogo_large}/> 
-                    <img src={projectLogo} alt="gears" className="ProjectsBlock_header_logoImg"/>
+                    <img src={projectLogo} alt="Project" className="ProjectsBlock_header_logoImg"/>
                 </picture>
             </div>
             <p data-aos='zoom-in' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_text'>Check out some of my interesting projects:</p>
