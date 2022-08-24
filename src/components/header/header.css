@@ -7,7 +7,7 @@
   top: 0;
   margin-top: -200px;
   animation: moving-header 0.5s steps(50, end);
-  animation-delay: 9.5s;
+  animation-delay: 13.5s;
   animation-fill-mode: forwards;
   overflow-x: hidden;
 }
@@ -160,7 +160,7 @@
   .Header {
     display: flex;
     justify-content: center;
-    animation-delay: 8s;
+    animation-delay: 12s;
     animation-fill-mode: forwards;
   }
 
