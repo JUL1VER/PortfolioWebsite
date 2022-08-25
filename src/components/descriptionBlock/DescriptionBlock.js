@@ -57,9 +57,8 @@ const DescriptionBlock = () => {
                             Say Hello
                     </button>
                 </div>
-                
-                <Modal active={modalActive} onCloseModalClick={handleCloseModalClick}/>
             </div>
+            <Modal active={modalActive} onCloseModalClick={handleCloseModalClick}/>
         </div>
     );
 };
