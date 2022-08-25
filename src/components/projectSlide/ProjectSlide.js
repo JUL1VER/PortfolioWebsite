@@ -6,15 +6,17 @@ import project1 from '../../img/project1.png';
 import project2 from '../../img/project2.png';
 import project3 from '../../img/project3.png';
 import project4 from '../../img/project4.png';
-import SwiperCore, { Navigation, Lazy, EffectFade, EffectFlip } from 'swiper'
+import project5 from '../../img/project5.png';
+import SwiperCore, { Navigation, Pagination, Lazy, EffectFade, EffectFlip } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 const ProjectSlide = () => {
     const cards = [
@@ -41,8 +43,15 @@ const ProjectSlide = () => {
         },
         {
             id: 4,
-            link: 'https://github.com/JUL1VER/PortfolioWebsite.React',
+            link: 'https://github.com/JUL1VER/FunnyRace.JS',
             imgprop: project4,
+            description: 'Made a funny race of players based on random step each oh them using pure JavaScript.',
+            techno: ['Navite JavaScript', 'CSS']
+        },
+        {
+            id: 5,
+            link: 'https://github.com/JUL1VER/PortfolioWebsite.React',
+            imgprop: project5,
             description: 'Made a collapse of the universe using recursion and my own website :)',
             techno: ['React', 'Screenshots', 'Meme']
         }
@@ -71,8 +80,6 @@ const ProjectSlide = () => {
                         }}
                         spaceBetween={500}
                         slidesPerView={1}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         { cards.map(card => (
                             <SwiperSlide key={card.id}>
@@ -83,7 +90,7 @@ const ProjectSlide = () => {
                 </div>
                 <div className='ProjectsBlock_contect_tecnho'>
                     <Swiper
-                        modules={[EffectFlip]}
+                        modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
                         noSwipingClass='ProjectsBlock_contect_tecnhoList'
@@ -94,8 +101,6 @@ const ProjectSlide = () => {
                         }}
                         spaceBetween={500}
                         slidesPerView={1}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         { cards.map(card => (
                             <SwiperSlide key={card.id}>
@@ -114,11 +119,12 @@ const ProjectSlide = () => {
                     Prev
                 </button>
                 <Swiper
-                    modules={[Lazy, EffectFade]}
+                    modules={[Lazy, EffectFade, Pagination]}
                     effect='fade'
                     lazy={true}
                     loop={true}
                     noSwiping={true}
+                    pagination={true}
                     noSwipingClass='ProjectsBlock_conteiner_slidePic'
                     className='ProjectsBlock_Swiper'
                     onBeforeInit={(swiper) => {

@@ -8,6 +8,19 @@
   align-items: center;
 }
 
+.swiper-pagination {
+  position: absolute;
+  top: 273px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 .ProjectsBlock_header {
   display: flex;
   flex-direction: row;
