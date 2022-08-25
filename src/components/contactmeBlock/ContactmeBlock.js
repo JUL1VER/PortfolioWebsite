@@ -60,7 +60,10 @@ const ContactmeBlock = () => {
         }, (error) => {
             console.log(error.text);
         });
-        e.target.reset();
+        
+        setInfo(state => ({ ...state, name: '' }))
+        setInfo(state => ({ ...state, email: '' }))
+        setInfo(state => ({ ...state, message: '' }))
     };
 
     return (
