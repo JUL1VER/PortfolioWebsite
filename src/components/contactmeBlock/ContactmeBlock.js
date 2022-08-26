@@ -12,7 +12,7 @@ import './contactmeBlock.css';
 const ContactmeBlock = () => {
     const [info, setInfo] = useState({ name: '', email: '', message: '' });
     const [disableButton, setDisableButton] = useState(true);
-    
+
     useEffect(() => {
         if (!info.email.length || !info.message.length || !info.name.length) { setDisableButton(true) }
         else { setDisableButton(false) }
@@ -21,6 +21,7 @@ const ContactmeBlock = () => {
     const handleNameChange = (e) => {
         setInfo(state => ({ ...state, name: e.target.value }))
         if (!String(e.target.value).length) {
+            // Состояние кнопки уже меняется в useEffect, в обработчике полей ввода можно не дублировать, здесь и ниже
             setDisableButton(true)
         } else {
             setDisableButton(false)
@@ -46,21 +47,23 @@ const ContactmeBlock = () => {
     }
 
     useEffect(() => {
-        Aos.init({duration: 2500});
+        Aos.init({ duration: 2500 });
     }, [])
 
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+        // При желании можно вернуть валидацию, ничего не мешает в текущей реализации здесь проверить валидность
+        // полей, если какое то поле невалидно, поставить ему ошибку и остановить выполнение функции
 
         emailjs.sendForm('service_kc7tg2i', 'template_1nboemo', form.current, 'uuqcIqnHZpy0Umg--')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
         setInfo(state => ({ ...state, name: '' }))
         setInfo(state => ({ ...state, email: '' }))
         setInfo(state => ({ ...state, message: '' }))
@@ -74,8 +77,8 @@ const ContactmeBlock = () => {
                     <source
                         className='ContactmeBlock_header_logo'
                         media='(min-width: 650px)'
-                        srcSet={contactmeLogo_large}/> 
-                    <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
+                        srcSet={contactmeLogo_large} />
+                    <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo" />
                 </picture>
             </div>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>
@@ -83,34 +86,34 @@ const ContactmeBlock = () => {
                     <source
                         className='ContactmeBlock_img'
                         media='(min-width: 500px)'
-                        srcSet={handsWithPills_large}/> 
-                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img'/>
+                        srcSet={handsWithPills_large} />
+                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img' />
                 </picture>
                 <form ref={form} onSubmit={sendEmail} className='ContactmeBlock_form'>
-                    <input 
+                    <input
                         name='user_name'
                         type='text'
-                        placeholder='Enter your name' 
+                        placeholder='Enter your name'
                         className='ContactmeBlock_name'
                         value={info.name}
                         onChange={handleNameChange}
-                        />
-                    <input 
+                    />
+                    <input
                         name='user_email'
                         type='email'
-                        placeholder='Enter your email address' 
+                        placeholder='Enter your email address'
                         className='ContactmeBlock_email'
                         value={info.email}
-                        onChange={handleEmailChange}/>
-                    <textarea 
+                        onChange={handleEmailChange} />
+                    <textarea
                         name='message'
                         type='text'
-                        placeholder='Enter your message...' 
+                        placeholder='Enter your message...'
                         className='ContactmeBlock_message'
                         value={info.message}
-                        onChange={handleMessageChange}/>
+                        onChange={handleMessageChange} />
                     <button
-                        disabled={ disableButton }
+                        disabled={disableButton}
                         className={disableButton ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
                         type='submit'
                         value='Send'>
