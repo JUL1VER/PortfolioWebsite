@@ -1,6 +1,7 @@
 .SkillsBlock_wrapper {
   margin-top: 50px;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding: 50px 0;
 }
 
@@ -22,8 +23,8 @@
   letter-spacing: 4px;
 }
 
-.SkillsBlock_header_logoImg {
-  margin: 10px 0px 0px 10px;
+.SkillsBlock_header_logo {
+  width: 35px;
 }
 
 .SkillsBlock_img {
@@ -75,6 +76,10 @@
     font-size: 50px;
   }
 
+  .SkillsBlock_header_logo {
+    width: 50px;
+  }
+
   .SkillsBlock_text {
     font-size: 25px;
     line-height: 35px;
@@ -101,7 +106,7 @@
   .SkillsBlock_content {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .SkillsBlock_header_text {

@@ -148,8 +148,9 @@
   text-shadow: 0 0 5px #1cd119;
 }
 
-.Header_navbar_logos {
-  margin: 5px 0 0 5px;
+.Header_navbar_logo {
+  width: 35px;
+  margin: 2px 0 0 5px;
 }
 
 .Header_overlay {
@@ -195,12 +196,9 @@
     margin-right: 40px;
   }
 
-  .Header_navbar_logos {
-    margin: 10px 0 0 5px;
-  }
-
   .Header_navbar_logo {
     width: 40px;
+    margin: 2px 0 0 5px;
   }
 
   .Header_navbar_navLinks {

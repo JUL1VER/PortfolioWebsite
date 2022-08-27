@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import myfoto from '../../img/myfoto.png';
 import myfoto_large from '../../img/myfoto_large.png';
-import question from '../../img/question.png';
-import question_large from '../../img/question_large.png';
+import question from '../../img/question_large.png';
 import Modal from '../modal/Modal';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -24,13 +23,7 @@ const DescriptionBlock = () => {
         <div className='DescriptionBlock_wrapper'>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='DescriptionBlock_header'>
                 <h2 className='DescriptionBlock_header_text' id='WhoAmI'>Who Am I</h2>
-                <picture className="DescriptionBlock_header_logoImg">
-                    <source
-                        className='DescriptionBlock_header_logo'
-                        media='(min-width: 650px)'
-                        srcSet={question_large}/> 
-                    <img src={question} alt="Question" className="DescriptionBlock_header_logo"/>
-                </picture>
+                <img src={question} alt="Question" className="DescriptionBlock_header_logo"/>
             </div>
             <div data-aos='zoom-in' data-aos-delay='400' data-aos-once='true' className='DescriptionBlock_description'>
                 <div className='DescriptionBlock_fotoWithHover'>

@@ -106,7 +106,7 @@ const ProjectSlide = () => {
                             <SwiperSlide key={card.id}>
                                 <ul className='ProjectsBlock_contect_tecnhoList'>
                                     { card.techno.map(technology => (
-                                        <li>{technology}</li>
+                                        <li key={technology}>{technology}</li>
                                     ))}
                                 </ul>
                             </SwiperSlide>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import skillsHead from '../../img/skillsHead.png';
-import skillsHead_large from '../../img/skillsHead_large.png';
+import skillsHead from '../../img/skillsHead_large.png';
 import skillsImg from '../../img/skillsImg.png';
 import skillsImg_large from '../../img/skillsImg_large.png';
 import css from '../../img/csslogo.png';
@@ -36,13 +35,7 @@ const SkillsBlock = () => {
         <div className='SkillsBlock_wrapper'>
             <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_header' id='SkillsPart'>
                 <h2 className='SkillsBlock_header_text'>Skills</h2>
-                <picture className="SkillsBlock_header_logoImg">
-                    <source
-                        className='SkillsBlock_header_logo'
-                        media='(min-width: 650px)'
-                        srcSet={skillsHead_large}/> 
-                    <img src={skillsHead} alt="Neo" className="SkillsBlock_header_logo"/>
-                </picture>
+                <img src={skillsHead} alt="Neo" className="SkillsBlock_header_logo"/>
             </div>
             <div className='SkillsBlock_content'>
                 <picture data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_imgPic'>

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import contactmeLogo from '../../img/contactme_Logo.png';
-import contactmeLogo_large from '../../img/contactme_Logo_large.png';
+import contactmeLogo from '../../img/contactmeLogo_large.png';
 import handsWithPills from '../../img/handsWithPills.png';
 import handsWithPills_large from '../../img/handsWithPills_large.png';
 import Aos from 'aos';
@@ -20,29 +19,14 @@ const ContactmeBlock = () => {
 
     const handleNameChange = (e) => {
         setInfo(state => ({ ...state, name: e.target.value }))
-        if (!String(e.target.value).length) {
-            setDisableButton(true)
-        } else {
-            setDisableButton(false)
-        }
     }
 
     const handleEmailChange = (e) => {
         setInfo(state => ({ ...state, email: e.target.value }))
-        if (!String(e.target.value).length) {
-            setDisableButton(true)
-        } else {
-            setDisableButton(false)
-        }
     }
 
     const handleMessageChange = (e) => {
         setInfo(state => ({ ...state, message: e.target.value }))
-        if (!String(e.target.value).length) {
-            setDisableButton(true)
-        } else {
-            setDisableButton(false)
-        }
     }
 
     useEffect(() => {
@@ -70,13 +54,7 @@ const ContactmeBlock = () => {
         <div className='ContactmeBlock_wrapper'>
             <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_header'>
                 <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
-                <picture className="ContactmeBlock_header_logoImg">
-                    <source
-                        className='ContactmeBlock_header_logo'
-                        media='(min-width: 650px)'
-                        srcSet={contactmeLogo_large}/> 
-                    <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
-                </picture>
+                <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
             </div>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>
                 <picture className="ContactmeBlock_imgPic">

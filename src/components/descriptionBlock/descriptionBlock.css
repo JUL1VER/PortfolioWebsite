@@ -21,7 +21,8 @@
   margin: 0;
 }
 
-.DescriptionBlock_header_logoImg {
+.DescriptionBlock_header_logo {
+  width: 35px;
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -140,6 +141,11 @@
     font-size: 30px;
   }
 
+  .DescriptionBlock_header_logo {
+    width: 50px;
+    height: 50px;
+  }
+
   .DescriptionBlock_fotoWithHover {
     margin: 0 auto;
     margin-top: 40px;
@@ -172,6 +178,10 @@
 
   .DescriptionBlock_header_text {
     font-size: 50px;
+  }
+
+  .DescriptionBlock_header_logo {
+    margin-top: 6px;
   }
 
   .DescriptionBlock_description {

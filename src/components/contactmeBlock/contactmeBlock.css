@@ -25,7 +25,8 @@
 }
 
 .ContactmeBlock_header_logo {
-  margin: 8px 0px 0px 8px;
+  margin: 3px 0px 0px 5px;
+  width: 35px;
 }
 
 .ContactmeBlock_img {
@@ -138,6 +139,10 @@
     font-size: 50px;
   }
 
+  .ContactmeBlock_header_logo {
+    width: 40px;
+  }
+
   .ContactmeBlock_name {
     font-size: 25px;
     height: 70px;
@@ -180,6 +185,10 @@
 
   .ContactmeBlock_header_text {
     font-size: 60px;
+  }
+
+  .ContactmeBlock_header_logo {
+    width: 50px;
   }
 
   .ContactmeBlock_img {

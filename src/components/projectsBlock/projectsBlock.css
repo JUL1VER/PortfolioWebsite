@@ -40,10 +40,9 @@
   color: #1cd119;
 }
 
-.ProjectsBlock_header_logoImg {
-  width: 36px;
-  height: 32px;
-  margin: 8px 0px 0px 8px;
+.ProjectsBlock_header_logo {
+  width: 35px;
+  margin: 3px 0px 0px 5px;
 }
 
 .ProjectsBlock_text {
@@ -255,9 +254,8 @@
     font-size: 25px;
   }
 
-  .ProjectsBlock_header_logoImg {
-    width: 45px;
-    height: 45px;
+  .ProjectsBlock_header_logo {
+    width: 50px;
   }
 
   .ProjectsBlock_Swiper {
@@ -322,6 +320,10 @@
 
   .ProjectsBlock_header_text {
     font-size: 60px;
+  }
+
+  .ProjectsBlock_header_logo {
+    margin-top: 13px;
   }
 
   .ProjectsBlock_text {
