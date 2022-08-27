@@ -5,7 +5,6 @@
   align-items: center;
   font-family: "Zilla Slab", serif;
   overflow-x: hidden;
-  overflow-y: hidden;
   padding: 50px 0;
 }
 
@@ -36,7 +35,7 @@
 .DescriptionBlock_fotoWithHover {
   order: 2;
   margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px;
   position: relative;
   outline: 2px solid #1cd119;
   outline-offset: 10px;
