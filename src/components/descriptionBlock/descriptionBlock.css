@@ -30,11 +30,11 @@
 .DescriptionBlock_description {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .DescriptionBlock_fotoWithHover {
   order: 2;
-  margin: 0 auto;
   margin: 40px;
   position: relative;
   outline: 2px solid #1cd119;
@@ -202,16 +202,16 @@
     margin: 0 auto;
     max-width: 450px;
     width: 40%;
-    margin-top: 20px;
+    margin: 20px 40px 20px;
   }
 
   .DescriptionBlock_text {
-    margin-top: 25px;
+    margin-top: 35px;
     text-align: start;
     width: 100%;
     max-width: 750px;
     font-size: 22px;
-    line-height: 155%;
+    line-height: 150%;
   }
 
   .DescriptionBlock_helloButton {
