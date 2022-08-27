@@ -41,8 +41,8 @@
   outline-offset: 10px;
   border-radius: 15px;
   transition: 0.5s;
-  width: 75%;
-  max-width: 400px;
+  width: 60%;
+  max-width: 300px;
 }
 
 .DescriptionBlock_fotoWithHover:hover {
@@ -148,6 +148,7 @@
   .DescriptionBlock_fotoWithHover {
     margin: 0 auto;
     margin-top: 40px;
+    max-width: 400px;
     order: 2;
   }
 
