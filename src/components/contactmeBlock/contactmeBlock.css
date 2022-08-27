@@ -29,12 +29,36 @@
   width: 35px;
 }
 
-.ContactmeBlock_img {
+/* .ContactmeBlock_img {
   width: 70%;
   min-width: 250px;
   max-width: 500px;
   min-height: 187px;
   margin-top: 45px;
+} */
+
+.ContactmeBlock_picture {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.ContactmeBlock_img {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.ContactmeBlock_leftpill {
+  position: relative;
+  width: 40px;
+  top: 105px;
+  left: -35px;
+}
+
+.ContactmeBlock_rightpill {
+  position: relative;
+  width: 40px;
+  top: 105px;
+  right: -35px;
 }
 
 .ContactmeBlock_form {
@@ -143,6 +167,26 @@
     width: 40px;
   }
 
+  .ContactmeBlock_picture {
+    width: 450px;
+  }
+
+  .ContactmeBlock_img {
+    margin-top: -40px;
+  }
+
+  .ContactmeBlock_leftpill {
+    width: 60px;
+    top: 173px;
+    left: -75px;
+  }
+
+  .ContactmeBlock_rightpill {
+    width: 60px;
+    top: 173px;
+    right: -75px;
+  }
+
   .ContactmeBlock_name {
     font-size: 25px;
     height: 70px;
@@ -191,22 +235,32 @@
     width: 50px;
   }
 
-  .ContactmeBlock_img {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 1000px;
-    margin-top: 30px;
+  .ContactmeBlock_picture {
+    order: 1;
+    width: 600px;
   }
 
-  .ContactmeBlock_imgPic {
-    order: 1;
+  .ContactmeBlock_img {
+    margin-top: -40px;
+  }
+
+  .ContactmeBlock_leftpill {
+    width: 80px;
+    top: 245px;
+    left: -95px;
+  }
+
+  .ContactmeBlock_rightpill {
+    width: 80px;
+    top: 245px;
+    right: -95px;
   }
 
   .ContactmeBlock_form {
     order: 2;
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 52%;
     margin-top: 0px;
   }
 

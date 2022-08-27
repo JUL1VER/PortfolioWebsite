@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import contactmeLogo from '../../img/contactmeLogo_large.png';
-import handsWithPills from '../../img/handsWithPills.png';
-import handsWithPills_large from '../../img/handsWithPills_large.png';
+import leftpill from '../../img/bluePill.png';
+import rightpill from '../../img/redPill.png';
+import hands from '../../img/hands.png';
+import hands_large from '../../img/hands_large.png';
 import Aos from 'aos';
 import emailjs from '@emailjs/browser';
 import 'aos/dist/aos.css';
@@ -57,13 +59,17 @@ const ContactmeBlock = () => {
                 <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
             </div>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>
-                <picture className="ContactmeBlock_imgPic">
-                    <source
-                        className='ContactmeBlock_img'
-                        media='(min-width: 500px)'
-                        srcSet={handsWithPills_large}/> 
-                    <img src={handsWithPills} alt="Hands with pills" className='ContactmeBlock_img'/>
-                </picture>
+                <div className='ContactmeBlock_picture'>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="ContactmeBlock_leftpill"/></a>
+                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='ContactmeBlock_rightpill'/></a>
+                    <picture className="ContactmeBlock_imgPic">
+                        <source
+                            className='ContactmeBlock_img'
+                            media='(min-width: 500px)'
+                            srcSet={hands_large}/> 
+                        <img src={hands} alt="Hands" className='ContactmeBlock_img'/>
+                    </picture>
+                </div>
                 <form ref={form} onSubmit={sendEmail} className='ContactmeBlock_form'>
                     <input 
                         name='user_name'
