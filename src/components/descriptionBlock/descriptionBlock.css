@@ -173,6 +173,7 @@
     max-width: 1280px;
     margin: 0 auto;
     flex-direction: column;
+    padding: 100px 0;
   }
 
   .DescriptionBlock_header_text {
