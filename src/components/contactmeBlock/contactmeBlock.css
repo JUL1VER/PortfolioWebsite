@@ -29,14 +29,6 @@
   width: 35px;
 }
 
-/* .ContactmeBlock_img {
-  width: 70%;
-  min-width: 250px;
-  max-width: 500px;
-  min-height: 187px;
-  margin-top: 45px;
-} */
-
 .ContactmeBlock_picture {
   width: 250px;
   margin: 0 auto;
@@ -304,7 +296,7 @@
     height: 70px;
     margin-top: 30px;
     font-size: 36px;
-    padding: 0 20px;
+    padding: 0 20px 0 15px;
     box-shadow: 0 0 10px 2px #1cd119;
   }
 }
