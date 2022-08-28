@@ -52,6 +52,7 @@
   width: 40px;
   top: 105px;
   left: -35px;
+  transition: 0.5s;
 }
 
 .ContactmeBlock_rightpill {
@@ -59,6 +60,12 @@
   width: 40px;
   top: 105px;
   right: -35px;
+  transition: 0.5s;
+}
+
+.ContactmeBlock_leftpill:hover,
+.ContactmeBlock_rightpill:hover {
+  transform: scale(1.15);
 }
 
 .ContactmeBlock_form {

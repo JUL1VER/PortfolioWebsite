@@ -15,7 +15,6 @@
 
 .Footer_media {
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .Footer_linksText {
@@ -106,12 +105,13 @@
     justify-content: space-around;
     font-size: 35px;
     line-height: 51px;
+    padding: 50px 0px 30px 0px;
   }
 
   .Footer_media {
     display: flex;
     flex-direction: column;
-    margin: 150px 0px 50px 0px;
+    margin: 0;
     width: 30%;
   }
 
@@ -138,7 +138,6 @@
   .Footer_github {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
   }
 
   .Footer_githubBlock {
@@ -149,7 +148,7 @@
     font-size: 35px;
     line-height: 51px;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .Footer_githubBlock_img {
