@@ -73,6 +73,8 @@
 .Footer_githubBlock_text_name {
   color: #1cd119;
   font-weight: 400;
+  display: inline-block;
+  margin-left: 3px;
 }
 
 @media (min-width: 650px) {

@@ -10,6 +10,7 @@ import gmail_large from '../../img/gmail_large.svg';
 import github from '../../img/github.png';
 import github_large from '../../img/github_large.svg';
 import FooterLink from '../footerLink/FooterLink';
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 import './footer.css';
 
@@ -30,16 +31,16 @@ const Footer = () => {
     return (
         <div className='Footer_wrapper'>
             <div className='Footer_media'>
-                <p className='Footer_linksText'>My social media links:</p>
+                <p className='Footer_linksText'>Follow me in my social networks:</p>
                 <div className='Footer_linksBlock'>
                     {content}
                 </div>
             </div>
             <div className="Footer_github">
-                <p className='Footer_linksText'>More projects I've worked on</p>
+                <p className='Footer_linksText'>Take a look at my new projects</p>
                 <div className='Footer_githubBlock'>
                     <FooterLink imgprop={github} img_largeprop={github_large} src='https://github.com/JUL1VER'/>
-                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<b className='Footer_githubBlock_text_name'>jul1ver</b> on github</a>
+                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<GlitchText component='span' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='Footer_githubBlock_text_name'>jul1ver</GlitchText> on github</a>
                 </div>
             </div>
         </div>

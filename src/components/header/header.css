@@ -37,6 +37,11 @@
 .Header_VlogoPic {
   margin-top: 15px;
   margin-left: 15px;
+  transition: 0.5s;
+}
+
+.Header_VlogoPic:hover {
+  transform: scale(1.1);
 }
 
 .Header_burgerBlock {
