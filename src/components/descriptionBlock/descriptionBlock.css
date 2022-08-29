@@ -5,7 +5,7 @@
   align-items: center;
   font-family: "Zilla Slab", serif;
   overflow-x: hidden;
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
 }
 
 .DescriptionBlock_header {
@@ -47,6 +47,7 @@
 
 .DescriptionBlock_fotoWithHover:hover {
   outline-offset: -15px;
+  outline-color: #0a0a0a;
 }
 
 .DescriptionBlock_foto {

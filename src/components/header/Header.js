@@ -30,7 +30,9 @@ const Header = () => {
            setVisible(position > moving);
            setPosition(moving)
         };
-        window.addEventListener("scroll", handleScroll);
+        if (!isActive) {
+            window.addEventListener("scroll", handleScroll);
+        }
         return(() => {
            window.removeEventListener("scroll", handleScroll);
         })

@@ -16,8 +16,8 @@ import './skillsBlock.css';
 
 const SkillsBlock = () => {
     const technologies = [
-        {id: 1, imgprop: css, title: 'CSS'},
-        {id: 2, imgprop: html, title: 'HTML'},
+        {id: 1, imgprop: html, title: 'HTML'},
+        {id: 2, imgprop: css, title: 'CSS'},
         {id: 3, imgprop: js, title: 'JS'},
         {id: 4, imgprop: ts, title: 'TS'},
         {id: 5, imgprop: react, title: 'React'},
@@ -46,7 +46,7 @@ const SkillsBlock = () => {
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
                 </picture>
                 <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='SkillsBlock_skillsAndLogos'>
-                    <p className='SkillsBlock_text'>I have a solid experience in the following web technologies:</p>
+                    <p className='SkillsBlock_text'>I have solid experience in the following web technologies:</p>
                     <div className='SkillsBlock_logoWrapper'>
                         {content}
                     </div>

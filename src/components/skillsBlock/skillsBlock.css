@@ -1,7 +1,7 @@
 .SkillsBlock_wrapper {
-  margin-top: 50px;
+  margin-top: 25px;
   overflow-x: hidden;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .SkillsBlock_header {
@@ -107,7 +107,6 @@
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 100px 0;
   }
 
   .SkillsBlock_content {
