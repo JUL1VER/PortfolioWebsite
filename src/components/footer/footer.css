@@ -131,6 +131,7 @@
   }
 
   .Footer_linksText {
+    width: 510px;
     display: flex;
     margin-top: 0px;
     font-size: 35px;

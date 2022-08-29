@@ -23,7 +23,7 @@
   letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
-  width: 7.3em;
+  width: 8em;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1s steps(13, end);
   animation-delay: 1s;
@@ -35,7 +35,7 @@
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 9.5em;
+  width: 10.1em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -48,7 +48,7 @@
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 12em;
+  width: 13em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -61,7 +61,7 @@
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 11.3em;
+  width: 12em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -117,7 +117,7 @@
 
   .WelcomeBlock_name {
     font-size: 50px;
-    width: 9.7em;
+    width: 10em;
     opacity: 0;
     border-right: 25px solid #1cd119;
     animation: type_desktop_border25 1.5s steps(25, end);
@@ -187,7 +187,7 @@
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 9.5em;
+    width: 10em;
     opacity: 0;
     border-right: 30px solid #1cd119;
     animation: type_desktop_border30 1.5s steps(23, end);
@@ -200,10 +200,10 @@
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 23.4em;
+    width: 24.7em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type_desktop_border25 1.5s steps(35, end);
+    animation: type_desktop_border25 1.5s steps(37, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
