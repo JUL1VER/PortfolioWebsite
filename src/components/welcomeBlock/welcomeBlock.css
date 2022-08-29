@@ -7,8 +7,18 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   text-align: start;
+}
+
+.WelcomeBlock_hello,
+.WelcomeBlock_name,
+.WelcomeBlock_creater_mobile1,
+.WelcomeBlock_creater_mobile2,
+.WelcomeBlock_creater_desktop,
+.WelcomeBlock_potrfolio_1,
+.WelcomeBlock_potrfolio_2 {
+  padding-left: 5px;
 }
 
 .WelcomeBlock_greenText {
@@ -35,7 +45,7 @@
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 10.1em;
+  width: 9.7em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -48,7 +58,7 @@
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 13em;
+  width: 12.2em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -61,7 +71,7 @@
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 12em;
+  width: 11.1em;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -71,6 +81,7 @@
 
 .WelcomeBlock_potrfolio_1 {
   font-size: 15px;
+  font-weight: 600;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
@@ -84,6 +95,7 @@
 
 .WelcomeBlock_potrfolio_2 {
   font-size: 15px;
+  font-weight: 600;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -117,7 +129,7 @@
 
   .WelcomeBlock_name {
     font-size: 50px;
-    width: 10em;
+    width: 9.5em;
     opacity: 0;
     border-right: 25px solid #1cd119;
     animation: type_desktop_border25 1.5s steps(25, end);
@@ -169,6 +181,7 @@
     max-width: 1100px;
     align-items: flex-start;
   }
+
   .WelcomeBlock_hello {
     font-size: 40px;
     margin: 0;
@@ -187,7 +200,7 @@
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 10em;
+    width: 9.5em;
     opacity: 0;
     border-right: 30px solid #1cd119;
     animation: type_desktop_border30 1.5s steps(23, end);
@@ -200,7 +213,7 @@
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 24.7em;
+    width: 24em;
     opacity: 0;
     border-right: 20px solid #1cd119;
     animation: type_desktop_border25 1.5s steps(37, end);

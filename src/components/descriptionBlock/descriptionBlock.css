@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   overflow-x: hidden;
   padding: 50px 0 100px 0;
 }
@@ -14,6 +14,7 @@
   letter-spacing: 3px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .DescriptionBlock_header_text {
@@ -110,7 +111,7 @@
   border-radius: 5px;
   cursor: pointer;
 
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   transition: 0.5s;
@@ -175,10 +176,6 @@
 
   .DescriptionBlock_header_text {
     font-size: 50px;
-  }
-
-  .DescriptionBlock_header_logo {
-    margin-top: 6px;
   }
 
   .DescriptionBlock_description {

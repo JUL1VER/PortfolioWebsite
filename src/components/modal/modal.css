@@ -39,7 +39,7 @@
 }
 
 .modal_text {
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   color: #1cd119;
   font-size: 20px;
   width: 90%;
@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
   width: 45%;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   font-weight: 600;
   border-radius: 10px;
@@ -102,7 +102,7 @@
     width: 500px;
   }
   .modal_text {
-    font-family: "Zilla Slab", serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 25px;
     width: 90%;
   }

@@ -32,7 +32,7 @@
 .ProjectsBlock_header_text {
   margin: 0px;
 
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 35px;
   letter-spacing: 3px;
@@ -50,7 +50,7 @@
   margin: 0 auto;
   margin-top: 20px;
 
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
 
@@ -121,7 +121,7 @@
 .ProjectsBlock_contect_tecnho {
   width: 80%;
   margin: 0 auto;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   color: #fff;
   background: #0a0a0a;
   border: 2px solid #1cd119;
@@ -161,7 +161,7 @@
   background: #1cd119;
   color: #0a0a0a;
   border: 1px solid #1cd119;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
   transition: 0.5s;
@@ -174,7 +174,7 @@
   height: 25px;
   padding-top: 0px;
   position: absolute;
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   border-radius: 5px;
   color: #1cd119;

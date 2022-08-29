@@ -40,7 +40,7 @@ const Footer = () => {
                 <p className='Footer_linksText'>Take a look at my new projects</p>
                 <div className='Footer_githubBlock'>
                     <FooterLink imgprop={github} img_largeprop={github_large} src='https://github.com/JUL1VER'/>
-                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<GlitchText component='span' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='Footer_githubBlock_text_name'>jul1ver</GlitchText> on github</a>
+                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<GlitchText component='span' onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='Footer_githubBlock_text_name'>jul1ver</GlitchText> on github</a>
                 </div>
             </div>
         </div>

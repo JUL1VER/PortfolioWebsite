@@ -37,10 +37,10 @@ const ContactmeBlock = () => {
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const SendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_kc7tg2i', 'template_1nboemo', form.current, 'uuqcIqnHZpy0Umg--')
+        emailjs.SendForm('service_kc7tg2i', 'template_1nboemo', form.current, 'uuqcIqnHZpy0Umg--')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -70,7 +70,7 @@ const ContactmeBlock = () => {
                         <img src={hands} alt="Hands" className='ContactmeBlock_img'/>
                     </picture>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className='ContactmeBlock_form'>
+                <form ref={form} onSubmit={SendEmail} className='ContactmeBlock_form'>
                     <input 
                         name='user_name'
                         type='text'

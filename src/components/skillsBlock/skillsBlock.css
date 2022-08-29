@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
 
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 25px;
   color: #1cd119;
@@ -41,7 +41,7 @@
   margin: 0 auto;
   margin-top: 45px;
 
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -71,7 +71,7 @@
 }
 
 .SkillsBlock_logos_text {
-  font-family: "Zilla Slab", serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 25px;
   margin: 0;
@@ -117,6 +117,10 @@
 
   .SkillsBlock_header_text {
     font-size: 60px;
+  }
+
+  .SkillsBlock_header_logo {
+    margin-top: 4px;
   }
 
   .SkillsBlock_skillsAndLogos {

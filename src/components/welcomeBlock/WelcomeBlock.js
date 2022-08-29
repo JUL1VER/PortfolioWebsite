@@ -18,10 +18,10 @@ const WelcomeBlock = () => {
     return (
         <div className='WelcomeBlock_wrapper'>
             <h1 className='WelcomeBlock_hello'>Knock, knock.</h1>
-            <h2 className='WelcomeBlock_name'> <GlitchText color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='WelcomeBlock_greenText'>Vladislav Juliver</GlitchText> here.</h2>
+            <h2 className='WelcomeBlock_name'> <GlitchText component='span' color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='WelcomeBlock_greenText'>Vladislav Juliver</GlitchText> here.</h2>
             {
                 isDesktop ? 
-                <h3 className='WelcomeBlock_creater_desktop'>I am <snap className='WelcomeBlock_greenText'>obsessed</snap> with creating beautiful digital products.</h3>
+                <h3 className='WelcomeBlock_creater_desktop'>I am <span className='WelcomeBlock_greenText'>obsessed</span> with creating beautiful digital products.</h3>
                 :
                 <>
                 <h3 className='WelcomeBlock_creater_mobile1'>I am <span className='WelcomeBlock_greenText'>obsessed</span> with creating
