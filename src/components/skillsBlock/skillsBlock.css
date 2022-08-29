@@ -57,6 +57,14 @@
   justify-content: center;
 }
 
+.SkillsBlock_logoWithText {
+  transition: 0.2s;
+}
+
+.SkillsBlock_logoWithText:hover {
+  margin-top: -10px;
+}
+
 .SkillsBlock_logos {
   width: 104px;
   height: 106px;

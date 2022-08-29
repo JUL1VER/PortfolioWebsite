@@ -99,6 +99,8 @@
 .DescriptionBlock_link {
   color: #1cd119;
   text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .DescriptionBlock_helloButton {

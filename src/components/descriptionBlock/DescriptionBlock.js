@@ -3,6 +3,7 @@ import myfoto from '../../img/myfoto.png';
 import myfoto_large from '../../img/myfoto_large.png';
 import question from '../../img/question_large.png';
 import Modal from '../modal/Modal';
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -41,9 +42,9 @@ const DescriptionBlock = () => {
                     </picture>
                 </div>
                 <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className="DescriptionBlock_contentPart">
-                    <p className='DescriptionBlock_text'>Hello, my name is <a href="https://linkedin.com/in/vladJ1" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Vlad</a> and I like to create cool things! Interesting fact about me: just like I'm obsessed with programming, I love to wrire <a href="https://stihi.ru/avtor/jul1ver" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>poems</a>. That's why I can say programming is a poetry too!</p>
-                    <p className='DescriptionBlock_text'>Currently I'm developing well desingned impressive apps in <a href="https://mish.design/" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Mish.design</a>. Mostly I work using React and TypeScript, but I also like native JavaScript. The power and possibilities of CSS never stop to amaze me!</p>
-                    <p className='DescriptionBlock_text'>I am interested in many things including science, poetry, music, history, phylosophy and travelling. But programming is one of my favourites! And I also like to talk with people, so feel free to <a href="mailto:jul1v3r@gmail.com" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>say</a> me something :)</p>
+                    <p className='DescriptionBlock_text'>Hello, my name is <GlitchText component='a' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' href="https://linkedin.com/in/vladJ1" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Vlad</GlitchText> and I like to create cool things! Interesting fact about me: just like I'm obsessed with programming, I love to wrire <GlitchText component='a' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' href="https://stihi.ru/avtor/jul1ver" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>poems</GlitchText>. That's why I can say programming is a poetry too!</p>
+                    <p className='DescriptionBlock_text'>Currently I'm developing well desingned impressive apps in <GlitchText component='a' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' href="https://mish.design/" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Mish.design</GlitchText>. Mostly I work using React and TypeScript, but I also like native JavaScript. The power and possibilities of CSS never stop to amaze me!</p>
+                    <p className='DescriptionBlock_text'>I am interested in many things including science, poetry, music, history, phylosophy and travelling. But programming is one of my favourites! And I also like to talk with people, so feel free to <GlitchText component='a' onHover='true' color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' href="mailto:jul1v3r@gmail.com" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>say</GlitchText> me something :)</p>
                     <button className='DescriptionBlock_helloButton' 
                             type={'button'}
                             onClick={() => setModalActive(true)}>

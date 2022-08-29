@@ -12,6 +12,7 @@
 }
 
 .WelcomeBlock_greenText {
+  display: inline-block;
   color: #1cd119;
 }
 
