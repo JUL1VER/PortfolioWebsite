@@ -187,7 +187,7 @@
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 7em;
+    width: 6.5em;
     opacity: 0;
     border-right: 25px solid #1cd119;
     animation: type_desktop_border25 1s steps(13, end);
