@@ -45,7 +45,7 @@ const ProjectSlide = () => {
             id: 4,
             link: 'https://github.com/JUL1VER/FunnyRace.JS',
             imgprop: project4,
-            description: 'Made a funny race of players based on random step each of them using pure JS.',
+            description: 'Made a minimalistic funny race of players based on random step using pure JS.',
             techno: ['Navite JavaScript', 'CSS']
         },
         {

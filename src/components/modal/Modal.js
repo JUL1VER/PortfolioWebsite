@@ -19,6 +19,7 @@ const Modal = ({ active, onCloseModalClick }) => {
                         <img src={telegram} alt='linkedin' className='modal_linkImg'/>
                     </a>
                 </div>
+                <button className='modal_closeButton' onClick={onCloseModalClick}/>
             </div>
         </div>
     );

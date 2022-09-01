@@ -40,7 +40,7 @@
 
 .modal_text {
   font-family: "PT Sans", sans-serif;
-  color: #1cd119;
+  color: #fff;
   font-size: 20px;
   width: 90%;
 }
@@ -97,6 +97,23 @@
   background-color: #2a7ede;
 }
 
+.modal_closeButton {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  mask: url(../../img/close.svg) center no-repeat;
+  mask-size: cover;
+  background: #fff;
+  right: 10px;
+  top: 10px;
+  transition: 0.2s;
+}
+
+.modal_closeButton:hover {
+  background: #1cd119;
+}
+
 @media (min-width: 650px) {
   .modal_content {
     width: 500px;
@@ -124,6 +141,11 @@
   .modal_linkImg {
     width: 25px;
     margin-left: 10px;
+  }
+
+  .modal_closeButton {
+    width: 30px;
+    height: 30px;
   }
 }
 
