@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import myfoto from '../../img/myfoto.png';
 import myfoto_large from '../../img/myfoto_large.png';
-import question from '../../img/question_large.png';
+import question from '../../img/question.png';
 import Modal from '../modal/Modal';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Aos from 'aos';

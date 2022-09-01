@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import projectLogo from '../../img/projectImg_large.png';
+import projectLogo from '../../img/projectImg.png';
 import ProjectSlide from '../projectSlide/ProjectSlide';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

@@ -10,11 +10,13 @@
 
 .swiper-pagination {
   position: absolute;
-  top: 273px;
+  top: 107px;
 }
 
 .swiper-pagination-bullet {
   background-color: #fff;
+  width: 5px;
+  height: 5px;
 }
 
 .swiper-pagination-bullet-active {
@@ -72,6 +74,10 @@
   position: relative;
 }
 
+.ProjectsBlock_conteiner:hover .ProjectsBlock_hover {
+  opacity: 0;
+}
+
 .ProjectsBlock_Swiper {
   width: 200px;
   height: 127px;
@@ -99,10 +105,6 @@
   border-radius: 5px;
   transition: 0.5s;
   height: 98%;
-}
-
-.ProjectsBlock_hover:hover {
-  opacity: 0;
 }
 
 .ProjectsBlock_conteiner_PC {
@@ -266,6 +268,17 @@
     border-radius: 18px;
   }
 
+  .swiper-pagination {
+    position: absolute;
+    top: 167px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+  }
+
   .ProjectsBlock_content_textInside {
     font-size: 25px;
   }
@@ -322,7 +335,7 @@
   }
 
   .ProjectsBlock_header_logo {
-    margin-top: 13px;
+    margin-top: 3px;
   }
 
   .ProjectsBlock_text {
@@ -344,10 +357,21 @@
 
   .ProjectsBlock_Swiper {
     width: 475px;
-    height: 297.5px;
+    height: 298px;
     margin-top: 60px;
     margin-left: 113px;
     border-radius: 20px;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    top: 275px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
   }
 
   .ProjectsBlock_conteiner_projectPic {

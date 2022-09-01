@@ -1,17 +1,17 @@
 import React from 'react';
 
 const FooterLink = (props) => {
-    const {imgprop, img_largeprop, src} = props;
+    const {imgprop, src} = props;
 
     return (
         <a href={src} target='_blank' rel='noreferrer'>
-            <picture className='Footer_linksBlock_imgsPic'>
-                <source
-                    className='Footer_linksBlock_imgs'
-                    media='(min-width: 650px)'
-                    srcSet={img_largeprop}/> 
-                <img src={imgprop} alt="linkIcon" className='Footer_linksBlock_imgs'/>
-            </picture>
+            <div 
+                style={{
+                    WebkitMask: `url("${imgprop}") no-repeat center`,
+                    WebkitMaskSize: "cover",
+                    mask: `url("${imgprop}") no-repeat center`,
+                  }}
+                alt="linkIcon" className='Footer_linksBlock_imgs'/>
         </a>
     );
 };

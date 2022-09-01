@@ -32,12 +32,15 @@
 }
 
 .Footer_linksBlock_imgs {
-  transition: 0.2s;
+  transition: 0.5s;
   width: 31px;
+  height: 31px;
+  background: #fff;
 }
 
 .Footer_linksBlock_imgs:hover {
   transform: scale(1.2);
+  background: #1cd119;
 }
 
 .Footer_projectsText {
@@ -83,11 +86,13 @@
   }
 
   .Footer_linksBlock {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .Footer_linksBlock_imgs {
     width: 40px;
+    height: 40px;
+    background: #fff;
   }
 
   .Footer_githubBlock {
@@ -122,6 +127,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
+    margin-top: 20px;
   }
 
   .Footer_linksBlock_imgs {
@@ -147,6 +153,7 @@
   .Footer_githubBlock {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .Footer_githubBlock_text {

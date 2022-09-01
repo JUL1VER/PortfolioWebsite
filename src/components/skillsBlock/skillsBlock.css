@@ -66,14 +66,14 @@
 }
 
 .SkillsBlock_logos {
-  width: 104px;
-  height: 106px;
+  width: 80px;
+  height: 81px;
 }
 
 .SkillsBlock_logos_text {
   font-family: "PT Sans", sans-serif;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   color: #1cd119;
 }
@@ -98,6 +98,15 @@
     column-gap: 60px;
     grid-template-columns: auto auto auto;
     justify-content: center;
+  }
+
+  .SkillsBlock_logos {
+    width: 104px;
+    height: 106px;
+  }
+
+  .SkillsBlock_logos_text {
+    font-size: 25px;
   }
 }
 

@@ -42,6 +42,7 @@
   transition: 0.5s;
   width: 60%;
   max-width: 300px;
+  overflow: hidden;
 }
 
 .DescriptionBlock_foto {
@@ -53,6 +54,11 @@
   width: 100%;
   border-radius: 15px;
   position: relative;
+  transition: 0.5s;
+}
+
+.DescriptionBlock_fotoWithHover:hover .DescriptionBlock_myFoto {
+  transform: scale(1.15);
 }
 
 .DescriptionBlock_hover {

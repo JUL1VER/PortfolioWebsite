@@ -7,7 +7,7 @@
   top: 0;
   margin-top: -200px;
   animation: moving-header 0.5s steps(50, end);
-  animation-delay: 13.5s;
+  animation-delay: 9.5s;
   animation-fill-mode: forwards;
   overflow-x: hidden;
 }
@@ -111,9 +111,26 @@
   transition: 0.5s;
 }
 
+.Header_navbar_glitch {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  transition: 0.5s;
+}
+
+.Header_navbar_text {
+  display: inline;
+  margin: 0;
+}
+
+.Header_navbar_glitch_inside {
+  display: flex;
+  align-items: center;
+}
+
 .Header_navbar.active {
-  height: 100vh;
   right: 0;
+  overflow: auto;
 }
 
 .Header_overlay.active {
@@ -130,10 +147,9 @@
 
 .Header_navbar_navLinks {
   display: flex;
+  height: 100px;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
-  transition: 0.5s;
   text-decoration: none;
   color: #fff;
   font-size: 25px;
@@ -141,16 +157,14 @@
   margin: 0 auto;
 }
 
-.Header_navbar_navLinks:hover {
+.Header_navbar_glitch:hover {
   color: #1cd119;
   font-size: 30px;
-  text-shadow: 0 0 5px #1cd119;
 }
 
-.Header_navbar_navLinks:active {
+.Header_navbar_glitch:active {
   color: #1cd119;
   font-size: 30px;
-  text-shadow: 0 0 5px #1cd119;
 }
 
 .Header_navbar_logo {
@@ -166,7 +180,7 @@
   .Header {
     display: flex;
     justify-content: center;
-    animation-delay: 12s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
   }
 
@@ -195,6 +209,14 @@
     display: contents;
   }
 
+  .Header_navbar_navLinks {
+    height: 50px;
+  }
+
+  .Header_navbar_glitch {
+    width: 220px;
+  }
+
   .Header_navbarBlock {
     display: flex;
     flex-direction: row;
@@ -203,11 +225,7 @@
 
   .Header_navbar_logo {
     width: 40px;
-    margin: 2px 0 0 5px;
-  }
-
-  .Header_navbar_navLinks {
-    width: 220px;
+    margin: 0 0 0 5px;
   }
 }
 

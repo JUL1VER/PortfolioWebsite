@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import contactmeLogo from '../../img/contactmeLogo_large.png';
+import contactmeLogo from '../../img/contactmeLogo.png';
 import leftpill from '../../img/bluePill.png';
 import rightpill from '../../img/redPill.png';
 import hands from '../../img/hands.png';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import skillsHead from '../../img/skillsHead_large.png';
+import skillsHead from '../../img/skillsHead.png';
 import skillsImg from '../../img/skillsImg.png';
 import skillsImg_large from '../../img/skillsImg_large.png';
 import css from '../../img/csslogo.png';

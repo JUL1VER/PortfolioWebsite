@@ -1,13 +1,14 @@
 import './header.css';
 import React, { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import question from '../../img/question_large.png';
-import skillsHead from '../../img/skillsHead_large.png';
-import projectLogo from '../../img/projectImg_large.png';
-import contactmeLogo from '../../img/contactmeLogo_large.png';
+import question from '../../img/question.png';
+import skillsHead from '../../img/skillsHead.png';
+import projectLogo from '../../img/projectImg.png';
+import contactmeLogo from '../../img/contactmeLogo.png';
 import Vlogo from '../../img/V_logo_44.svg';
 import Vlogo_large from '../../img/V_logo_88.svg';
 import classNames from 'classnames';
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -65,10 +66,14 @@ const Header = () => {
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <p className="Header_navbar_text">
-                                Who Am I
-                            </p>
-                            <img src={question} alt="Question" className="Header_navbar_logo"></img>
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
+                                <div className='Header_navbar_glitch_inside'>
+                                    <p className="Header_navbar_text">
+                                        Who Am I
+                                    </p>
+                                    <img src={question} alt="Question" className="Header_navbar_logo"></img>
+                                </div>
+                            </GlitchText>
                         </Link>
                         <Link  
                             className='Header_navbar_navLinks'
@@ -77,10 +82,14 @@ const Header = () => {
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <p className="Header_navbar_text">
-                                Skills
-                            </p>
-                            <img src={skillsHead} alt="gears" className="Header_navbar_logo"></img>
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
+                                <div className='Header_navbar_glitch_inside'>
+                                    <p className="Header_navbar_text">
+                                        Skills
+                                    </p>
+                                    <img src={skillsHead} alt="Neo" className="Header_navbar_logo"></img>
+                                </div>
+                            </GlitchText>
                         </Link>
                         <Link  
                             className='Header_navbar_navLinks'
@@ -89,10 +98,14 @@ const Header = () => {
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <p className="Header_navbar_text">
-                                Projects
-                            </p>
-                            <img src={projectLogo} alt="gears" className="Header_navbar_logo"></img>
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
+                                <div className='Header_navbar_glitch_inside'>
+                                    <p className="Header_navbar_text">
+                                        Projects
+                                    </p>
+                                    <img src={projectLogo} alt="Projects" className="Header_navbar_logo"></img>
+                                </div>
+                            </GlitchText>
                         </Link>
                         <Link 
                             className='Header_navbar_navLinks'
@@ -101,10 +114,14 @@ const Header = () => {
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <p className="Header_navbar_text">
-                                Contact me
-                            </p>
-                            <img src={contactmeLogo} alt="gears" className="Header_navbar_logo"></img>
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
+                                <div className='Header_navbar_glitch_inside'>
+                                    <p className="Header_navbar_text">
+                                        Contact me
+                                    </p>
+                                    <img src={contactmeLogo} alt="Phone" className="Header_navbar_logo"></img>
+                                </div>
+                            </GlitchText>
                         </Link>
                     </nav>
                     <div className={classNames('Header_overlay', {'active': isActive})} onClick={ toggleActiveClass }></div>
