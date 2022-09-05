@@ -57,8 +57,21 @@ const ProjectSlide = () => {
         }
     ];
 
-    const navigationPrevRef = React.useRef(null)
-    const navigationNextRef = React.useRef(null)
+    const swiperTextRef = React.useRef(null);
+    const swiperTecnhoRef = React.useRef(null);
+    const swiperPicRef = React.useRef(null);
+
+    const swiperPrev = () => {
+        swiperTextRef.current.swiper.slidePrev()
+        swiperTecnhoRef.current.swiper.slidePrev()
+        swiperPicRef.current.swiper.slidePrev()
+    }
+
+    const swiperNext = () => {
+        swiperTextRef.current.swiper.slideNext()
+        swiperTecnhoRef.current.swiper.slideNext()
+        swiperPicRef.current.swiper.slideNext()
+    }
 
     useEffect(() => {
         Aos.init({duration: 2500});
@@ -69,16 +82,12 @@ const ProjectSlide = () => {
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
                 <div className='ProjectsBlock_content_text'>
                     <Swiper
-                        modules={[EffectFlip]}
+                        ref={swiperTextRef}
+                        modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
                         noSwipingClass='ProjectsBlock_content_textInside'
                         loop={true}
-                        onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = navigationPrevRef.current
-                            swiper.params.navigation.nextEl = navigationNextRef.current
-                        }}
-                        spaceBetween={500}
                         slidesPerView={1}
                     >
                         { cards.map(card => (
@@ -90,16 +99,12 @@ const ProjectSlide = () => {
                 </div>
                 <div className='ProjectsBlock_contect_tecnho'>
                     <Swiper
+                        ref={swiperTecnhoRef}
                         modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
                         noSwipingClass='ProjectsBlock_contect_tecnhoList'
                         loop={true}
-                        onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = navigationPrevRef.current
-                            swiper.params.navigation.nextEl = navigationNextRef.current
-                        }}
-                        spaceBetween={500}
                         slidesPerView={1}
                     >
                         { cards.map(card => (
@@ -115,13 +120,14 @@ const ProjectSlide = () => {
                 </div>
             </div>
             <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_conteiner'>
-                <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
+                <button onClick={() => swiperPrev()} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>
-                <button ref={navigationNextRef} className='ProjectsBlock_conteiner_nextButton'>
+                <button onClick={() => swiperNext()} className='ProjectsBlock_conteiner_nextButton'>
                     Next
                 </button>
                 <Swiper
+                    ref={swiperPicRef}
                     modules={[Lazy, EffectFade, Pagination]}
                     effect='fade'
                     lazy={true}
@@ -130,10 +136,6 @@ const ProjectSlide = () => {
                     pagination={true}
                     noSwipingClass='ProjectsBlock_conteiner_slidePic'
                     className='ProjectsBlock_Swiper'
-                    onBeforeInit={(swiper) => {
-                        swiper.params.navigation.prevEl = navigationPrevRef.current
-                        swiper.params.navigation.nextEl = navigationNextRef.current
-                   }}
                     spaceBetween={0}
                     slidesPerView={1}
                 >
