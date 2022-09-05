@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsite/static/css/main.8f4e222a.css",
+    "main.js": "/PortfolioWebsite/static/js/main.e47829c3.js",
+    "static/media/myfoto_large.png": "/PortfolioWebsite/static/media/myfoto_large.16cabfe4ce29596942bf.png",
+    "static/media/myfoto.png": "/PortfolioWebsite/static/media/myfoto.9ae59a2d137fe7c87622.png",
+    "static/media/hands_large.png": "/PortfolioWebsite/static/media/hands_large.d7478044660cf437bf9e.png",
+    "static/media/project5.png": "/PortfolioWebsite/static/media/project5.075cfcf766781371824c.png",
+    "static/media/project2.png": "/PortfolioWebsite/static/media/project2.3e046cad7f8d27c66c90.png",
+    "static/media/project1.png": "/PortfolioWebsite/static/media/project1.1be30bdc285787210a89.png",
+    "static/media/hands.png": "/PortfolioWebsite/static/media/hands.d09c2267de62cd0baba1.png",
+    "static/media/project4.png": "/PortfolioWebsite/static/media/project4.aef47bb1a639d6d0bb6d.png",
+    "static/media/project3.png": "/PortfolioWebsite/static/media/project3.2fb6aba92fcae17b8901.png",
+    "static/media/skillsImg_large.png": "/PortfolioWebsite/static/media/skillsImg_large.18c2838aa163c58d8d7b.png",
+    "static/media/skillsImg.png": "/PortfolioWebsite/static/media/skillsImg.6fef3ffd483f75c2270f.png",
+    "static/media/github.svg": "/PortfolioWebsite/static/media/github.9ec5473d7301947a22e8c62f57ee860b.svg",
+    "static/media/linkedin.svg": "/PortfolioWebsite/static/media/linkedin.2eb6f205e1b2cbd9c32a88166017dd65.svg",
+    "static/media/twitter.svg": "/PortfolioWebsite/static/media/twitter.9a9625f33371980a39fc172ef5524f5f.svg",
+    "static/media/close.svg": "/PortfolioWebsite/static/media/close.a4a4a1ee856e99b24064.svg",
+    "static/media/telegram.svg": "/PortfolioWebsite/static/media/telegram.89fdd059c05006444bc77825005eec4c.svg",
+    "index.html": "/PortfolioWebsite/index.html",
+    "static/media/google.svg": "/PortfolioWebsite/static/media/google.ad222e856642fdc6c2784ef1874574b3.svg",
+    "static/media/V_logo_44.svg": "/PortfolioWebsite/static/media/V_logo_44.13c726d050873da7d82801f6d28a03da.svg",
+    "static/media/V_logo_88.svg": "/PortfolioWebsite/static/media/V_logo_88.41f5e678a4b1fc046ac3b2eb5f51354a.svg",
+    "main.8f4e222a.css.map": "/PortfolioWebsite/static/css/main.8f4e222a.css.map",
+    "main.e47829c3.js.map": "/PortfolioWebsite/static/js/main.e47829c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f4e222a.css",
+    "static/js/main.e47829c3.js"
+  ]
+}
