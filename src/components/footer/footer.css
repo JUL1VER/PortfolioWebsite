@@ -35,6 +35,8 @@
   transition: 0.5s;
   width: 31px;
   height: 31px;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   background: #fff;
 }
 

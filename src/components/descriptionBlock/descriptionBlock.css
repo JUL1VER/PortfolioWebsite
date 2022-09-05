@@ -58,10 +58,6 @@
   transition: 0.5s;
 }
 
-.DescriptionBlock_fotoWithHover:hover .DescriptionBlock_myFoto {
-  transform: scale(1.15);
-}
-
 .DescriptionBlock_hover {
   background: #1cd119;
   position: absolute;
@@ -205,6 +201,10 @@
     max-width: 450px;
     width: 40%;
     margin: 20px 40px 20px;
+  }
+
+  .DescriptionBlock_fotoWithHover:hover .DescriptionBlock_myFoto {
+    transform: scale(1.15);
   }
 
   .DescriptionBlock_text {

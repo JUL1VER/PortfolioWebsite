@@ -75,8 +75,8 @@ const ProjectSlide = () => {
                         noSwipingClass='ProjectsBlock_content_textInside'
                         loop={true}
                         onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = navigationPrevRef.current;
-                            swiper.params.navigation.nextEl = navigationNextRef.current;
+                            swiper.params.navigation.prevEl = navigationPrevRef.current
+                            swiper.params.navigation.nextEl = navigationNextRef.current
                         }}
                         spaceBetween={500}
                         slidesPerView={1}
@@ -96,8 +96,8 @@ const ProjectSlide = () => {
                         noSwipingClass='ProjectsBlock_contect_tecnhoList'
                         loop={true}
                         onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = navigationPrevRef.current;
-                            swiper.params.navigation.nextEl = navigationNextRef.current;
+                            swiper.params.navigation.prevEl = navigationPrevRef.current
+                            swiper.params.navigation.nextEl = navigationNextRef.current
                         }}
                         spaceBetween={500}
                         slidesPerView={1}
