@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   text-align: start;
 }
 
@@ -27,25 +27,25 @@
 }
 
 .WelcomeBlock_hello {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   opacity: 0;
   letter-spacing: 2px;
   white-space: nowrap;
   overflow: hidden;
-  width: 8em;
+  width: 15ch;
   border-right: 15px solid #1cd119;
-  animation: type_mobile_border15 1s steps(13, end);
+  animation: type_mobile_border15 1s steps(15, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
 .WelcomeBlock_name {
-  font-size: 30px;
+  font-size: 23px;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 9.7em;
+  width: 23ch;
   opacity: 0;
   border-right: 15px solid #1cd119;
   animation: type_mobile_border15 1.5s steps(23, end);
@@ -54,56 +54,56 @@
 }
 
 .WelcomeBlock_creater_mobile1 {
-  font-size: 25px;
+  font-size: 18px;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 12.2em;
+  width: 27ch;
   opacity: 0;
   border-right: 15px solid #1cd119;
-  animation: type_mobile_border15 1.5s steps(23, end);
+  animation: type_mobile_border15 1.5s steps(27, end);
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
 }
 
 .WelcomeBlock_creater_mobile2 {
-  font-size: 25px;
+  font-size: 18px;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 11.1em;
+  width: 27ch;
   opacity: 0;
   border-right: 15px solid #1cd119;
-  animation: type_mobile_border15 1.5s steps(23, end);
+  animation: type_mobile_border15 1.5s steps(27, end);
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
 .WelcomeBlock_potrfolio_1 {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 600;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 20em;
+  width: 47ch;
   opacity: 0;
   border-right: 10px solid #1cd119;
-  animation: type_mobile_border10_2ver 1.5s steps(30, end);
+  animation: type_mobile_border10_2ver 2s steps(47, end);
   animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
 
 .WelcomeBlock_potrfolio_2 {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 600;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 18.8em;
+  width: 43ch;
   opacity: 0;
   border-right: 10px solid #1cd119;
-  animation: type_mobile_border10_2ver 1.5s steps(30, end);
-  animation-delay: 8s;
+  animation: type_mobile_border10_2ver 1.5s steps(43, end);
+  animation-delay: 8.5s;
   animation-fill-mode: forwards;
 }
 
@@ -111,68 +111,66 @@
   background: #1cd119;
   color: #1cd119;
   animation: blinkConsole 0.5s step-end infinite alternate;
-  animation-delay: 10s;
+  animation-delay: 9s;
   animation-fill-mode: forwards;
   margin-left: 3px;
 }
 
 @media (min-width: 650px) {
   .WelcomeBlock_hello {
-    font-size: 40px;
-    width: 6.8em;
+    font-size: 35px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop_border20 1s steps(13, end);
+    animation: type_desktop_border20 1s steps(15, end);
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_name {
-    font-size: 50px;
-    width: 9.5em;
+    font-size: 40px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop_border25 1.5s steps(25, end);
+    animation: type_desktop_border25 1.5s steps(23, end);
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_creater_mobile1 {
-    font-size: 35px;
+    font-size: 30px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop_border25 1.5s steps(25, end);
+    animation: type_desktop_border25 1.5s steps(27, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_creater_mobile2 {
-    font-size: 35px;
+    font-size: 30px;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop_border25 1.5s steps(25, end);
+    animation: type_desktop_border25 1.5s steps(27, end);
     animation-delay: 5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_1 {
-    font-size: 20px;
+    font-size: 17px;
     border-right: 15px solid #1cd119;
-    animation: type_mobile_border15 1.5s steps(30, end);
+    animation: type_mobile_border15 2s steps(47, end);
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_2 {
-    font-size: 20px;
+    font-size: 17px;
     border-right: 15px solid #1cd119;
-    animation: type_mobile_border15 1.5s steps(30, end);
-    animation-delay: 8s;
+    animation: type_mobile_border15 2s steps(43, end);
+    animation-delay: 8.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_console {
-    animation-delay: 10s;
+    animation-delay: 11s;
   }
 }
 
@@ -183,24 +181,22 @@
   }
 
   .WelcomeBlock_hello {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 6.5em;
     opacity: 0;
     border-right: 25px solid #1cd119;
-    animation: type_desktop_border25 1s steps(13, end);
+    animation: type_desktop_border25 1s steps(15, end);
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_name {
-    font-size: 60px;
+    font-size: 50px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 9.5em;
     opacity: 0;
     border-right: 30px solid #1cd119;
     animation: type_desktop_border30 1.5s steps(23, end);
@@ -209,44 +205,42 @@
   }
 
   .WelcomeBlock_creater_desktop {
-    font-size: 40px;
+    font-size: 33px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 24em;
+    width: 55ch;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type_desktop_border25 1.5s steps(37, end);
+    animation: type_desktop_border25 2s steps(55, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_1 {
-    font-size: 30px;
+    font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
-    width: 20em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type_desktop_border20 1.5s steps(30, end);
-    animation-delay: 5s;
+    animation: type_desktop_border20 2s steps(47, end);
+    animation-delay: 5.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_potrfolio_2 {
-    font-size: 30px;
+    font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
-    width: 18.7em;
     opacity: 0;
     border-right: 20px solid #1cd119;
-    animation: type_desktop_border20 1.5s steps(30, end);
-    animation-delay: 6.5s;
+    animation: type_desktop_border20 2s steps(43, end);
+    animation-delay: 7.5s;
     animation-fill-mode: forwards;
   }
 
   .WelcomeBlock_console {
-    animation-delay: 8.5s;
+    animation-delay: 10s;
   }
 }
 
