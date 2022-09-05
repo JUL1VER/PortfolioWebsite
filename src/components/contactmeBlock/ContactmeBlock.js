@@ -4,8 +4,8 @@ import leftpill from '../../img/bluePill.png';
 import rightpill from '../../img/redPill.png';
 import hands from '../../img/hands.png';
 import hands_large from '../../img/hands_large.png';
-import Aos from 'aos';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import './contactmeBlock.css';
@@ -37,10 +37,10 @@ const ContactmeBlock = () => {
 
     const form = useRef();
 
-    const SendEmail = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.SendForm('service_kc7tg2i', 'template_1nboemo', form.current, 'uuqcIqnHZpy0Umg--')
+        emailjs.sendForm('service_kc7tg2i', 'template_1nboemo', form.current, 'uuqcIqnHZpy0Umg--')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -70,7 +70,7 @@ const ContactmeBlock = () => {
                         <img src={hands} alt="Hands" className='ContactmeBlock_img'/>
                     </picture>
                 </div>
-                <form ref={form} onSubmit={SendEmail} className='ContactmeBlock_form'>
+                <form ref={form} onSubmit={sendEmail} className='ContactmeBlock_form'>
                     <input 
                         name='user_name'
                         type='text'
