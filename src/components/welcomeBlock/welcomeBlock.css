@@ -1,13 +1,12 @@
 .WelcomeBlock_wrapper {
   margin: 0 auto;
-  width: 90%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Roboto Mono", monospace;
+  font-family: monospace;
   text-align: start;
 }
 
