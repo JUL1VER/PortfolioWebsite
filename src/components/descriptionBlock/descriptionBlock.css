@@ -47,6 +47,7 @@
 
 .DescriptionBlock_foto {
   position: relative;
+  border-radius: 15px;
   top: 2px;
 }
 
