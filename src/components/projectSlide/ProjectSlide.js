@@ -118,6 +118,9 @@ const ProjectSlide = () => {
                 <button ref={navigationPrevRef} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>
+                <button ref={navigationNextRef} className='ProjectsBlock_conteiner_nextButton'>
+                    Next
+                </button>
                 <Swiper
                     modules={[Lazy, EffectFade, Pagination]}
                     effect='fade'
@@ -128,8 +131,8 @@ const ProjectSlide = () => {
                     noSwipingClass='ProjectsBlock_conteiner_slidePic'
                     className='ProjectsBlock_Swiper'
                     onBeforeInit={(swiper) => {
-                        swiper.params.navigation.prevEl = navigationPrevRef.current;
-                        swiper.params.navigation.nextEl = navigationNextRef.current;
+                        swiper.params.navigation.prevEl = navigationPrevRef.current
+                        swiper.params.navigation.nextEl = navigationNextRef.current
                    }}
                     spaceBetween={0}
                     slidesPerView={1}
@@ -154,9 +157,6 @@ const ProjectSlide = () => {
                         srcSet={projectsPC_medium}/>
                     <img src={projectsPC} alt="PC" className="ProjectsBlock_conteiner_PC"/>
                 </picture>
-                <button ref={navigationNextRef} className='ProjectsBlock_conteiner_nextButton'>
-                    Next
-                </button>
             </div>
         </div>
     );
