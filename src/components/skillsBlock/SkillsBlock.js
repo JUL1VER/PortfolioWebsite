@@ -16,16 +16,16 @@ import './skillsBlock.css';
 
 const SkillsBlock = () => {
     const technologies = [
-        {id: 1, imgprop: html, title: 'HTML'},
-        {id: 2, imgprop: css, title: 'CSS'},
-        {id: 3, imgprop: js, title: 'JS'},
-        {id: 4, imgprop: ts, title: 'TS'},
-        {id: 5, imgprop: react, title: 'React'},
-        {id: 6, imgprop: redux, title: 'Redux'}
+        {id: 1, imgprop: html, src: 'https://github.com/JUL1VER/PortfolioWebsite', title: 'HTML'},
+        {id: 2, imgprop: css, src: 'https://github.com/JUL1VER/PortfolioWebsite', title: 'CSS'},
+        {id: 3, imgprop: js, src: 'https://github.com/JUL1VER/FunnyRace.JS', title: 'JS'},
+        {id: 4, imgprop: ts, src: 'https://github.com/JUL1VER/GitHubSearch.TS', title: 'TS'},
+        {id: 5, imgprop: react, src: 'https://github.com/JUL1VER/MarvelCharactersApp.React', title: 'React'},
+        {id: 6, imgprop: redux, src: 'https://github.com/JUL1VER/GitHubSearch.TS', title: 'Redux'}
     ]
 
     const content = technologies.map(techno => 
-        <SkillIcon imgprop={techno.imgprop} key={techno.id} title={techno.title}/>
+        <SkillIcon imgprop={techno.imgprop} src={techno.src} key={techno.id} title={techno.title}/>
     )
 
     useEffect(() => {

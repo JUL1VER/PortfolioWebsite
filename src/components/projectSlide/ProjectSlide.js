@@ -141,7 +141,7 @@ const ProjectSlide = () => {
                 >
                     { cards.map(card => (
                         <SwiperSlide key={card.id}>
-                            <a href={card.link} target='_blank' rel="noreferrer" className='ProjectsBlock_conteiner_slidePic'>
+                            <a href={card.link} target='_blank' rel='noreferrer' className='ProjectsBlock_conteiner_slidePic'>
                                 <div className='ProjectsBlock_hover'/>
                                 <img src={card.imgprop} alt="Project" className="ProjectsBlock_conteiner_projectPic"/>
                             </a>
