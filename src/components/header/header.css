@@ -7,7 +7,7 @@
   top: 0;
   margin-top: -200px;
   animation: moving-header 0.5s steps(50, end);
-  animation-delay: 10s;
+  animation-delay: 10.5s;
   animation-fill-mode: forwards;
   overflow-x: hidden;
 }

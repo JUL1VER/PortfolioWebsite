@@ -110,7 +110,7 @@
   background: #1cd119;
   color: #1cd119;
   animation: blinkConsole 0.5s step-end infinite alternate;
-  animation-delay: 9.5s;
+  animation-delay: 10.5s;
   animation-fill-mode: forwards;
   margin-left: 3px;
 }
@@ -169,7 +169,7 @@
   }
 
   .WelcomeBlock_console {
-    animation-delay: 11s;
+    animation-delay: 10.5s;
   }
 }
 
