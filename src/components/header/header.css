@@ -37,10 +37,13 @@
 .Header_VlogoPic {
   margin-top: 15px;
   margin-left: 15px;
+}
+
+.Header_Vlogo {
   transition: 0.5s;
 }
 
-.Header_VlogoPic:hover {
+.Header_logoBlock:hover .Header_Vlogo {
   transform: scale(1.1);
 }
 

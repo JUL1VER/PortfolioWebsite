@@ -44,13 +44,15 @@ const Header = () => {
     return (
         <div className={classNames("Header", headerVision)}>
             <div className="Header_wrapper">
-                <picture className="Header_VlogoPic">
-                    <source
-                        className='Header_Vlogo'
-                        media='(min-width: 1280px)'
-                        srcSet={Vlogo_large}/>
-                    <img src={Vlogo} alt="Vlogo" className="Header_Vlogo"></img>
-                </picture>
+                <a href="https://jul1ver.github.io/PortfolioWebsite/" className='Header_logoBlock'>
+                    <picture className="Header_VlogoPic">
+                        <source
+                            className='Header_Vlogo'
+                            media='(min-width: 1280px)'
+                            srcSet={Vlogo_large}/>
+                        <img src={Vlogo} alt="Vlogo" className="Header_Vlogo"></img>
+                    </picture>
+                </a>
                 <button 
                     type='button'
                     className={classNames('Header_burgerBlock', {'active': isActive})}

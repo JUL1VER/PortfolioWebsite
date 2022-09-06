@@ -231,6 +231,7 @@
     font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
+    width: 42.5ch;
     opacity: 0;
     border-right: 20px solid #1cd119;
     animation: type_desktop_border20 2s steps(43, end);
