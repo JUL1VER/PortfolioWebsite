@@ -15,7 +15,10 @@ const FooterLink = (props) => {
     })
 
     return (
-        <a href={src} target='_blank' rel='noreferrer'>
+        <a href={src} target='_blank' rel='noreferrer' style={{
+            display: 'flex',
+            alignItems: 'center',
+        }}>
             { isDesktop ? 
                 <div 
                     style={{
