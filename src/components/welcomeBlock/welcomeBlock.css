@@ -101,7 +101,7 @@
   width: 43ch;
   opacity: 0;
   border-right: 10px solid #1cd119;
-  animation: type_mobile_border10_2ver 1.5s steps(43, end);
+  animation: type_mobile_border10_2ver 2s steps(43, end);
   animation-delay: 8.5s;
   animation-fill-mode: forwards;
 }
@@ -110,7 +110,7 @@
   background: #1cd119;
   color: #1cd119;
   animation: blinkConsole 0.5s step-end infinite alternate;
-  animation-delay: 9s;
+  animation-delay: 9.5s;
   animation-fill-mode: forwards;
   margin-left: 3px;
 }
