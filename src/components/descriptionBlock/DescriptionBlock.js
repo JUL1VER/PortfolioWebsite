@@ -22,11 +22,11 @@ const DescriptionBlock = () => {
 
     return (
         <div className='DescriptionBlock_wrapper'>
-            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='DescriptionBlock_header'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='DescriptionBlock_header'>
                 <h2 className='DescriptionBlock_header_text' id='WhoAmI'>Who Am I</h2>
                 <img src={question} alt="Question" className="DescriptionBlock_header_logo"/>
             </div>
-            <div data-aos='zoom-in' data-aos-delay='400' data-aos-once='true' className='DescriptionBlock_description'>
+            <div data-aos='zoom-in' data-aos-delay='100' data-aos-once='true' className='DescriptionBlock_description'>
                 <div className='DescriptionBlock_fotoWithHover'>
                     <div className='DescriptionBlock_hover'/>
                     <picture className='DescriptionBlock_foto'>
@@ -41,7 +41,7 @@ const DescriptionBlock = () => {
                         <img src={myfoto} alt='myFoto' className='DescriptionBlock_myFoto'/>
                     </picture>
                 </div>
-                <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className="DescriptionBlock_contentPart">
+                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className="DescriptionBlock_contentPart">
                     <div className='DescriptionBlock_text'>Hello, my name is <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="https://linkedin.com/in/vladJ1" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Vlad</a></GlitchText> and I like to create cool things! Interesting fact about me: just like I'm obsessed with programming, I love to write <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="https://stihi.ru/avtor/jul1ver" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>poems</a></GlitchText>. That's why I can say programming is a poetry too!</div>
                     <div className='DescriptionBlock_text'>Currently I'm developing well desingned impressive apps in <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="https://mish.design/" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>Mish.design</a></GlitchText>. Mostly I work using React and TypeScript, but I also like native JavaScript. The power and possibilities of CSS never stop to amaze me!</div>
                     <div className='DescriptionBlock_text'>I am interested in many things including science, poetry, music, history, phylosophy and travelling. But programming is one of my favourites! And I also like to talk with people, so feel free to <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="mailto:jul1v3r@gmail.com" target='_blank' rel='noreferrer' className='DescriptionBlock_link'>say</a></GlitchText> me something :)</div>

@@ -12,11 +12,11 @@ const ProjectsBlock = () => {
     }, [])
     return (
         <div className='ProjectsBlock_wrapper'>
-            <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_header'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock_header'>
                 <h2 className='ProjectsBlock_header_text' id='ProjectsPart'>Projects</h2>
                 <img src={projectLogo} alt="Project" className="ProjectsBlock_header_logo"/>
             </div>
-            <p data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_text'>Check out some of my interesting projects:</p>
+            <p data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock_text'>Check out some of my interesting projects:</p>
             <ProjectSlide/>
         </div>
     );

@@ -169,9 +169,8 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .DescriptionBlock_wrapper {
-    max-width: 1280px;
     margin: 0 auto;
     flex-direction: column;
     padding: 100px 0;
@@ -198,9 +197,9 @@
   .DescriptionBlock_fotoWithHover {
     order: 2;
     margin: 0 auto;
-    max-width: 450px;
+    margin: 33px 40px 20px;
+    max-width: 400px;
     width: 40%;
-    margin: 20px 40px 20px;
   }
 
   .DescriptionBlock_fotoWithHover:hover .DescriptionBlock_myFoto {
@@ -208,20 +207,43 @@
   }
 
   .DescriptionBlock_text {
-    margin-top: 35px;
+    margin-top: 30px;
     text-align: start;
     width: 100%;
     max-width: 750px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 150%;
   }
 
   .DescriptionBlock_helloButton {
     margin-top: 50px;
     box-shadow: 0 0 10px 2px #1cd119;
+    padding: 0 0 3px 0;
 
+    font-size: 30px;
+
+    width: 200px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .DescriptionBlock_wrapper {
+    max-width: 1260px;
+  }
+
+  .DescriptionBlock_text {
+    margin-top: 35px;
+    font-size: 22px;
+    line-height: 157%;
+  }
+
+  .DescriptionBlock_fotoWithHover {
+    max-width: 450px;
+  }
+
+  .DescriptionBlock_helloButton {
     font-size: 35px;
-
     width: 230px;
     height: 85px;
   }

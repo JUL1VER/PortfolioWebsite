@@ -173,14 +173,14 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .WelcomeBlock_wrapper {
-    max-width: 1100px;
+    max-width: 900px;
     align-items: flex-start;
   }
 
   .WelcomeBlock_hello {
-    font-size: 35px;
+    font-size: 28px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -192,7 +192,7 @@
   }
 
   .WelcomeBlock_name {
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
@@ -204,7 +204,7 @@
   }
 
   .WelcomeBlock_creater_desktop {
-    font-size: 33px;
+    font-size: 26px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
@@ -217,7 +217,7 @@
   }
 
   .WelcomeBlock_potrfolio_1 {
-    font-size: 25px;
+    font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
@@ -228,7 +228,7 @@
   }
 
   .WelcomeBlock_potrfolio_2 {
-    font-size: 25px;
+    font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     width: 42.5ch;
@@ -237,6 +237,32 @@
     animation: type_desktop_border20 2s steps(43, end);
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width: 1280px) {
+  .WelcomeBlock_wrapper {
+    max-width: 1100px;
+  }
+
+  .WelcomeBlock_hello {
+    font-size: 35px;
+  }
+
+  .WelcomeBlock_name {
+    font-size: 50px;
+  }
+
+  .WelcomeBlock_creater_desktop {
+    font-size: 33px;
+  }
+
+  .WelcomeBlock_potrfolio_1 {
+    font-size: 25px;
+  }
+
+  .WelcomeBlock_potrfolio_2 {
+    font-size: 25px;
   }
 
   .WelcomeBlock_console {

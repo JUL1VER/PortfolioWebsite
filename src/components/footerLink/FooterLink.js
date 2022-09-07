@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 const FooterLink = (props) => {
     const {imgprop, imgprop_large, src} = props;
 
-    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1280);
+    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024);
 
     const updateMedia = () => {
-        setDesktop(window.innerWidth > 1280);
+        setDesktop(window.innerWidth >= 1024);
       };
 
     useEffect(() => {

@@ -4,10 +4,10 @@ import { useEffect } from 'react';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const WelcomeBlock = () => {
-    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1280);
+    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024);
 
     const updateMedia = () => {
-        setDesktop(window.innerWidth > 1280);
+        setDesktop(window.innerWidth >= 1024);
       };
 
     useEffect(() => {

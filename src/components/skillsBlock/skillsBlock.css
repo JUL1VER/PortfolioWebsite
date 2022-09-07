@@ -110,9 +110,8 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .SkillsBlock_wrapper {
-    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
@@ -125,7 +124,7 @@
   }
 
   .SkillsBlock_header_text {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .SkillsBlock_header_logo {
@@ -138,19 +137,40 @@
   }
 
   .SkillsBlock_text {
-    width: 80%;
-    font-size: 35px;
-    line-height: 51px;
-    height: 25%;
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    height: 100px;
   }
 
   .SkillsBlock_imgPic {
     order: 1;
     margin: 0 auto;
+    margin-top: 20px;
   }
 
   .SkillsBlock_img {
     width: 100%;
     max-width: 750px;
+  }
+
+  .SkillsBlock_logoWrapper {
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .SkillsBlock_wrapper {
+    max-width: 1260px;
+  }
+
+  .SkillsBlock_text {
+    font-size: 35px;
+    line-height: 51px;
+  }
+
+  .SkillsBlock_logoWrapper {
+    margin-top: 20px;
+    row-gap: 50px;
   }
 }

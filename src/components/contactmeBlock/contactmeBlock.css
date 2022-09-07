@@ -74,6 +74,7 @@
   width: 60%;
   min-width: 251px;
   max-width: 500px;
+  padding: 15px;
 
   background: #0a0a0a;
   border: 2px solid #1cd119;
@@ -82,27 +83,24 @@
 
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 20px;
 
   color: #1cd119;
 }
 
 .ContactmeBlock_name {
-  height: 45px;
-  padding-left: 10px;
+  height: 50px;
 }
 
 .ContactmeBlock_email {
-  height: 45px;
-  padding-left: 10px;
+  height: 50px;
   margin-top: 30px;
 }
 
 .ContactmeBlock_message {
   resize: none;
   height: 200px;
-  padding: 10px 0px 0px 10px;
   margin-top: 30px;
 }
 
@@ -114,8 +112,8 @@
 }
 
 .ContactmeBlock_button {
-  width: 80px;
-  height: 35px;
+  width: 90px;
+  height: 45px;
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 5px;
@@ -203,16 +201,15 @@
 
   .ContactmeBlock_button {
     width: 120px;
-    height: 50px;
+    height: 60px;
     margin-top: 30px;
     padding-top: 0px;
     font-size: 30px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .ContactmeBlock_wrapper {
-    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
@@ -226,7 +223,7 @@
   }
 
   .ContactmeBlock_header_text {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .ContactmeBlock_header_logo {
@@ -235,11 +232,72 @@
 
   .ContactmeBlock_picture {
     order: 1;
+    width: 500px;
+  }
+
+  .ContactmeBlock_img {
+    margin-top: -40px;
+    width: 500px;
+  }
+
+  .ContactmeBlock_leftpill {
+    width: 70px;
+    top: 200px;
+    left: -80px;
+  }
+
+  .ContactmeBlock_rightpill {
+    width: 70px;
+    top: 200px;
+    right: -80px;
+  }
+
+  .ContactmeBlock_form {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    margin-top: 0px;
+  }
+
+  .ContactmeBlock_name,
+  .ContactmeBlock_email,
+  .ContactmeBlock_message {
+    width: 80%;
+    max-width: 1000px;
+    height: 66px;
+    font-size: 22px;
+    line-height: 44px;
+    padding-left: 20px;
+  }
+
+  .ContactmeBlock_message {
+    height: 250px;
+    padding-top: 10px;
+  }
+
+  .ContactmeBlock_button {
+    width: 120px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 0 20px 0 15px;
+    box-shadow: 0 0 10px 2px #1cd119;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ContactmeBlock_wrapper {
+    max-width: 1260px;
+  }
+
+  .ContactmeBlock_picture {
     width: 600px;
   }
 
   .ContactmeBlock_img {
     margin-top: -40px;
+    width: 600px;
   }
 
   .ContactmeBlock_leftpill {
@@ -254,40 +312,20 @@
     right: -95px;
   }
 
-  .ContactmeBlock_form {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    width: 52%;
-    margin-top: 0px;
-  }
-
-  .ContactmeBlock_name {
-    width: 80%;
-    max-width: 1000px;
-    height: 80px;
-    font-size: 30px;
-    line-height: 44px;
-    padding-left: 15px;
-  }
-
-  .ContactmeBlock_email {
-    width: 80%;
-    max-width: 1000px;
-    height: 80px;
-    font-size: 30px;
-    line-height: 44px;
-    padding-left: 15px;
-  }
-
+  .ContactmeBlock_name,
+  .ContactmeBlock_email,
   .ContactmeBlock_message {
     width: 80%;
     max-width: 1000px;
-    height: 280px;
+    height: 85px;
     font-size: 30px;
     line-height: 44px;
-    padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
+  }
+
+  .ContactmeBlock_message {
+    height: 300px;
+    padding-top: 15px;
   }
 
   .ContactmeBlock_button {

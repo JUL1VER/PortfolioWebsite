@@ -79,7 +79,7 @@ const ProjectSlide = () => {
 
     return (
         <div className='ProjectsBlock_content'>
-            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock_content_textBlock'>
                 <div className='ProjectsBlock_content_text'>
                     <Swiper
                         ref={swiperTextRef}
@@ -119,7 +119,7 @@ const ProjectSlide = () => {
                     </Swiper>
                 </div>
             </div>
-            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ProjectsBlock_conteiner'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock_conteiner'>
                 <button onClick={() => swiperPrev()} className='ProjectsBlock_conteiner_prevButton'>
                     Prev
                 </button>
@@ -151,7 +151,7 @@ const ProjectSlide = () => {
                 <picture className="ProjectsBlock_conteiner_PCImg">
                     <source
                         className='ProjectsBlock_conteiner_PC'
-                        media='(min-width: 1280px)'
+                        media='(min-width: 1024px)'
                         srcSet={projectsPC_large}/>
                     <source
                         className='ProjectsBlock_conteiner_PC'

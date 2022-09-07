@@ -325,13 +325,14 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .ProjectsBlock_wrapper {
+    width: 95%;
     margin-top: 50px;
   }
 
   .ProjectsBlock_header_text {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .ProjectsBlock_header_logo {
@@ -339,10 +340,10 @@
   }
 
   .ProjectsBlock_text {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 51px;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .ProjectsBlock_slides {
@@ -355,6 +356,104 @@
     flex-direction: row;
   }
 
+  .ProjectsBlock_conteiner_PC {
+    width: 550px;
+  }
+
+  .ProjectsBlock_Swiper {
+    width: 375px;
+    height: 228px;
+    margin-top: 50px;
+    margin-left: 87px;
+    border-radius: 20px;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    top: 211px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+  }
+
+  .ProjectsBlock_conteiner_projectPic {
+    border-radius: 15px;
+  }
+
+  .ProjectsBlock_content_textBlock {
+    padding: 10px;
+    margin-top: 35px;
+    order: 1;
+  }
+
+  .ProjectsBlock_content_text,
+  .ProjectsBlock_contect_tecnho {
+    width: 300px;
+  }
+
+  .ProjectsBlock_content_textInside {
+    font-size: 28px;
+    height: 150px;
+  }
+
+  .ProjectsBlock_contect_tecnhoList {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton,
+  .ProjectsBlock_conteiner_nextButton {
+    width: 235px;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid #1cd119;
+    box-shadow: 0 0 10px 2px #1cd119;
+    border-radius: 10px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton {
+    top: 138px;
+    left: -72px;
+  }
+
+  .ProjectsBlock_conteiner_nextButton {
+    top: 138px;
+    right: -72px;
+  }
+
+  .ProjectsBlock_conteiner_prevButton:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+
+  .ProjectsBlock_conteiner_nextButton:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+
+  .ProjectsBlock_hover {
+    height: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ProjectsBlock_wrapper {
+    max-width: 1260px;
+  }
+
+  .ProjectsBlock_text {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  .ProjectsBlock_conteiner_PC {
+    width: 700px;
+  }
+
   .ProjectsBlock_Swiper {
     width: 475px;
     height: 298px;
@@ -364,7 +463,6 @@
   }
 
   .swiper-pagination {
-    position: absolute;
     top: 275px;
   }
 
@@ -374,8 +472,9 @@
     height: 10px;
   }
 
-  .ProjectsBlock_conteiner_projectPic {
-    border-radius: 15px;
+  .ProjectsBlock_content_text,
+  .ProjectsBlock_contect_tecnho {
+    width: 400px;
   }
 
   .ProjectsBlock_content_textBlock {
@@ -391,13 +490,7 @@
 
   .ProjectsBlock_contect_tecnhoList {
     font-size: 25px;
-  }
-
-  .ProjectsBlock_pagButton {
-    width: 200px;
-    height: 70px;
-    font-size: 30px;
-    margin-top: 60px;
+    margin: 20px 0px;
   }
 
   .ProjectsBlock_conteiner_prevButton,
@@ -420,18 +513,7 @@
     right: -85px;
   }
 
-  .ProjectsBlock_conteiner_prevButton:hover {
-    box-shadow: 0 0 10px 2px #fff;
-    border: 2px solid #fff;
-  }
-
-  .ProjectsBlock_conteiner_nextButton:hover {
-    box-shadow: 0 0 10px 2px #fff;
-    border: 2px solid #fff;
-  }
-
   .ProjectsBlock_hover {
     height: 99%;
-    border-radius: 15px;
   }
 }

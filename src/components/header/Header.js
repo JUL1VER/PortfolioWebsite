@@ -48,7 +48,7 @@ const Header = () => {
                     <picture className="Header_VlogoPic">
                         <source
                             className='Header_Vlogo'
-                            media='(min-width: 1280px)'
+                            media='(min-width: 1024px)'
                             srcSet={Vlogo_large}/>
                         <img src={Vlogo} alt="Vlogo" className="Header_Vlogo"></img>
                     </picture>

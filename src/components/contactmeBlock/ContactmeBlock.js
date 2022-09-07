@@ -54,11 +54,11 @@ const ContactmeBlock = () => {
 
     return (
         <div className='ContactmeBlock_wrapper'>
-            <div data-aos='fade-down' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_header'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock_header'>
                 <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
                 <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
             </div>
-            <div data-aos='fade-up' data-aos-delay='400' data-aos-once='true' className='ContactmeBlock_content'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock_content'>
                 <div className='ContactmeBlock_picture'>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="ContactmeBlock_leftpill"/></a>
                     <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='ContactmeBlock_rightpill'/></a>
