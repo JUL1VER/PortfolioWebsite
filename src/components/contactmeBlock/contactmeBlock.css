@@ -109,6 +109,7 @@
 .ContactmeBlock_message:focus {
   color: #1cd119;
   text-decoration: none;
+  outline: #1cd119;
 }
 
 .ContactmeBlock_button {
