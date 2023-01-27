@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
-  color: #fff;
+  color: var(--white);
   overflow-x: hidden;
 }
 
@@ -35,12 +35,12 @@
   transition: 0.5s;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: var(--white);
 }
 
 .Footer__linksBlock-imgs:hover {
   transform: scale(1.2);
-  background: #1cd119;
+  background: var(--matrixGreen);
 }
 
 .Footer__github-block {
@@ -66,11 +66,11 @@
   line-height: 37px;
   text-decoration: none;
 
-  color: #fffafa;
+  color: var(--white);
 }
 
 .Footer__githubBlock-text-name {
-  color: #1cd119;
+  color: var(--matrixGreen);
   font-weight: 400;
   display: inline-block;
   margin-left: 3px;
@@ -88,7 +88,7 @@
   .Footer__linksBlock-imgs {
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: var(--white);
   }
 
   .Footer__github-block {
