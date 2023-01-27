@@ -22,7 +22,7 @@
   transition: top 0.5s ease-out;
 }
 
-.Header_wrapper {
+.Header__wrapper {
   display: flex;
   position: fixed;
   width: 100%;
@@ -34,20 +34,20 @@
   backdrop-filter: blur(3px);
 }
 
-.Header_Vlogo {
+.Header__Vlogo {
   margin-top: 15px;
   margin-left: 10px;
 }
 
-.Header_Vlogo {
+.Header__Vlogo {
   transition: 0.5s;
 }
 
-.Header_logoBlock:hover .Header_Vlogo {
+.Header__logo-block:hover .Header__Vlogo {
   transform: scale(1.1);
 }
 
-.Header_burgerBlock {
+.Header__burger-block {
   display: block;
   position: absolute;
   width: 40px;
@@ -60,8 +60,8 @@
   background-color: #0a0a0a;
 }
 
-.Header_burgerBlock:before,
-.Header_burgerBlock:after {
+.Header__burger-block:before,
+.Header__burger-block:after {
   content: "";
   background-color: #1cd119;
   position: absolute;
@@ -71,7 +71,7 @@
   left: 0;
 }
 
-.Header_burgerBlock span {
+.Header__burger-block span {
   position: absolute;
   background-color: #1cd119;
   left: 0;
@@ -80,29 +80,29 @@
   transition: 0.5s;
 }
 
-.Header_burgerBlock:before {
+.Header__burger-block:before {
   top: 0;
 }
 
-.Header_burgerBlock:after {
+.Header__burger-block:after {
   bottom: 0;
 }
 
-.Header_burgerBlock.active:before {
+.Header__burger-block.active:before {
   transform: rotate(45deg);
   top: 14px;
 }
 
-.Header_burgerBlock.active:after {
+.Header__burger-block.active:after {
   transform: rotate(-45deg);
   bottom: 14px;
 }
 
-.Header_burgerBlock.active span {
+.Header__burger-block.active span {
   transform: scale(0);
 }
 
-.Header_navbar {
+.Header__navbar {
   position: fixed;
   top: 0;
   right: -100%;
@@ -114,29 +114,29 @@
   transition: 0.5s;
 }
 
-.Header_navbar_glitch {
+.Header__navbar-glitch {
   display: flex;
   justify-content: center;
   flex-direction: row;
   transition: 0.5s;
 }
 
-.Header_navbar_text {
+.Header__navbar-text {
   display: inline;
   margin: 0;
 }
 
-.Header_navbar_glitch_inside {
+.Header__navbar-glitch_inside {
   display: flex;
   align-items: center;
 }
 
-.Header_navbar.active {
+.Header__navbar.active {
   right: 0;
   overflow: auto;
 }
 
-.Header_overlay.active {
+.Header__overlay.active {
   visibility: visible;
   opacity: 0.8;
   position: fixed;
@@ -148,7 +148,7 @@
   background-color: #000;
 }
 
-.Header_navbar_navLinks {
+.Header__navbar-navlinks {
   display: flex;
   height: 100px;
   justify-content: center;
@@ -160,22 +160,22 @@
   margin: 0 auto;
 }
 
-.Header_navbar_glitch:hover {
+.Header__navbar-glitch:hover {
   color: #1cd119;
   font-size: 30px;
 }
 
-.Header_navbar_glitch:active {
+.Header__navbar-glitch:active {
   color: #1cd119;
   font-size: 30px;
 }
 
-.Header_navbar_logo {
+.Header__navbar-logo {
   width: 35px;
   margin: 2px 0 0 5px;
 }
 
-.Header_overlay {
+.Header__overlay {
   transition: 0.5s;
 }
 
@@ -187,7 +187,7 @@
     animation-fill-mode: forwards;
   }
 
-  .Header_wrapper {
+  .Header__wrapper {
     position: fixed;
     border: none;
     width: 100%;
@@ -198,77 +198,77 @@
     align-items: center;
   }
 
-  .Header_Vlogo {
+  .Header__Vlogo {
     width: 60px;
   }
 
-  .Header_VlogoPic {
+  .Header__Vlogo-pic {
     margin: 10px 0 0 10px;
   }
 
-  .Header_burgerBlock {
+  .Header__burger-block {
     display: none;
   }
 
-  .Header_navbar {
+  .Header__navbar {
     display: contents;
   }
 
-  .Header_navbar_navLinks {
+  .Header__navbar-navlinks {
     font-size: 25px;
     height: 50px;
   }
 
-  .Header_navbar_glitch {
+  .Header__navbar-glitch {
     width: 210px;
   }
 
-  .Header_navbarBlock {
+  .Header__navbar-block {
     display: flex;
     flex-direction: row;
     margin-right: 40px;
   }
 
-  .Header_navbar_logo {
+  .Header__navbar-logo {
     width: 35x;
     margin: 0 0 0 5px;
   }
 }
 
 @media (min-width: 1280px) {
-  .Header_wrapper {
+  .Header__wrapper {
     height: 100px;
   }
 
-  .Header_Vlogo {
+  .Header__Vlogo {
     width: 80px;
   }
 
-  .Header_VlogoPic {
+  .Header__Vlogo-pic {
     margin: 10px 0 0 20px;
   }
 
-  .Header_navbar_glitch {
+  .Header__navbar-glitch {
     width: 240px;
   }
 
-  .Header_navbar {
+  .Header__navbar {
     font-size: 28px;
   }
 
-  .Header_navbar_navLinks {
+  .Header__navbar-navlinks {
     font-size: 28px;
   }
 
-  .Header_navbar_logo {
+  .Header__navbar-logo {
     width: 40px;
   }
 
-  .Header_navbar_glitch:hover {
+  .Header__navbar-glitch:hover {
     font-size: 35px;
   }
 
-  .Header_navbar_glitch:active {
+  .Header__navbar-glitch:active {
     font-size: 35px;
   }
 }

@@ -19,7 +19,7 @@
   pointer-events: all;
 }
 
-.modal_content {
+.modal__content {
   width: 250px;
   padding: 20px;
   border-radius: 12px;
@@ -34,18 +34,18 @@
   flex-direction: column;
 }
 
-.modal_content.active {
+.modal__content.active {
   transform: scale(1);
 }
 
-.modal_text {
+.modal__text {
   font-family: "PT Sans", sans-serif;
   color: #fff;
   font-size: 20px;
   width: 90%;
 }
 
-.modal_linksBlock {
+.modal__links-block {
   width: 90%;
   height: 40px;
   display: flex;
@@ -54,7 +54,7 @@
   margin-bottom: 20px;
 }
 
-.modal_link {
+.modal__link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,13 +74,13 @@
   transition: 0.5s;
 }
 
-.modal_linkImg {
+.modal__link-img {
   width: 20px;
   margin-left: 5px;
 }
 
-.modal_link_right:hover,
-.modal_link_rigth:active {
+.modal__link_right:hover,
+.modal__link_right:active {
   color: #fff;
   border: 1px solid #fff;
   box-shadow: 0 0 5px 2px #fff;
@@ -88,8 +88,8 @@
   background-color: #e84949;
 }
 
-.modal_link_left:hover,
-.modal_link_left:active {
+.modal__link_left:hover,
+.modal__link_left:active {
   color: #fff;
   border: 1px solid #fff;
   box-shadow: 0 0 5px 2px #fff;
@@ -97,7 +97,7 @@
   background-color: #2a7ede;
 }
 
-.modal_closeButton {
+.modal__close-button {
   position: absolute;
   cursor: pointer;
   width: 20px;
@@ -110,27 +110,27 @@
   transition: 0.2s;
 }
 
-.modal_closeButton:hover {
+.modal__close-button:hover {
   background: #1cd119;
 }
 
 @media (min-width: 650px) {
-  .modal_content {
+  .modal__content {
     width: 500px;
   }
-  .modal_text {
+  .modal__text {
     font-family: "PT Sans", sans-serif;
     font-size: 25px;
     width: 90%;
   }
 
-  .modal_linksBlock {
+  .modal__links-block {
     width: 80%;
     height: 40px;
     margin-bottom: 20px;
   }
 
-  .modal_link {
+  .modal__link {
     width: 40%;
     border-radius: 10px;
     font-size: 18px;
@@ -138,33 +138,33 @@
     border: 1px solid #1cd119;
   }
 
-  .modal_linkImg {
+  .modal__link-img {
     width: 25px;
     margin-left: 10px;
   }
 
-  .modal_closeButton {
+  .modal__close-button {
     width: 30px;
     height: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  .modal_content {
+  .modal__content {
     width: 700px;
   }
-  .modal_text {
+  .modal__text {
     font-size: 25px;
     width: 90%;
   }
 
-  .modal_linksBlock {
+  .modal__links-block {
     width: 70%;
     height: 50px;
     margin-bottom: 20px;
   }
 
-  .modal_link {
+  .modal__link {
     width: 40%;
     border: none;
     border-radius: 10px;
@@ -173,7 +173,7 @@
     border: 1px solid #1cd119;
   }
 
-  .modal_linkImg {
+  .modal__link-img {
     width: 30px;
     height: 30px;
     margin-left: 10px;

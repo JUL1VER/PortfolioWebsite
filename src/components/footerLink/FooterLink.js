@@ -19,24 +19,24 @@ const FooterLink = (props) => {
             display: 'flex',
             alignItems: 'center',
         }}>
-            { isDesktop ? 
-                <div 
+            { isDesktop ?
+                <div
                     style={{
                         WebkitMask: `url("${imgprop_large}") no-repeat center`,
                         WebkitMaskSize: "cover",
                         maskSize: "cover",
                         mask: `url("${imgprop_large}") no-repeat center`,
                     }}
-                    alt="linkIcon" className='Footer_linksBlock_imgs'/>
+                    alt="linkIcon" className='Footer__linksBlock-imgs'/>
                 :
-                <div 
+                <div
                     style={{
                         WebkitMask: `url("${imgprop}") no-repeat center`,
                         WebkitMaskSize: "cover",
                         MaskSize: "cover",
                         mask: `url("${imgprop}") no-repeat center`,
                     }}
-                    alt="linkIcon" className='Footer_linksBlock_imgs'/>
+                    alt="linkIcon" className='Footer__linksBlock-imgs'/>
             }
         </a>
     );

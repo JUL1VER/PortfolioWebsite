@@ -1,4 +1,4 @@
-.DescriptionBlock_wrapper {
+.DescriptionBlock__wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +8,7 @@
   padding: 50px 0 100px 0;
 }
 
-.DescriptionBlock_header {
+.DescriptionBlock__header {
   color: #1cd119;
   font-size: 20px;
   letter-spacing: 3px;
@@ -17,24 +17,24 @@
   align-items: center;
 }
 
-.DescriptionBlock_header_text {
+.DescriptionBlock__header-text {
   margin: 0;
 }
 
-.DescriptionBlock_header_logo {
+.DescriptionBlock__header-logo {
   width: 35px;
   margin-left: 10px;
   display: flex;
   align-items: center;
 }
 
-.DescriptionBlock_description {
+.DescriptionBlock__description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.DescriptionBlock_fotoWithHover {
+.DescriptionBlock__fotoWithHover {
   order: 2;
   margin: 40px;
   position: relative;
@@ -45,20 +45,20 @@
   overflow: hidden;
 }
 
-.DescriptionBlock_foto {
+.DescriptionBlock__fotoPic {
   position: relative;
   border-radius: 15px;
   top: 2px;
 }
 
-.DescriptionBlock_myFoto {
+.DescriptionBlock__myFoto {
   width: 100%;
   border-radius: 15px;
   position: relative;
   transition: 0.5s;
 }
 
-.DescriptionBlock_hover {
+.DescriptionBlock__hover {
   background: #1cd119;
   position: absolute;
   left: 0;
@@ -71,16 +71,16 @@
   transition: 0.5s;
 }
 
-.DescriptionBlock_hover:hover {
+.DescriptionBlock__hover:hover {
   opacity: 0;
 }
 
-.DescriptionBlock_contentPart {
+.DescriptionBlock__contentPart {
   order: 1;
   margin-top: 20px;
 }
 
-.DescriptionBlock_text {
+.DescriptionBlock__text {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -94,14 +94,14 @@
   color: #fff;
 }
 
-.DescriptionBlock_link {
+.DescriptionBlock__link {
   color: #1cd119;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
 }
 
-.DescriptionBlock_helloButton {
+.DescriptionBlock__helloButton {
   width: 140px;
   height: 55px;
   margin-top: 30px;
@@ -120,7 +120,7 @@
   transition: 0.5s;
 }
 
-.DescriptionBlock_helloButton:hover {
+.DescriptionBlock__helloButton:hover {
   color: #0a0a0a;
   background: #1cd119;
   border: 2px solid #1cd119;
@@ -128,39 +128,39 @@
   text-shadow: 0 0 5px #1cd119;
 }
 
-.DescriptionBlock_helloButton:active {
+.DescriptionBlock__helloButton:active {
   color: #1cd119;
   background: #0a0a0a;
   transition: 0.1s;
 }
 
 @media (min-width: 650px) {
-  .DescriptionBlock_header {
+  .DescriptionBlock__header {
     color: #1cd119;
     font-size: 30px;
   }
 
-  .DescriptionBlock_header_logo {
+  .DescriptionBlock__header-logo {
     width: 50px;
     height: 50px;
   }
 
-  .DescriptionBlock_fotoWithHover {
+  .DescriptionBlock__fotoWithHover {
     margin: 0 auto;
     margin-top: 40px;
     max-width: 400px;
     order: 2;
   }
 
-  .DescriptionBlock_contentPart {
+  .DescriptionBlock__contentPart {
     order: 1;
   }
 
-  .DescriptionBlock_text {
+  .DescriptionBlock__text {
     font-size: 22px;
   }
 
-  .DescriptionBlock_helloButton {
+  .DescriptionBlock__helloButton {
     font-size: 25px;
     line-height: 51px;
 
@@ -170,31 +170,31 @@
 }
 
 @media (min-width: 1024px) {
-  .DescriptionBlock_wrapper {
+  .DescriptionBlock__wrapper {
     margin: 0 auto;
     flex-direction: column;
     padding: 100px 0;
   }
 
-  .DescriptionBlock_header_text {
+  .DescriptionBlock__header-text {
     font-size: 50px;
   }
 
-  .DescriptionBlock_description {
+  .DescriptionBlock__description {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 50px;
   }
 
-  .DescriptionBlock_contentPart {
+  .DescriptionBlock__contentPart {
     order: 1;
     width: 55%;
     padding-left: 50px;
     margin-top: 0px;
   }
 
-  .DescriptionBlock_fotoWithHover {
+  .DescriptionBlock__fotoWithHover {
     order: 2;
     margin: 0 auto;
     margin: 33px 40px 20px;
@@ -202,11 +202,11 @@
     width: 40%;
   }
 
-  .DescriptionBlock_fotoWithHover:hover .DescriptionBlock_myFoto {
+  .DescriptionBlock__fotoWithHover:hover .DescriptionBlock__myFoto {
     transform: scale(1.15);
   }
 
-  .DescriptionBlock_text {
+  .DescriptionBlock__text {
     margin-top: 30px;
     text-align: start;
     width: 100%;
@@ -215,7 +215,7 @@
     line-height: 150%;
   }
 
-  .DescriptionBlock_helloButton {
+  .DescriptionBlock__helloButton {
     margin-top: 50px;
     box-shadow: 0 0 10px 2px #1cd119;
     padding: 0 0 3px 0;
@@ -228,21 +228,21 @@
 }
 
 @media (min-width: 1280px) {
-  .DescriptionBlock_wrapper {
+  .DescriptionBlock__wrapper {
     max-width: 1260px;
   }
 
-  .DescriptionBlock_text {
+  .DescriptionBlock__text {
     margin-top: 35px;
     font-size: 22px;
     line-height: 157%;
   }
 
-  .DescriptionBlock_fotoWithHover {
+  .DescriptionBlock__fotoWithHover {
     max-width: 450px;
   }
 
-  .DescriptionBlock_helloButton {
+  .DescriptionBlock__helloButton {
     font-size: 35px;
     width: 230px;
     height: 85px;
