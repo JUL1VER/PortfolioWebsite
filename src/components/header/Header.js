@@ -43,90 +43,90 @@ const Header = () => {
 
     return (
         <div className={classNames("Header", headerVision)}>
-            <div className="Header_wrapper">
-                <a href="https://jul1ver.github.io/PortfolioWebsite/" className='Header_logoBlock'>
-                    <picture className="Header_VlogoPic">
+            <div className="Header__wrapper">
+                <a href="https://jul1ver.github.io/PortfolioWebsite/" className='Header__logo-block'>
+                    <picture className="Header__Vlogo-pic">
                         <source
-                            className='Header_Vlogo'
+                            className='Header__Vlogo'
                             media='(min-width: 1024px)'
                             srcSet={Vlogo_large}/>
-                        <img src={Vlogo} alt="Vlogo" className="Header_Vlogo"></img>
+                        <img src={Vlogo} alt="Vlogo" className="Header__Vlogo"></img>
                     </picture>
                 </a>
                 <button 
                     type='button'
-                    className={classNames('Header_burgerBlock', {'active': isActive})}
+                    className={classNames('Header__burger-block', {'active': isActive})}
                     onClick={ toggleActiveClass }>
                     <span></span>
                 </button>
-                <div className="Header_navbarBlock">
-                    <nav className={classNames('Header_navbar', {'active': isActive})}>
+                <div className="Header__navbar-block">
+                    <nav className={classNames('Header__navbar', {'active': isActive})}>
                         <Link  
-                            className='Header_navbar_navLinks'
+                            className='Header__navbar-navlinks'
                             to='WhoAmI'
                             smooth={true}
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
-                                <div className='Header_navbar_glitch_inside'>
-                                    <p className="Header_navbar_text">
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header__navbar-glitch'>
+                                <div className='Header__navbar-glitch_inside'>
+                                    <p className="Header__navbar-text">
                                         Who Am I
                                     </p>
-                                    <img src={question} alt="Question" className="Header_navbar_logo"></img>
+                                    <img src={question} alt="Question" className="Header__navbar-logo"></img>
                                 </div>
                             </GlitchText>
                         </Link>
                         <Link  
-                            className='Header_navbar_navLinks'
+                            className='Header__navbar-navlinks'
                             to='SkillsPart'
                             smooth={true}
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
-                                <div className='Header_navbar_glitch_inside'>
-                                    <p className="Header_navbar_text">
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header__navbar-glitch'>
+                                <div className='Header__navbar-glitch_inside'>
+                                    <p className="Header__navbar-text">
                                         Skills
                                     </p>
-                                    <img src={skillsHead} alt="Neo" className="Header_navbar_logo"></img>
+                                    <img src={skillsHead} alt="Neo" className="Header__navbar-logo"></img>
                                 </div>
                             </GlitchText>
                         </Link>
                         <Link  
-                            className='Header_navbar_navLinks'
+                            className='Header__navbar-navlinks'
                             to='ProjectsPart'
                             smooth={true}
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
-                                <div className='Header_navbar_glitch_inside'>
-                                    <p className="Header_navbar_text">
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header__navbar-glitch'>
+                                <div className='Header__navbar-glitch_inside'>
+                                    <p className="Header__navbar-text">
                                         Projects
                                     </p>
-                                    <img src={projectLogo} alt="Projects" className="Header_navbar_logo"></img>
+                                    <img src={projectLogo} alt="Projects" className="Header__navbar-logo"></img>
                                 </div>
                             </GlitchText>
                         </Link>
                         <Link 
-                            className='Header_navbar_navLinks'
+                            className='Header__navbar-navlinks'
                             to='ContactmePart'
                             smooth={true}
                             offset={-100}
                             duration={500}
                             onClick={closeMenuOnScroll}>
-                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header_navbar_glitch'>
-                                <div className='Header_navbar_glitch_inside'>
-                                    <p className="Header_navbar_text">
+                            <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='Header__navbar-glitch'>
+                                <div className='Header__navbar-glitch_inside'>
+                                    <p className="Header__navbar-text">
                                         Contact me
                                     </p>
-                                    <img src={contactmeLogo} alt="Phone" className="Header_navbar_logo"></img>
+                                    <img src={contactmeLogo} alt="Phone" className="Header__navbar-logo"></img>
                                 </div>
                             </GlitchText>
                         </Link>
                     </nav>
-                    <div className={classNames('Header_overlay', {'active': isActive})} onClick={ toggleActiveClass }></div>
+                    <div className={classNames('Header__overlay', {'active': isActive})} onClick={ toggleActiveClass }></div>
                 </div>
             </div>
         </div>

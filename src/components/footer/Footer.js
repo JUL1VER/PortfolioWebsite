@@ -29,18 +29,18 @@ const Footer = () => {
     )
 
     return (
-        <div className='Footer_wrapper'>
-            <div className='Footer_media'>
-                <p className='Footer_linksText'>Follow me in my social networks:</p>
-                <div className='Footer_linksBlock'>
+        <div className='Footer__wrapper'>
+            <div className='Footer__media'>
+                <p className='Footer__links-text'>Follow me in my social networks:</p>
+                <div className='Footer__links-block'>
                     {content}
                 </div>
             </div>
             <div className="Footer_github">
-                <p className='Footer_linksText'>Take a look at my new projects:</p>
-                <div className='Footer_githubBlock'>
+                <p className='Footer__links-text'>Take a look at my new projects:</p>
+                <div className='Footer__github-block'>
                     <FooterLink imgprop={github} imgprop_large={github_large} src='https://github.com/JUL1VER'/>
-                    <a href='https://github.com/JUL1VER' className='Footer_githubBlock_text'>@<GlitchText component='span' onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='Footer_githubBlock_text_name'>jul1ver</GlitchText> on github</a>
+                    <a href='https://github.com/JUL1VER' className='Footer__githubBlock-text'>@<GlitchText component='span' onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='Footer__githubBlock-text-name'>jul1ver</GlitchText> on github</a>
                 </div>
             </div>
         </div>

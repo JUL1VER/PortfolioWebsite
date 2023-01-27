@@ -32,22 +32,22 @@ const SkillsBlock = () => {
         Aos.init({duration: 2500});
     }, [])
     return (
-        <div className='SkillsBlock_wrapper'>
-            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='SkillsBlock_header' id='SkillsPart'>
-                <h2 className='SkillsBlock_header_text'>Skills</h2>
-                <img src={skillsHead} alt="Neo" className="SkillsBlock_header_logo"/>
+        <div className='SkillsBlock__wrapper'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__header' id='SkillsPart'>
+                <h2 className='SkillsBlock__header-text'>Skills</h2>
+                <img src={skillsHead} alt="Neo" className="SkillsBlock__header-logo"/>
             </div>
-            <div className='SkillsBlock_content'>
-                <picture data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock_imgPic'>
+            <div className='SkillsBlock__content'>
+                <picture data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__img-pic'>
                     <source 
-                        className='SkillsBlock_img'
+                        className='SkillsBlock__img'
                         media='(min-width: 500px)'
                         srcSet={skillsImg_large}/>
-                    <img src={skillsImg} alt="skillsImg" className='SkillsBlock_img'/>
+                    <img src={skillsImg} alt="skillsImg" className='SkillsBlock__img'/>
                 </picture>
-                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock_skillsAndLogos'>
-                    <p className='SkillsBlock_text'>I have solid experience in the following web technologies:</p>
-                    <div className='SkillsBlock_logoWrapper'>
+                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__skills-and-logos'>
+                    <p className='SkillsBlock__text'>I have solid experience in the following web technologies:</p>
+                    <div className='SkillsBlock__logo-wrapper'>
                         {content}
                     </div>
                 </div>

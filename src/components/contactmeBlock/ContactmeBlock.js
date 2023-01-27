@@ -13,7 +13,7 @@ import './contactmeBlock.css';
 const ContactmeBlock = () => {
     const [info, setInfo] = useState({ name: '', email: '', message: '' });
     const [disableButton, setDisableButton] = useState(true);
-    
+
     useEffect(() => {
         if (!info.email.length || !info.message.length || !info.name.length) { setDisableButton(true) }
         else { setDisableButton(false) }
@@ -46,56 +46,56 @@ const ContactmeBlock = () => {
         }, (error) => {
             console.log(error.text);
         });
-        
+
         setInfo(state => ({ ...state, name: '' }))
         setInfo(state => ({ ...state, email: '' }))
         setInfo(state => ({ ...state, message: '' }))
     };
 
     return (
-        <div className='ContactmeBlock_wrapper'>
-            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock_header'>
-                <h2 className='ContactmeBlock_header_text' id='ContactmePart'>Contact me</h2>
-                <img src={contactmeLogo} alt="Phone" className="ContactmeBlock_header_logo"/>
+        <div className='ContactmeBlock__wrapper'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock__header'>
+                <h2 className='ContactmeBlock__header-text' id='ContactmePart'>Contact me</h2>
+                <img src={contactmeLogo} alt="Phone" className="ContactmeBlock__header-logo"/>
             </div>
-            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock_content'>
-                <div className='ContactmeBlock_picture'>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="ContactmeBlock_leftpill"/></a>
-                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='ContactmeBlock_rightpill'/></a>
-                    <picture className="ContactmeBlock_imgPic">
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock__content'>
+                <div className='ContactmeBlock__picture'>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="ContactmeBlock__leftpill"/></a>
+                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='ContactmeBlock__rightpill'/></a>
+                    <picture className="ContactmeBlock__imgPic">
                         <source
-                            className='ContactmeBlock_img'
+                            className='ContactmeBlock__img'
                             media='(min-width: 500px)'
-                            srcSet={hands_large}/> 
-                        <img src={hands} alt="Hands" className='ContactmeBlock_img'/>
+                            srcSet={hands_large}/>
+                        <img src={hands} alt="Hands" className='ContactmeBlock__img'/>
                     </picture>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className='ContactmeBlock_form'>
-                    <input 
+                <form ref={form} onSubmit={sendEmail} className='ContactmeBlock__form'>
+                    <input
                         name='user_name'
                         type='text'
-                        placeholder='Enter your name' 
-                        className='ContactmeBlock_name'
+                        placeholder='Enter your name'
+                        className='ContactmeBlock__name'
                         value={info.name}
                         onChange={handleNameChange}
                         />
-                    <input 
+                    <input
                         name='user_email'
                         type='email'
-                        placeholder='Enter your email address' 
-                        className='ContactmeBlock_email'
+                        placeholder='Enter your email address'
+                        className='ContactmeBlock__email'
                         value={info.email}
                         onChange={handleEmailChange}/>
                     <textarea 
                         name='message'
                         type='text'
-                        placeholder='Enter your message...' 
-                        className='ContactmeBlock_message'
+                        placeholder='Enter your message...'
+                        className='ContactmeBlock__message'
                         value={info.message}
                         onChange={handleMessageChange}/>
                     <button
                         disabled={ disableButton }
-                        className={disableButton ? 'ContactmeBlock_button disabled' : 'ContactmeBlock_button'}
+                        className={disableButton ? 'ContactmeBlock__button disabled' : 'ContactmeBlock__button'}
                         type='submit'
                         value='Send'>
                         Send

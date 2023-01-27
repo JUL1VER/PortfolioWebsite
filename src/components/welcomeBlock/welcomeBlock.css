@@ -1,4 +1,4 @@
-.WelcomeBlock_wrapper {
+.WelcomeBlock__wrapper {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -10,22 +10,22 @@
   text-align: start;
 }
 
-.WelcomeBlock_hello,
-.WelcomeBlock_name,
-.WelcomeBlock_creater_mobile1,
-.WelcomeBlock_creater_mobile2,
-.WelcomeBlock_creater_desktop,
-.WelcomeBlock_potrfolio_1,
-.WelcomeBlock_potrfolio_2 {
+.WelcomeBlock__hello,
+.WelcomeBlock__name,
+.WelcomeBlock__creater_mobile1,
+.WelcomeBlock__creater_mobile2,
+.WelcomeBlock__creater_desktop,
+.WelcomeBlock__potrfolio_1,
+.WelcomeBlock__potrfolio_2 {
   padding-left: 5px;
 }
 
-.WelcomeBlock_greenText {
+.WelcomeBlock__green-text {
   display: inline-block;
   color: #1cd119;
 }
 
-.WelcomeBlock_hello {
+.WelcomeBlock__hello {
   font-size: 18px;
   margin: 0;
   opacity: 0;
@@ -39,7 +39,7 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_name {
+.WelcomeBlock__name {
   font-size: 23px;
   margin: 20px 0 0 0;
   white-space: nowrap;
@@ -52,7 +52,7 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_creater_mobile1 {
+.WelcomeBlock__creater_mobile1 {
   font-size: 18px;
   margin: 20px 0 0 0;
   white-space: nowrap;
@@ -65,7 +65,7 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_creater_mobile2 {
+.WelcomeBlock__creater_mobile2 {
   font-size: 18px;
   margin: 0;
   white-space: nowrap;
@@ -78,7 +78,7 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_potrfolio_1 {
+.WelcomeBlock__potrfolio_1 {
   font-size: 11px;
   font-weight: 600;
   margin: 20px 0 0 0;
@@ -92,7 +92,7 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_potrfolio_2 {
+.WelcomeBlock__potrfolio_2 {
   font-size: 11px;
   font-weight: 600;
   margin: 0;
@@ -106,17 +106,17 @@
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock_console {
+.WelcomeBlock__console {
   background: #1cd119;
   color: #1cd119;
-  animation: blinkConsole 0.5s step-end infinite alternate;
+  animation: blink_console 0.5s step-end infinite alternate;
   animation-delay: 10.5s;
   animation-fill-mode: forwards;
   margin-left: 3px;
 }
 
 @media (min-width: 650px) {
-  .WelcomeBlock_hello {
+  .WelcomeBlock__hello {
     font-size: 35px;
     opacity: 0;
     border-right: 25px solid #1cd119;
@@ -125,7 +125,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_name {
+  .WelcomeBlock__name {
     font-size: 40px;
     opacity: 0;
     border-right: 25px solid #1cd119;
@@ -134,7 +134,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_creater_mobile1 {
+  .WelcomeBlock__creater_mobile1 {
     font-size: 30px;
     opacity: 0;
     border-right: 25px solid #1cd119;
@@ -143,7 +143,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_creater_mobile2 {
+  .WelcomeBlock__creater_mobile2 {
     font-size: 30px;
     opacity: 0;
     border-right: 25px solid #1cd119;
@@ -152,7 +152,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio_1 {
+  .WelcomeBlock__potrfolio_1 {
     font-size: 17px;
     border-right: 15px solid #1cd119;
     animation: type_mobile_border15 2s steps(47, end);
@@ -160,7 +160,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio_2 {
+  .WelcomeBlock__potrfolio_2 {
     font-size: 17px;
     border-right: 15px solid #1cd119;
     animation: type_mobile_border15 2s steps(43, end);
@@ -168,18 +168,18 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_console {
+  .WelcomeBlock__console {
     animation-delay: 10.5s;
   }
 }
 
 @media (min-width: 1024px) {
-  .WelcomeBlock_wrapper {
+  .WelcomeBlock__wrapper {
     max-width: 900px;
     align-items: flex-start;
   }
 
-  .WelcomeBlock_hello {
+  .WelcomeBlock__hello {
     font-size: 28px;
     margin: 0;
     white-space: nowrap;
@@ -191,7 +191,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_name {
+  .WelcomeBlock__name {
     font-size: 40px;
     margin: 20px 0 0 0;
     white-space: nowrap;
@@ -203,7 +203,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_creater_desktop {
+  .WelcomeBlock__creater_desktop {
     font-size: 26px;
     margin: 20px 0 0 0;
     white-space: nowrap;
@@ -216,7 +216,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio_1 {
+  .WelcomeBlock__potrfolio_1 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -227,7 +227,7 @@
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock_potrfolio_2 {
+  .WelcomeBlock__potrfolio_2 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -241,31 +241,31 @@
 }
 
 @media (min-width: 1280px) {
-  .WelcomeBlock_wrapper {
+  .WelcomeBlock__wrapper {
     max-width: 1100px;
   }
 
-  .WelcomeBlock_hello {
+  .WelcomeBlock__hello {
     font-size: 35px;
   }
 
-  .WelcomeBlock_name {
+  .WelcomeBlock__name {
     font-size: 50px;
   }
 
-  .WelcomeBlock_creater_desktop {
+  .WelcomeBlock__creater_desktop {
     font-size: 33px;
   }
 
-  .WelcomeBlock_potrfolio_1 {
+  .WelcomeBlock__potrfolio_1 {
     font-size: 25px;
   }
 
-  .WelcomeBlock_potrfolio_2 {
+  .WelcomeBlock__potrfolio_2 {
     font-size: 25px;
   }
 
-  .WelcomeBlock_console {
+  .WelcomeBlock__console {
     animation-delay: 10s;
   }
 }
@@ -366,7 +366,7 @@
   }
 }
 
-@keyframes blinkConsole {
+@keyframes blink_console {
   50% {
     opacity: 0;
   }
