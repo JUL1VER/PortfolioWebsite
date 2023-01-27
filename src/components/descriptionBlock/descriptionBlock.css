@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.DescriptionBlock__fotoWithHover {
+.DescriptionBlock__foto-with-hover {
   order: 2;
   margin: 40px;
   position: relative;
@@ -45,13 +45,13 @@
   overflow: hidden;
 }
 
-.DescriptionBlock__fotoPic {
+.DescriptionBlock__foto-pic {
   position: relative;
   border-radius: 15px;
   top: 2px;
 }
 
-.DescriptionBlock__myFoto {
+.DescriptionBlock__myfoto {
   width: 100%;
   border-radius: 15px;
   position: relative;
@@ -145,7 +145,7 @@
     height: 50px;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .DescriptionBlock__foto-with-hover {
     margin: 0 auto;
     margin-top: 40px;
     max-width: 400px;
@@ -194,7 +194,7 @@
     margin-top: 0px;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .DescriptionBlock__foto-with-hover {
     order: 2;
     margin: 0 auto;
     margin: 33px 40px 20px;
@@ -202,7 +202,7 @@
     width: 40%;
   }
 
-  .DescriptionBlock__fotoWithHover:hover .DescriptionBlock__myFoto {
+  .DescriptionBlock__foto-with-hover:hover .DescriptionBlock__myfoto {
     transform: scale(1.15);
   }
 
@@ -238,7 +238,7 @@
     line-height: 157%;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .DescriptionBlock__foto-with-hover {
     max-width: 450px;
   }
 

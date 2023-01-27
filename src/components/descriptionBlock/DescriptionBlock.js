@@ -27,18 +27,18 @@ const DescriptionBlock = () => {
                 <img src={question} alt="Question" className="DescriptionBlock__header-logo"/>
             </div>
             <div data-aos='zoom-in' data-aos-delay='100' data-aos-once='true' className='DescriptionBlock__description'>
-                <div className='DescriptionBlock__fotoWithHover'>
+                <div className='DescriptionBlock__foto-with-hover'>
                     <div className='DescriptionBlock__hover'/>
-                    <picture className='DescriptionBlock__fotoPic'>
+                    <picture className='DescriptionBlock__foto-pic'>
                         <source
-                            className='DescriptionBlock__myFoto'
+                            className='DescriptionBlock__myfoto'
                             media='(min-width: 650px)'
                             srcSet={myfoto_large}/>
                         <source
-                            className='DescriptionBlock__myFoto'
+                            className='DescriptionBlock__myfoto'
                             media='(min-width: 1280px)'
                             srcSet={myfoto_large}/>
-                        <img src={myfoto} alt='myFoto' className='DescriptionBlock__myFoto'/>
+                        <img src={myfoto} alt='myFoto' className='DescriptionBlock__myfoto'/>
                     </picture>
                 </div>
                 <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className="DescriptionBlock__contentPart">
