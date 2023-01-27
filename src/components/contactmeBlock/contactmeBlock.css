@@ -16,7 +16,7 @@
   font-weight: 900;
   font-size: 25px;
 
-  color: #1cd119;
+  color: var(--matrixGreen);
 }
 
 .ContactmeBlock__header-text {
@@ -76,9 +76,9 @@
   max-width: 500px;
   padding: 15px;
 
-  background: #0a0a0a;
-  border: 2px solid #1cd119;
-  box-shadow: 0px 0px 10px 2px #1cd119;
+  background: var(--darkGray);
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0px 0px 10px 2px var(--matrixGreen);
   border-radius: 8px;
 
   font-family: "PT Sans", sans-serif;
@@ -86,7 +86,7 @@
   font-size: 18px;
   line-height: 20px;
 
-  color: #1cd119;
+  color: var(--matrixGreen);
 }
 
 .ContactmeBlock__name {
@@ -107,7 +107,7 @@
 .ContactmeBlock__name:focus,
 .ContactmeBlock__email:focus,
 .ContactmeBlock__message:focus {
-  color: #1cd119;
+  color: var(--matrixGreen);
   text-decoration: none;
   outline: none;
 }
@@ -120,11 +120,11 @@
   border-radius: 5px;
   padding: 0;
 
-  color: #1cd119;
-  background: #0a0a0a;
-  border: 2px solid #1cd119;
-  box-shadow: 0 0 5px 1px #1cd119;
-  text-shadow: 0 0 5px #1cd119;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0 0 5px 1px var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
   cursor: pointer;
 
   font-family: "PT Sans", sans-serif;
@@ -134,25 +134,25 @@
 }
 
 .ContactmeBlock__button:hover {
-  color: #0a0a0a;
-  background: #1cd119;
-  border: 2px solid #1cd119;
+  color: var(--darkGray);
+  background: var(--matrixGreen);
+  border: 2px solid var(--matrixGreen);
   box-shadow: none;
 }
 
 .ContactmeBlock__button:active {
-  color: #1cd119;
-  background: #0a0a0a;
-  text-shadow: 0 0 5px #1cd119;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
+  text-shadow: 0 0 5px var(--matrixGreen);
   transition: 0.1s;
 }
 
 .ContactmeBlock__button.disabled {
-  background-color: #22421d;
-  border-color: #22421d;
+  background-color: var(--matrixGreenDisabled);
+  border-color: var(--matrixGreenDisabled);
   box-shadow: none;
   text-shadow: none;
-  color: #0a0a0a;
+  color: var(--darkGray);
   cursor: default;
 }
 
@@ -283,7 +283,7 @@
     margin-top: 30px;
     font-size: 30px;
     padding: 0 20px 0 15px;
-    box-shadow: 0 0 10px 2px #1cd119;
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
   }
 }
 
@@ -335,6 +335,6 @@
     margin-top: 30px;
     font-size: 36px;
     padding: 0 20px 0 15px;
-    box-shadow: 0 0 10px 2px #1cd119;
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
   }
 }

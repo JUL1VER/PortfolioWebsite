@@ -9,7 +9,7 @@
 }
 
 .DescriptionBlock__header {
-  color: #1cd119;
+  color: var(--matrixGreen);
   font-size: 20px;
   letter-spacing: 3px;
   display: flex;
@@ -59,7 +59,7 @@
 }
 
 .DescriptionBlock__hover {
-  background: #1cd119;
+  background: var(--matrixGreen);
   position: absolute;
   left: 0;
   right: 0;
@@ -91,11 +91,11 @@
   font-size: 20px;
   line-height: 130%;
 
-  color: #fff;
+  color: var(--white);
 }
 
 .DescriptionBlock__link {
-  color: #1cd119;
+  color: var(--matrixGreen);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -106,11 +106,11 @@
   height: 55px;
   margin-top: 30px;
 
-  background: #0a0a0a;
-  color: #1cd119;
-  text-shadow: 0 0 5px #1cd119;
-  box-shadow: 0 0 5px 1px #1cd119;
-  border: 2px solid #1cd119;
+  background: var(--darkGray);
+  color: var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
+  box-shadow: 0 0 5px 1px var(--matrixGreen);
+  border: 2px solid var(--matrixGreen);
   border-radius: 5px;
   cursor: pointer;
 
@@ -121,22 +121,22 @@
 }
 
 .DescriptionBlock__helloButton:hover {
-  color: #0a0a0a;
-  background: #1cd119;
-  border: 2px solid #1cd119;
+  color: var(--darkGray);
+  background: var(--matrixGreen);
+  border: 2px solid var(--matrixGreen);
   box-shadow: none;
-  text-shadow: 0 0 5px #1cd119;
+  text-shadow: 0 0 5px var(--matrixGreen);
 }
 
 .DescriptionBlock__helloButton:active {
-  color: #1cd119;
-  background: #0a0a0a;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
   transition: 0.1s;
 }
 
 @media (min-width: 650px) {
   .DescriptionBlock__header {
-    color: #1cd119;
+    color: var(--matrixGreen);
     font-size: 30px;
   }
 
@@ -217,7 +217,7 @@
 
   .DescriptionBlock__helloButton {
     margin-top: 50px;
-    box-shadow: 0 0 10px 2px #1cd119;
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
     padding: 0 0 3px 0;
 
     font-size: 30px;

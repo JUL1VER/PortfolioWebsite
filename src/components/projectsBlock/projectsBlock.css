@@ -20,7 +20,7 @@
   font-size: 35px;
   letter-spacing: 3px;
 
-  color: #1cd119;
+  color: var(--matrixGreen);
 }
 
 .ProjectsBlock__header-logo {
@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 18px;
 
-  color: #fff;
+  color: var(--white);
 }
 
 .ProjectsBlock__content {
@@ -75,7 +75,7 @@
 }
 
 .ProjectsBlock__hover {
-  background: #1cd119;
+  background: var(--matrixGreen);
   position: absolute;
   left: 0;
   right: 0;
@@ -105,10 +105,10 @@
   width: 80%;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
-  color: #fff;
-  background: #0a0a0a;
-  border: 2px solid #1cd119;
-  box-shadow: 0 0 10px 2px #1cd119;
+  color: var(--white);
+  background: var(--darkGray);
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0 0 10px 2px var(--matrixGreen);
   border-radius: 10px;
 }
 
@@ -145,11 +145,11 @@
   font-family: "PT Sans", sans-serif;
   font-weight: 900;
   border-radius: 5px;
-  color: #1cd119;
-  background: #0a0a0a;
-  border: 1px solid #1cd119;
-  box-shadow: 0 0 2px 2px #1cd119;
-  text-shadow: 0 0 5px #1cd119;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
+  border: 1px solid var(--matrixGreen);
+  box-shadow: 0 0 2px 2px var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
   cursor: pointer;
   z-index: 1;
   transition: 0.5s;
@@ -168,27 +168,27 @@
 }
 
 .ProjectsBlock__conteiner-prevButton:hover {
-  color: #fff;
+  color: var(--white);
   background: #2a7ede;
-  border: 1px solid #fff;
-  box-shadow: 0 0 2px 2px #fff;
+  border: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;
 }
 
 .ProjectsBlock__conteiner-nextButton:hover {
-  color: #fff;
+  color: var(--white);
   background: #e84949;
-  border: 1px solid #fff;
-  box-shadow: 0 0 2px 2px #fff;
+  border: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;
 }
 
 .ProjectsBlock__conteiner-prevButton:active,
 .ProjectsBlock__conteiner-nextButton:active {
-  color: #fff;
-  background: #0a0a0a;
-  border: 2px solid #0a0a0a;
-  box-shadow: 0 0 5px 2px #1cd119;
+  color: var(--white);
+  background: var(--darkGray);
+  border: 2px solid var(--darkGray);
+  box-shadow: 0 0 5px 2px var(--matrixGreen);
   transition: 0.1s;
 }
 
@@ -202,13 +202,13 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #fff;
+  background-color: var(--white);
   width: 5px;
   height: 5px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 @media (min-width: 650px) {
@@ -244,7 +244,7 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #fff;
+    background-color: var(--white);
     width: 7px;
     height: 7px;
   }
@@ -269,7 +269,7 @@
     width: 180px;
     height: 40px;
     font-size: 20px;
-    box-shadow: 0 0 5px 2px #1cd119;
+    box-shadow: 0 0 5px 2px var(--matrixGreen);
   }
 
   .ProjectsBlock__conteiner-prevButton {
@@ -283,11 +283,11 @@
   }
 
   .ProjectsBlock__conteiner-prevButton:hover {
-    box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px var(--white);
   }
 
   .ProjectsBlock__conteiner-nextButton:hover {
-    box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px var(--white);
   }
 
   .ProjectsBlock__hover {
@@ -344,7 +344,7 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #fff;
+    background-color: var(--white);
     width: 7px;
     height: 7px;
   }
@@ -379,8 +379,8 @@
     width: 235px;
     height: 50px;
     font-size: 25px;
-    border: 2px solid #1cd119;
-    box-shadow: 0 0 10px 2px #1cd119;
+    border: 2px solid var(--matrixGreen);
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
     border-radius: 10px;
   }
 
@@ -395,13 +395,13 @@
   }
 
   .ProjectsBlock__conteiner-prevButton:hover {
-    box-shadow: 0 0 10px 2px #fff;
-    border: 2px solid #fff;
+    box-shadow: 0 0 10px 2px var(--white);
+    border: 2px solid var(--white);
   }
 
   .ProjectsBlock__conteiner-nextButton:hover {
-    box-shadow: 0 0 10px 2px #fff;
-    border: 2px solid #fff;
+    box-shadow: 0 0 10px 2px var(--white);
+    border: 2px solid var(--white);
   }
 
   .ProjectsBlock__hover {
@@ -437,7 +437,7 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #fff;
+    background-color: var(--white);
     width: 10px;
     height: 10px;
   }
@@ -468,8 +468,8 @@
     width: 290px;
     height: 60px;
     font-size: 30px;
-    border: 2px solid #1cd119;
-    box-shadow: 0 0 10px 2px #1cd119;
+    border: 2px solid var(--matrixGreen);
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
     border-radius: 10px;
   }
 
