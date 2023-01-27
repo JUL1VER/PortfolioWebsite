@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import projectsPC from '../../img/projectsPC.png';
-import projectsPC_medium from '../../img/projectsPC_medium.png';
-import projectsPC_large from '../../img/projectsPC_large.png';
-import project1 from '../../img/project1.png';
-import project2 from '../../img/project2.png';
-import project3 from '../../img/project3.png';
-import project4 from '../../img/project4.png';
-import project5 from '../../img/project5.png';
+import projectsPC from '../img/projectsPC.png';
+import projectsPC_medium from '../img/projectsPC_medium.png';
+import projectsPC_large from '../img/projectsPC_large.png';
+import project1 from '../img/project1.png';
+import project2 from '../img/project2.png';
+import project3 from '../img/project3.png';
+import project4 from '../img/project4.png';
+import project5 from '../img/project5.png';
 import SwiperCore, { Navigation, Pagination, Lazy, EffectFade, EffectFlip } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -79,20 +79,20 @@ const ProjectSlide = () => {
 
     return (
         <div className='ProjectsBlock__content'>
-            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock__content-text-block'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock__content-textBlock'>
                 <div className='ProjectsBlock__content-text'>
                     <Swiper
                         ref={swiperTextRef}
                         modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
-                        noSwipingClass='ProjectsBlock__content-text-inside'
+                        noSwipingClass='ProjectsBlock__content-textInside'
                         loop={true}
                         slidesPerView={1}
                     >
                         { cards.map(card => (
                             <SwiperSlide key={card.id}>
-                                <p className='ProjectsBlock__content-text-inside'>{card.description}</p>
+                                <p className='ProjectsBlock__content-textInside'>{card.description}</p>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -120,10 +120,10 @@ const ProjectSlide = () => {
                 </div>
             </div>
             <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock__conteiner'>
-                <button onClick={() => swiperPrev()} className='ProjectsBlock__conteiner-prev-button'>
+                <button type='button' onClick={() => swiperPrev()} className='ProjectsBlock__conteiner-prevButton'>
                     Prev
                 </button>
-                <button onClick={() => swiperNext()} className='ProjectsBlock__conteiner-next-button'>
+                <button type='button' onClick={() => swiperNext()} className='ProjectsBlock__conteiner-nextButton'>
                     Next
                 </button>
                 <Swiper
@@ -143,12 +143,12 @@ const ProjectSlide = () => {
                         <SwiperSlide key={card.id}>
                             <a href={card.link} target='_blank' rel='noreferrer' className='ProjectsBlock_conteiner_slidePic'>
                                 <div className='ProjectsBlock__hover'/>
-                                <img src={card.imgprop} alt="Project" className="ProjectsBlock__conteiner-project-pic"/>
+                                <img src={card.imgprop} alt="Project" className="ProjectsBlock__conteiner-projectPic"/>
                             </a>
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <picture className="ProjectsBlock__conteiner-PC-img">
+                <picture className="ProjectsBlock__conteiner-PCimg">
                     <source
                         className='ProjectsBlock__conteiner-PC'
                         media='(min-width: 1024px)'

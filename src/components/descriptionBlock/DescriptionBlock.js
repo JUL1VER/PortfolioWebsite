@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import myfoto from '../../img/myfoto.png';
-import myfoto_large from '../../img/myfoto_large.png';
-import question from '../../img/question.png';
+import myfoto from './img/myfoto.png';
+import myfoto_large from './img/myfoto_large.png';
+import question from './img/question.png';
 import Modal from '../modal/Modal';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Aos from 'aos';
@@ -27,18 +27,18 @@ const DescriptionBlock = () => {
                 <img src={question} alt="Question" className="DescriptionBlock__header-logo"/>
             </div>
             <div data-aos='zoom-in' data-aos-delay='100' data-aos-once='true' className='DescriptionBlock__description'>
-                <div className='DescriptionBlock__foto-with-hover'>
+                <div className='DescriptionBlock__fotoWithHover'>
                     <div className='DescriptionBlock__hover'/>
-                    <picture className='DescriptionBlock__foto-pic'>
+                    <picture className='DescriptionBlock__fotoPic'>
                         <source
-                            className='DescriptionBlock__myfoto'
+                            className='DescriptionBlock__myFoto'
                             media='(min-width: 650px)'
                             srcSet={myfoto_large}/>
                         <source
-                            className='DescriptionBlock__myfoto'
+                            className='DescriptionBlock__myFoto'
                             media='(min-width: 1280px)'
                             srcSet={myfoto_large}/>
-                        <img src={myfoto} alt='myFoto' className='DescriptionBlock__myfoto'/>
+                        <img src={myfoto} alt='myFoto' className='DescriptionBlock__myFoto'/>
                     </picture>
                 </div>
                 <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className="DescriptionBlock__contentPart">
@@ -46,7 +46,7 @@ const DescriptionBlock = () => {
                     <div className='DescriptionBlock__text'>Currently I'm developing well desingned impressive apps in <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="https://mish.design/" target='_blank' rel='noreferrer' className='DescriptionBlock__link'>Mish.design</a></GlitchText>. Mostly I work using React and TypeScript, but I also like native JavaScript. The power and possibilities of CSS never stop to amaze me!</div>
                     <div className='DescriptionBlock__text'>I am interested in many things including science, poetry, music, history, phylosophy and travelling. But programming is one of my favourites! And I also like to talk with people, so feel free to <GlitchText onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' style={{display: 'inline-block'}}><a href="mailto:jul1v3r@gmail.com" target='_blank' rel='noreferrer' className='DescriptionBlock__link'>say</a></GlitchText> me something :)</div>
                     <button className='DescriptionBlock__helloButton'
-                            type={'button'}
+                            type='button'
                             onClick={() => setModalActive(true)}>
                             Say Hello
                     </button>

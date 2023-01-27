@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import skillsHead from '../../img/skillsHead.png';
-import skillsImg from '../../img/skillsImg.png';
-import skillsImg_large from '../../img/skillsImg_large.png';
-import css from '../../img/csslogo.png';
-import js from '../../img/jslogo.png';
-import html from '../../img/htmllogo.png';
-import react from '../../img/reactlogo.png';
-import redux from '../../img/reduxlogo.png';
-import ts from '../../img/tslogo.png';
-import SkillIcon from '../skillIcon/SkillIcon';
+import skillsHead from './img/skillsHead.png';
+import skillsImg from './img/skillsImg.png';
+import skillsImg_large from './img/skillsImg_large.png';
+import css from './img/csslogo.png';
+import js from './img/jslogo.png';
+import html from './img/htmllogo.png';
+import react from './img/reactlogo.png';
+import redux from './img/reduxlogo.png';
+import ts from './img/tslogo.png';
+import SkillIcon from './skillIcon/SkillIcon';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -45,15 +45,15 @@ const SkillsBlock = () => {
                         srcSet={skillsImg_large}/>
                     <img src={skillsImg} alt="skillsImg" className='SkillsBlock__img'/>
                 </picture>
-                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__skills-and-logos'>
+                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__skillsAndLogos'>
                     <p className='SkillsBlock__text'>I have solid experience in the following web technologies:</p>
-                    <div className='SkillsBlock__logo-wrapper'>
+                    <div className='SkillsBlock__logoWrapper'>
                         {content}
                     </div>
                 </div>
             </div>
         </div>
     );
-}; 
+};
 
 export default SkillsBlock;

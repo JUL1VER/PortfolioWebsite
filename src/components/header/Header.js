@@ -1,12 +1,12 @@
 import './header.css';
 import React, { useEffect, useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
-import question from '../../img/question.png';
-import skillsHead from '../../img/skillsHead.png';
-import projectLogo from '../../img/projectImg.png';
-import contactmeLogo from '../../img/contactmeLogo.png';
-import Vlogo from '../../img/V_logo_44.svg';
-import Vlogo_large from '../../img/V_logo_88.svg';
+import { Link } from "react-scroll";
+import question from '../descriptionBlock/img/question.png';
+import skillsHead from '../skillsBlock/img/skillsHead.png';
+import projectLogo from '../projectsBlock/img/projectImg.png';
+import contactmeLogo from '../contactmeBlock/img/contactmeLogo.png';
+import Vlogo from './img/V_logo_44.svg';
+import Vlogo_large from './img/V_logo_88.svg';
 import classNames from 'classnames';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 
@@ -22,12 +22,12 @@ const Header = () => {
     }
 
     const [position, setPosition] = useState(window.pageYOffset)
-    const [visible, setVisible] = useState(true) 
+    const [visible, setVisible] = useState(true)
 
     useEffect(() => {
         const handleScroll = () => {
            let moving = window.pageYOffset
-           
+
            setVisible(position > moving);
            setPosition(moving)
         };
@@ -44,7 +44,7 @@ const Header = () => {
     return (
         <div className={classNames("Header", headerVision)}>
             <div className="Header__wrapper">
-                <a href="https://jul1ver.github.io/PortfolioWebsite/" className='Header__logo-block'>
+                <a href="https://jul1ver.github.io/PortfolioWebsite/" className='Header__logoBlock'>
                     <picture className="Header__Vlogo-pic">
                         <source
                             className='Header__Vlogo'
@@ -53,16 +53,16 @@ const Header = () => {
                         <img src={Vlogo} alt="Vlogo" className="Header__Vlogo"></img>
                     </picture>
                 </a>
-                <button 
+                <button
                     type='button'
-                    className={classNames('Header__burger-block', {'active': isActive})}
+                    className={classNames('Header__burgerBlock', {'active': isActive})}
                     onClick={ toggleActiveClass }>
                     <span></span>
                 </button>
                 <div className="Header__navbar-block">
                     <nav className={classNames('Header__navbar', {'active': isActive})}>
-                        <Link  
-                            className='Header__navbar-navlinks'
+                        <Link
+                            className='Header__navbar-navLinks'
                             to='WhoAmI'
                             smooth={true}
                             offset={-100}
@@ -77,8 +77,8 @@ const Header = () => {
                                 </div>
                             </GlitchText>
                         </Link>
-                        <Link  
-                            className='Header__navbar-navlinks'
+                        <Link
+                            className='Header__navbar-navLinks'
                             to='SkillsPart'
                             smooth={true}
                             offset={-100}
@@ -93,8 +93,8 @@ const Header = () => {
                                 </div>
                             </GlitchText>
                         </Link>
-                        <Link  
-                            className='Header__navbar-navlinks'
+                        <Link
+                            className='Header__navbar-navLinks'
                             to='ProjectsPart'
                             smooth={true}
                             offset={-100}
@@ -109,8 +109,8 @@ const Header = () => {
                                 </div>
                             </GlitchText>
                         </Link>
-                        <Link 
-                            className='Header__navbar-navlinks'
+                        <Link
+                            className='Header__navbar-navLinks'
                             to='ContactmePart'
                             smooth={true}
                             offset={-100}

@@ -1,4 +1,4 @@
-export default {
+const defaultStyles = {
 	container: {
 		position: "relative",
 		backgroundColor: "#FF3456"
@@ -11,3 +11,5 @@ export default {
 		right: "0px",
 	},
 }
+
+export default defaultStyles;
