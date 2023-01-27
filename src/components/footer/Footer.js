@@ -1,15 +1,15 @@
 import React from 'react';
-import linkedin from '../../img/linkedin.svg';
-import telegram from '../../img/telegram.svg';
-import twitter from '../../img/twitter.svg';
-import google from '../../img/google.svg';
-import github from '../../img/github.svg';
-import linkedin_large from '../../img/linkedin_large.svg';
-import telegram_large from '../../img/telegram_large.svg';
-import twitter_large from '../../img/twitter_large.svg';
-import google_large from '../../img/google_large.svg';
-import github_large from '../../img/github_large.svg';
-import FooterLink from '../footerLink/FooterLink';
+import linkedin from './img/linkedin.svg';
+import telegram from './img/telegram.svg';
+import twitter from './img/twitter.svg';
+import google from './img/google.svg';
+import github from './img/github.svg';
+import linkedin_large from './img/linkedin_large.svg';
+import telegram_large from './img/telegram_large.svg';
+import twitter_large from './img/twitter_large.svg';
+import google_large from './img/google_large.svg';
+import github_large from './img/github_large.svg';
+import FooterLink from './footerLink/FooterLink';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 import './footer.css';

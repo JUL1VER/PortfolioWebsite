@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import contactmeLogo from '../../img/contactmeLogo.png';
-import leftpill from '../../img/bluePill.png';
-import rightpill from '../../img/redPill.png';
-import hands from '../../img/hands.png';
-import hands_large from '../../img/hands_large.png';
+import contactmeLogo from './img/contactmeLogo.png';
+import leftpill from './img/bluePill.png';
+import rightpill from './img/redPill.png';
+import hands from './img/hands.png';
+import hands_large from './img/hands_large.png';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -86,7 +86,7 @@ const ContactmeBlock = () => {
                         className='ContactmeBlock__email'
                         value={info.email}
                         onChange={handleEmailChange}/>
-                    <textarea 
+                    <textarea
                         name='message'
                         type='text'
                         placeholder='Enter your message...'

@@ -4,25 +4,6 @@
   padding: 100px 0;
 }
 
-.swiper-wrapper {
-  align-items: center;
-}
-
-.swiper-pagination {
-  position: absolute;
-  top: 107px;
-}
-
-.swiper-pagination-bullet {
-  background-color: #fff;
-  width: 5px;
-  height: 5px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
 .ProjectsBlock__header {
   display: flex;
   flex-direction: row;
@@ -70,7 +51,7 @@
   order: 1;
 }
 
-.ProjectsBlock__conteiner-PC-img {
+.ProjectsBlock__conteiner-PCimg {
   position: relative;
 }
 
@@ -88,7 +69,7 @@
   border-radius: 12px;
 }
 
-.ProjectsBlock__conteiner-project-pic {
+.ProjectsBlock__conteiner-projectPic {
   width: 100%;
   border-radius: 5px;
 }
@@ -112,7 +93,7 @@
   margin: 0 auto;
 }
 
-.ProjectsBlock__content-text-block {
+.ProjectsBlock__content-textBlock {
   order: 2;
   width: 80%;
   max-width: 450px;
@@ -135,7 +116,7 @@
   padding: 20px;
 }
 
-.ProjectsBlock__content-text-inside {
+.ProjectsBlock__content-textInside {
   display: flex;
   align-items: center;
   margin: 0;
@@ -155,8 +136,8 @@
   padding: 0;
 }
 
-.ProjectsBlock__conteiner-prev-button,
-.ProjectsBlock__conteiner-next-button {
+.ProjectsBlock__conteiner-prevButton,
+.ProjectsBlock__conteiner-nextButton {
   width: 120px;
   height: 25px;
   padding-top: 0px;
@@ -174,19 +155,19 @@
   transition: 0.5s;
 }
 
-.ProjectsBlock__conteiner-prev-button {
+.ProjectsBlock__conteiner-prevButton {
   transform: rotate(-90deg);
   top: 80px;
   left: -35px;
 }
 
-.ProjectsBlock__conteiner-next-button {
+.ProjectsBlock__conteiner-nextButton {
   transform: rotate(90deg);
   top: 80px;
   right: -35px;
 }
 
-.ProjectsBlock__conteiner-prev-button:hover {
+.ProjectsBlock__conteiner-prevButton:hover {
   color: #fff;
   background: #2a7ede;
   border: 1px solid #fff;
@@ -194,7 +175,7 @@
   text-shadow: none;
 }
 
-.ProjectsBlock__conteiner-next-button:hover {
+.ProjectsBlock__conteiner-nextButton:hover {
   color: #fff;
   background: #e84949;
   border: 1px solid #fff;
@@ -202,13 +183,32 @@
   text-shadow: none;
 }
 
-.ProjectsBlock__conteiner-prev-button:active,
-.ProjectsBlock__conteiner-next-button:active {
+.ProjectsBlock__conteiner-prevButton:active,
+.ProjectsBlock__conteiner-nextButton:active {
   color: #fff;
   background: #0a0a0a;
   border: 2px solid #0a0a0a;
   box-shadow: 0 0 5px 2px #1cd119;
   transition: 0.1s;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 107px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 @media (min-width: 650px) {
@@ -249,7 +249,7 @@
     height: 7px;
   }
 
-  .ProjectsBlock__content-text-inside {
+  .ProjectsBlock__content-textInside {
     font-size: 25px;
   }
 
@@ -264,29 +264,29 @@
     margin-top: 30px;
   }
 
-  .ProjectsBlock__conteiner-prev-button,
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-prevButton,
+  .ProjectsBlock__conteiner-nextButton {
     width: 180px;
     height: 40px;
     font-size: 20px;
     box-shadow: 0 0 5px 2px #1cd119;
   }
 
-  .ProjectsBlock__conteiner-prev-button {
+  .ProjectsBlock__conteiner-prevButton {
     top: 115px;
     left: -52px;
   }
 
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-nextButton {
     top: 115px;
     right: -52px;
   }
 
-  .ProjectsBlock__conteiner-prev-button:hover {
+  .ProjectsBlock__conteiner-prevButton:hover {
     box-shadow: 0 0 5px 2px #fff;
   }
 
-  .ProjectsBlock__conteiner-next-button:hover {
+  .ProjectsBlock__conteiner-nextButton:hover {
     box-shadow: 0 0 5px 2px #fff;
   }
 
@@ -349,11 +349,11 @@
     height: 7px;
   }
 
-  .ProjectsBlock__conteiner-project-pic {
+  .ProjectsBlock__conteiner-projectPic {
     border-radius: 15px;
   }
 
-  .ProjectsBlock__content-text-block {
+  .ProjectsBlock__content-textBlock {
     padding: 10px;
     margin-top: 35px;
     order: 1;
@@ -364,7 +364,7 @@
     width: 300px;
   }
 
-  .ProjectsBlock__content-text-inside {
+  .ProjectsBlock__content-textInside {
     font-size: 28px;
     height: 150px;
   }
@@ -374,8 +374,8 @@
     margin: 15px 0px;
   }
 
-  .ProjectsBlock__conteiner-prev-button,
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-prevButton,
+  .ProjectsBlock__conteiner-nextButton {
     width: 235px;
     height: 50px;
     font-size: 25px;
@@ -384,22 +384,22 @@
     border-radius: 10px;
   }
 
-  .ProjectsBlock__conteiner-prev-button {
+  .ProjectsBlock__conteiner-prevButton {
     top: 138px;
     left: -72px;
   }
 
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-nextButton {
     top: 138px;
     right: -72px;
   }
 
-  .ProjectsBlock__conteiner-prev-button:hover {
+  .ProjectsBlock__conteiner-prevButton:hover {
     box-shadow: 0 0 10px 2px #fff;
     border: 2px solid #fff;
   }
 
-  .ProjectsBlock__conteiner-next-button:hover {
+  .ProjectsBlock__conteiner-nextButton:hover {
     box-shadow: 0 0 10px 2px #fff;
     border: 2px solid #fff;
   }
@@ -447,13 +447,13 @@
     width: 400px;
   }
 
-  .ProjectsBlock__content-text-block {
+  .ProjectsBlock__content-textBlock {
     padding: 10px;
     margin-top: 55px;
     order: 1;
   }
 
-  .ProjectsBlock__content-text-inside {
+  .ProjectsBlock__content-textInside {
     font-size: 35px;
     height: 200px;
   }
@@ -463,8 +463,8 @@
     margin: 20px 0px;
   }
 
-  .ProjectsBlock__conteiner-prev-button,
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-prevButton,
+  .ProjectsBlock__conteiner-nextButton {
     width: 290px;
     height: 60px;
     font-size: 30px;
@@ -473,12 +473,12 @@
     border-radius: 10px;
   }
 
-  .ProjectsBlock__conteiner-prev-button {
+  .ProjectsBlock__conteiner-prevButton {
     top: 180px;
     left: -85px;
   }
 
-  .ProjectsBlock__conteiner-next-button {
+  .ProjectsBlock__conteiner-nextButton {
     top: 180px;
     right: -85px;
   }

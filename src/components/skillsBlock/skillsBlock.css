@@ -48,7 +48,7 @@
   color: #fff;
 }
 
-.SkillsBlock__logo-wrapper {
+.SkillsBlock__logoWrapper {
   margin-top: 20px;
   display: grid;
   column-gap: 60px;
@@ -57,11 +57,11 @@
   justify-content: center;
 }
 
-.SkillsBlock__logo-with-text {
+.SkillsBlock__logoWithText {
   transition: 0.2s;
 }
 
-.SkillsBlock__logo-with-text:hover {
+.SkillsBlock__logoWithText:hover {
   margin-top: -10px;
 }
 
@@ -92,7 +92,7 @@
     line-height: 35px;
   }
 
-  .SkillsBlock__logo-wrapper {
+  .SkillsBlock__logoWrapper {
     display: grid;
     margin-top: 0px;
     column-gap: 60px;
@@ -131,7 +131,7 @@
     margin-top: 4px;
   }
 
-  .SkillsBlock__skills-and-logos {
+  .SkillsBlock__skillsAndLogos {
     order: 2;
     width: 50%;
   }
@@ -154,7 +154,7 @@
     max-width: 750px;
   }
 
-  .SkillsBlock__logo-wrapper {
+  .SkillsBlock__logoWrapper {
     row-gap: 30px;
   }
 }
@@ -169,7 +169,7 @@
     line-height: 51px;
   }
 
-  .SkillsBlock__logo-wrapper {
+  .SkillsBlock__logoWrapper {
     margin-top: 20px;
     row-gap: 50px;
   }

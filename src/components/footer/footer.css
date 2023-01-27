@@ -171,6 +171,7 @@
 @media (min-width: 1280px) {
   .Footer__links-text {
     font-size: 35px;
+    text-align: center;
   }
 
   .Footer__media {

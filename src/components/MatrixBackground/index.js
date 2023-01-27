@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MatrixCanvas from './MatrixCanvas.jsx';
-import MatrixCardDefaultStyles from './MatrixCardDefaultStyles.js'
+import MatrixCardDefaultStyles from './matrixCardDefaultStyles.js'
 
 
 // main idea: https://github.com/MehmetKaplan/matrix-card
