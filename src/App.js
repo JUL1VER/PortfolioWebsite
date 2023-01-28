@@ -2,6 +2,7 @@ import MainPage from './components/mainPage/MainPage';
 import MatrixBackground from './components/matrixBackground/MatrixBackground';
 import Bowser from "bowser";
 import './app.css';
+import './global.css';
 
 function App() {
   const browser = Bowser.getParser(window.navigator.userAgent);

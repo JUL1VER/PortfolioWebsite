@@ -23,9 +23,9 @@
   width: 250px;
   padding: 20px;
   border-radius: 12px;
-  background-color: #0a0a0a;
-  border: 2px solid #1cd119;
-  box-shadow: 0 0 15px 1px #1cd119;
+  background-color: var(--darkGray);
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0 0 15px 1px var(--matrixGreen);
   transform: scale(0.5);
   transition: 0.4s;
   display: flex;
@@ -40,7 +40,7 @@
 
 .modal__text {
   font-family: "PT Sans", sans-serif;
-  color: #fff;
+  color: var(--white);
   font-size: 20px;
   width: 90%;
 }
@@ -64,11 +64,11 @@
   font-size: 10px;
   font-weight: 600;
   border-radius: 10px;
-  color: #fff;
-  border: 1px solid #1cd119;
-  background-color: #0a0a0a;
-  box-shadow: 0 0 5px 2px #1cd119;
-  text-shadow: 0 0 5px #1cd119;
+  color: var(--white);
+  border: 1px solid var(--matrixGreen);
+  background-color: var(--darkGray);
+  box-shadow: 0 0 5px 2px var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
@@ -81,18 +81,18 @@
 
 .modal__link_right:hover,
 .modal__link_right:active {
-  color: #fff;
-  border: 1px solid #fff;
-  box-shadow: 0 0 5px 2px #fff;
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
   background-color: #e84949;
 }
 
 .modal__link_left:hover,
 .modal__link_left:active {
-  color: #fff;
-  border: 1px solid #fff;
-  box-shadow: 0 0 5px 2px #fff;
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
   background-color: #2a7ede;
 }
@@ -104,7 +104,7 @@
   height: 20px;
   mask: url(./img/close.svg) center no-repeat;
   mask-size: cover;
-  background: #fff;
+  background: var(--white);
   right: 10px;
   top: 10px;
   transition: 0.2s;
@@ -135,7 +135,7 @@
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
-    border: 1px solid #1cd119;
+    border: 1px solid var(--matrixGreen);
   }
 
   .modal__link-img {
@@ -170,7 +170,7 @@
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
-    border: 1px solid #1cd119;
+    border: 1px solid var(--matrixGreen);
   }
 
   .modal__link-img {
