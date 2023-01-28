@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       {browser.getBrowserName() === 'Firefox' ?
-        <div className="App App_firefox" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
+        <div className="app app_firefox" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
           <MainPage/>
         </div>
       :
-        <div className="App" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
+        <div className="app" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
           <MatrixBackground/>
           <MainPage/>
         </div>

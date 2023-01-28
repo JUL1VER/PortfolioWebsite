@@ -1,4 +1,4 @@
-.Preloader {
+.preloader {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 
-.MatrixConsole {
+.matrix-console {
   width: 15ch;
   font-family: monospace;
   font-size: 30px;
@@ -25,14 +25,14 @@
 }
 
 @media (min-width: 650px) {
-  .MatrixConsole {
+  .matrix-console {
     font-size: 45px;
     border-right: 30px solid #1cd119;
   }
 }
 
 @media (min-width: 1280px) {
-  .MatrixConsole {
+  .matrix-console {
     font-size: 60px;
     border-right: 40px solid #1cd119;
   }

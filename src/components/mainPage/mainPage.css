@@ -1,9 +1,9 @@
-.Preloader_hidden {
+.preloader_hidden {
   transition: 2s;
   opacity: 0;
   top: 100%;
 }
 
-.Mainpage_hidden {
+.mainpage_hidden {
   display: none;
 }

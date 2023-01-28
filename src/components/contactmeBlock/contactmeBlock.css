@@ -1,10 +1,10 @@
-.ContactmeBlock__wrapper {
+.contactme-block__wrapper {
   margin-top: 25px;
   overflow-x: hidden;
   padding: 100px 0;
 }
 
-.ContactmeBlock__header {
+.contactme-block__header {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -19,27 +19,27 @@
   color: #1cd119;
 }
 
-.ContactmeBlock__header-text {
+.contactme-block__header-text {
   margin: 0;
   letter-spacing: 4px;
 }
 
-.ContactmeBlock__header-logo {
+.contactme-block__header-logo {
   margin: 3px 0px 0px 5px;
   width: 35px;
 }
 
-.ContactmeBlock__picture {
+.contactme-block__picture {
   width: 250px;
   margin: 0 auto;
 }
 
-.ContactmeBlock__img {
+.contactme-block__img {
   width: 100%;
   margin-top: -20px;
 }
 
-.ContactmeBlock__leftpill {
+.contactme-block__leftpill {
   position: relative;
   width: 40px;
   top: 105px;
@@ -47,7 +47,7 @@
   transition: 0.5s;
 }
 
-.ContactmeBlock__rightpill {
+.contactme-block__rightpill {
   position: relative;
   width: 40px;
   top: 105px;
@@ -55,19 +55,19 @@
   transition: 0.5s;
 }
 
-.ContactmeBlock__leftpill:hover,
-.ContactmeBlock__rightpill:hover {
+.contactme-block__leftpill:hover,
+.contactme-block__rightpill:hover {
   transform: scale(1.15);
 }
 
-.ContactmeBlock__form {
+.contactme-block__form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-.ContactmeBlock__name,
-.ContactmeBlock__email,
-.ContactmeBlock__message {
+.contactme-block__name,
+.contactme-block__email,
+.contactme-block__message {
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -89,30 +89,30 @@
   color: #1cd119;
 }
 
-.ContactmeBlock__name {
+.contactme-block__name {
   height: 50px;
 }
 
-.ContactmeBlock__email {
+.contactme-block__email {
   height: 50px;
   margin-top: 30px;
 }
 
-.ContactmeBlock__message {
+.contactme-block__message {
   resize: none;
   height: 200px;
   margin-top: 30px;
 }
 
-.ContactmeBlock__name:focus,
-.ContactmeBlock__email:focus,
-.ContactmeBlock__message:focus {
+.contactme-block__name:focus,
+.contactme-block__email:focus,
+.contactme-block__message:focus {
   color: #1cd119;
   text-decoration: none;
   outline: none;
 }
 
-.ContactmeBlock__button {
+.contactme-block__button {
   width: 90px;
   height: 45px;
   margin: 0 auto;
@@ -133,21 +133,21 @@
   transition: 0.5s;
 }
 
-.ContactmeBlock__button:hover {
+.contactme-block__button:hover {
   color: #0a0a0a;
   background: #1cd119;
   border: 2px solid #1cd119;
   box-shadow: none;
 }
 
-.ContactmeBlock__button:active {
+.contactme-block__button:active {
   color: #1cd119;
   background: #0a0a0a;
   text-shadow: 0 0 5px #1cd119;
   transition: 0.1s;
 }
 
-.ContactmeBlock__button.disabled {
+.contactme-block__button.disabled {
   background-color: #22421d;
   border-color: #22421d;
   box-shadow: none;
@@ -157,50 +157,50 @@
 }
 
 @media (min-width: 650px) {
-  .ContactmeBlock__header-text {
+  .contactme-block__header-text {
     font-size: 50px;
   }
 
-  .ContactmeBlock__header-logo {
+  .contactme-block__header-logo {
     width: 40px;
   }
 
-  .ContactmeBlock__picture {
+  .contactme-block__picture {
     width: 450px;
   }
 
-  .ContactmeBlock__img {
+  .contactme-block__img {
     margin-top: -40px;
   }
 
-  .ContactmeBlock__leftpill {
+  .contactme-block__leftpill {
     width: 60px;
     top: 173px;
     left: -75px;
   }
 
-  .ContactmeBlock__rightpill {
+  .contactme-block__rightpill {
     width: 60px;
     top: 173px;
     right: -75px;
   }
 
-  .ContactmeBlock__name {
+  .contactme-block__name {
     font-size: 25px;
     height: 70px;
   }
 
-  .ContactmeBlock__email {
+  .contactme-block__email {
     font-size: 25px;
     height: 70px;
   }
 
-  .ContactmeBlock__message {
+  .contactme-block__message {
     font-size: 25px;
     height: 250px;
   }
 
-  .ContactmeBlock__button {
+  .contactme-block__button {
     width: 120px;
     height: 60px;
     margin-top: 30px;
@@ -210,50 +210,50 @@
 }
 
 @media (min-width: 1024px) {
-  .ContactmeBlock__wrapper {
+  .contactme-block__wrapper {
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
   }
 
-  .ContactmeBlock__content {
+  .contactme-block__content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 60px;
   }
 
-  .ContactmeBlock__header-text {
+  .contactme-block__header-text {
     font-size: 55px;
   }
 
-  .ContactmeBlock__header-logo {
+  .contactme-block__header-logo {
     width: 50px;
   }
 
-  .ContactmeBlock__picture {
+  .contactme-block__picture {
     order: 1;
     width: 500px;
   }
 
-  .ContactmeBlock__img {
+  .contactme-block__img {
     margin-top: -40px;
     width: 500px;
   }
 
-  .ContactmeBlock__leftpill {
+  .contactme-block__leftpill {
     width: 70px;
     top: 200px;
     left: -80px;
   }
 
-  .ContactmeBlock__rightpill {
+  .contactme-block__rightpill {
     width: 70px;
     top: 200px;
     right: -80px;
   }
 
-  .ContactmeBlock__form {
+  .contactme-block__form {
     order: 2;
     display: flex;
     flex-direction: column;
@@ -261,9 +261,9 @@
     margin-top: 0px;
   }
 
-  .ContactmeBlock__name,
-  .ContactmeBlock__email,
-  .ContactmeBlock__message {
+  .contactme-block__name,
+  .contactme-block__email,
+  .contactme-block__message {
     width: 80%;
     max-width: 1000px;
     height: 66px;
@@ -272,12 +272,12 @@
     padding-left: 20px;
   }
 
-  .ContactmeBlock__message {
+  .contactme-block__message {
     height: 250px;
     padding-top: 10px;
   }
 
-  .ContactmeBlock__button {
+  .contactme-block__button {
     width: 120px;
     height: 60px;
     margin-top: 30px;
@@ -288,34 +288,34 @@
 }
 
 @media (min-width: 1280px) {
-  .ContactmeBlock__wrapper {
+  .contactme-block__wrapper {
     max-width: 1260px;
   }
 
-  .ContactmeBlock__picture {
+  .contactme-block__picture {
     width: 600px;
   }
 
-  .ContactmeBlock__img {
+  .contactme-block__img {
     margin-top: -40px;
     width: 600px;
   }
 
-  .ContactmeBlock__leftpill {
+  .contactme-block__leftpill {
     width: 80px;
     top: 245px;
     left: -95px;
   }
 
-  .ContactmeBlock__rightpill {
+  .contactme-block__rightpill {
     width: 80px;
     top: 245px;
     right: -95px;
   }
 
-  .ContactmeBlock__name,
-  .ContactmeBlock__email,
-  .ContactmeBlock__message {
+  .contactme-block__name,
+  .contactme-block__email,
+  .contactme-block__message {
     width: 80%;
     max-width: 1000px;
     height: 85px;
@@ -324,12 +324,12 @@
     padding-left: 20px;
   }
 
-  .ContactmeBlock__message {
+  .contactme-block__message {
     height: 300px;
     padding-top: 15px;
   }
 
-  .ContactmeBlock__button {
+  .contactme-block__button {
     width: 150px;
     height: 70px;
     margin-top: 30px;

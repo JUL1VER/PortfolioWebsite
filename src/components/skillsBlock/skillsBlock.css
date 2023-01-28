@@ -1,10 +1,10 @@
-.SkillsBlock__wrapper {
+.skills-block {
   margin-top: 25px;
   overflow-x: hidden;
   padding: 110px 0;
 }
 
-.SkillsBlock__header {
+.skills-block__header {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -17,16 +17,16 @@
   color: #1cd119;
 }
 
-.SkillsBlock__header-text {
+.skills-block__header-text {
   margin: 0;
   letter-spacing: 4px;
 }
 
-.SkillsBlock__header-logo {
+.skills-block__header-logo {
   width: 35px;
 }
 
-.SkillsBlock__img {
+.skills-block__img {
   width: 70%;
   min-width: 250px;
   max-width: 500px;
@@ -34,7 +34,7 @@
   margin-top: 15px;
 }
 
-.SkillsBlock__text {
+.skills-block__text {
   width: 80%;
   min-width: 293px;
   height: 80px;
@@ -48,7 +48,7 @@
   color: #fff;
 }
 
-.SkillsBlock__logoWrapper {
+.skills-block__logo-wrapper {
   margin-top: 20px;
   display: grid;
   column-gap: 60px;
@@ -57,20 +57,20 @@
   justify-content: center;
 }
 
-.SkillsBlock__logoWithText {
+.skills-block__logo-with-text {
   transition: 0.2s;
 }
 
-.SkillsBlock__logoWithText:hover {
+.skills-block__logo-with-text:hover {
   margin-top: -10px;
 }
 
-.SkillsBlock__logos {
+.skills-block__logos {
   width: 80px;
   height: 81px;
 }
 
-.SkillsBlock__logos-text {
+.skills-block__logos-text {
   font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 20px;
@@ -79,20 +79,20 @@
 }
 
 @media (min-width: 650px) {
-  .SkillsBlock__header-text {
+  .skills-block__header-text {
     font-size: 50px;
   }
 
-  .SkillsBlock__header-logo {
+  .skills-block__header-logo {
     width: 50px;
   }
 
-  .SkillsBlock__text {
+  .skills-block__text {
     font-size: 25px;
     line-height: 35px;
   }
 
-  .SkillsBlock__logoWrapper {
+  .skills-block__logo-wrapper {
     display: grid;
     margin-top: 0px;
     column-gap: 60px;
@@ -100,76 +100,76 @@
     justify-content: center;
   }
 
-  .SkillsBlock__logos {
+  .skills-block__logos {
     width: 104px;
     height: 106px;
   }
 
-  .SkillsBlock__logos-text {
+  .skills-block__logos-text {
     font-size: 25px;
   }
 }
 
 @media (min-width: 1024px) {
-  .SkillsBlock__wrapper {
+  .skills-block {
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
   }
 
-  .SkillsBlock__content {
+  .skills-block__content {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
   }
 
-  .SkillsBlock__header-text {
+  .skills-block__header-text {
     font-size: 55px;
   }
 
-  .SkillsBlock__header-logo {
+  .skills-block__header-logo {
     margin-top: 4px;
   }
 
-  .SkillsBlock__skillsAndLogos {
+  .skills-block__skills-and-logos {
     order: 2;
     width: 50%;
   }
 
-  .SkillsBlock__text {
+  .skills-block__text {
     width: 100%;
     font-size: 30px;
     line-height: 40px;
     height: 100px;
   }
 
-  .SkillsBlock__img-pic {
+  .skills-block__img-pic {
     order: 1;
     margin: 0 auto;
     margin-top: 20px;
   }
 
-  .SkillsBlock__img {
+  .skills-block__img {
     width: 100%;
     max-width: 750px;
   }
 
-  .SkillsBlock__logoWrapper {
+  .skills-block__logo-wrapper {
     row-gap: 30px;
   }
 }
 
 @media (min-width: 1280px) {
-  .SkillsBlock__wrapper {
+  .skills-block {
     max-width: 1260px;
   }
 
-  .SkillsBlock__text {
+  .skills-block__text {
     font-size: 35px;
     line-height: 51px;
   }
 
-  .SkillsBlock__logoWrapper {
+  .skills-block__logo-wrapper {
     margin-top: 20px;
     row-gap: 50px;
   }
