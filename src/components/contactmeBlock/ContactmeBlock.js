@@ -52,7 +52,7 @@ const ContactmeBlock = () => {
     };
 
     return (
-        <section className='contactme-block__wrapper'>
+        <section className='contactme-block'>
             <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='contactme-block__header'>
                 <h2 className='contactme-block__header-text' id='ContactmePart'>Contact me</h2>
                 <img src={contactmeLogo} alt="Phone" className="contactme-block__header-logo"/>

@@ -1,4 +1,4 @@
-.contactme-block__wrapper {
+.contactme-block {
   margin-top: 25px;
   overflow-x: hidden;
   padding: 100px 0;
@@ -210,7 +210,7 @@
 }
 
 @media (min-width: 1024px) {
-  .contactme-block__wrapper {
+  .contactme-block {
     width: 95%;
     margin: 0 auto;
     margin-top: 50px;
@@ -288,7 +288,7 @@
 }
 
 @media (min-width: 1280px) {
-  .contactme-block__wrapper {
+  .contactme-block {
     max-width: 1260px;
   }
 
