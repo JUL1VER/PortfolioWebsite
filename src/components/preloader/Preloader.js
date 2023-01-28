@@ -4,8 +4,8 @@ import React from 'react';
 
 const Preloader = ({ className }) => {
     return (
-        <div className={classNames('Preloader', className)}>
-            <h1 className='MatrixConsole'>Wake up, Neo...</h1>
+        <div className={classNames('preloader', className)}>
+            <h1 className='matrix-console'>Wake up, Neo...</h1>
         </div>
     );
 };

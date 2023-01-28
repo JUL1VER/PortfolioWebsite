@@ -7,7 +7,6 @@ import hands_large from './img/hands_large.png';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
 import './contactmeBlock.css';
 
 const ContactmeBlock = () => {
@@ -53,29 +52,29 @@ const ContactmeBlock = () => {
     };
 
     return (
-        <div className='ContactmeBlock__wrapper'>
-            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock__header'>
-                <h2 className='ContactmeBlock__header-text' id='ContactmePart'>Contact me</h2>
-                <img src={contactmeLogo} alt="Phone" className="ContactmeBlock__header-logo"/>
+        <section className='contactme-block__wrapper'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='contactme-block__header'>
+                <h2 className='contactme-block__header-text' id='ContactmePart'>Contact me</h2>
+                <img src={contactmeLogo} alt="Phone" className="contactme-block__header-logo"/>
             </div>
-            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ContactmeBlock__content'>
-                <div className='ContactmeBlock__picture'>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="ContactmeBlock__leftpill"/></a>
-                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='ContactmeBlock__rightpill'/></a>
-                    <picture className="ContactmeBlock__imgPic">
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='contactme-block__content'>
+                <div className='contactme-block__picture'>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="contactme-block__leftpill"/></a>
+                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='contactme-block__rightpill'/></a>
+                    <picture className="contactme-block__imgPic">
                         <source
-                            className='ContactmeBlock__img'
+                            className='contactme-block__img'
                             media='(min-width: 500px)'
                             srcSet={hands_large}/>
-                        <img src={hands} alt="Hands" className='ContactmeBlock__img'/>
+                        <img src={hands} alt="Hands" className='contactme-block__img'/>
                     </picture>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className='ContactmeBlock__form'>
+                <form ref={form} onSubmit={sendEmail} className='contactme-block__form'>
                     <input
                         name='user_name'
                         type='text'
                         placeholder='Enter your name'
-                        className='ContactmeBlock__name'
+                        className='contactme-block__name'
                         value={info.name}
                         onChange={handleNameChange}
                         />
@@ -83,26 +82,26 @@ const ContactmeBlock = () => {
                         name='user_email'
                         type='email'
                         placeholder='Enter your email address'
-                        className='ContactmeBlock__email'
+                        className='contactme-block__email'
                         value={info.email}
                         onChange={handleEmailChange}/>
                     <textarea
                         name='message'
                         type='text'
                         placeholder='Enter your message...'
-                        className='ContactmeBlock__message'
+                        className='contactme-block__message'
                         value={info.message}
                         onChange={handleMessageChange}/>
                     <button
                         disabled={ disableButton }
-                        className={disableButton ? 'ContactmeBlock__button disabled' : 'ContactmeBlock__button'}
+                        className={disableButton ? 'contactme-block__button disabled' : 'contactme-block__button'}
                         type='submit'
                         value='Send'>
                         Send
                     </button>
                 </form>
             </div>
-        </div>
+        </section>
     );
 };
 

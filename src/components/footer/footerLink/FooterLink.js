@@ -27,7 +27,7 @@ const FooterLink = (props) => {
                         maskSize: "cover",
                         mask: `url("${imgprop_large}") no-repeat center`,
                     }}
-                    alt="linkIcon" className='Footer__linksBlock-imgs'/>
+                    alt="linkIcon" className='footer__links-block-imgs'/>
                 :
                 <div
                     style={{
@@ -36,7 +36,7 @@ const FooterLink = (props) => {
                         MaskSize: "cover",
                         mask: `url("${imgprop}") no-repeat center`,
                     }}
-                    alt="linkIcon" className='Footer__linksBlock-imgs'/>
+                    alt="linkIcon" className='footer__links-block-imgs'/>
             }
         </a>
     );

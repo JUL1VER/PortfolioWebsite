@@ -78,38 +78,38 @@ const ProjectSlide = () => {
     }, [])
 
     return (
-        <div className='ProjectsBlock__content'>
-            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock__content-textBlock'>
-                <div className='ProjectsBlock__content-text'>
+        <div className='projects-block__content'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='projects-block__content-text-block'>
+                <div className='projects-block__content-text'>
                     <Swiper
                         ref={swiperTextRef}
                         modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
-                        noSwipingClass='ProjectsBlock__content-textInside'
+                        noSwipingClass='projects-block__content-text-inside'
                         loop={true}
                         slidesPerView={1}
                     >
                         { cards.map(card => (
                             <SwiperSlide key={card.id}>
-                                <p className='ProjectsBlock__content-textInside'>{card.description}</p>
+                                <p className='projects-block__content-text-inside'>{card.description}</p>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 </div>
-                <div className='ProjectsBlock__contect-tecnho'>
+                <div className='projects-block__contect-tecnho'>
                     <Swiper
                         ref={swiperTecnhoRef}
                         modules={[EffectFlip, Pagination]}
                         effect='flip'
                         noSwiping={true}
-                        noSwipingClass='ProjectsBlock__contect-tecnho-list'
+                        noSwipingClass='projects-block__contect-tecnho-list'
                         loop={true}
                         slidesPerView={1}
                     >
                         { cards.map(card => (
                             <SwiperSlide key={card.id}>
-                                <ul className='ProjectsBlock__contect-tecnho-list'>
+                                <ul className='projects-block__contect-tecnho-list'>
                                     { card.techno.map(technology => (
                                         <li key={technology}>{technology}</li>
                                     ))}
@@ -119,11 +119,11 @@ const ProjectSlide = () => {
                     </Swiper>
                 </div>
             </div>
-            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='ProjectsBlock__conteiner'>
-                <button type='button' onClick={() => swiperPrev()} className='ProjectsBlock__conteiner-prevButton'>
+            <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='projects-block__conteiner'>
+                <button type='button' onClick={() => swiperPrev()} className='projects-block__conteiner-prev-button'>
                     Prev
                 </button>
-                <button type='button' onClick={() => swiperNext()} className='ProjectsBlock__conteiner-nextButton'>
+                <button type='button' onClick={() => swiperNext()} className='projects-block__conteiner-next-button'>
                     Next
                 </button>
                 <Swiper
@@ -134,30 +134,30 @@ const ProjectSlide = () => {
                     loop={true}
                     noSwiping={true}
                     pagination={true}
-                    noSwipingClass='ProjectsBlock_conteiner_slidePic'
-                    className='ProjectsBlock__swiper'
+                    noSwipingClass='projects-block_conteiner_slidePic'
+                    className='projects-block__swiper'
                     spaceBetween={0}
                     slidesPerView={1}
                 >
                     { cards.map(card => (
                         <SwiperSlide key={card.id}>
-                            <a href={card.link} target='_blank' rel='noreferrer' className='ProjectsBlock_conteiner_slidePic'>
-                                <div className='ProjectsBlock__hover'/>
-                                <img src={card.imgprop} alt="Project" className="ProjectsBlock__conteiner-projectPic"/>
+                            <a href={card.link} target='_blank' rel='noreferrer' className='projects-block_conteiner_slidePic'>
+                                <div className='projects-block__hover'/>
+                                <img src={card.imgprop} alt="Project" className="projects-block__conteiner-project-pic"/>
                             </a>
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <picture className="ProjectsBlock__conteiner-PCimg">
+                <picture className="projects-block__conteiner-pc-img">
                     <source
-                        className='ProjectsBlock__conteiner-PC'
+                        className='projects-block__conteiner-pc'
                         media='(min-width: 1024px)'
                         srcSet={projectsPC_large}/>
                     <source
-                        className='ProjectsBlock__conteiner-PC'
+                        className='projects-block__conteiner-pc'
                         media='(min-width: 650px)'
                         srcSet={projectsPC_medium}/>
-                    <img src={projectsPC} alt="PC" className="ProjectsBlock__conteiner-PC"/>
+                    <img src={projectsPC} alt="PC" className="projects-block__conteiner-pc"/>
                 </picture>
             </div>
         </div>

@@ -27,7 +27,7 @@ code {
     monospace;
 }
 
-.App_firefox {
+.app_firefox {
   background: url(./img/matrixback.png);
 
   @media (min-width: 650px) {

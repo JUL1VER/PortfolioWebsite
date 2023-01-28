@@ -9,7 +9,7 @@ const Modal = ({ active, onCloseModalClick }) => {
         <div className={active ? 'modal active' : 'modal'} onClick={onCloseModalClick}>
             <div className={active ? 'modal__content active' : 'modal__content'} onClick={e => e.stopPropagation()}>
                 <p className='modal__text'>Feel free to contact me by the following links below!</p>
-                <div className='modal__linksBlock'>
+                <div className='modal__links-block'>
                     <a href='https://linkedin.com/in/vladJ1' className='modal__link modal__link_left' target="blank">
                         LinkedIn 
                         <img src={linkedin} alt='linkedin' className='modal__link-img'/>
@@ -19,7 +19,7 @@ const Modal = ({ active, onCloseModalClick }) => {
                         <img src={telegram} alt='linkedin' className='modal__link-img'/>
                     </a>
                 </div>
-                <button type='button' className='modal__closeButton' onClick={onCloseModalClick}/>
+                <button type='button' className='modal__close-button' onClick={onCloseModalClick}/>
             </div>
         </div>
     );

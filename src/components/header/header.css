@@ -1,4 +1,4 @@
-.Header {
+.header {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -6,7 +6,7 @@
   right: 0;
   top: 0;
   margin-top: -200px;
-  animation: moving-header 0.5s steps(50, end);
+  animation: moving_header 0.5s steps(50, end);
   animation-delay: 10.5s;
   animation-fill-mode: forwards;
   overflow-x: hidden;
@@ -22,7 +22,7 @@
   transition: top 0.5s ease-out;
 }
 
-.Header__wrapper {
+.header__wrapper {
   display: flex;
   position: fixed;
   width: 100%;
@@ -34,20 +34,20 @@
   backdrop-filter: blur(3px);
 }
 
-.Header__Vlogo {
+.header__v-logo {
   margin-top: 15px;
   margin-left: 10px;
 }
 
-.Header__Vlogo {
+.header__v-logo {
   transition: 0.5s;
 }
 
-.Header__logoBlock:hover .Header__Vlogo {
+.header__logo-block:hover .header__v-logo {
   transform: scale(1.1);
 }
 
-.Header__burgerBlock {
+.header__burger-block {
   display: block;
   position: absolute;
   width: 40px;
@@ -60,8 +60,8 @@
   background-color: var(--darkGray);
 }
 
-.Header__burgerBlock:before,
-.Header__burgerBlock:after {
+.header__burger-block:before,
+.header__burger-block:after {
   content: "";
   background-color: var(--matrixGreen);
   position: absolute;
@@ -71,7 +71,7 @@
   left: 0;
 }
 
-.Header__burgerBlock span {
+.header__burger-block span {
   position: absolute;
   background-color: var(--matrixGreen);
   left: 0;
@@ -80,29 +80,29 @@
   transition: 0.5s;
 }
 
-.Header__burgerBlock:before {
+.header__burger-block:before {
   top: 0;
 }
 
-.Header__burgerBlock:after {
+.header__burger-block:after {
   bottom: 0;
 }
 
-.Header__burgerBlock.active:before {
+.header__burger-block.active:before {
   transform: rotate(45deg);
   top: 14px;
 }
 
-.Header__burgerBlock.active:after {
+.header__burger-block.active:after {
   transform: rotate(-45deg);
   bottom: 14px;
 }
 
-.Header__burgerBlock.active span {
+.header__burger-block.active span {
   transform: scale(0);
 }
 
-.Header__navbar {
+.header__navbar {
   position: fixed;
   top: 0;
   right: -100%;
@@ -114,29 +114,29 @@
   transition: 0.5s;
 }
 
-.Header__navbar-glitch {
+.header__navbar-glitch {
   display: flex;
   justify-content: center;
   flex-direction: row;
   transition: 0.5s;
 }
 
-.Header__navbar-text {
+.header__navbar-text {
   display: inline;
   margin: 0;
 }
 
-.Header__navbar-glitch_inside {
+.header__navbar-glitch_inside {
   display: flex;
   align-items: center;
 }
 
-.Header__navbar.active {
+.header__navbar.active {
   right: 0;
   overflow: auto;
 }
 
-.Header__overlay.active {
+.header__overlay.active {
   visibility: visible;
   opacity: 0.8;
   position: fixed;
@@ -148,7 +148,7 @@
   background-color: #000;
 }
 
-.Header__navbar-navLinks {
+.header__navbar-navlinks {
   display: flex;
   height: 100px;
   justify-content: center;
@@ -160,34 +160,34 @@
   margin: 0 auto;
 }
 
-.Header__navbar-glitch:hover {
-  color: var(--matrixGreen);
+.header__navbar-glitch:hover {
+  color: #1cd119;
   font-size: 30px;
 }
 
-.Header__navbar-glitch:active {
-  color: var(--matrixGreen);
+.header__navbar-glitch:active {
+  color: #1cd119;
   font-size: 30px;
 }
 
-.Header__navbar-logo {
+.header__navbar-logo {
   width: 35px;
   margin: 2px 0 0 5px;
 }
 
-.Header__overlay {
+.header__overlay {
   transition: 0.5s;
 }
 
 @media (min-width: 1024px) {
-  .Header {
+  .header {
     display: flex;
     justify-content: center;
     animation-delay: 9.5s;
     animation-fill-mode: forwards;
   }
 
-  .Header__wrapper {
+  .header__wrapper {
     position: fixed;
     border: none;
     width: 100%;
@@ -198,82 +198,82 @@
     align-items: center;
   }
 
-  .Header__Vlogo {
+  .header__v-logo {
     width: 60px;
   }
 
-  .Header__Vlogo-pic {
+  .header__v-logo-pic {
     margin: 10px 0 0 10px;
   }
 
-  .Header__burgerBlock {
+  .header__burger-block {
     display: none;
   }
 
-  .Header__navbar {
+  .header__navbar {
     display: contents;
   }
 
-  .Header__navbar-navLinks {
+  .header__navbar-navlinks {
     font-size: 25px;
     height: 50px;
   }
 
-  .Header__navbar-glitch {
+  .header__navbar-glitch {
     width: 210px;
   }
 
-  .Header__navbar-block {
+  .header__navbar-block {
     display: flex;
     flex-direction: row;
     margin-right: 40px;
   }
 
-  .Header__navbar-logo {
+  .header__navbar-logo {
     width: 35x;
     margin: 0 0 0 5px;
   }
 }
 
 @media (min-width: 1280px) {
-  .Header__wrapper {
+  .header__wrapper {
     height: 100px;
   }
 
-  .Header__Vlogo {
+  .header__v-logo {
     width: 80px;
   }
 
-  .Header__Vlogo-pic {
+  .header__v-logo-pic {
     margin: 10px 0 0 20px;
   }
 
-  .Header__navbar-glitch {
+  .header__navbar-glitch {
     width: 240px;
   }
 
-  .Header__navbar {
+  .header__navbar {
     font-size: 28px;
   }
 
-  .Header__navbar-navLinks {
+  .header__navbar-navlinks {
     font-size: 28px;
   }
 
-  .Header__navbar-logo {
+  .header__navbar-logo {
     width: 40px;
   }
 
-  .Header__navbar-glitch:hover {
+  .header__navbar-glitch:hover {
     font-size: 35px;
   }
 
-  .Header__navbar-glitch:active {
+  .header__navbar-glitch:active {
     font-size: 35px;
   }
 }
 
-@keyframes moving-header {
+@keyframes moving_header {
   0% {
     margin-top: -200px;
   }
