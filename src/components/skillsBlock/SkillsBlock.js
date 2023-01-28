@@ -32,27 +32,27 @@ const SkillsBlock = () => {
         Aos.init({duration: 2500});
     }, [])
     return (
-        <div className='SkillsBlock__wrapper'>
-            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__header' id='SkillsPart'>
-                <h2 className='SkillsBlock__header-text'>Skills</h2>
-                <img src={skillsHead} alt="Neo" className="SkillsBlock__header-logo"/>
+        <section className='skills-block'>
+            <div data-aos='fade-down' data-aos-delay='100' data-aos-once='true' className='skills-block__header' id='SkillsPart'>
+                <h2 className='skills-block__header-text'>Skills</h2>
+                <img src={skillsHead} alt="Neo" className="skills-block__header-logo"/>
             </div>
-            <div className='SkillsBlock__content'>
-                <picture data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__img-pic'>
-                    <source 
-                        className='SkillsBlock__img'
+            <div className='skills-block__content'>
+                <picture data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='skills-block__img-pic'>
+                    <source
+                        className='skills-block__img'
                         media='(min-width: 500px)'
                         srcSet={skillsImg_large}/>
-                    <img src={skillsImg} alt="skillsImg" className='SkillsBlock__img'/>
+                    <img src={skillsImg} alt="skillsImg" className='skills-block__img'/>
                 </picture>
-                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='SkillsBlock__skillsAndLogos'>
-                    <p className='SkillsBlock__text'>I have solid experience in the following web technologies:</p>
-                    <div className='SkillsBlock__logoWrapper'>
+                <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='skills-block__skills-and-logos'>
+                    <p className='skills-block__text'>I have solid experience in the following web technologies:</p>
+                    <div className='skills-block__logo-wrapper'>
                         {content}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

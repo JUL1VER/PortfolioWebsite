@@ -1,31 +1,31 @@
-.WelcomeBlock__wrapper {
+.welcome-block {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   font-family: monospace;
   text-align: start;
 }
 
-.WelcomeBlock__hello,
-.WelcomeBlock__name,
-.WelcomeBlock__creater_mobile1,
-.WelcomeBlock__creater_mobile2,
-.WelcomeBlock__creater_desktop,
-.WelcomeBlock__potrfolio_1,
-.WelcomeBlock__potrfolio_2 {
+.welcome-block__hello,
+.welcome-block__name,
+.welcome-block__creater_mobile1,
+.welcome-block__creater_mobile2,
+.welcome-block__creater_desktop,
+.welcome-block__potrfolio_1,
+.welcome-block__potrfolio_2 {
   padding-left: 5px;
 }
 
-.WelcomeBlock__green-text {
+.welcome-block__green-text {
   display: inline-block;
-  color: #1cd119;
+  color: var(--matrixGreen);
 }
 
-.WelcomeBlock__hello {
+.welcome-block__hello {
   font-size: 18px;
   margin: 0;
   opacity: 0;
@@ -33,52 +33,52 @@
   white-space: nowrap;
   overflow: hidden;
   width: 15ch;
-  border-right: 15px solid #1cd119;
+  border-right: 15px solid var(--matrixGreen);
   animation: type_mobile_border15 1s steps(15, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__name {
+.welcome-block__name {
   font-size: 23px;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   width: 23ch;
   opacity: 0;
-  border-right: 15px solid #1cd119;
+  border-right: 15px solid var(--matrixGreen);
   animation: type_mobile_border15 1.5s steps(23, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__creater_mobile1 {
+.welcome-block__creater_mobile1 {
   font-size: 18px;
   margin: 20px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   width: 27ch;
   opacity: 0;
-  border-right: 15px solid #1cd119;
+  border-right: 15px solid var(--matrixGreen);
   animation: type_mobile_border15 1.5s steps(27, end);
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__creater_mobile2 {
+.welcome-block__creater_mobile2 {
   font-size: 18px;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   width: 27ch;
   opacity: 0;
-  border-right: 15px solid #1cd119;
+  border-right: 15px solid var(--matrixGreen);
   animation: type_mobile_border15 1.5s steps(27, end);
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__potrfolio_1 {
+.welcome-block__potrfolio_1 {
   font-size: 11px;
   font-weight: 600;
   margin: 20px 0 0 0;
@@ -86,13 +86,13 @@
   overflow: hidden;
   width: 47ch;
   opacity: 0;
-  border-right: 10px solid #1cd119;
+  border-right: 10px solid var(--matrixGreen);
   animation: type_mobile_border10_2ver 2s steps(47, end);
   animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__potrfolio_2 {
+.welcome-block__potrfolio_2 {
   font-size: 11px;
   font-weight: 600;
   margin: 0;
@@ -100,13 +100,13 @@
   overflow: hidden;
   width: 43ch;
   opacity: 0;
-  border-right: 10px solid #1cd119;
+  border-right: 10px solid var(--matrixGreen);
   animation: type_mobile_border10_2ver 2s steps(43, end);
   animation-delay: 8.5s;
   animation-fill-mode: forwards;
 }
 
-.WelcomeBlock__console {
+.welcome-block__console {
   background: #1cd119;
   color: #1cd119;
   animation: blink_console 0.5s step-end infinite alternate;
@@ -116,124 +116,124 @@
 }
 
 @media (min-width: 650px) {
-  .WelcomeBlock__hello {
+  .welcome-block__hello {
     font-size: 35px;
     opacity: 0;
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border20 1s steps(15, end);
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__name {
+  .welcome-block__name {
     font-size: 40px;
     opacity: 0;
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border25 1.5s steps(23, end);
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__creater_mobile1 {
+  .welcome-block__creater_mobile1 {
     font-size: 30px;
     opacity: 0;
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border25 1.5s steps(27, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__creater_mobile2 {
+  .welcome-block__creater_mobile2 {
     font-size: 30px;
     opacity: 0;
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border25 1.5s steps(27, end);
     animation-delay: 5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__potrfolio_1 {
+  .welcome-block__potrfolio_1 {
     font-size: 17px;
-    border-right: 15px solid #1cd119;
+    border-right: 15px solid var(--matrixGreen);
     animation: type_mobile_border15 2s steps(47, end);
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__potrfolio_2 {
+  .welcome-block__potrfolio_2 {
     font-size: 17px;
-    border-right: 15px solid #1cd119;
+    border-right: 15px solid var(--matrixGreen);
     animation: type_mobile_border15 2s steps(43, end);
     animation-delay: 8.5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__console {
+  .welcome-block__console {
     animation-delay: 10.5s;
   }
 }
 
 @media (min-width: 1024px) {
-  .WelcomeBlock__wrapper {
+  .welcome-block {
     max-width: 900px;
     align-items: flex-start;
   }
 
-  .WelcomeBlock__hello {
+  .welcome-block__hello {
     font-size: 28px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border25 1s steps(15, end);
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__name {
+  .welcome-block__name {
     font-size: 40px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    border-right: 30px solid #1cd119;
+    border-right: 30px solid var(--matrixGreen);
     animation: type_desktop_border30 1.5s steps(23, end);
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__creater_desktop {
+  .welcome-block__creater_desktop {
     font-size: 26px;
     margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
     width: 55ch;
     opacity: 0;
-    border-right: 20px solid #1cd119;
+    border-right: 20px solid var(--matrixGreen);
     animation: type_desktop_border25 2s steps(55, end);
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__potrfolio_1 {
+  .welcome-block__potrfolio_1 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    border-right: 20px solid #1cd119;
+    border-right: 20px solid var(--matrixGreen);
     animation: type_desktop_border20 2s steps(47, end);
     animation-delay: 5.5s;
     animation-fill-mode: forwards;
   }
 
-  .WelcomeBlock__potrfolio_2 {
+  .welcome-block__potrfolio_2 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     width: 42.5ch;
     opacity: 0;
-    border-right: 20px solid #1cd119;
+    border-right: 20px solid var(--matrixGreen);
     animation: type_desktop_border20 2s steps(43, end);
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
@@ -241,31 +241,31 @@
 }
 
 @media (min-width: 1280px) {
-  .WelcomeBlock__wrapper {
+  .welcome-block {
     max-width: 1100px;
   }
 
-  .WelcomeBlock__hello {
+  .welcome-block__hello {
     font-size: 35px;
   }
 
-  .WelcomeBlock__name {
+  .welcome-block__name {
     font-size: 50px;
   }
 
-  .WelcomeBlock__creater_desktop {
+  .welcome-block__creater_desktop {
     font-size: 33px;
   }
 
-  .WelcomeBlock__potrfolio_1 {
+  .welcome-block__potrfolio_1 {
     font-size: 25px;
   }
 
-  .WelcomeBlock__potrfolio_2 {
+  .welcome-block__potrfolio_2 {
     font-size: 25px;
   }
 
-  .WelcomeBlock__console {
+  .welcome-block__console {
     animation-delay: 10s;
   }
 }
@@ -278,7 +278,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 15px solid #1cd119;
+    border-right: 15px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;
@@ -294,7 +294,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 10px solid #1cd119;
+    border-right: 10px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;
@@ -310,7 +310,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 10px solid #1cd119;
+    border-right: 10px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;
@@ -326,7 +326,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 25px solid #1cd119;
+    border-right: 25px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;
@@ -342,7 +342,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 30px solid #1cd119;
+    border-right: 30px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;
@@ -358,7 +358,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 20px solid #1cd119;
+    border-right: 20px solid var(--matrixGreen);
   }
   100% {
     opacity: 1;

@@ -1,4 +1,4 @@
-.Preloader {
+.preloader {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -7,46 +7,46 @@
   height: 200vh;
   top: -50%;
   left: -50%;
-  color: #1cd119;
-  background: #0a0a0a;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
   overflow-x: hidden;
 }
 
-.MatrixConsole {
+.matrix-console {
   width: 15ch;
   font-family: monospace;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 20px solid #1cd119;
+  border-right: 20px solid var(--matrixGreen);
   animation: flashing_console 0.75s step-end infinite, print_text 2.5s steps(15);
-  text-shadow: 0 0 5px #1cd119;
+  text-shadow: 0 0 5px var(--matrixGreen);
   cursor: default;
 }
 
 @media (min-width: 650px) {
-  .MatrixConsole {
+  .matrix-console {
     font-size: 45px;
-    border-right: 30px solid #1cd119;
+    border-right: 30px solid var(--matrixGreen);
   }
 }
 
 @media (min-width: 1280px) {
-  .MatrixConsole {
+  .matrix-console {
     font-size: 60px;
-    border-right: 40px solid #1cd119;
+    border-right: 40px solid var(--matrixGreen);
   }
 }
 
 @keyframes flashing_console {
   0% {
-    border-color: #1cd119;
+    border-color: var(--matrixGreen);
   }
   50% {
     border-color: transparent;
   }
   100% {
-    border-color: #1cd119;
+    border-color: var(--matrixGreen);
   }
 }
 

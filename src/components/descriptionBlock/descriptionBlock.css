@@ -1,4 +1,4 @@
-.DescriptionBlock__wrapper {
+.description-block {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +8,7 @@
   padding: 50px 0 100px 0;
 }
 
-.DescriptionBlock__header {
+.description-block__header {
   color: #1cd119;
   font-size: 20px;
   letter-spacing: 3px;
@@ -17,24 +17,24 @@
   align-items: center;
 }
 
-.DescriptionBlock__header-text {
+.description-block__header-text {
   margin: 0;
 }
 
-.DescriptionBlock__header-logo {
+.description-block__header-logo {
   width: 35px;
   margin-left: 10px;
   display: flex;
   align-items: center;
 }
 
-.DescriptionBlock__description {
+.description-block__description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.DescriptionBlock__fotoWithHover {
+.description-block__foto-with-hover {
   order: 2;
   margin: 40px;
   position: relative;
@@ -45,20 +45,20 @@
   overflow: hidden;
 }
 
-.DescriptionBlock__fotoPic {
+.description-block__foto-pic {
   position: relative;
   border-radius: 15px;
   top: 2px;
 }
 
-.DescriptionBlock__myFoto {
+.description-block__myfoto {
   width: 100%;
   border-radius: 15px;
   position: relative;
   transition: 0.5s;
 }
 
-.DescriptionBlock__hover {
+.description-block__hover {
   background: #1cd119;
   position: absolute;
   left: 0;
@@ -71,16 +71,16 @@
   transition: 0.5s;
 }
 
-.DescriptionBlock__hover:hover {
+.description-block__hover:hover {
   opacity: 0;
 }
 
-.DescriptionBlock__contentPart {
+.description-block__content-part {
   order: 1;
   margin-top: 20px;
 }
 
-.DescriptionBlock__text {
+.description-block__text {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -91,26 +91,26 @@
   font-size: 20px;
   line-height: 130%;
 
-  color: #fff;
+  color: var(--white);
 }
 
-.DescriptionBlock__link {
+.description-block__link {
   color: #1cd119;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
 }
 
-.DescriptionBlock__helloButton {
+.description-block__hello-button {
   width: 140px;
   height: 55px;
   margin-top: 30px;
 
-  background: #0a0a0a;
-  color: #1cd119;
-  text-shadow: 0 0 5px #1cd119;
-  box-shadow: 0 0 5px 1px #1cd119;
-  border: 2px solid #1cd119;
+  background: var(--darkGray);
+  color: var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
+  box-shadow: 0 0 5px 1px var(--matrixGreen);
+  border: 2px solid var(--matrixGreen);
   border-radius: 5px;
   cursor: pointer;
 
@@ -120,12 +120,12 @@
   transition: 0.5s;
 }
 
-.DescriptionBlock__helloButton:hover {
+.description-block__hello-button:hover {
   color: #0a0a0a;
   background: #1cd119;
   border: 2px solid #1cd119;
   box-shadow: none;
-  text-shadow: 0 0 5px #1cd119;
+  text-shadow: 0 0 5px var(--matrixGreen);
 }
 
 .DescriptionBlock__helloButton:active {
@@ -135,32 +135,32 @@
 }
 
 @media (min-width: 650px) {
-  .DescriptionBlock__header {
+  .description-block__header {
     color: #1cd119;
     font-size: 30px;
   }
 
-  .DescriptionBlock__header-logo {
+  .description-block__header-logo {
     width: 50px;
     height: 50px;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .description-block__foto-with-hover {
     margin: 0 auto;
     margin-top: 40px;
     max-width: 400px;
     order: 2;
   }
 
-  .DescriptionBlock__contentPart {
+  .description-block__content-part {
     order: 1;
   }
 
-  .DescriptionBlock__text {
+  .description-block__text {
     font-size: 22px;
   }
 
-  .DescriptionBlock__helloButton {
+  .description-block__hello-button {
     font-size: 25px;
     line-height: 51px;
 
@@ -170,31 +170,31 @@
 }
 
 @media (min-width: 1024px) {
-  .DescriptionBlock__wrapper {
+  .description-block {
     margin: 0 auto;
     flex-direction: column;
     padding: 100px 0;
   }
 
-  .DescriptionBlock__header-text {
+  .description-block__header-text {
     font-size: 50px;
   }
 
-  .DescriptionBlock__description {
+  .description-block__description {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 50px;
   }
 
-  .DescriptionBlock__contentPart {
+  .description-block__content-part {
     order: 1;
     width: 55%;
     padding-left: 50px;
     margin-top: 0px;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .description-block__foto-with-hover {
     order: 2;
     margin: 0 auto;
     margin: 33px 40px 20px;
@@ -202,11 +202,11 @@
     width: 40%;
   }
 
-  .DescriptionBlock__fotoWithHover:hover .DescriptionBlock__myFoto {
+  .description-block__foto-with-hover:hover .description-block__myfoto {
     transform: scale(1.15);
   }
 
-  .DescriptionBlock__text {
+  .description-block__text {
     margin-top: 30px;
     text-align: start;
     width: 100%;
@@ -215,9 +215,9 @@
     line-height: 150%;
   }
 
-  .DescriptionBlock__helloButton {
+  .description-block__hello-button {
     margin-top: 50px;
-    box-shadow: 0 0 10px 2px #1cd119;
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
     padding: 0 0 3px 0;
 
     font-size: 30px;
@@ -228,21 +228,21 @@
 }
 
 @media (min-width: 1280px) {
-  .DescriptionBlock__wrapper {
+  .description-block {
     max-width: 1260px;
   }
 
-  .DescriptionBlock__text {
+  .description-block__text {
     margin-top: 35px;
     font-size: 22px;
     line-height: 157%;
   }
 
-  .DescriptionBlock__fotoWithHover {
+  .description-block__foto-with-hover {
     max-width: 450px;
   }
 
-  .DescriptionBlock__helloButton {
+  .description-block__hello-button {
     font-size: 35px;
     width: 230px;
     height: 85px;
