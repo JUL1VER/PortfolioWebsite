@@ -60,7 +60,7 @@ const ContactmeBlock = () => {
             <div data-aos='fade-up' data-aos-delay='100' data-aos-once='true' className='contactme-block__content'>
                 <div className='contactme-block__picture'>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={leftpill} alt="leftpill" className="contactme-block__leftpill"/></a>
-                    <a href="https://www.youtube.com/watch?v=O5b0ZxUWNf0" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='contactme-block__rightpill'/></a>
+                    <a href="https://www.youtube.com/watch?v=yyrhikYaRrk" target="_blank" rel="noreferrer"><img src={rightpill} alt="rightpull" className='contactme-block__rightpill'/></a>
                     <picture className="contactme-block__imgPic">
                         <source
                             className='contactme-block__img'
