@@ -55,6 +55,10 @@ The Welcome section of the website is a cool console animation of introducing th
 
 The Who Am I section contains information about me as a professional and as a person.
 
+### Skills
+
+The Skills section contains information about frontend technologies that I use.
+
 ### Projects
 
 In the Projects section, you can explore the various projects I have worked on. Each project card contains a project screenshot, description, and a link (click on a screenshot) to its GitHub repository.
