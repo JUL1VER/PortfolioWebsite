@@ -40,14 +40,19 @@ Before running the project, ensure you have the following dependencies installed
    ```
    git clone https://github.com/jul1ver/PortfolioWebsite.git
    ```
+2. Change into the project directory:
 
-2. Install the required dependencies:
+   ```
+   cd portfolio-website
+   ```
+  
+3. Install the required dependencies:
 
    ```
    npm install
    ```
 
-3. Start the development server:
+4. Start the development server:
 
    ```
    npm start
