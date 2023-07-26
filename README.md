@@ -93,3 +93,5 @@ I welcome contributions to improve this portfolio website. If you find any bugs 
 ---
 
 Thank you for visiting my portfolio website! I hope you enjoy exploring my projects and getting to know more about me. If you have any questions or feedback, don't hesitate to reach out. Happy coding!
+
+---
