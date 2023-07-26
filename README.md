@@ -12,11 +12,11 @@ Welcome to my portfolio website! This React-powered website serves as my digital
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [Welcome](#Welcome)
-  - [About](#about)
-  - [Skill](#skills)
-  - [Projects](#propjects)
-  - [Contact](#contact)
+  - [Welcome](#welcome)
+  - [WhoAmI](#whoami)
+  - [Skills](#skills)
+  - [Projects](#projects)
+  - [ContactMe](#contactme)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 
@@ -51,17 +51,17 @@ Once the development server is up and running, you can access the website on you
 
 The Welcome section of the website is a cool console animation of introducing this website to to you :)
 
-### About
+### WhoAmI
 
-The About section contains information about me as a professional and as a person.
+The Who Am I section contains information about me as a professional and as a person.
 
 ### Projects
 
 In the Projects section, you can explore the various projects I have worked on. Each project card contains a project screenshot, description, and a link (click on a screenshot) to its GitHub repository.
 
-### Contact
+### ContactMe
 
-If you wish to get in touch with me, the Contact section provides form with your message on my email and links to my social media profiles.
+If you wish to get in touch with me, the Contact Me section provides form with your message on my email and links to my social media profiles.
 
 ## Technologies Used
 
