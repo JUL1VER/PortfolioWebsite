@@ -37,15 +37,21 @@ Before running the project, ensure you have the following dependencies installed
 
 1. Clone the repository to your local machine using the following command:
 
+   ```
    git clone https://github.com/jul1ver/PortfolioWebsite.git
+   ```
 
 2. Install the required dependencies:
 
+   ```
    npm install
+   ```
 
 3. Start the development server:
 
+   ```
    npm start
+   ```
 
 ## Usage
 
