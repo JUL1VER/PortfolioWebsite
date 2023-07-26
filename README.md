@@ -1,10 +1,14 @@
-https://jul1ver.github.io/PortfolioWebsite/
-
 # My Portfolio Website
 
 ## Overview
 
 Welcome to my portfolio website! This React-powered website serves as my digital business card, showcasing my projects and skills. Through this comprehensive documentation, you will learn how to navigate the website, understand its structure, and explore the projects that I have worked on.
+
+## GitHubPages
+
+You can easily view my website using the GitHubPages link below.
+
+https://jul1ver.github.io/PortfolioWebsite/
 
 ## Table of Contents
 
