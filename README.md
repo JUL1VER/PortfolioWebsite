@@ -64,7 +64,7 @@ Once the development server is up and running, you can access the website on you
 
 ### Welcome 
 
-The Welcome section of the website is a cool console animation of introducing this website to to you :)
+The Welcome section of the website is a cool console animation of introducing this website to you :)
 
 ### WhoAmI
 
