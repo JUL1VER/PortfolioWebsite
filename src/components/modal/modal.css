@@ -85,7 +85,7 @@
   border: 1px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
-  background-color: #e84949;
+  background-color: var(--martixRed);
 }
 
 .modal__link_left:hover,
@@ -94,7 +94,7 @@
   border: 1px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
-  background-color: #2a7ede;
+  background-color: var(--martixBlue);
 }
 
 .modal__close-button {
