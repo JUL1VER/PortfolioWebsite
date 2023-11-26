@@ -1,0 +1,246 @@
+.descriptionBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
+  padding: 50px 0 100px 0;
+
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1260px;
+  }
+}
+
+.header {
+  color: #1cd119;
+  font-size: 20px;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: 650px) {
+    color: #1cd119;
+    font-size: 30px;
+  }
+}
+
+.headerText {
+  margin: 0;
+
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
+}
+
+.logo {
+  width: 35px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 650px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+}
+
+.photoBlock {
+  order: 2;
+  margin: 40px;
+  position: relative;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 60%;
+  max-width: 300px;
+  max-height: 550px;
+  overflow: hidden;
+
+  @media (min-width: 650px) {
+    margin: 40px auto 0;
+    max-width: 400px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 33px 40px 20px;
+    max-width: 400px;
+    width: 40%;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photoBlock:hover .myPhoto {
+    transform: scale(1.15);
+  }
+}
+
+.photoPic {
+  position: relative;
+  border-radius: 15px;
+  top: 2px;
+}
+
+.myPhoto {
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.neo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.photoHover {
+  background: #1cd119;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  opacity: 0.45;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.photoHover:hover {
+  opacity: 0;
+}
+
+.content {
+  order: 1;
+  margin-top: 20px;
+
+  @media (min-width: 1024px) {
+    width: 55%;
+    padding-left: 50px;
+    margin-top: 0px;
+  }
+}
+
+.text {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 16px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+
+  color: var(--white);
+
+  @media (min-width: 650px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 30px;
+    text-align: start;
+    width: 100%;
+    max-width: 750px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 35px;
+    font-size: 22px;
+    line-height: 157%;
+  }
+}
+
+.link {
+  color: #1cd119;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hello {
+  display: block;
+  width: 140px;
+  height: 55px;
+  margin: 30px auto 0;
+
+  background: var(--darkGray);
+  color: var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
+  box-shadow: 0 0 5px 1px var(--matrixGreen);
+  border: 2px solid var(--matrixGreen);
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.5s;
+
+  @media (min-width: 650px) {
+    font-size: 25px;
+    line-height: 51px;
+
+    width: 180px;
+    height: 70px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 50px auto 0;
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
+    padding: 0 0 3px 0;
+
+    font-size: 30px;
+
+    width: 200px;
+    height: 80px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+    width: 230px;
+    height: 85px;
+  }
+}
+
+.hello:hover {
+  color: #0a0a0a;
+  background: #1cd119;
+  border: 2px solid #1cd119;
+  box-shadow: none;
+  text-shadow: 0 0 5px var(--matrixGreen);
+}
+
+.hello:active {
+  color: #1cd119;
+  background: #0a0a0a;
+  transition: 0.1s;
+}

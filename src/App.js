@@ -1,23 +1,24 @@
-import MainPage from './components/mainPage/MainPage';
-import MatrixBackground from './components/matrixBackground/MatrixBackground';
+import MainPage from "./pages/mainPage/MainPage";
+import MatrixBackground from "./components/matrixBackground/MatrixBackground";
 import Bowser from "bowser";
-import './app.css';
-import './global.css';
+import classNames from "classnames";
+import s from "./app.module.css";
+import "./global.css";
 
 function App() {
   const browser = Bowser.getParser(window.navigator.userAgent);
   return (
     <>
-      {browser.getBrowserName() === 'Firefox' ?
-        <div className="app app_firefox" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
-          <MainPage/>
+      {browser.getBrowserName() === "Firefox" ? (
+        <div className={classNames(s.app, s.app_firefox)}>
+          <MainPage />
         </div>
-      :
-        <div className="app" style={{margin: '0 auto', width: '100%', textAlign: 'center'}}>
-          <MatrixBackground/>
-          <MainPage/>
+      ) : (
+        <div className="app">
+          <MatrixBackground />
+          <MainPage />
         </div>
-      }
+      )}
     </>
   );
 }

@@ -1,81 +1,81 @@
-import React, { useState, useEffect } from 'react';
-import MatrixCanvas from './MatrixCanvas.jsx';
-import MatrixCardDefaultStyles from './matrixCardDefaultStyles.js'
-
+import React, { useState, useEffect } from "react";
+import MatrixCanvas from "./MatrixCanvas.jsx";
+import MatrixCardDefaultStyles from "./MatrixCardDefaultStyles.js";
 
 // main idea: https://github.com/MehmetKaplan/matrix-card
 // add: 1) shadows
 // 2) lines like matrix (renderLines)
 
 const MatrixCard = (props) => {
+  let l_size = useWindowSize();
 
-	let l_size = useWindowSize();
+  const l_containerId = `container-${props.id}`;
+  const l_canvasId = `canvas-${props.id}`;
+  const l_containerStyle = {
+    ...MatrixCardDefaultStyles.container,
+    backgroundColor: props.backgroundColor,
+    ...(props.styleOverrideForContainerDiv
+      ? props.styleOverrideForContainerDiv
+      : {}),
+  };
+  const l_canvasStyle = {
+    ...MatrixCardDefaultStyles.canvas,
+    ...(props.styleOverrideForCanvas ? props.styleOverrideForCanvas : {}),
+  };
 
-	const l_containerId = `container-${props.id}`;
-	const l_canvasId = `canvas-${props.id}`;
-	const l_containerStyle = { ...(MatrixCardDefaultStyles.container), backgroundColor: props.backgroundColor, ...(props.styleOverrideForContainerDiv ? props.styleOverrideForContainerDiv : {}) };
-	const l_canvasStyle = { ...(MatrixCardDefaultStyles.canvas), ...(props.styleOverrideForCanvas ? props.styleOverrideForCanvas : {}) };
-
-	return (
-		<div id={l_containerId}
-			style={l_containerStyle}
-		>
-			<canvas
-				id={l_canvasId}
-				style={l_canvasStyle}
-			/>
-			<MatrixCanvas
-				cardHeight={props.canvasSize ? props.canvasSize.height : l_size.height}
-				cardWidth={props.canvasSize ? props.canvasSize.width : l_size.width}
-				matrixText={`${props.matrixText} `}
-				delay={props.delay}
-				matrixCanvasId={l_canvasId}
-				containerId={l_containerId}
-				backgroundColor={props.backgroundColor}
-				textFontSize={props.textFontSize}
-				textMainColor={props.textMainColor}
-				textAlternateColorRatio={props.textAlternateColorRatio}
-				textAlternateColorList={props.textAlternateColorList}
-			/>
-		</div >
-	);
-}
+  return (
+    <div id={l_containerId} style={l_containerStyle}>
+      <canvas id={l_canvasId} style={l_canvasStyle} />
+      <MatrixCanvas
+        cardHeight={props.canvasSize ? props.canvasSize.height : l_size.height}
+        cardWidth={props.canvasSize ? props.canvasSize.width : l_size.width}
+        matrixText={`${props.matrixText} `}
+        delay={props.delay}
+        matrixCanvasId={l_canvasId}
+        containerId={l_containerId}
+        backgroundColor={props.backgroundColor}
+        textFontSize={props.textFontSize}
+        textMainColor={props.textMainColor}
+        textAlternateColorRatio={props.textAlternateColorRatio}
+        textAlternateColorList={props.textAlternateColorList}
+      />
+    </div>
+  );
+};
 
 // Hook
 function useWindowSize() {
+  const initialState = {
+    width: typeof window === "object" ? window.visualViewport.width : undefined,
+    height:
+      typeof window === "object" ? window.visualViewport.height : undefined,
+  };
 
-	const initialState = {
-		width: (typeof window === 'object') ? window.visualViewport.width : undefined,
-		height: (typeof window === 'object') ? window.visualViewport.height : undefined
-	};
+  const [windowSize, setWindowSize] = useState(initialState);
 
-	const [windowSize, setWindowSize] = useState(initialState);
+  useEffect(() => {
+    const isClient = typeof window === "object";
 
-	useEffect(() => {
+    const getSize = () => {
+      return {
+        width: isClient ? window.visualViewport.width : undefined,
+        height: isClient ? window.visualViewport.height : undefined,
+      };
+    };
 
-		const isClient = typeof window === 'object';
+    if (!isClient) {
+      return false;
+    }
 
-		const getSize = () => {
-			return {
-				width: isClient ? window.visualViewport.width : undefined,
-				height: isClient ? window.visualViewport.height : undefined
-			};
-		}
+    function handleResize() {
+      setWindowSize(getSize());
+    }
 
-		if (!isClient) {
-			return false;
-		}
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount and unmount
 
-		function handleResize() {
-			setWindowSize(getSize());
-		}
-
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
-	}, []); // Empty array ensures that effect is only run on mount and unmount
-
-	return windowSize;
+  return windowSize;
 }
 
 export default MatrixCard;
-

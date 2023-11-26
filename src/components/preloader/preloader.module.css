@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 
-.matrix-console {
+.matrixConsole {
   width: 15ch;
   font-family: monospace;
   font-size: 30px;
@@ -22,17 +22,13 @@
   animation: flashing_console 0.75s step-end infinite, print_text 2.5s steps(15);
   text-shadow: 0 0 5px var(--matrixGreen);
   cursor: default;
-}
 
-@media (min-width: 650px) {
-  .matrix-console {
+  @media (min-width: 650px) {
     font-size: 45px;
     border-right: 30px solid var(--matrixGreen);
   }
-}
 
-@media (min-width: 1280px) {
-  .matrix-console {
+  @media (min-width: 1280px) {
     font-size: 60px;
     border-right: 40px solid var(--matrixGreen);
   }

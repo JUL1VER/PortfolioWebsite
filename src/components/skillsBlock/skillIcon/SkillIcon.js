@@ -1,16 +1,42 @@
-import React from 'react';
-import GlitchText from 'react-glitch-effect/core/GlitchText';
+import React, { useState } from "react";
+import Glitch from "../../glitch/Glitch";
+
+import s from "./skillIcon.module.css";
 
 const SkillIcon = (props) => {
-    const {imgprop, src, title} = props;
-    return (
-        <GlitchText component='span' onHover={true} color1='rgba(212, 81, 25, 0.7)' color2='rgba(25, 100, 212, 0.7)' className='skills-block__logo-with-text'>
-            <a href={src} target='_blank' rel='noreferrer' style={{textDecoration: 'none'}}>
-                <img src={imgprop} alt="skillIcon" className='skills-block__logos'/>
-                <p className='skills-block__logos-text'>{title}</p>
-            </a>
-        </GlitchText>
-    );
+  const { imgprop, src, title } = props;
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      className={s.wrapper}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <a
+        href={src}
+        target="_blank"
+        rel="noreferrer"
+        style={{ textDecoration: "none" }}
+      >
+        <img src={imgprop} alt="skillIcon" className={s.logo} />
+        <p className={s.text}>
+          <Glitch inline onHover={!isHovered}>
+            {title}
+          </Glitch>
+        </p>
+      </a>
+    </div>
+  );
 };
 
 export default SkillIcon;

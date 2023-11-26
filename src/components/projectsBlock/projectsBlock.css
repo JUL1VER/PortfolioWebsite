@@ -36,6 +36,7 @@
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  text-align: center;
 
   color: var(--white);
 }
@@ -121,6 +122,7 @@
   align-items: center;
   margin: 0;
   font-size: 20px;
+  text-align: center;
 }
 
 .projects-block__contect-tecnho {
@@ -169,7 +171,7 @@
 
 .projects-block__conteiner-prev-button:hover {
   color: #fff;
-  background: #2a7ede;
+  background: var(--martixBlue);
   border: 1px solid var(--white);
   box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;
@@ -177,7 +179,7 @@
 
 .projects-block__conteiner-next-button:hover {
   color: #fff;
-  background: #e84949;
+  background: var(--martixRed);
   border: 1px solid var(--white);
   box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;

@@ -27,14 +27,19 @@ code {
     monospace;
 }
 
+.app {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .app_firefox {
-  background: url(./img/matrixback.png);
+  background: url(./assets/png/matrixback.png);
 
   @media (min-width: 650px) {
-    background: url(./img/matrixback_medium.png);
+    background: url(./assets/png/matrixback_medium.png);
   }
 
   @media (min-width: 1024px) {
-    background: url(./img/matrixback_large.png);
+    background: url(./assets/png/matrixback_large.png);
   }
 }

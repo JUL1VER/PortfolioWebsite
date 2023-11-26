@@ -1,38 +1,44 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import GlitchText from 'react-glitch-effect/core/GlitchText';
+import React from "react";
 
-import './welcomeBlock.css'
+import s from "./welcomeBlock.module.css";
+import Glitch from "../glitch/Glitch";
+import useIsDesktop from "../../hooks/useIsDesktop";
 
 const WelcomeBlock = () => {
-    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024);
+  const isDesktop = useIsDesktop();
 
-    const updateMedia = () => {
-        setDesktop(window.innerWidth >= 1024);
-      };
-
-    useEffect(() => {
-        window.addEventListener('resize', updateMedia);
-        return () => window.removeEventListener('resize', updateMedia);
-    })
-
-    return (
-        <section className='welcome-block'>
-            <h1 className='welcome-block__hello'>Knock, knock.</h1>
-            <h2 className='welcome-block__name'> <GlitchText component='span' color1='rgba(212, 81, 25, 0.8)' color2='rgba(25, 100, 212, 0.8)' className='welcome-block__green-text'>Vladislav Juliver</GlitchText> here.</h2>
-            {
-                isDesktop ?
-                <h3 className='welcome-block__creater_desktop'>I am <span className='welcome-block__green-text'>obsessed</span> with creating beautiful digital products.</h3>
-                :
-                <>
-                <h3 className='welcome-block__creater_mobile1'>I am <span className='welcome-block__green-text'>obsessed</span> with creating
-                </h3><h3 className='welcome-block__creater_mobile2'>beautiful digital products.</h3>
-                </>
-            }
-                <p className='welcome-block__potrfolio_1'>This is my portfolio website where you'll learn</p> 
-                <p className='welcome-block__potrfolio_2'>about my journey as a <span className='welcome-block__green-text'>frontend developer.</span><span className='welcome-block__console'>NEO</span></p> 
-        </section>
-    );
+  return (
+    <section className={s.welcomeBlock}>
+      <h1 className={s.hello}>Knock, knock.</h1>
+      <h2 className={s.name}>
+        <div className={s.greenText}>
+          <Glitch>Vladislav Juliver&nbsp;</Glitch>
+        </div>
+        here.
+      </h2>
+      {isDesktop ? (
+        <h3 className={s.creater_desktop}>
+          I am <span className={s.greenText}>obsessed</span> with creating
+          beautiful digital products.
+        </h3>
+      ) : (
+        <>
+          <h3 className={s.creater_mobile_1}>
+            I am <span className={s.greenText}>obsessed</span> with creating
+          </h3>
+          <h3 className={s.creater_mobile_2}>beautiful digital products.</h3>
+        </>
+      )}
+      <p className={s.potrfolio_1}>
+        This is my portfolio website where you'll learn
+      </p>
+      <p className={s.potrfolio_2}>
+        about my journey as a&nbsp;
+        <span className={s.greenText}>frontend developer.</span>
+        <span className={s.console}>NEO</span>
+      </p>
+    </section>
+  );
 };
 
 export default WelcomeBlock;
