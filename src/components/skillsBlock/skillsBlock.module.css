@@ -1,0 +1,144 @@
+.skillsBlock {
+  margin-top: 25px;
+  overflow-x: hidden;
+  padding: 110px 0;
+
+  @media (min-width: 1024px) {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1260px;
+  }
+}
+
+.content {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+
+.wrapper {
+  @media (min-width: 1024px) {
+    order: 2;
+    width: 50%;
+  }
+}
+
+.imgPic {
+  @media (min-width: 1024px) {
+    order: 1;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--matrixGreen);
+}
+
+.headerText {
+  margin: 0;
+  letter-spacing: 4px;
+
+  @media (min-width: 650px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1024) {
+    font-size: 55px;
+  }
+}
+
+.headerLogo {
+  width: 35px;
+
+  @media (min-width: 650px) {
+    width: 50px;
+  }
+
+  @media (min-width: 1024) {
+    margin-top: 4px;
+  }
+}
+
+.img {
+  width: 70%;
+  min-width: 250px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+
+.skillsText {
+  width: 80%;
+  min-width: 293px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 45px;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--white);
+
+  @media (min-width: 650px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    height: 100px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+    line-height: 51px;
+  }
+}
+
+.logo {
+  margin-top: 20px;
+  display: grid;
+  column-gap: 60px;
+  row-gap: 50px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+
+  @media (min-width: 650px) {
+    margin-top: 0px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 20px;
+    row-gap: 50px;
+  }
+}

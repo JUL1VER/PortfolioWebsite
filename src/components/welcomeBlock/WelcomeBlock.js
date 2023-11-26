@@ -1,29 +1,19 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 
 import s from "./welcomeBlock.module.css";
 import Glitch from "../glitch/Glitch";
+import useIsDesktop from "../../hooks/useIsDesktop";
 
 const WelcomeBlock = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024);
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth >= 1024);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+  const isDesktop = useIsDesktop();
 
   return (
     <section className={s.welcomeBlock}>
       <h1 className={s.hello}>Knock, knock.</h1>
       <h2 className={s.name}>
-        {" "}
         <div className={s.greenText}>
-          <Glitch>Vladislav Juliver</Glitch>
-        </div>{" "}
+          <Glitch>Vladislav Juliver&nbsp;</Glitch>
+        </div>
         here.
       </h2>
       {isDesktop ? (
@@ -43,7 +33,7 @@ const WelcomeBlock = () => {
         This is my portfolio website where you'll learn
       </p>
       <p className={s.potrfolio_2}>
-        about my journey as a{" "}
+        about my journey as a&nbsp;
         <span className={s.greenText}>frontend developer.</span>
         <span className={s.console}>NEO</span>
       </p>

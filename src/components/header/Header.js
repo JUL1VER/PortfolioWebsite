@@ -1,16 +1,28 @@
 import "./header.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import question from "../descriptionBlock/img/question.png";
-import skillsHead from "../skillsBlock/img/skillsHead.png";
-import projectLogo from "../projectsBlock/img/projectImg.png";
-import contactmeLogo from "../contactmeBlock/img/contactmeLogo.png";
-import Vlogo from "./img/V_logo_44.svg";
-import Vlogo_large from "./img/V_logo_88.svg";
+import question from "../../assets/png/question.png";
+import skillsHead from "../../assets/png/skillsHead.png";
+import projectLogo from "../../assets/png/projectImg.png";
+import contactmeLogo from "../../assets/png/contactmeLogo.png";
+import Vlogo from "../../assets/svg/V_logo_44.svg";
+import Vlogo_large from "../../assets/svg/V_logo_88.svg";
 import classNames from "classnames";
+import Glitch from "../glitch/Glitch";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+
+  const headerVision = visible ? "visible" : "hidden";
+
+  const navLinks = [
+    { to: "WhoAmI", text: "Who Am I", img: question },
+    { to: "SkillsPart", text: "Skills", img: skillsHead },
+    { to: "ProjectsPart", text: "Projects", img: projectLogo },
+    { to: "ContactmePart", text: "Contact me", img: contactmeLogo },
+  ];
 
   const toggleActiveClass = () => {
     setIsActive(!isActive);
@@ -20,12 +32,9 @@ const Header = () => {
     setIsActive(false);
   };
 
-  const [position, setPosition] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
-
   useEffect(() => {
     const handleScroll = () => {
-      let moving = window.pageYOffset;
+      let moving = window.scrollY;
 
       setVisible(position > moving);
       setPosition(moving);
@@ -37,8 +46,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
-
-  const headerVision = visible ? "visible" : "hidden";
 
   return (
     <div className={classNames("header", headerVision)}>
@@ -65,82 +72,32 @@ const Header = () => {
         </button>
         <div className="header__navbar-block">
           <nav className={classNames("header__navbar", { active: isActive })}>
-            <Link
-              className="header__navbar-navlinks"
-              to="WhoAmI"
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={closeMenuOnScroll}
-            >
-              <div className="header__navbar-glitch">
-                <div className="header__navbar-glitch_inside">
-                  <p className="header__navbar-text">Who Am I</p>
-                  <img
-                    src={question}
-                    alt="Question"
-                    className="header__navbar-logo"
-                  ></img>
+            {navLinks.map((link) => (
+              <Link
+                className="header__navbar-navlinks"
+                to={link.to}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeMenuOnScroll}
+                key={link.text}
+              >
+                <div className="header__navbar-glitch">
+                  <div className="header__navbar-glitch_inside">
+                    <p className="header__navbar-text">
+                      <Glitch inline onHover>
+                        {link.text}
+                      </Glitch>
+                    </p>
+                    <img
+                      src={link.img}
+                      alt="Link"
+                      className="header__navbar-logo"
+                    ></img>
+                  </div>
                 </div>
-              </div>
-            </Link>
-            <Link
-              className="header__navbar-navlinks"
-              to="SkillsPart"
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={closeMenuOnScroll}
-            >
-              <div className="header__navbar-glitch">
-                <div className="header__navbar-glitch_inside">
-                  <p className="header__navbar-text">Skills</p>
-                  <img
-                    src={skillsHead}
-                    alt="Neo"
-                    className="header__navbar-logo"
-                  ></img>
-                </div>
-              </div>
-            </Link>
-            <Link
-              className="header__navbar-navlinks"
-              to="ProjectsPart"
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={closeMenuOnScroll}
-            >
-              <div className="header__navbar-glitch">
-                <div className="header__navbar-glitch_inside">
-                  <p className="header__navbar-text">Projects</p>
-                  <img
-                    src={projectLogo}
-                    alt="Projects"
-                    className="header__navbar-logo"
-                  ></img>
-                </div>
-              </div>
-            </Link>
-            <Link
-              className="header__navbar-navlinks"
-              to="ContactmePart"
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={closeMenuOnScroll}
-            >
-              <div className="header__navbar-glitch">
-                <div className="header__navbar-glitch_inside">
-                  <p className="header__navbar-text">Contact me</p>
-                  <img
-                    src={contactmeLogo}
-                    alt="Phone"
-                    className="header__navbar-logo"
-                  ></img>
-                </div>
-              </div>
-            </Link>
+              </Link>
+            ))}
           </nav>
           <div
             className={classNames("header__overlay", { active: isActive })}

@@ -1,4 +1,5 @@
 :root {
+  /* COLORS */
   --matrixGreen: #1cd119;
   --matrixGreenDisabled: #22421d;
   --martixBlue: #2a7ede;
@@ -7,4 +8,9 @@
   --white: #fff;
   --text-shadow-color-1: rgba(212, 81, 25, 0.8);
   --text-shadow-color-2: rgba(25, 100, 212, 0.8);
+
+  /* MEDIA */
+  --sm: 650px;
+  --md: 1024px;
+  --lg: 1280px;
 }

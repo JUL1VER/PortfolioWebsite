@@ -1,14 +1,14 @@
 import React from "react";
-import linkedin from "./img/linkedin.svg";
-import telegram from "./img/telegram.svg";
-import twitter from "./img/twitter.svg";
-import google from "./img/google.svg";
-import github from "./img/github.svg";
-import linkedin_large from "./img/linkedin_large.svg";
-import telegram_large from "./img/telegram_large.svg";
-import twitter_large from "./img/twitter_large.svg";
-import google_large from "./img/google_large.svg";
-import github_large from "./img/github_large.svg";
+import linkedin from "../../assets/svg/linkedin.svg";
+import telegram from "../../assets/svg/telegram.svg";
+import twitter from "../../assets/svg/twitter.svg";
+import google from "../../assets/svg/google.svg";
+import github from "../../assets/svg/github.svg";
+import linkedin_large from "../../assets/svg/linkedin_large.svg";
+import telegram_large from "../../assets/svg/telegram_large.svg";
+import twitter_large from "../../assets/svg/twitter_large.svg";
+import google_large from "../../assets/svg/google_large.svg";
+import github_large from "../../assets/svg/github_large.svg";
 import FooterLink from "./footerLink/FooterLink";
 
 import "./footer.css";

@@ -1,0 +1,32 @@
+.wrapper {
+  transition: 0.2s;
+}
+
+.wrapper:hover {
+  margin-top: -10px;
+}
+
+.logo {
+  width: 80px;
+  height: 81px;
+}
+
+.text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+  color: var(--matrixGreen);
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .logo {
+    width: 104px;
+    height: 106px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+}

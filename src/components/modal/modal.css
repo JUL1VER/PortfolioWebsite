@@ -102,7 +102,7 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
-  mask: url(./img/close.svg) center no-repeat;
+  mask: url(../../assets/svg/close.svg) center no-repeat;
   mask-size: cover;
   background: var(--white);
   right: 10px;
