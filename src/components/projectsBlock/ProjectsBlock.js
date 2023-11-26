@@ -11,7 +11,7 @@ const ProjectsBlock = () => {
     Aos.init({ duration: 2500 });
   }, []);
   return (
-    <section className="projects-block">
+    <section className="projects-block containerBlock">
       <div
         data-aos="fade-down"
         data-aos-delay="100"

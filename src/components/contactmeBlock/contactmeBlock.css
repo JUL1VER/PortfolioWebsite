@@ -1,7 +1,6 @@
 .contactme-block {
   margin-top: 25px;
   overflow-x: hidden;
-  padding: 100px 0;
 }
 
 .contactme-block__header {
@@ -32,6 +31,7 @@
 .contactme-block__picture {
   width: 250px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contactme-block__img {
@@ -63,7 +63,7 @@
 .contactme-block__form {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .contactme-block__name,
 .contactme-block__email,
@@ -95,13 +95,13 @@
 
 .contactme-block__email {
   height: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .contactme-block__message {
   resize: none;
   height: 200px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .contactme-block__name:focus,
@@ -203,7 +203,7 @@
   .contactme-block__button {
     width: 120px;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 0px;
     font-size: 30px;
   }
@@ -280,7 +280,7 @@
   .contactme-block__button {
     width: 120px;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 30px;
     padding: 0 20px 0 15px;
     box-shadow: 0 0 10px 2px var(--matrixGreen);
@@ -288,10 +288,6 @@
 }
 
 @media (min-width: 1280px) {
-  .contactme-block {
-    max-width: 1260px;
-  }
-
   .contactme-block__picture {
     width: 600px;
   }
@@ -332,7 +328,7 @@
   .contactme-block__button {
     width: 150px;
     height: 70px;
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 36px;
     padding: 0 20px 0 15px;
     box-shadow: 0 0 10px 2px var(--matrixGreen);

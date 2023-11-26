@@ -64,7 +64,7 @@ const ContactmeBlock = () => {
   };
 
   return (
-    <section className="contactme-block">
+    <section className="contactme-block containerBlock">
       <div
         data-aos="fade-down"
         data-aos-delay="100"

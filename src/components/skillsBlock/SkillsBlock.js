@@ -14,6 +14,7 @@ import "aos/dist/aos.css";
 
 import s from "./skillsBlock.module.css";
 import Glitch from "../glitch/Glitch";
+import classNames from "classnames";
 
 const SkillsBlock = () => {
   const technologies = [
@@ -69,7 +70,7 @@ const SkillsBlock = () => {
   }, []);
 
   return (
-    <section className={s.skillsBlock}>
+    <section className={classNames(s.skillsBlock, ["containerBlock"])}>
       <div
         className={s.header}
         id="SkillsPart"

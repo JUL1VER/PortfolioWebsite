@@ -1,7 +1,6 @@
 .projects-block {
   margin-top: 25px;
   overflow-x: hidden;
-  padding: 100px 0;
 }
 
 .projects-block__header {
@@ -30,8 +29,7 @@
 
 .projects-block__text {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 40px auto 0;
 
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -44,6 +42,7 @@
 .projects-block__content {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .projects-block__conteiner {
@@ -98,7 +97,7 @@
   order: 2;
   width: 80%;
   max-width: 450px;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 .projects-block__content-text,
@@ -126,7 +125,7 @@
 }
 
 .projects-block__contect-tecnho {
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 0 20px;
 }
 
@@ -257,13 +256,6 @@
 
   .projects-block__contect-tecnho-list {
     font-size: 20px;
-  }
-
-  .projects-block__pag-button {
-    width: 180px;
-    height: 60px;
-    font-size: 23px;
-    margin-top: 30px;
   }
 
   .projects-block__conteiner-prev-button,
@@ -413,10 +405,6 @@
 }
 
 @media (min-width: 1280px) {
-  .projects-block {
-    max-width: 1260px;
-  }
-
   .projects-block__text {
     font-size: 35px;
     margin-top: 50px;
