@@ -127,6 +127,14 @@
   animation: type_mobile_border15 1.5s steps(27, end);
   animation-delay: 5s;
   animation-fill-mode: forwards;
+
+  @media (min-width: 650px) {
+    font-size: 28px !important;
+    border-right: 25px solid var(--matrixGreen);
+    animation: type_desktop_border25 1.5s steps(27, end);
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .potrfolio_1 {
@@ -140,7 +148,7 @@
   animation-fill-mode: forwards;
 
   @media (min-width: 650px) {
-    font-size: 17px;
+    font-size: 17px !important;
     border-right: 15px solid var(--matrixGreen);
     animation: type_mobile_border15 2s steps(47, end);
     animation-delay: 6.5s;
@@ -148,7 +156,7 @@
   }
 
   @media (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 20px !important;
     border-right: 20px solid var(--matrixGreen);
     animation: type_desktop_border20 2s steps(47, end);
     animation-delay: 5.5s;
@@ -156,7 +164,7 @@
   }
 
   @media (min-width: 1280px) {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
 
