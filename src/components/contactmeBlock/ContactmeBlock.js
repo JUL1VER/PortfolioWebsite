@@ -1,13 +1,15 @@
+import s from "./contactmeBlock.module.css";
+
 import React, { useEffect, useRef, useState } from "react";
 import contactmeLogo from "../../assets/png/contactmeLogo.png";
 import leftpill from "../../assets/png/bluePill.png";
 import rightpill from "../../assets/png/redPill.png";
-import hands from "../../assets/png/hands.png";
-import hands_large from "../../assets/png/hands_large.png";
+import morpheus from "../../assets/png/morpheus.webp";
 import emailjs from "@emailjs/browser";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./contactmeBlock.css";
+import classNames from "classnames";
+import Glitch from "../glitch/Glitch";
 
 const ContactmeBlock = () => {
   const [info, setInfo] = useState({ name: "", email: "", message: "" });
@@ -64,66 +66,56 @@ const ContactmeBlock = () => {
   };
 
   return (
-    <section className="contactme-block containerBlock">
+    <section className={classNames(s.contactmeBlock, "containerBlock")}>
       <div
+        className={s.header}
         data-aos="fade-down"
         data-aos-delay="100"
         data-aos-once="true"
-        className="contactme-block__header"
       >
-        <h2 className="contactme-block__header-text" id="ContactmePart">
-          Contact me
+        <h2 className={s.headerText} id="ContactmePart">
+          <Glitch inline>Contact me</Glitch>
         </h2>
-        <img
-          src={contactmeLogo}
-          alt="Phone"
-          className="contactme-block__header-logo"
-        />
+        <img src={contactmeLogo} alt="Phone" className={s.headerLogo} />
       </div>
       <div
+        className={s.content}
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-once="true"
-        className="contactme-block__content"
       >
-        <div className="contactme-block__picture">
+        <div className={s.pic}>
           <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             target="_blank"
             rel="noreferrer"
+            className={s.bluePill}
           >
-            <img
-              src={leftpill}
-              alt="leftpill"
-              className="contactme-block__leftpill"
-            />
+            <img src={leftpill} alt="bluePill" />
           </a>
           <a
             href="https://www.youtube.com/watch?v=yyrhikYaRrk"
             target="_blank"
             rel="noreferrer"
+            className={s.redPill}
           >
-            <img
-              src={rightpill}
-              alt="rightpull"
-              className="contactme-block__rightpill"
-            />
+            <img src={rightpill} alt="redPill" />
           </a>
-          <picture className="contactme-block__imgPic">
+          <picture>
             <source
-              className="contactme-block__img"
+              className={s.image}
               media="(min-width: 500px)"
-              srcSet={hands_large}
+              srcSet={morpheus}
             />
-            <img src={hands} alt="Hands" className="contactme-block__img" />
+            <img src={morpheus} alt="Morpheus" className={s.image} />
           </picture>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="contactme-block__form">
+        <form ref={form} onSubmit={sendEmail} className={s.form}>
           <input
             name="user_name"
             type="text"
             placeholder="Enter your name"
-            className="contactme-block__name"
+            className={s.name}
             value={info.name}
             onChange={handleNameChange}
           />
@@ -131,7 +123,7 @@ const ContactmeBlock = () => {
             name="user_email"
             type="email"
             placeholder="Enter your email address"
-            className="contactme-block__email"
+            className={s.email}
             value={info.email}
             onChange={handleEmailChange}
           />
@@ -139,17 +131,13 @@ const ContactmeBlock = () => {
             name="message"
             type="text"
             placeholder="Enter your message..."
-            className="contactme-block__message"
+            className={s.message}
             value={info.message}
             onChange={handleMessageChange}
           />
           <button
             disabled={disableButton}
-            className={
-              disableButton
-                ? "contactme-block__button disabled"
-                : "contactme-block__button"
-            }
+            className={classNames(s.button)}
             type="submit"
             value="Send"
           >

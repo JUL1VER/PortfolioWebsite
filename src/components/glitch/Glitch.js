@@ -1,6 +1,6 @@
-import React from "react";
-
 import s from "./glitch.module.css";
+
+import React from "react";
 import classNames from "classnames";
 
 const Glitch = ({ className, children, onHover, inline }) => {

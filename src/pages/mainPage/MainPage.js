@@ -1,3 +1,5 @@
+import s from "./mainPage.module.css";
+
 import React from "react";
 import { useEffect, useState } from "react";
 import ContactmeBlock from "../../components/contactmeBlock/ContactmeBlock";
@@ -9,8 +11,6 @@ import WelcomeBlock from "../../components/welcomeBlock/WelcomeBlock";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import classNames from "classnames";
-
-import s from "./mainPage.module.css";
 
 const MainPage = () => {
   const [loading, setLoadong] = useState();

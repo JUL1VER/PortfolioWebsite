@@ -1,3 +1,5 @@
+import s from "./descriptionBlock.module.css";
+
 import React, { useEffect, useRef, useState } from "react";
 import myfoto from "../../assets/png/myfoto.png";
 import myfoto_large from "../../assets/png/myfoto_large.png";
@@ -8,8 +10,6 @@ import Modal from "../modal/Modal";
 import Glitch from "../glitch/Glitch";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import s from "./descriptionBlock.module.css";
 import classNames from "classnames";
 
 const DescriptionBlock = () => {

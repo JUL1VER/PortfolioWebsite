@@ -52,4 +52,13 @@ code {
   @media (min-width: 1024px) {
     padding: 70px 40px;
   }
+
+  @media (min-width: 1280px) {
+    padding: 100px 40px;
+    margin: 40px auto 0;
+  }
+}
+
+.swiper-wrapper {
+  align-items: center;
 }

@@ -1,0 +1,153 @@
+.footer {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px 0 10px;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  color: var(--white);
+  overflow-x: hidden;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 51px;
+    padding: 50px 0px 30px 0px;
+  }
+}
+
+.media {
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 45%;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 550px;
+  }
+}
+
+.linksText {
+  text-align: center;
+  margin-bottom: 0px;
+
+  @media (min-width: 650px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 510px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+  }
+}
+
+.linksBlock {
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  @media (min-width: 650px) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+}
+
+.githubBlock {
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+
+  @media (min-width: 650px) {
+    max-width: 400px;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.githubBlock-img {
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: 1024px) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.githubText {
+  margin: 0 0 0 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-decoration: none;
+
+  color: var(--white);
+
+  @media (min-width: 650px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 51px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+  }
+}
+
+.name {
+  color: #1cd119;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 3px;
+
+  @media (min-width: 1024px) {
+    font-weight: 600;
+  }
+}
+
+.github {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 550px;
+  }
+}

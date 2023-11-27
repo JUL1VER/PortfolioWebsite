@@ -1,0 +1,22 @@
+.logos {
+  transition: 0.5s;
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+
+  @media (min-width: 650px) {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+  }
+
+  @media (min-width: 1024px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.logos:hover {
+  transform: scale(1.2);
+  background: var(--matrixGreen);
+}

@@ -1,3 +1,5 @@
+import s from "./footer.module.css";
+
 import React from "react";
 import linkedin from "../../assets/svg/linkedin.svg";
 import telegram from "../../assets/svg/telegram.svg";
@@ -10,8 +12,7 @@ import twitter_large from "../../assets/svg/twitter_large.svg";
 import google_large from "../../assets/svg/google_large.svg";
 import github_large from "../../assets/svg/github_large.svg";
 import FooterLink from "./footerLink/FooterLink";
-
-import "./footer.css";
+import Glitch from "../glitch/Glitch";
 
 const Footer = () => {
   const links = [
@@ -51,25 +52,21 @@ const Footer = () => {
   ));
 
   return (
-    <div className="footer">
-      <div className="footer__media">
-        <p className="footer__links-text">Follow me in my social networks:</p>
-        <div className="footer__links-block">{content}</div>
+    <div className={s.footer}>
+      <div className={s.media}>
+        <p className={s.linksText}>Follow me in my social networks:</p>
+        <div className={s.linksBlock}>{content}</div>
       </div>
-      <div className="footer__github">
-        <p className="footer__links-text">Take a look at my new projects:</p>
-        <div className="footer__github-block">
+      <div className={s.github}>
+        <p className={s.linksText}>Take a look at my new projects:</p>
+        <div className={s.githubBlock}>
           <FooterLink
             imgprop={github}
             imgprop_large={github_large}
             src="https://github.com/JUL1VER"
           />
-          <a
-            href="https://github.com/JUL1VER"
-            className="footer__github-block-text"
-          >
-            @<span className="footer__github-block-text-name">jul1ver</span> on
-            github
+          <a href="https://github.com/JUL1VER" className={s.githubText}>
+            @<Glitch className={s.name}>jul1ver</Glitch> on github
           </a>
         </div>
       </div>

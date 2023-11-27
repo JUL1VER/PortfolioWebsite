@@ -59,7 +59,7 @@
     font-size: 50px;
   }
 
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     font-size: 55px;
   }
 }
@@ -71,7 +71,7 @@
     width: 50px;
   }
 
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     margin-top: 4px;
   }
 }
