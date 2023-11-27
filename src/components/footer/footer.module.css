@@ -3,7 +3,6 @@
   margin-top: 50px;
   padding-top: 30px 0 10px;
   width: 100%;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
@@ -105,7 +104,6 @@
 .githubText {
   margin: 0 0 0 0;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;

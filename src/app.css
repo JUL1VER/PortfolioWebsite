@@ -27,6 +27,19 @@ code {
     monospace;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+input,
+textarea,
+button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+}
+
 .app {
   margin: 0 auto;
   width: 100%;

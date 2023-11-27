@@ -15,8 +15,6 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 25px;
 
@@ -175,7 +173,6 @@
   box-shadow: 0px 0px 10px 2px var(--matrixGreen);
   border-radius: 8px;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -257,7 +254,6 @@
   text-shadow: 0 0 5px var(--matrixGreen);
   cursor: pointer;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 20px;
   transition: 0.5s;

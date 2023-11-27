@@ -119,7 +119,6 @@
 .techno {
   width: 80%;
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
   color: var(--white);
   background: var(--darkGray);
   border: 2px solid var(--matrixGreen);
@@ -201,7 +200,6 @@
   height: 25px;
   padding-top: 0px;
   position: absolute;
-  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   border-radius: 5px;
   color: var(--matrixGreen);

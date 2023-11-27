@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   color: var(--white);
-  font-family: monospace;
   text-align: start;
 
   @media (min-width: 1024px) {
@@ -30,11 +29,13 @@
   opacity: 0;
   white-space: nowrap;
   overflow: hidden;
+  font-family: monospace !important;
 }
 
 .greenText {
   display: inline-block;
   color: var(--matrixGreen);
+  font-family: monospace !important;
 }
 
 .hello {

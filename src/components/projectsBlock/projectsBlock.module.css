@@ -24,7 +24,6 @@
   width: 80%;
   margin: 40px auto 0;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -51,7 +50,6 @@
 .headerText {
   margin: 0px;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 35px;
   letter-spacing: 3px;
