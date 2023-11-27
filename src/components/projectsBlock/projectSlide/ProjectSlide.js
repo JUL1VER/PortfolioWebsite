@@ -167,7 +167,7 @@ const ProjectSlide = () => {
           noSwiping={true}
           pagination={true}
           noSwipingClass={s.slidePic}
-          className={s.swiper}
+          className={s.swiperSlides}
           spaceBetween={0}
           slidesPerView={1}
         >

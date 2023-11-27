@@ -14,20 +14,15 @@
   order: 1;
 }
 
-.pcPic {
-  position: relative;
-}
-
 .container:hover .hover {
   opacity: 0;
 }
 
-.swiper {
+.swiperSlides {
   width: 200px;
   height: 127px;
-  position: absolute;
-  margin-top: 26px;
-  margin-left: 50px;
+  position: absolute !important;
+  margin: 26px 0 0 50px !important;
   z-index: 2;
   border-radius: 12px;
   align-items: center;
@@ -35,24 +30,21 @@
   @media (min-width: 650px) {
     width: 300px;
     height: 189px;
-    margin-top: 40px;
-    margin-left: 75px;
+    mergin: 40px 0 0 75px !important;
     border-radius: 18px;
   }
 
   @media (min-width: 1024px) {
     width: 375px;
     height: 228px;
-    margin-top: 50px;
-    margin-left: 87px;
+    margin: 50px 0 0 87px !important;
     border-radius: 20px;
   }
 
   @media (min-width: 1280px) {
     width: 475px;
     height: 298px;
-    margin-top: 60px;
-    margin-left: 113px;
+    margin: 60px 0 0 113px !important;
     border-radius: 20px;
   }
 }
