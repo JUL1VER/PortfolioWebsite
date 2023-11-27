@@ -109,7 +109,7 @@
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
 
-  @media (min-width: 650) {
+  @media (min-width: 650px) {
     font-size: 30px;
     border-right: 25px solid var(--matrixGreen);
     animation: type_desktop_border25 1.5s steps(27, end);

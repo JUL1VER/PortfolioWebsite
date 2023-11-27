@@ -1,4 +1,5 @@
-import "./header.css";
+import s from "./header.module.css";
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import question from "../../assets/png/question.png";
@@ -12,10 +13,8 @@ import Glitch from "../glitch/Glitch";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [position, setPosition] = useState(window.pageYOffset);
+  const [position, setPosition] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
-
-  const headerVision = visible ? "visible" : "hidden";
 
   const navLinks = [
     { to: "WhoAmI", text: "Who Am I", img: question },
@@ -39,42 +38,44 @@ const Header = () => {
       setVisible(position > moving);
       setPosition(moving);
     };
+
     if (!isActive) {
       window.addEventListener("scroll", handleScroll);
     }
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
 
   return (
-    <div className={classNames("header", headerVision)}>
-      <div className="header__wrapper">
+    <div className={classNames(s.header, visible ? s.visible : s.hidden)}>
+      <div className={s.wrapper}>
         <a
           href="https://jul1ver.github.io/PortfolioWebsite/"
-          className="header__logo-block"
+          className={s.logoBlock}
         >
-          <picture className="header__v-logo-pic">
+          <picture className={s.vLogoPic}>
             <source
-              className="header__v-logo"
+              className={s.vLogo}
               media="(min-width: 1024px)"
               srcSet={Vlogo_large}
             />
-            <img src={Vlogo} alt="Vlogo" className="header__v-logo"></img>
+            <img src={Vlogo} alt="Vlogo" className={s.vLogo}></img>
           </picture>
         </a>
         <button
           type="button"
-          className={classNames("header__burger-block", { active: isActive })}
+          className={classNames(s.burger, { [s.active]: isActive })}
           onClick={toggleActiveClass}
         >
           <span></span>
         </button>
-        <div className="header__navbar-block">
-          <nav className={classNames("header__navbar", { active: isActive })}>
+        <div className={s.navbarBlock}>
+          <nav className={classNames(s.navbar, { [s.active]: isActive })}>
             {navLinks.map((link) => (
               <Link
-                className="header__navbar-navlinks"
+                className={s.navLinks}
                 to={link.to}
                 smooth={true}
                 offset={-100}
@@ -82,9 +83,9 @@ const Header = () => {
                 onClick={closeMenuOnScroll}
                 key={link.text}
               >
-                <div className="header__navbar-glitch">
-                  <div className="header__navbar-glitch_inside">
-                    <p className="header__navbar-text">
+                <div className={s.block}>
+                  <div className={s.blockWrapper}>
+                    <p className={s.navbarText}>
                       <Glitch inline onHover>
                         {link.text}
                       </Glitch>
@@ -92,7 +93,7 @@ const Header = () => {
                     <img
                       src={link.img}
                       alt="Link"
-                      className="header__navbar-logo"
+                      className={s.navbarLogo}
                     ></img>
                   </div>
                 </div>
@@ -100,7 +101,7 @@ const Header = () => {
             ))}
           </nav>
           <div
-            className={classNames("header__overlay", { active: isActive })}
+            className={classNames(s.overlay, { [s.active]: isActive })}
             onClick={toggleActiveClass}
           ></div>
         </div>

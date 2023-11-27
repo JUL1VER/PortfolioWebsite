@@ -1,28 +1,28 @@
 .skillsBlock {
-  margin-top: 25px;
   overflow-x: hidden;
-  padding: 110px 0;
+  margin: 0 auto;
 
   @media (min-width: 1024px) {
     width: 95%;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-
-  @media (min-width: 1280px) {
-    max-width: 1260px;
   }
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    gap: 40px;
   }
 }
 
 .wrapper {
+  margin-top: 40px;
+
   @media (min-width: 1024px) {
     order: 2;
     width: 50%;
@@ -30,10 +30,11 @@
 }
 
 .imgPic {
+  margin-top: 20px;
+
   @media (min-width: 1024px) {
     order: 1;
     margin: 0 auto;
-    margin-top: 20px;
   }
 }
 
@@ -58,7 +59,7 @@
     font-size: 50px;
   }
 
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     font-size: 55px;
   }
 }
@@ -70,30 +71,33 @@
     width: 50px;
   }
 
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     margin-top: 4px;
   }
 }
 
 .img {
-  width: 70%;
+  width: 100%;
   min-width: 250px;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin: 10px auto 0;
+
+  @media (min-width: 650px) {
+    max-width: 550px;
+  }
 
   @media (min-width: 1024px) {
     width: 100%;
     max-width: 750px;
+    margin: 40px auto 0;
   }
 }
 
 .skillsText {
   width: 80%;
   min-width: 293px;
-  height: 80px;
   margin: 0 auto;
-  margin-top: 45px;
 
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -110,7 +114,6 @@
     width: 100%;
     font-size: 30px;
     line-height: 40px;
-    height: 100px;
   }
 
   @media (min-width: 1280px) {
@@ -120,7 +123,7 @@
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 40px;
   display: grid;
   column-gap: 60px;
   row-gap: 50px;
@@ -128,7 +131,6 @@
   justify-content: center;
 
   @media (min-width: 650px) {
-    margin-top: 0px;
     grid-template-columns: auto auto auto;
     justify-content: center;
   }

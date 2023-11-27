@@ -1,3 +1,5 @@
+import s from "./descriptionBlock.module.css";
+
 import React, { useEffect, useRef, useState } from "react";
 import myfoto from "../../assets/png/myfoto.png";
 import myfoto_large from "../../assets/png/myfoto_large.png";
@@ -8,8 +10,7 @@ import Modal from "../modal/Modal";
 import Glitch from "../glitch/Glitch";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import s from "./descriptionBlock.module.css";
+import classNames from "classnames";
 
 const DescriptionBlock = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -60,7 +61,7 @@ const DescriptionBlock = () => {
   }, []);
 
   return (
-    <section className={s.descriptionBlock}>
+    <section className={classNames(s.descriptionBlock, ["containerBlock"])}>
       <div
         className={s.header}
         data-aos="fade-up"
@@ -132,7 +133,7 @@ const DescriptionBlock = () => {
                 poems
               </Glitch>
             </a>
-            .&nbsp;That's why I can say programming is a poetry too!
+            . That's why I can say programming is a poetry too!
           </div>
           <div className={s.text}>
             Currently I'm developing well desingned impressive apps in&nbsp;
@@ -146,9 +147,9 @@ const DescriptionBlock = () => {
                 Mish.design
               </Glitch>
             </a>
-            .&nbsp;Mostly I work using React and TypeScript, but I also like
-            native JavaScript. The power and possibilities of CSS never stop to
-            amaze me!
+            . Mostly I work using React and TypeScript, but I also like native
+            JavaScript. The power and possibilities of CSS never stop to amaze
+            me!
           </div>
           <div className={s.text}>
             I am interested in many things including science, poetry, music,

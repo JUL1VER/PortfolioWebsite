@@ -2,7 +2,8 @@ import MainPage from "./pages/mainPage/MainPage";
 import MatrixBackground from "./components/matrixBackground/MatrixBackground";
 import Bowser from "bowser";
 import classNames from "classnames";
-import s from "./app.module.css";
+
+import s from "./app.css";
 import "./global.css";
 
 function App() {

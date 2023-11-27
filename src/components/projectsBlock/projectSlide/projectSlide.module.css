@@ -1,0 +1,333 @@
+.projectSlide {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  order: 1;
+}
+
+.pcPic {
+  position: relative;
+}
+
+.container:hover .hover {
+  opacity: 0;
+}
+
+.swiper {
+  width: 200px;
+  height: 127px;
+  position: absolute;
+  margin-top: 26px;
+  margin-left: 50px;
+  z-index: 2;
+  border-radius: 12px;
+  align-items: center;
+
+  @media (min-width: 650px) {
+    width: 300px;
+    height: 189px;
+    margin-top: 40px;
+    margin-left: 75px;
+    border-radius: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 375px;
+    height: 228px;
+    margin-top: 50px;
+    margin-left: 87px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 475px;
+    height: 298px;
+    margin-top: 60px;
+    margin-left: 113px;
+    border-radius: 20px;
+  }
+}
+
+.projectImg {
+  width: 100%;
+  border-radius: 5px;
+
+  @media (min-width: 1024px) {
+    border-radius: 15px;
+  }
+}
+
+.hover {
+  background: #1cd119;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4;
+  border-radius: 5px;
+  transition: 0.5s;
+  height: 98%;
+
+  @media (min-width: 650px) {
+    border-radius: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 99%;
+  }
+}
+
+.pc {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    width: 550px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 700px;
+  }
+}
+
+.textBlock {
+  order: 2;
+  width: 80%;
+  max-width: 450px;
+  margin: 20px auto 0;
+
+  @media (min-width: 1024px) {
+    padding: 10px;
+    margin-top: 35px;
+    order: 1;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 55px;
+  }
+}
+
+.text,
+.techno {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  color: var(--white);
+  background: var(--darkGray);
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0 0 10px 2px var(--matrixGreen);
+  border-radius: 10px;
+
+  @media (min-width: 1024px) {
+    width: 300px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 400px;
+  }
+}
+
+.text {
+  padding: 20px;
+
+  @media (min-width: 650px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 51px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+  }
+}
+
+.textInside {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+
+  @media (min-width: 650px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+  }
+}
+
+.techno {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.technoList {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+
+  @media (min-width: 650px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+}
+
+.prevButton,
+.nextButton {
+  width: 120px;
+  height: 25px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  border-radius: 5px;
+  color: var(--matrixGreen);
+  background: var(--darkGray);
+  border: 1px solid var(--matrixGreen);
+  box-shadow: 0 0 2px 2px var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+
+  @media (min-width: 650px) {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 0 5px 2px var(--matrixGreen);
+  }
+
+  @media (min-width: 1024px) {
+    width: 235px;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid var(--matrixGreen);
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
+    border-radius: 10px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 290px;
+    height: 60px;
+    font-size: 30px;
+    border: 2px solid var(--matrixGreen);
+    box-shadow: 0 0 10px 2px var(--matrixGreen);
+    border-radius: 10px;
+  }
+}
+
+.prevButton {
+  transform: rotate(-90deg);
+  top: 80px;
+  left: -35px;
+
+  @media (min-width: 650px) {
+    top: 115px;
+    left: -52px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 138px;
+    left: -72px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 180px;
+    left: -85px;
+  }
+}
+
+.nextButton {
+  transform: rotate(90deg);
+  top: 80px;
+  right: -35px;
+
+  @media (min-width: 650px) {
+    top: 115px;
+    right: -52px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 138px;
+    right: -72px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 180px;
+    right: -85px;
+  }
+}
+
+.prevButton:hover {
+  color: #fff;
+  background: var(--martixBlue);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--white);
+  text-shadow: none;
+
+  @media (min-width: 650px) {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  @media (min-width: 1024px) {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+}
+
+.nextButton:hover {
+  color: #fff;
+  background: var(--martixRed);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--white);
+  text-shadow: none;
+
+  @media (min-width: 650px) {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  @media (min-width: 1024px) {
+    box-shadow: 0 0 10px 2px #fff;
+    border: 2px solid #fff;
+  }
+}
+
+.prevButton:active,
+.nextButton:active {
+  color: #fff;
+  background: #0a0a0a;
+  border: 2px solid #0a0a0a;
+  box-shadow: 0 0 5px 2px #1cd119;
+  transition: 0.1s;
+}

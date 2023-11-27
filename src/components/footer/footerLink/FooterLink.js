@@ -1,3 +1,5 @@
+import s from "./footerLink.module.css";
+
 import React from "react";
 import useIsDesktop from "../../../hooks/useIsDesktop";
 
@@ -25,7 +27,7 @@ const FooterLink = (props) => {
             mask: `url("${imgprop_large}") no-repeat center`,
           }}
           alt="linkIcon"
-          className="footer__links-block-imgs"
+          className={s.logos}
         />
       ) : (
         <div
@@ -36,7 +38,7 @@ const FooterLink = (props) => {
             mask: `url("${imgprop}") no-repeat center`,
           }}
           alt="linkIcon"
-          className="footer__links-block-imgs"
+          className={s.logos}
         />
       )}
     </a>

@@ -1,6 +1,6 @@
-import React from "react";
-
 import s from "./welcomeBlock.module.css";
+
+import React from "react";
 import Glitch from "../glitch/Glitch";
 import useIsDesktop from "../../hooks/useIsDesktop";
 

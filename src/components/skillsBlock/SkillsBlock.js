@@ -1,3 +1,5 @@
+import s from "./skillsBlock.module.css";
+
 import React, { useEffect } from "react";
 import skillsHead from "../../assets/png/skillsHead.png";
 import skillsImg from "../../assets/png/skillsImg.png";
@@ -11,9 +13,8 @@ import ts from "../../assets/png/tslogo.png";
 import SkillIcon from "./skillIcon/SkillIcon";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import s from "./skillsBlock.module.css";
 import Glitch from "../glitch/Glitch";
+import classNames from "classnames";
 
 const SkillsBlock = () => {
   const technologies = [
@@ -69,7 +70,7 @@ const SkillsBlock = () => {
   }, []);
 
   return (
-    <section className={s.skillsBlock}>
+    <section className={classNames(s.skillsBlock, ["containerBlock"])}>
       <div
         className={s.header}
         id="SkillsPart"

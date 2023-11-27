@@ -5,16 +5,7 @@
   align-items: center;
   font-family: "PT Sans", sans-serif;
   overflow-x: hidden;
-  padding: 50px 0 100px 0;
-
-  @media (min-width: 1024px) {
-    margin: 0 auto;
-    padding: 100px 0;
-  }
-
-  @media (min-width: 1280px) {
-    max-width: 1260px;
-  }
+  margin: 0 auto;
 }
 
 .header {
@@ -55,17 +46,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 50px;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
   }
 }
 
 .photoBlock {
   order: 2;
-  margin: 40px;
+  margin: 40px 0 0;
   position: relative;
   border-radius: 15px;
   transition: 0.5s;
@@ -80,7 +74,7 @@
   }
 
   @media (min-width: 1024px) {
-    margin: 33px 40px 20px;
+    margin: 0;
     max-width: 400px;
     width: 40%;
   }
@@ -137,11 +131,9 @@
 
 .content {
   order: 1;
-  margin-top: 20px;
 
   @media (min-width: 1024px) {
-    width: 55%;
-    padding-left: 50px;
+    width: 58%;
     margin-top: 0px;
   }
 }
@@ -149,8 +141,7 @@
 .text {
   width: 80%;
   max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 16px;
+  margin: 0 auto 20px;
 
   font-style: normal;
   font-weight: 400;
@@ -164,7 +155,6 @@
   }
 
   @media (min-width: 1024px) {
-    margin-top: 30px;
     text-align: start;
     width: 100%;
     max-width: 750px;
@@ -173,7 +163,6 @@
   }
 
   @media (min-width: 1280px) {
-    margin-top: 35px;
     font-size: 22px;
     line-height: 157%;
   }
@@ -190,7 +179,7 @@
   display: block;
   width: 140px;
   height: 55px;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
 
   background: var(--darkGray);
   color: var(--matrixGreen);

@@ -1,7 +1,7 @@
+import s from "./skillIcon.module.css";
+
 import React, { useState } from "react";
 import Glitch from "../../glitch/Glitch";
-
-import s from "./skillIcon.module.css";
 
 const SkillIcon = (props) => {
   const { imgprop, src, title } = props;

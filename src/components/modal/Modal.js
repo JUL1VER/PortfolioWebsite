@@ -1,45 +1,66 @@
-import React from "react";
+import s from "./modal.module.css";
+
+import React, { useEffect } from "react";
 import linkedin from "../../assets/svg/linkedin.svg";
 import telegram from "../../assets/svg/telegram.svg";
-
-import "./modal.css";
+import classNames from "classnames";
 
 const Modal = ({ active, onCloseModalClick }) => {
+  useEffect(() => {
+    if (active) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    const handleKeyPress = (event) => {
+      if (event.key === "Escape" && active) {
+        onCloseModalClick();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [active, onCloseModalClick]);
+
   return (
     <div
-      className={active ? "modal active" : "modal"}
+      className={classNames(s.modal, {
+        [s.active]: active,
+      })}
       onClick={onCloseModalClick}
     >
       <div
-        className={active ? "modal__content active" : "modal__content"}
+        className={classNames(s.content, {
+          [s.active]: active,
+        })}
         onClick={(e) => e.stopPropagation()}
       >
-        <p className="modal__text">
+        <p className={s.text}>
           Feel free to contact me by the following links below!
         </p>
-        <div className="modal__links-block">
+        <div className={s.links}>
           <a
             href="https://linkedin.com/in/vladJ1"
-            className="modal__link modal__link_left"
+            className={classNames(s.link, s.link_left)}
             target="blank"
           >
             LinkedIn
-            <img src={linkedin} alt="linkedin" className="modal__link-img" />
+            <img src={linkedin} alt="linkedin" className={s.linkImg} />
           </a>
           <a
             href="https://t.me/JUL1VER"
-            className="modal__link modal__link_right"
+            className={classNames(s.link, s.link_right)}
             target="blank"
           >
             Telegram
-            <img src={telegram} alt="linkedin" className="modal__link-img" />
+            <img src={telegram} alt="linkedin" className={s.linkImg} />
           </a>
         </div>
-        <button
-          type="button"
-          className="modal__close-button"
-          onClick={onCloseModalClick}
-        />
+        <button type="button" className={s.close} onClick={onCloseModalClick} />
       </div>
     </div>
   );

@@ -1,0 +1,81 @@
+.projectsBlock {
+  max-width: 1280px;
+  margin-top: 25px;
+  overflow-x: hidden;
+
+  @media (min-width: 650px) {
+    margin: 25px auto 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 50px auto 0;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.text {
+  width: 80%;
+  margin: 40px auto 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+
+  color: var(--white);
+
+  @media (min-width: 650px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 51px;
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+}
+
+.headerText {
+  margin: 0px;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 3px;
+
+  color: var(--matrixGreen);
+
+  @media (min-width: 650px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 55px;
+  }
+}
+
+.headerLogo {
+  width: 35px;
+  margin: 3px 0px 0px 5px;
+
+  @media (min-width: 650px) {
+    width: 50px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 3px;
+  }
+}

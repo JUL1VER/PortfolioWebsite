@@ -1,3 +1,6 @@
+import s from "./projectSlide.module.css";
+import "./swiper.css";
+
 import React, { useEffect } from "react";
 import projectsPC from "../../../assets/png/projectsPC.png";
 import projectsPC_medium from "../../../assets/png/projectsPC_medium.png";
@@ -89,45 +92,43 @@ const ProjectSlide = () => {
   }, []);
 
   return (
-    <div className="projects-block__content">
+    <div className={s.projectSlide}>
       <div
+        className={s.textBlock}
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-once="true"
-        className="projects-block__content-text-block"
       >
-        <div className="projects-block__content-text">
+        <div className={s.text}>
           <Swiper
             ref={swiperTextRef}
             modules={[EffectFlip, Pagination]}
             effect="flip"
             noSwiping={true}
-            noSwipingClass="projects-block__content-text-inside"
+            noSwipingClass={s.textInside}
             loop={true}
             slidesPerView={1}
           >
             {cards.map((card) => (
               <SwiperSlide key={card.id}>
-                <p className="projects-block__content-text-inside">
-                  {card.description}
-                </p>
+                <p className={s.textInside}>{card.description}</p>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className="projects-block__contect-tecnho">
+        <div className={s.techno}>
           <Swiper
             ref={swiperTecnhoRef}
             modules={[EffectFlip, Pagination]}
             effect="flip"
             noSwiping={true}
-            noSwipingClass="projects-block__contect-tecnho-list"
+            noSwipingClass={s.technoList}
             loop={true}
             slidesPerView={1}
           >
             {cards.map((card) => (
               <SwiperSlide key={card.id}>
-                <ul className="projects-block__contect-tecnho-list">
+                <ul className={s.technoList}>
                   {card.techno.map((technology) => (
                     <li key={technology}>{technology}</li>
                   ))}
@@ -138,22 +139,22 @@ const ProjectSlide = () => {
         </div>
       </div>
       <div
+        className={s.container}
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-once="true"
-        className="projects-block__conteiner"
       >
         <button
           type="button"
           onClick={() => swiperPrev()}
-          className="projects-block__conteiner-prev-button"
+          className={s.prevButton}
         >
           Prev
         </button>
         <button
           type="button"
           onClick={() => swiperNext()}
-          className="projects-block__conteiner-next-button"
+          className={s.nextButton}
         >
           Next
         </button>
@@ -165,8 +166,8 @@ const ProjectSlide = () => {
           loop={true}
           noSwiping={true}
           pagination={true}
-          noSwipingClass="projects-block_conteiner_slidePic"
-          className="projects-block__swiper"
+          noSwipingClass={s.slidePic}
+          className={s.swiper}
           spaceBetween={0}
           slidesPerView={1}
         >
@@ -176,34 +177,30 @@ const ProjectSlide = () => {
                 href={card.link}
                 target="_blank"
                 rel="noreferrer"
-                className="projects-block_conteiner_slidePic"
+                className={s.slidePic}
               >
-                <div className="projects-block__hover" />
+                <div className={s.hover} />
                 <img
                   src={card.imgprop}
                   alt="Project"
-                  className="projects-block__conteiner-project-pic"
+                  className={s.projectImg}
                 />
               </a>
             </SwiperSlide>
           ))}
         </Swiper>
-        <picture className="projects-block__conteiner-pc-img">
+        <picture className={s.pcPic}>
           <source
-            className="projects-block__conteiner-pc"
+            className={s.pc}
             media="(min-width: 1024px)"
             srcSet={projectsPC_large}
           />
           <source
-            className="projects-block__conteiner-pc"
+            className={s.pc}
             media="(min-width: 650px)"
             srcSet={projectsPC_medium}
           />
-          <img
-            src={projectsPC}
-            alt="PC"
-            className="projects-block__conteiner-pc"
-          />
+          <img src={projectsPC} alt="PC" className={s.pc} />
         </picture>
       </div>
     </div>
