@@ -45,7 +45,6 @@
   flex-direction: row;
   justify-content: center;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 900;
   font-size: 25px;
   color: var(--matrixGreen);
@@ -99,7 +98,6 @@
   min-width: 293px;
   margin: 0 auto;
 
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
