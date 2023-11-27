@@ -7,35 +7,8 @@
   }
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    gap: 40px;
-  }
-}
-
-.wrapper {
-  margin-top: 40px;
-
-  @media (min-width: 1024px) {
-    order: 2;
-    width: 50%;
-  }
-}
-
-.imgPic {
-  margin-top: 20px;
-
-  @media (min-width: 1024px) {
-    order: 1;
-    margin: 0 auto;
-  }
+.skillsBlock::-webkit-scrollbar {
+  display: none;
 }
 
 .header {
@@ -75,12 +48,51 @@
   }
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 40px;
+  }
+}
+
+.wrapper {
+  margin-top: 40px;
+
+  @media (min-width: 1024px) {
+    order: 2;
+    width: 50%;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.imgPic {
+  margin-top: 20px;
+  transition: 0.5s;
+
+  @media (min-width: 1024px) {
+    order: 1;
+    margin: 0 auto;
+  }
+}
+
 .img {
+  display: block;
   width: 100%;
   min-width: 250px;
   max-width: 400px;
   margin: 0 auto;
-  margin: 10px auto 0;
 
   @media (min-width: 650px) {
     max-width: 550px;
@@ -89,39 +101,33 @@
   @media (min-width: 1024px) {
     width: 100%;
     max-width: 750px;
-    margin: 40px auto 0;
+    margin: 0 auto;
   }
 }
 
-.skillsText {
-  width: 80%;
-  min-width: 293px;
+.imgPic.gifActive {
+  opacity: 0;
+}
+
+.gif {
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  border-radius: 15px;
+  border: 2px solid var(--matrixGreen);
+  box-shadow: 0 0 5px 1px var(--matrixGreen);
+}
+
+.gif.gifActive {
+  opacity: 1;
   margin: 0 auto;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: var(--white);
-
-  @media (min-width: 650px) {
-    font-size: 25px;
-    line-height: 35px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 100%;
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 35px;
-    line-height: 51px;
-  }
 }
 
-.logo {
-  margin-top: 40px;
+.logos {
   display: grid;
   column-gap: 60px;
   row-gap: 50px;
@@ -138,7 +144,6 @@
   }
 
   @media (min-width: 1280px) {
-    margin-top: 20px;
     row-gap: 50px;
   }
 }

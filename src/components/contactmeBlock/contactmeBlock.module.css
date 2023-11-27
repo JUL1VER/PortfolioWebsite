@@ -220,6 +220,19 @@
   }
 }
 
+.message::-webkit-scrollbar {
+  width: 5px;
+}
+
+.message::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.message::-webkit-scrollbar-thumb {
+  background-color: var(--matrixGreen);
+  border-radius: 20px;
+}
+
 .message {
   resize: none;
   height: 200px;
