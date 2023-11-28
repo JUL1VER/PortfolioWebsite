@@ -55,7 +55,7 @@ const Header = () => {
           href="https://jul1ver.github.io/PortfolioWebsite/"
           className={s.logoBlock}
         >
-          <picture className={s.vLogoPic}>
+          <picture>
             <source
               className={s.vLogo}
               media="(min-width: 1024px)"
