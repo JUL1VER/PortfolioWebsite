@@ -1,9 +1,27 @@
-.preloader_hidden {
-  transition: 2s;
-  opacity: 0;
-  top: 100%;
-}
-
 .mainPage_hidden {
   display: none;
+}
+
+.preloader_hidden {
+  z-index: -1;
+  transition: 0.75s;
+  transform: scale(0.15);
+  animation: moving_preloader 2s steps(322, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving_preloader {
+  0% {
+    top: -50%;
+    opacity: 1;
+  }
+  30% {
+    top: -50%;
+    opacity: 1;
+    background: transparent;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
 }

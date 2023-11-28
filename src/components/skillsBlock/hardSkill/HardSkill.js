@@ -1,9 +1,9 @@
-import s from "./skillIcon.module.css";
+import s from "./hardSkill.module.css";
 
 import React, { useState } from "react";
 import Glitch from "../../glitch/Glitch";
 
-const SkillIcon = (props) => {
+const HardSkill = (props) => {
   const { imgprop, src, title } = props;
 
   const [isHovered, setIsHovered] = useState(false);
@@ -39,4 +39,4 @@ const SkillIcon = (props) => {
   );
 };
 
-export default SkillIcon;
+export default HardSkill;

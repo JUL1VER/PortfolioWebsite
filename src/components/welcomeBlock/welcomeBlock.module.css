@@ -40,7 +40,6 @@
 
 .hello {
   font-size: 18px;
-  margin: 0;
   letter-spacing: 2px;
   width: 15ch;
   border-right: 15px solid var(--matrixGreen);
@@ -121,7 +120,6 @@
 
 .creater_mobile_2 {
   font-size: 18px;
-  margin: 0;
   width: 27ch;
   border-right: 15px solid var(--matrixGreen);
   animation: type_mobile_border15 1.5s steps(27, end);
@@ -171,7 +169,6 @@
 .potrfolio_2 {
   font-size: 11px;
   font-weight: 600;
-  margin: 0;
   width: 43ch;
   border-right: 10px solid var(--matrixGreen);
   animation: type_mobile_border10_2ver 2s steps(43, end);

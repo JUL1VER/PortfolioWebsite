@@ -59,6 +59,7 @@
 
   @media (min-width: 1024px) {
     width: 60px;
+    margin-left: 35px;
   }
 
   @media (min-width: 1280px) {
@@ -170,7 +171,6 @@
 
 .navbarText {
   display: inline;
-  margin: 0;
 }
 
 .blockWrapper {

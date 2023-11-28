@@ -22,7 +22,6 @@
 }
 
 .headerText {
-  margin: 0;
   letter-spacing: 4px;
 
   @media (min-width: 650px) {

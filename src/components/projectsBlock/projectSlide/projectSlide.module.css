@@ -80,7 +80,7 @@
   }
 
   @media (min-width: 1280px) {
-    height: 99%;
+    height: 98.8%;
   }
 }
 
@@ -153,7 +153,6 @@
 .textInside {
   display: flex;
   align-items: center;
-  margin: 0;
   font-size: 20px;
   text-align: center;
 

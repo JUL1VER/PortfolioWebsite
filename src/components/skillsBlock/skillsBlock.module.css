@@ -1,14 +1,10 @@
 .skillsBlock {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0 auto;
 
   @media (min-width: 1024px) {
     width: 95%;
   }
-}
-
-.skillsBlock::-webkit-scrollbar {
-  display: none;
 }
 
 .header {
@@ -24,7 +20,6 @@
 }
 
 .headerText {
-  margin: 0;
   letter-spacing: 4px;
 
   @media (min-width: 650px) {
@@ -48,17 +43,37 @@
   }
 }
 
+.switcher {
+  margin: 40px auto;
+}
+
+.container {
+  position: relative;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: rotateX(90deg) scale(0.1);
 
   @media (min-width: 1024px) {
-    display: flex;
     flex-direction: row;
-    margin-top: 20px;
     gap: 40px;
   }
+}
+
+.content:last-child {
+  padding-top: 40px;
+}
+
+.active {
+  opacity: 1;
+  transform: rotateX(0deg) scale(1);
 }
 
 .wrapper {
@@ -70,11 +85,60 @@
   }
 }
 
+.softs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  order: 2;
+  margin-top: 40px;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    margin-top: 0;
+    order: 1;
+  }
+}
+
+.soft {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid var(--matrixGreen);
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--darkGray);
+
+  @media (min-width: 650px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.soft:hover {
+  border: 1px solid var(--white);
+  box-shadow: 0 0 5px 1px var(--white);
+}
+
 .images {
   display: flex;
   justify-content: center;
   width: 50%;
   position: relative;
+}
+
+.images:last-child {
+  @media (min-width: 1024px) {
+    order: 2;
+  }
 }
 
 .imgPic {
@@ -107,6 +171,7 @@
 
 .imgPic.gifActive {
   opacity: 0;
+  z-index: 1;
 }
 
 .gif {
@@ -120,6 +185,7 @@
   border-radius: 15px;
   border: 2px solid var(--matrixGreen);
   box-shadow: 0 0 5px 1px var(--matrixGreen);
+  z-index: -1;
 }
 
 .gif.gifActive {
