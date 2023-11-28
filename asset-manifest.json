@@ -1,12 +1,20 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.17bc12fe.css",
-    "main.js": "/PortfolioWebsite/static/js/main.a909b11b.js",
+    "main.js": "/PortfolioWebsite/static/js/main.d1728db9.js",
+    "static/media/communication.gif": "/PortfolioWebsite/static/media/communication.b8fa86ad0fe05ce20e36.gif",
+    "static/media/determination.gif": "/PortfolioWebsite/static/media/determination.ab01000e57383a99eea9.gif",
+    "static/media/podcast.gif": "/PortfolioWebsite/static/media/podcast.b20bfeaf3a8c41e82313.gif",
+    "static/media/conference.gif": "/PortfolioWebsite/static/media/conference.edb3fffd5ee56bc08c67.gif",
     "static/media/myfoto_large.png": "/PortfolioWebsite/static/media/myfoto_large.16cabfe4ce29596942bf.png",
+    "static/media/english.gif": "/PortfolioWebsite/static/media/english.8d796073f6ee4c7f73db.gif",
+    "static/media/german.gif": "/PortfolioWebsite/static/media/german.fc929ff77e1df0babbd5.gif",
     "static/media/matrixback_large.png": "/PortfolioWebsite/static/media/matrixback_large.b49bbf019a7e1027fdd2.png",
     "static/media/myfoto.png": "/PortfolioWebsite/static/media/myfoto.9ae59a2d137fe7c87622.png",
     "static/media/neo_large.webp": "/PortfolioWebsite/static/media/neo_large.777e874e9b6da05ddcb5.webp",
     "static/media/morpheus.webp": "/PortfolioWebsite/static/media/morpheus.3111973132549416c377.webp",
+    "static/media/humor.gif": "/PortfolioWebsite/static/media/humor.35654e1ddb554572dde4.gif",
+    "static/media/leadership.gif": "/PortfolioWebsite/static/media/leadership.f568fc11546026785fc3.gif",
     "static/media/neo.webp": "/PortfolioWebsite/static/media/neo.e0f02b61146b39541c90.webp",
     "static/media/neogif.gif": "/PortfolioWebsite/static/media/neogif.81c193d1bb76b74f37ba.gif",
     "static/media/coding_large.png": "/PortfolioWebsite/static/media/coding_large.d35a6ae8b531d1f609ba.png",
@@ -35,10 +43,10 @@
     "static/media/V_logo_44.svg": "/PortfolioWebsite/static/media/V_logo_44.6a996f36c59b762467e019b16e65b2d0.svg",
     "static/media/V_logo_88.svg": "/PortfolioWebsite/static/media/V_logo_88.12d40cd3ecaf652f2f520ac1c2ed96f2.svg",
     "main.17bc12fe.css.map": "/PortfolioWebsite/static/css/main.17bc12fe.css.map",
-    "main.a909b11b.js.map": "/PortfolioWebsite/static/js/main.a909b11b.js.map"
+    "main.d1728db9.js.map": "/PortfolioWebsite/static/js/main.d1728db9.js.map"
   },
   "entrypoints": [
     "static/css/main.17bc12fe.css",
-    "static/js/main.a909b11b.js"
+    "static/js/main.d1728db9.js"
   ]
 }
