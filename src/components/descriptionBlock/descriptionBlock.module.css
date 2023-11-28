@@ -22,8 +22,6 @@
 }
 
 .headerText {
-  margin: 0;
-
   @media (min-width: 1024px) {
     font-size: 50px;
   }
@@ -89,16 +87,12 @@
   }
 }
 
-.photoPic {
-  position: relative;
-  border-radius: 15px;
-  top: 2px;
-}
-
 .myPhoto {
+  position: relative;
+  top: 2px;
+
   width: 100%;
   border-radius: 15px;
-  position: relative;
   transition: 0.5s;
   z-index: 2;
 }
