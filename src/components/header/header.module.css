@@ -225,6 +225,14 @@
   }
 }
 
+.navbarBlock {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+}
+
 .navbarLogo {
   width: 35px;
   margin: 2px 0 0 5px;
@@ -240,24 +248,6 @@
 
 .overlay {
   transition: 0.5s;
-}
-
-.vLogoPic {
-  @media (max-width: 1024px) {
-    margin: 10px 0 0 10px;
-  }
-
-  @media (max-width: 1280px) {
-    margin: 10px 0 0 20px;
-  }
-}
-
-.navbarBlock {
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    margin-right: 40px;
-  }
 }
 
 @keyframes moving_header {
