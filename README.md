@@ -72,7 +72,7 @@ The Who Am I section contains information about me as a professional and as a pe
 
 ### Skills
 
-The Skills section contains information about frontend technologies that I use.
+The Skills section contains switcher with information about frontend technologies that I use and list of my soft skills.
 
 ### Projects
 
