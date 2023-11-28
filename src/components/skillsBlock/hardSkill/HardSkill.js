@@ -30,7 +30,7 @@ const HardSkill = (props) => {
       >
         <img src={imgprop} alt="skillIcon" className={s.logo} />
         <p className={s.text}>
-          <Glitch inline onHover={!isHovered}>
+          <Glitch inline onHover isHovered={isHovered}>
             {title}
           </Glitch>
         </p>
