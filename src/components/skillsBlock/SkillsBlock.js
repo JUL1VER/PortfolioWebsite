@@ -6,7 +6,15 @@ import coding from "../../assets/png/coding.png";
 import coding_large from "../../assets/png/coding_large.png";
 import softskill from "../../assets/png/softskill.png";
 import softskill_large from "../../assets/png/softskill_large.png";
-import neogif from "../../assets/png/neogif.gif";
+import neogif from "../../assets/gif/neogif.gif";
+import english from "../../assets/gif/english.gif";
+import german from "../../assets/gif/german.gif";
+import leadership from "../../assets/gif/leadership.gif";
+import determination from "../../assets/gif/determination.gif";
+import comminication from "../../assets/gif/communication.gif";
+import humor from "../../assets/gif/humor.gif";
+import conference from "../../assets/gif/conference.gif";
+import podcast from "../../assets/gif/podcast.gif";
 import css from "../../assets/png/csslogo.png";
 import js from "../../assets/png/jslogo.png";
 import html from "../../assets/png/htmllogo.png";
@@ -60,24 +68,25 @@ const hards = [
 ];
 
 const softs = [
-  "English Upper Intermediate",
-  "German Intermediate",
-  "Mentoring and leadership",
-  "Curiosity and determination",
-  "Professional comminication",
-  "Perfect sense of humor",
-  "Conference fan",
-  "White articles and attend podcasts",
+  { title: "English Upper Intermediate", gif: english },
+  { title: "German Intermediate", gif: german },
+  { title: "Mentoring and leadership", gif: leadership },
+  { title: "Curiosity and determination", gif: determination },
+  { title: "Professional comminication", gif: comminication },
+  { title: "Perfect sense of humor", gif: humor },
+  { title: "Conference fan", gif: conference },
+  { title: "White articles and attend podcasts", gif: podcast },
 ];
 
 const SkillsBlock = () => {
   const [isLogosHover, setIsLogosHover] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
+  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
 
   const containerRef = useRef(null);
 
-  const tabs = ["Hards Skills", "Soft Skills"];
+  const tabs = ["Hard Skills", "Soft Skills"];
 
   const handleMouseEnter = () => {
     setIsLogosHover(true);
@@ -186,15 +195,24 @@ const SkillsBlock = () => {
           })}
         >
           <div className={s.softs}>
-            {softs.map((soft) => (
-              <p key={soft} className={s.soft}>
-                {soft}
+            {softs.map((soft, index) => (
+              <p
+                key={soft.title}
+                className={s.soft}
+                onMouseEnter={() => setActiveSoftGifIndex(index)}
+                onMouseLeave={() => setActiveSoftGifIndex(null)}
+              >
+                <Glitch inline onHover isHovered={index === activeSoftGifIndex}>
+                  {soft.title}
+                </Glitch>
               </p>
             ))}
           </div>
           <div className={s.images}>
             <picture
-              className={classNames(s.imgPic, { [s.gifActive]: isLogosHover })}
+              className={classNames(s.imgPic, {
+                [s.gifActive]: activeSoftGifIndex !== null,
+              })}
             >
               <source
                 className={s.img}
@@ -203,6 +221,15 @@ const SkillsBlock = () => {
               />
               <img src={softskill} className={s.img} alt="skillsImg" />
             </picture>
+            {activeSoftGifIndex !== null && (
+              <img
+                src={softs[activeSoftGifIndex].gif}
+                className={classNames(s.gif, {
+                  [s.gifActive]: activeSoftGifIndex !== null,
+                })}
+                alt="meme"
+              />
+            )}
           </div>
         </div>
       </div>
