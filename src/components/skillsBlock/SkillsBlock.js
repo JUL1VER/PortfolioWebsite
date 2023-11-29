@@ -217,7 +217,7 @@ const SkillsBlock = () => {
           <div className={s.images}>
             <picture
               className={classNames(s.imgPic, {
-                [s.gifActive]: activeSoftGifIndex !== null,
+                [s.gifActive]: !isOneSoftGovered,
               })}
             >
               <source
