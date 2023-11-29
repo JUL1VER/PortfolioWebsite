@@ -74,8 +74,8 @@ const softs = [
   { title: "Curiosity and determination", gif: determination },
   { title: "Professional comminication", gif: comminication },
   { title: "Perfect sense of humor", gif: humor },
-  { title: "Conference fan", gif: conference },
-  { title: "White articles and attend podcasts", gif: podcast },
+  { title: "Conference and networking fan", gif: conference },
+  { title: "Making articles and podcasts", gif: podcast },
 ];
 
 const SkillsBlock = () => {
@@ -83,6 +83,7 @@ const SkillsBlock = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
   const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const containerRef = useRef(null);
 
@@ -98,6 +99,10 @@ const SkillsBlock = () => {
 
   const handleTabClick = (index) => {
     setActiveTab(index);
+  };
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
   };
 
   useEffect(() => {
@@ -228,6 +233,8 @@ const SkillsBlock = () => {
                   [s.gifActive]: activeSoftGifIndex !== null,
                 })}
                 alt="meme"
+                onLoad={handleImageLoad}
+                style={{ display: isImageLoaded ? "block" : "none" }}
               />
             )}
           </div>

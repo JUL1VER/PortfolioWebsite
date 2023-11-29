@@ -15,6 +15,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [position, setPosition] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const navLinks = [
     { to: "WhoAmI", text: "Who Am I", img: question },
@@ -73,7 +74,7 @@ const Header = () => {
         </button>
         <div className={s.navbarBlock}>
           <nav className={classNames(s.navbar, { [s.active]: isActive })}>
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <Link
                 className={s.navLinks}
                 to={link.to}
@@ -82,11 +83,13 @@ const Header = () => {
                 duration={500}
                 onClick={closeMenuOnScroll}
                 key={link.text}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className={s.block}>
                   <div className={s.blockWrapper}>
                     <p className={s.navbarText}>
-                      <Glitch inline onHover>
+                      <Glitch inline onHover isHovered={index === hoveredIndex}>
                         {link.text}
                       </Glitch>
                     </p>

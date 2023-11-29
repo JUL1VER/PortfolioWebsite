@@ -177,6 +177,7 @@
   line-height: 20px;
 
   color: var(--matrixGreen);
+  transition: 0.2s;
 
   @media (min-width: 1024px) {
     width: 80%;
@@ -196,7 +197,7 @@
 .name:focus,
 .email:focus,
 .message:focus {
-  color: #1cd119;
+  color: var(--white);
   text-decoration: none;
   outline: none;
 }
