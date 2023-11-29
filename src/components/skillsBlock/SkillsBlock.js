@@ -83,22 +83,22 @@ const SkillsBlock = () => {
   const [isLogosHover, setIsLogosHover] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
+  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [activeSoftGifSrc, setActiveSoftGifSrc] = useState(null);
   const [isGifLoading, setIsGifLoading] = useState(true);
-
-  let activeSoftGifIndex = null;
-  let activeSoftGifSrc = null;
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
 
   const handleSoftHoverOn = (index) => {
-    activeSoftGifIndex = index;
-    activeSoftGifSrc = softs[index].gif;
+    setActiveSoftGifIndex(index);
+    setActiveSoftGifSrc(softs[index].gif);
   };
 
   const handleSoftHoverOff = () => {
-    activeSoftGifSrc = null;
+    setActiveSoftGifIndex(null);
+    setActiveSoftGifSrc(null);
   };
 
   useEffect(() => {
@@ -207,7 +207,7 @@ const SkillsBlock = () => {
                 key={soft.title}
                 className={s.soft}
                 onMouseEnter={() => handleSoftHoverOn(index)}
-                onMouseLeave={() => handleSoftHoverOff(null)}
+                onMouseLeave={() => handleSoftHoverOff()}
               >
                 <Glitch inline onHover isHovered={index === activeSoftGifIndex}>
                   {soft.title}
