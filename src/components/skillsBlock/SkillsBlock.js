@@ -25,6 +25,7 @@ import Glitch from "../glitch/Glitch";
 import classNames from "classnames";
 import Switcher from "../switcher/Switcher";
 import HardSkill from "./hardSkill/HardSkill";
+import Loader from "../loader/Loader";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -74,8 +75,8 @@ const softs = [
   { title: "Curiosity and determination", gif: determination },
   { title: "Professional comminication", gif: comminication },
   { title: "Perfect sense of humor", gif: humor },
-  { title: "Conference fan", gif: conference },
-  { title: "White articles and attend podcasts", gif: podcast },
+  { title: "Conference and networking fan", gif: conference },
+  { title: "Making articles and podcasts", gif: podcast },
 ];
 
 const SkillsBlock = () => {
@@ -83,26 +84,11 @@ const SkillsBlock = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
   const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [isGifLoading, setIsGifLoading] = useState(true);
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
-
-  const handleMouseEnter = () => {
-    setIsLogosHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsLogosHover(false);
-  };
-
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
-
-  useEffect(() => {
-    Aos.init({ duration: 2500 });
-  }, []);
 
   useEffect(() => {
     const updateContainerHeight = () => {
@@ -125,6 +111,16 @@ const SkillsBlock = () => {
     };
   }, [activeTab]);
 
+  useEffect(() => {
+    if (activeSoftGifIndex === null) {
+      setIsGifLoading(true);
+    }
+  }, [activeSoftGifIndex]);
+
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
+
   return (
     <section
       className={classNames(s.skillsBlock, ["containerBlock"])}
@@ -142,7 +138,7 @@ const SkillsBlock = () => {
         tabs={tabs}
         className={s.switcher}
         activeIndex={activeTab}
-        onTabClick={(index) => handleTabClick(index)}
+        onTabClick={(index) => setActiveTab(index)}
       />
       <div
         className={s.container}
@@ -175,8 +171,8 @@ const SkillsBlock = () => {
           <div className={s.wrapper}>
             <div
               className={s.logos}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onMouseEnter={() => setIsLogosHover(true)}
+              onMouseLeave={() => setIsLogosHover(false)}
             >
               {hards.map((techno) => (
                 <HardSkill
@@ -222,13 +218,23 @@ const SkillsBlock = () => {
               <img src={softskill} className={s.img} alt="skillsImg" />
             </picture>
             {activeSoftGifIndex !== null && (
-              <img
-                src={softs[activeSoftGifIndex].gif}
-                className={classNames(s.gif, {
-                  [s.gifActive]: activeSoftGifIndex !== null,
-                })}
-                alt="meme"
-              />
+              <>
+                <Loader
+                  positionAbsolute
+                  className={classNames(s.loader, {
+                    [s.gifLoaded]: !isGifLoading,
+                  })}
+                />
+                <img
+                  src={softs[activeSoftGifIndex].gif}
+                  className={classNames(s.gif, {
+                    [s.gifActive]: activeSoftGifIndex !== null,
+                  })}
+                  alt="meme"
+                  onLoad={() => setIsGifLoading(false)}
+                  style={{ display: isGifLoading ? "none" : "block" }}
+                />
+              </>
             )}
           </div>
         </div>

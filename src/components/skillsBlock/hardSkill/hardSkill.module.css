@@ -14,8 +14,14 @@
 .text {
   font-weight: 900;
   font-size: 20px;
-  color: var(--matrixGreen);
+  color: var(--white);
   text-align: center;
+  transition: 0.2s;
+}
+
+.text.hovered {
+  color: var(--matrixGreen);
+  text-shadow: 0 0 3px var(--matrixGreen);
 }
 
 @media (min-width: 650px) {

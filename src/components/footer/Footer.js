@@ -65,7 +65,12 @@ const Footer = () => {
             imgprop_large={github_large}
             src="https://github.com/JUL1VER"
           />
-          <a href="https://github.com/JUL1VER" className={s.githubText}>
+          <a
+            href="https://github.com/JUL1VER"
+            target="_blank"
+            rel="noreferrer"
+            className={s.githubText}
+          >
             @<Glitch className={s.name}>jul1ver</Glitch> on github
           </a>
         </div>

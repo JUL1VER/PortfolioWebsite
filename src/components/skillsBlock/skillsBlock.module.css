@@ -113,6 +113,7 @@
   border-radius: 5px;
   cursor: pointer;
   background: var(--darkGray);
+  transition: 0.2s;
 
   @media (min-width: 650px) {
     font-size: 20px;
@@ -124,8 +125,9 @@
 }
 
 .soft:hover {
-  border: 1px solid var(--white);
-  box-shadow: 0 0 5px 1px var(--white);
+  box-shadow: 0 0 10px 1px var(--matrixGreen);
+  text-shadow: 0 0 5px var(--matrixGreen);
+  color: var(--matrixGreen);
 }
 
 .images {
@@ -143,7 +145,7 @@
 
 .imgPic {
   margin-top: 20px;
-  transition: 0.5s;
+  transition: 0.25s;
 
   @media (min-width: 1024px) {
     order: 1;
@@ -174,9 +176,17 @@
   z-index: 1;
 }
 
+.loader {
+  display: block;
+}
+
+.loader.gifLoaded {
+  display: none !important;
+}
+
 .gif {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.25s;
   position: absolute;
   top: 50%;
   left: 50%;

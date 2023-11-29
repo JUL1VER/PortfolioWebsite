@@ -166,6 +166,11 @@
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.link:hover {
+  text-shadow: 0 0 3px var(--matrixGreen);
 }
 
 .hello {

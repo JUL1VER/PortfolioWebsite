@@ -9,8 +9,8 @@
   position: relative;
   box-sizing: border-box;
   padding: 10px 20px;
-  border: 1px solid var(--matrixGreen);
-  background: transparent;
+  border: 2px solid var(--matrixGreen);
+  background: var(--darkGray);
   color: var(--matrixGreen);
   font-size: 16px;
   font-weight: 600;
@@ -31,13 +31,13 @@
 
 .tab:nth-child(1) {
   border-radius: 10px 0 0 10px;
-  transform: translateX(0.5px);
+  transform: translateX(1px);
 }
 
 .tab:nth-child(1).tab_active,
 .tab:nth-child(1):hover {
-  background: var(--martixRed);
-  border: 1px solid var(--white);
+  background: var(--matrixRed);
+  border: 2px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   color: var(--white);
   z-index: 2;
@@ -50,13 +50,13 @@
 
 .tab:nth-child(2) {
   border-radius: 0 10px 10px 0;
-  transform: translateX(-0.5px);
+  transform: translateX(-1px);
 }
 
 .tab:nth-child(2).tab_active,
 .tab:nth-child(2):hover {
-  background: var(--martixBlue);
-  border: 1px solid var(--white);
+  background: var(--matrixBlue);
+  border: 2px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   color: var(--white);
   z-index: 2;

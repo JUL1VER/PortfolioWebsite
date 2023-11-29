@@ -279,7 +279,7 @@
 
 .prevButton:hover {
   color: #fff;
-  background: var(--martixBlue);
+  background: var(--matrixBlue);
   border: 1px solid var(--white);
   box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;
@@ -296,7 +296,7 @@
 
 .nextButton:hover {
   color: #fff;
-  background: var(--martixRed);
+  background: var(--matrixRed);
   border: 1px solid var(--white);
   box-shadow: 0 0 2px 2px var(--white);
   text-shadow: none;

@@ -126,7 +126,7 @@
   border: 1px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
-  background-color: var(--martixRed);
+  background-color: var(--matrixRed);
 }
 
 .link_left:hover,
@@ -135,7 +135,7 @@
   border: 1px solid var(--white);
   box-shadow: 0 0 5px 2px var(--white);
   text-shadow: none;
-  background-color: var(--martixBlue);
+  background-color: var(--matrixBlue);
 }
 
 .close {
