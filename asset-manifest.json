@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.17bc12fe.css",
-    "main.js": "/PortfolioWebsite/static/js/main.d1728db9.js",
+    "main.css": "/PortfolioWebsite/static/css/main.4b255e55.css",
+    "main.js": "/PortfolioWebsite/static/js/main.8e09ac41.js",
     "static/media/communication.gif": "/PortfolioWebsite/static/media/communication.b8fa86ad0fe05ce20e36.gif",
-    "static/media/determination.gif": "/PortfolioWebsite/static/media/determination.ab01000e57383a99eea9.gif",
     "static/media/podcast.gif": "/PortfolioWebsite/static/media/podcast.b20bfeaf3a8c41e82313.gif",
     "static/media/conference.gif": "/PortfolioWebsite/static/media/conference.edb3fffd5ee56bc08c67.gif",
     "static/media/myfoto_large.png": "/PortfolioWebsite/static/media/myfoto_large.16cabfe4ce29596942bf.png",
+    "static/media/determination.gif": "/PortfolioWebsite/static/media/determination.39f041bc73f51fcd1d94.gif",
     "static/media/english.gif": "/PortfolioWebsite/static/media/english.8d796073f6ee4c7f73db.gif",
     "static/media/german.gif": "/PortfolioWebsite/static/media/german.fc929ff77e1df0babbd5.gif",
     "static/media/matrixback_large.png": "/PortfolioWebsite/static/media/matrixback_large.b49bbf019a7e1027fdd2.png",
@@ -42,11 +42,11 @@
     "static/media/google_large.svg": "/PortfolioWebsite/static/media/google_large.3231debef375c060df94470eb6af83d0.svg",
     "static/media/V_logo_44.svg": "/PortfolioWebsite/static/media/V_logo_44.6a996f36c59b762467e019b16e65b2d0.svg",
     "static/media/V_logo_88.svg": "/PortfolioWebsite/static/media/V_logo_88.12d40cd3ecaf652f2f520ac1c2ed96f2.svg",
-    "main.17bc12fe.css.map": "/PortfolioWebsite/static/css/main.17bc12fe.css.map",
-    "main.d1728db9.js.map": "/PortfolioWebsite/static/js/main.d1728db9.js.map"
+    "main.4b255e55.css.map": "/PortfolioWebsite/static/css/main.4b255e55.css.map",
+    "main.8e09ac41.js.map": "/PortfolioWebsite/static/js/main.8e09ac41.js.map"
   },
   "entrypoints": [
-    "static/css/main.17bc12fe.css",
-    "static/js/main.d1728db9.js"
+    "static/css/main.4b255e55.css",
+    "static/js/main.8e09ac41.js"
   ]
 }
