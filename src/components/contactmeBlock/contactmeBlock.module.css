@@ -198,6 +198,8 @@
 .email:focus,
 .message:focus {
   color: var(--white);
+  border: 2px solid var(--white);
+  box-shadow: 0px 0px 10px 2px var(--white);
   text-decoration: none;
   outline: none;
 }

@@ -145,7 +145,7 @@
 
 .imgPic {
   margin-top: 20px;
-  transition: 0.5s;
+  transition: 0.25s;
 
   @media (min-width: 1024px) {
     order: 1;
@@ -176,9 +176,17 @@
   z-index: 1;
 }
 
+.loader {
+  display: block;
+}
+
+.loader.gifLoaded {
+  display: none !important;
+}
+
 .gif {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.25s;
   position: absolute;
   top: 50%;
   left: 50%;
