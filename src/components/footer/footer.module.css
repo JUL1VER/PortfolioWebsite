@@ -56,15 +56,11 @@
 
 .linksBlock {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   max-width: 400px;
   display: flex;
   justify-content: space-between;
   width: 90%;
-
-  @media (min-width: 650px) {
-    margin-top: 10px;
-  }
 
   @media (min-width: 1024px) {
     width: 100%;
@@ -139,10 +135,13 @@
 }
 
 .github {
+  margin-top: 20px;
+
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-top: 0;
   }
 
   @media (min-width: 1280px) {

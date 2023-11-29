@@ -80,15 +80,26 @@ const softs = [
 ];
 
 const SkillsBlock = () => {
-  const [isLogosHover, setIsLogosHover] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
+  const [isLogosHover, setIsLogosHover] = useState(false);
   const [containerHeight, setContainerHeight] = useState(0);
-  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+
   const [isGifLoading, setIsGifLoading] = useState(true);
+  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [isOneSoftHovered, setIsOneSoftHovered] = useState(false);
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
+
+  const handleSoftHoverOn = (index) => {
+    setIsOneSoftHovered(true);
+    setActiveSoftGifIndex(index);
+  };
+
+  const handleSoftHoverOff = () => {
+    setIsOneSoftHovered(false);
+  };
 
   useEffect(() => {
     const updateContainerHeight = () => {
@@ -112,9 +123,7 @@ const SkillsBlock = () => {
   }, [activeTab]);
 
   useEffect(() => {
-    if (activeSoftGifIndex === null) {
-      setIsGifLoading(true);
-    }
+    setIsGifLoading(true);
   }, [activeSoftGifIndex]);
 
   useEffect(() => {
@@ -195,10 +204,14 @@ const SkillsBlock = () => {
               <p
                 key={soft.title}
                 className={s.soft}
-                onMouseEnter={() => setActiveSoftGifIndex(index)}
-                onMouseLeave={() => setActiveSoftGifIndex(null)}
+                onMouseEnter={() => handleSoftHoverOn(index)}
+                onMouseLeave={() => handleSoftHoverOff()}
               >
-                <Glitch inline onHover isHovered={index === activeSoftGifIndex}>
+                <Glitch
+                  inline
+                  onHover
+                  isHovered={index === activeSoftGifIndex && isOneSoftHovered}
+                >
                   {soft.title}
                 </Glitch>
               </p>
@@ -207,7 +220,7 @@ const SkillsBlock = () => {
           <div className={s.images}>
             <picture
               className={classNames(s.imgPic, {
-                [s.gifActive]: activeSoftGifIndex !== null,
+                [s.gifActive]: isOneSoftHovered,
               })}
             >
               <source
@@ -217,25 +230,22 @@ const SkillsBlock = () => {
               />
               <img src={softskill} className={s.img} alt="skillsImg" />
             </picture>
-            {activeSoftGifIndex !== null && (
-              <>
-                <Loader
-                  positionAbsolute
-                  className={classNames(s.loader, {
-                    [s.gifLoaded]: !isGifLoading,
-                  })}
-                />
-                <img
-                  src={softs[activeSoftGifIndex].gif}
-                  className={classNames(s.gif, {
-                    [s.gifActive]: activeSoftGifIndex !== null,
-                  })}
-                  alt="meme"
-                  onLoad={() => setIsGifLoading(false)}
-                  style={{ display: isGifLoading ? "none" : "block" }}
-                />
-              </>
-            )}
+            <Loader
+              positionAbsolute
+              className={classNames(s.loader, {
+                [s.gifLoaded]: !isGifLoading,
+                [s.gifInactive]: activeSoftGifIndex === null,
+              })}
+            />
+            <img
+              src={softs[activeSoftGifIndex]?.gif}
+              className={classNames(s.gif, {
+                [s.gifActive]: isOneSoftHovered && !isGifLoading,
+              })}
+              alt="meme"
+              onLoad={() => setIsGifLoading(false)}
+              style={{ opacity: isGifLoading ? "0" : "1" }}
+            />
           </div>
         </div>
       </div>
