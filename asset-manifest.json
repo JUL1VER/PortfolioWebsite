@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.4b255e55.css",
-    "main.js": "/PortfolioWebsite/static/js/main.8e09ac41.js",
+    "main.css": "/PortfolioWebsite/static/css/main.83f48934.css",
+    "main.js": "/PortfolioWebsite/static/js/main.f19d5ecb.js",
     "static/media/communication.gif": "/PortfolioWebsite/static/media/communication.b8fa86ad0fe05ce20e36.gif",
     "static/media/podcast.gif": "/PortfolioWebsite/static/media/podcast.b20bfeaf3a8c41e82313.gif",
     "static/media/conference.gif": "/PortfolioWebsite/static/media/conference.edb3fffd5ee56bc08c67.gif",
@@ -42,11 +42,11 @@
     "static/media/google_large.svg": "/PortfolioWebsite/static/media/google_large.3231debef375c060df94470eb6af83d0.svg",
     "static/media/V_logo_44.svg": "/PortfolioWebsite/static/media/V_logo_44.6a996f36c59b762467e019b16e65b2d0.svg",
     "static/media/V_logo_88.svg": "/PortfolioWebsite/static/media/V_logo_88.12d40cd3ecaf652f2f520ac1c2ed96f2.svg",
-    "main.4b255e55.css.map": "/PortfolioWebsite/static/css/main.4b255e55.css.map",
-    "main.8e09ac41.js.map": "/PortfolioWebsite/static/js/main.8e09ac41.js.map"
+    "main.83f48934.css.map": "/PortfolioWebsite/static/css/main.83f48934.css.map",
+    "main.f19d5ecb.js.map": "/PortfolioWebsite/static/js/main.f19d5ecb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b255e55.css",
-    "static/js/main.8e09ac41.js"
+    "static/css/main.83f48934.css",
+    "static/js/main.f19d5ecb.js"
   ]
 }
