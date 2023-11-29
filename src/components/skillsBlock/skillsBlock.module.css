@@ -68,7 +68,9 @@
 }
 
 .content:last-child {
-  padding-top: 40px;
+  @media (min-width: 1024px) {
+    padding-top: 40px;
+  }
 }
 
 .active {
@@ -133,8 +135,12 @@
 .images {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   position: relative;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 }
 
 .images:last-child {
