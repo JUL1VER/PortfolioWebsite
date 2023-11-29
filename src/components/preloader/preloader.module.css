@@ -21,7 +21,6 @@
   overflow: hidden;
   border-right: 20px solid var(--matrixGreen);
   animation: flashing_console 0.75s step-end infinite, print_text 2.5s steps(15);
-  text-shadow: 0 0 5px var(--matrixGreen);
   cursor: default;
 
   @media (min-width: 650px) {
