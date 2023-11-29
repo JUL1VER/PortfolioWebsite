@@ -184,6 +184,10 @@
   display: none !important;
 }
 
+.loader.gifInactive {
+  display: none !important;
+}
+
 .gif {
   opacity: 0;
   transition: 0.5s;

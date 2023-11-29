@@ -84,21 +84,20 @@ const SkillsBlock = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
   const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
-  const [activeSoftGifSrc, setActiveSoftGifSrc] = useState(null);
   const [isGifLoading, setIsGifLoading] = useState(true);
+  const [isOneSoftGovered, setIsOneSoftGovered] = useState(false);
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
 
   const handleSoftHoverOn = (index) => {
+    setIsOneSoftGovered(true);
     setActiveSoftGifIndex(index);
-    setActiveSoftGifSrc(softs[index].gif);
   };
 
   const handleSoftHoverOff = () => {
-    setActiveSoftGifIndex(null);
-    setActiveSoftGifSrc(null);
+    setIsOneSoftGovered(false);
   };
 
   useEffect(() => {
@@ -228,25 +227,22 @@ const SkillsBlock = () => {
               />
               <img src={softskill} className={s.img} alt="skillsImg" />
             </picture>
-            {activeSoftGifIndex !== null && activeSoftGifSrc !== null && (
-              <>
-                <Loader
-                  positionAbsolute
-                  className={classNames(s.loader, {
-                    [s.gifLoaded]: !isGifLoading,
-                  })}
-                />
-                <img
-                  src={activeSoftGifSrc}
-                  className={classNames(s.gif, {
-                    [s.gifActive]: activeSoftGifIndex !== null,
-                  })}
-                  alt="meme"
-                  onLoad={() => setIsGifLoading(false)}
-                  style={{ opacity: isGifLoading ? "0" : "1" }}
-                />
-              </>
-            )}
+            <Loader
+              positionAbsolute
+              className={classNames(s.loader, {
+                [s.gifLoaded]: !isGifLoading,
+                [s.gifInactive]: activeSoftGifIndex === null,
+              })}
+            />
+            <img
+              src={softs[activeSoftGifIndex]?.gif}
+              className={classNames(s.gif, {
+                [s.gifActive]: isOneSoftGovered,
+              })}
+              alt="meme"
+              onLoad={() => setIsGifLoading(false)}
+              style={{ opacity: isGifLoading ? "0" : "1" }}
+            />
           </div>
         </div>
       </div>
