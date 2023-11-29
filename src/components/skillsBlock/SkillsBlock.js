@@ -207,7 +207,11 @@ const SkillsBlock = () => {
                 onMouseEnter={() => handleSoftHoverOn(index)}
                 onMouseLeave={() => handleSoftHoverOff()}
               >
-                <Glitch inline onHover isHovered={index === activeSoftGifIndex}>
+                <Glitch
+                  inline
+                  onHover
+                  isHovered={index === activeSoftGifIndex && isOneSoftHovered}
+                >
                   {soft.title}
                 </Glitch>
               </p>
