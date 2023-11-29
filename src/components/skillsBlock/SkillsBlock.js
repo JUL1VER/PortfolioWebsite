@@ -84,11 +84,22 @@ const SkillsBlock = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
   const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [activeSoftGifSrc, setActiveSoftGifSrc] = useState(null);
   const [isGifLoading, setIsGifLoading] = useState(true);
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
+
+  const handleSoftHoverOn = (index) => {
+    setActiveSoftGifIndex(index);
+    setActiveSoftGifSrc(softs[index].gif);
+  };
+
+  const handleSoftHoverOff = () => {
+    setActiveSoftGifIndex(null);
+    setActiveSoftGifSrc(null);
+  };
 
   useEffect(() => {
     const updateContainerHeight = () => {
@@ -195,8 +206,8 @@ const SkillsBlock = () => {
               <p
                 key={soft.title}
                 className={s.soft}
-                onMouseEnter={() => setActiveSoftGifIndex(index)}
-                onMouseLeave={() => setActiveSoftGifIndex(null)}
+                onMouseEnter={() => handleSoftHoverOn(index)}
+                onMouseLeave={() => handleSoftHoverOff(null)}
               >
                 <Glitch inline onHover isHovered={index === activeSoftGifIndex}>
                   {soft.title}
@@ -217,7 +228,7 @@ const SkillsBlock = () => {
               />
               <img src={softskill} className={s.img} alt="skillsImg" />
             </picture>
-            {activeSoftGifIndex !== null && (
+            {activeSoftGifIndex !== null && activeSoftGifSrc !== null && (
               <>
                 <Loader
                   positionAbsolute
@@ -226,13 +237,13 @@ const SkillsBlock = () => {
                   })}
                 />
                 <img
-                  src={softs[activeSoftGifIndex].gif}
+                  src={activeSoftGifSrc}
                   className={classNames(s.gif, {
                     [s.gifActive]: activeSoftGifIndex !== null,
                   })}
                   alt="meme"
                   onLoad={() => setIsGifLoading(false)}
-                  style={{ display: isGifLoading ? "none" : "block" }}
+                  style={{ opacity: isGifLoading ? "0" : "1" }}
                 />
               </>
             )}

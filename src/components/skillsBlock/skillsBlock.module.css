@@ -186,11 +186,11 @@
 
 .gif {
   opacity: 0;
-  transition: 0.25s;
+  transition: 0.5s;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   width: 90%;
   border-radius: 15px;
   border: 2px solid var(--matrixGreen);
@@ -201,6 +201,7 @@
 .gif.gifActive {
   opacity: 1;
   margin: 0 auto;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .logos {
