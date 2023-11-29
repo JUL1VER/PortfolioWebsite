@@ -83,22 +83,22 @@ const SkillsBlock = () => {
   const [isLogosHover, setIsLogosHover] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
-  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
-  const [activeSoftGifSrc, setActiveSoftGifSrc] = useState(null);
   const [isGifLoading, setIsGifLoading] = useState(true);
+
+  let activeSoftGifIndex = null;
+  let activeSoftGifSrc = null;
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
 
   const handleSoftHoverOn = (index) => {
-    setActiveSoftGifIndex(index);
-    setActiveSoftGifSrc(softs[index].gif);
+    activeSoftGifIndex = index;
+    activeSoftGifSrc = softs[index].gif;
   };
 
   const handleSoftHoverOff = () => {
-    setActiveSoftGifIndex(null);
-    setActiveSoftGifSrc(null);
+    activeSoftGifSrc = null;
   };
 
   useEffect(() => {
