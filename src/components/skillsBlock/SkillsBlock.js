@@ -80,24 +80,25 @@ const softs = [
 ];
 
 const SkillsBlock = () => {
-  const [isLogosHover, setIsLogosHover] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
+  const [isLogosHover, setIsLogosHover] = useState(false);
   const [containerHeight, setContainerHeight] = useState(0);
-  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+
   const [isGifLoading, setIsGifLoading] = useState(true);
-  const [isOneSoftGovered, setIsOneSoftGovered] = useState(false);
+  const [activeSoftGifIndex, setActiveSoftGifIndex] = useState(null);
+  const [isOneSoftHovered, setIsOneSoftHovered] = useState(false);
 
   const containerRef = useRef(null);
 
   const tabs = ["Hard Skills", "Soft Skills"];
 
   const handleSoftHoverOn = (index) => {
-    setIsOneSoftGovered(true);
+    setIsOneSoftHovered(true);
     setActiveSoftGifIndex(index);
   };
 
   const handleSoftHoverOff = () => {
-    setIsOneSoftGovered(false);
+    setIsOneSoftHovered(false);
   };
 
   useEffect(() => {
@@ -122,9 +123,7 @@ const SkillsBlock = () => {
   }, [activeTab]);
 
   useEffect(() => {
-    if (activeSoftGifIndex === null) {
-      setIsGifLoading(true);
-    }
+    setIsGifLoading(true);
   }, [activeSoftGifIndex]);
 
   useEffect(() => {
@@ -217,7 +216,7 @@ const SkillsBlock = () => {
           <div className={s.images}>
             <picture
               className={classNames(s.imgPic, {
-                [s.gifActive]: !isOneSoftGovered,
+                [s.gifActive]: isOneSoftHovered,
               })}
             >
               <source
@@ -237,7 +236,7 @@ const SkillsBlock = () => {
             <img
               src={softs[activeSoftGifIndex]?.gif}
               className={classNames(s.gif, {
-                [s.gifActive]: isOneSoftGovered,
+                [s.gifActive]: isOneSoftHovered && !isGifLoading,
               })}
               alt="meme"
               onLoad={() => setIsGifLoading(false)}
