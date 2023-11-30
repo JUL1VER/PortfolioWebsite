@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 200vw;
-  height: 200vh;
+  height: 200dvh;
   top: -50%;
   left: -50%;
   color: var(--matrixGreen);
   background: var(--darkGray);
   overflow-x: hidden;
+
+  @media (min-width: 650px) {
+    height: 200dvh;
+  }
 }
 
 .matrixConsole {

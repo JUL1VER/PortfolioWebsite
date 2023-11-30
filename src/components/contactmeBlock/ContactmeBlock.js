@@ -44,21 +44,18 @@ const ContactmeBlock = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_kc7tg2i",
-        "template_1nboemo",
-        form.current,
-        "uuqcIqnHZpy0Umg--"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const serviceId = "service_kc7tg2i";
+    const templateId = "template_1nboemo";
+    const publicKey = "qPy8paNK-hYxxqT0p";
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     setInfo((state) => ({ ...state, name: "" }));
     setInfo((state) => ({ ...state, email: "" }));
@@ -137,7 +134,7 @@ const ContactmeBlock = () => {
           />
           <button
             disabled={disableButton}
-            className={classNames(s.button)}
+            className={classNames(s.button, disableButton ? s.disabled : null)}
             type="submit"
             value="Send"
           >
