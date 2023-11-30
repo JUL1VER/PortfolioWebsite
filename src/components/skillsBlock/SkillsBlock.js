@@ -127,6 +127,10 @@ const SkillsBlock = () => {
   }, [activeSoftGifIndex]);
 
   useEffect(() => {
+    setActiveSoftGifIndex(null);
+  }, [activeTab]);
+
+  useEffect(() => {
     Aos.init({ duration: 2500 });
   }, []);
 

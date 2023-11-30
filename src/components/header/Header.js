@@ -14,8 +14,9 @@ import Glitch from "../glitch/Glitch";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [position, setPosition] = useState(window.scrollY);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const navLinks = [
     { to: "WhoAmI", text: "Who Am I", img: question },
@@ -38,6 +39,9 @@ const Header = () => {
 
       setVisible(position > moving);
       setPosition(moving);
+      if (!hasScrolled) {
+        setHasScrolled(true);
+      }
     };
 
     if (!isActive) {
@@ -47,7 +51,33 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, [position, isActive, hasScrolled]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!hasScrolled) {
+        setVisible(true);
+      }
+    }, 13500);
+
+    return () => clearTimeout(timer);
+  }, [hasScrolled]);
+
+  useEffect(() => {
+    const handleBodyOverflow = () => {
+      if (isActive) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    handleBodyOverflow();
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isActive]);
 
   return (
     <div className={classNames(s.header, visible ? s.visible : s.hidden)}>
