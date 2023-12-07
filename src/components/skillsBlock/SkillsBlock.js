@@ -74,9 +74,9 @@ const softs = [
   { title: "Mentoring and leadership", gif: leadership },
   { title: "Curiosity and determination", gif: determination },
   { title: "Professional comminication", gif: comminication },
-  { title: "Perfect sense of humor", gif: humor },
+  { title: "Wholesome sense of humor", gif: humor },
   { title: "Conference and networking fan", gif: conference },
-  { title: "Making articles and podcasts", gif: podcast },
+  { title: "Making podcasts and articles", gif: podcast },
 ];
 
 const SkillsBlock = () => {
