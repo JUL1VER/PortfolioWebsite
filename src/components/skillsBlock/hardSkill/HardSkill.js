@@ -23,12 +23,7 @@ const HardSkill = (props) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <a
-        href={src}
-        target="_blank"
-        rel="noreferrer"
-        style={{ textDecoration: "none" }}
-      >
+      <a className={s.link} href={src} target="_blank" rel="noreferrer">
         <img src={imgprop} alt="skillIcon" className={s.logo} />
         <p className={classNames(s.text, { [s.hovered]: isHovered })}>
           <Glitch inline onHover isHovered={isHovered}>
